@@ -1,0 +1,92 @@
+@import "../../pages/_variables.scss";
+
+.boolean-game {
+    position: relative;
+    width: 60vw;
+    border: 2px solid #ec7eff;
+    padding: 10px 0 0 0;
+    margin: 0 auto;
+    background-color: #faddff;
+    @media screen and (max-width: $mini-width) {
+        width: 80vw;
+    }
+    .result {
+        margin: 20px auto;
+        display: block;
+        font-size: 20px;
+    }
+    .replay {
+        margin: 20px auto;
+        display: block;
+        font-size: 15px;
+        padding: 10px 10px;
+        border-radius: 4px;
+    }
+    .board {
+        user-select: none;
+        box-shadow: 0 0 10px #00000069;
+        border-radius: 20px;
+        border: 2px solid #ec7eff;
+        margin: 10px auto;
+        width: 50vw;
+        height: 50vw;
+        @media screen and (max-width: $mini-width) {
+            width: 70vw;
+            height: 70vw;
+        }
+        // &:before {
+        //     content:     "";
+        //     display:     block;
+        //     padding-top: 100%; /* initial ratio of 1:1*/
+        // }
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+  //justify-content: space-between;
+        .cell {
+            overflow: hidden;
+            position: relative;
+            border: 2px solid #0000008a;
+            box-sizing: border-box;
+            transition: border-color 0.5s ease;
+            cursor: pointer;
+            &.failed {
+                border-color: red !important;
+                filter: none !important;
+                background-color: #ff6666 !important;
+            }
+            .inner {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 7vw;
+                font-weight: bold;
+            }
+            &:not(disabled) {
+                &:hover {
+                    border-color: white;
+                    transition: none;
+                }
+                &:active {
+                    filter: brightness(85%);
+                }
+            }
+            &[disabled] {
+                filter: brightness(50%);
+            }
+            &[horizontal="left"][vertical="top"] {
+                border-top-left-radius: 10px;
+            }
+            &[horizontal="left"][vertical="bottom"] {
+                border-bottom-left-radius: 10px;
+            }
+            &[horizontal="right"][vertical="bottom"] {
+                border-bottom-right-radius: 10px;
+            }
+            &[horizontal="right"][vertical="top"] {
+                border-top-right-radius: 10px;
+            }
+        }
+    }
+}

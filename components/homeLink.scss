@@ -1,0 +1,10 @@
+@import "../pages/_variables.scss";
+
+.home-link {
+    font-size: 40px;
+    text-align: left;
+    display: block;
+    text-decoration: none;
+    //position: fixed;
+    text-shadow: 2px 3px 5px $accent-dark;
+}

@@ -1,0 +1,122 @@
+@import "./_variables.scss";
+
+@font-face {
+  font-family: 'Droid';
+  src: url('/static/fonts/droidSerifRegular.ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Droid';
+  src: url('/static/fonts/droidSerifBold.ttf');
+  //font-weight: 900;
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  font-family: 'Droid';
+  background-color: $background;
+  color: $foreground;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: $background;
+  @media screen and (min-width: $mini-width) {
+      background-attachment: fixed;
+      background-image: url("data:image/svg+xml,%3Csvg width='40' height='12' viewBox='0 0 40 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6.172L6.172 0h5.656L0 11.828V6.172zm40 5.656L28.172 0h5.656L40 6.172v5.656zM6.172 12l12-12h3.656l12 12h-5.656L20 3.828 11.828 12H6.172zm12 0L20 10.172 21.828 12h-3.656z' fill='%23dae2ff' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+  }
+}
+
+#next {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#page {
+  text-align: center;
+  //background-color: $background;
+  margin: 0 8vw;
+  @media screen and (max-width: $mini-width) {
+    margin: 0 3vw;
+  }
+  padding: 5vh 5vw 10vh 5vw;
+  min-height: 85vh;
+  background-color: $background;
+  @media screen and (min-width: $mini-width) {
+    box-shadow: 0 0 10px $accent;
+  }
+  & > .title {
+    text-shadow: $accent 1px 1px 7px;
+    font-size: 3.5em;
+  }
+  .intro-card {
+    display: block;
+    text-align: center;
+    font-style: italic;
+    & > * {
+      display: block;
+    }
+    & > img, & > video {
+      width: 60%;
+      min-width: 300px;
+      border-radius: 10px;
+      margin: 10px auto;
+    }
+    a {
+      display: inline;
+    }
+  }
+  a:visited, a:link {
+    color: $accent-dark;
+  }
+  
+  .smaller-text {
+    font-size: 0.75em;
+  }
+  p {
+    margin: 20px 0;
+  }
+  .bold {
+    font-weight: bold;
+  }
+  .underline {
+    text-decoration: underline;
+  }
+  .italic {
+    font-style: italic;
+  }
+}
+
+li a {
+    text-decoration: none;
+}
+
+
+.youtube-container {
+    position: relative;
+    width: 80%;
+    @media screen and (max-width: $mini-width) {
+      width: 100%;
+    }
+    margin: 0 auto;
+    height: 0;
+    padding-bottom: 56.25%;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+}
+
+.next {
+  margin: 40px 0 20px 0;
+  text-align: right;
+  display: block;
+}
