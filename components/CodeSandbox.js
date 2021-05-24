@@ -1,26 +1,29 @@
-import { Component } from "react";
-import AceEditor from "./AceEditor";
-import "./CodeSandbox.scss";
-import { inspect } from "util";
-import deval from "deval";
+import { Component } from 'react'
+import AceEditor from './AceEditor'
+import './CodeSandbox.scss'
+import { inspect } from 'util'
+import autoBind from 'auto-bind'
 
 class CodeSandbox extends Component {
   constructor(props) {
-    super(props);
-
-    this.state = { value: this.props.value || "" };
+    super(props)
+    autoBind(this)
+    this.state = { value: this.props.value || '' }
   }
   render() {
     return (
       <div
         className={
-          "sandbox" +
-          (this.props.hasOwnProperty("className")
-            ? " " + this.props.className
-            : "")
-        }
-      >
-        <h2 className="main-title">JavaScript Expression Evaluator</h2>
+          'sandbox' + (this.props.hasOwnProperty('className') ? ' ' + this.props.className : '')
+        }>
+        <h2 className="main-title">
+          JavaScript Expression Evaluator
+          {this.props.noRefresh !== true ? (
+            <span className="reset" onClick={this.reset}>
+              ↻
+            </span>
+          ) : null}
+        </h2>
         <div className="titles">
           <h2 className="title">Input</h2>
           <h2 className="title">Output</h2>
@@ -33,7 +36,7 @@ class CodeSandbox extends Component {
             theme="ambiance"
             value={this.state.value}
             onChange={(...args) => {
-              this.handleChange(...args);
+              this.handleChange(...args)
             }}
           />
           {this.state.value.trim().length > 0 ? (
@@ -43,12 +46,12 @@ class CodeSandbox extends Component {
           )}
         </div>
       </div>
-    );
+    )
   }
   getOutput(source) {
     try {
-      const output = eval(source);
-      let outputSource = inspect(output);
+      const output = eval(source)
+      let outputSource = inspect(output)
       return (
         <AceEditor
           className="output valid"
@@ -59,14 +62,17 @@ class CodeSandbox extends Component {
           readOnly
           value={outputSource}
         />
-      );
+      )
     } catch (err) {
-      return <span className="output error">{inspect(err)}</span>;
+      return <span className="output error">{inspect(err)}</span>
     }
   }
   handleChange(output) {
-    this.setState({ value: output });
+    this.setState({ value: output })
+  }
+  reset() {
+    this.setState({ value: this.props.value || '' })
   }
 }
 
-export default CodeSandbox;
+export default CodeSandbox

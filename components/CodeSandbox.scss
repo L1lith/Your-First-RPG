@@ -12,12 +12,35 @@
     color: $background;
     position: relative;
     width: 70vw;
-    height: 60vh;
+    height: 50vh;
+    min-height: 400px;
+    .reset {
+        font-size: 4vw;
+        position: absolute;
+        top: 0%;
+        user-select: none;
+        right: 4%;
+        //transform: translateY(-50%);
+        display: inline;
+        width: fit-content;
+        cursor: pointer;
+        //transform-origin: top top;
+        &:hover {
+            transform: rotateZ(360deg);
+            transition: transform 0.5s linear;
+        }
+        &:active {
+            color: white;
+        }
+    }
+    @media screen and (max-width: $mini-width) {
+        width: 90vw;
+        font-size: 0.7em;
+    }
     &.short {
         height: 20vh;
         min-height: 250px;
     }
-    min-height: 500px;
     & > * {
         display: block;
     }
@@ -27,6 +50,7 @@
         height: 100%;
     }
     .main-title {
+        position: relative;
         font-size: 1.5em !important;
         height: 50px;
         line-height: 50px;

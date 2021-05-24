@@ -18,8 +18,7 @@ export default () => (
     <br />
     <p>
       In this section we will upgrade from working with just boolean logic to writing functional
-      JavaScript! Primitives represent the basic data types in JavaScript. Here are the basic
-      primitives:
+      JavaScript! Primitives are the basic data types in JavaScript. Here are the basic primitives:
     </p>
     <ul className="primitives-list">
       <li>Boolean</li>
@@ -98,12 +97,16 @@ export default () => (
     <div className="type null">
       <h2>null</h2>
       <p>
-        The value undefined is used to represent a value that has not been assigned anything else.
-        It's basically the universal placeholder value.
+        The value null is used to represent the value "nothing". It's different from undefined in
+        that it is intentionally nothing rather than just being missing a value.
       </p>
-      <CodeSandbox value="undefined" className="short" />
+      <CodeSandbox value="null" className="short" />
     </div>
-    <Link href="/">
+    <p>
+      In the next section we'll be using these primitive values so you can see a little bit more why
+      they are useful.
+    </p>
+    <Link href="/coding/basic-programs">
       <a className="next">Up next: Building Basic Programs</a>
     </Link>
   </div>

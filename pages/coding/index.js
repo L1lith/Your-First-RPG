@@ -16,6 +16,11 @@ export default () => (
           <a>#3.1 Coding with Primitives</a>
         </Link>
       </li>
+      <li>
+        <Link href="/coding/basic-programs">
+          <a>#3.2 Building Basic Programs</a>
+        </Link>
+      </li>
     </ol>
     <h2 id="lesson">#3.0 Stepping into Coding</h2>
     <br />

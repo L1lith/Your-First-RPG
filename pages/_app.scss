@@ -42,7 +42,8 @@ body {
   //background-color: $background;
   margin: 0 8vw;
   @media screen and (max-width: $mini-width) {
-    margin: 0 3vw;
+    margin: 0 1vw;
+    padding: 0 1vw;
   }
   padding: 5vh 5vw 10vh 5vw;
   min-height: 85vh;
