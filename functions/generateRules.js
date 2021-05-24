@@ -15,7 +15,7 @@ function generateRules(
   } = options;
   let allowedColors = randomSubset(colors, minColors);
   let allowedShapes = randomSubset(shapes, minShapes);
-  console.log(notColors, notShapes);
+  //console.log(notColors, notShapes);
   if (notShapes === true && allowedShapes.length >= shapes.length) {
     allowedShapes = allowedShapes.slice(0, shapes.length - 1);
   }

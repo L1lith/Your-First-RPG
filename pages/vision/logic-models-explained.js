@@ -2,7 +2,7 @@ import Link from "next/link";
 import "./logic-models-explained.scss";
 
 export default () => (
-  <div className="vision-intro">
+  <div className="logic-models">
     <h2>#1.1 Logic Models Explained</h2>
     <br />
     <span className="intro-card">

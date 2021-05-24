@@ -13,14 +13,24 @@
     .result {
         margin: 20px auto;
         display: block;
-        font-size: 20px;
+        font-size: 35px;
+        font-weight: bold;
+        &.won {
+            color: #00807b;
+        }
+        &.lost {
+            color: #ff0068;
+        }
     }
     .replay {
-        margin: 20px auto;
+        margin: 2vw auto;
         display: block;
-        font-size: 15px;
-        padding: 10px 10px;
-        border-radius: 4px;
+        font-size: 25px;
+        background-color: $background;
+        border-color: $foreground;
+        padding: 2vw 3vw;
+        border-radius: 2vw;
+        box-shadow: 0 0 8px #effffa;
     }
     .board {
         user-select: none;
@@ -61,7 +71,7 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
                 font-size: 7vw;
-                font-weight: bold;
+                //font-weight: bold;
             }
             &:not(disabled) {
                 &:hover {

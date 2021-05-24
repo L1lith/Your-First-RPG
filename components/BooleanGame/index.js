@@ -80,7 +80,7 @@ class BooleanGame extends Component {
   }
   lose() {
     this.setState({ gameState: "lost" });
-    console.log("lost");
+    //console.log("lost");
   }
   getRemainingCells(board, rules) {
     return (board || this.state.board)
@@ -97,7 +97,7 @@ class BooleanGame extends Component {
     if (lost) {
       newCell.failed = true;
     }
-    console.log(newCell);
+    //console.log(newCell);
     newBoard[index] = newCell;
     this.setState({ board: newBoard });
     //console.log("x", lost, this.getRemainingCells(), this.state.board);
@@ -109,7 +109,7 @@ class BooleanGame extends Component {
     }
   }
   win() {
-    console.log("You won!");
+    //console.log("You won!");
     this.setState({ gameState: "won" });
   }
   render() {
@@ -132,9 +132,23 @@ class BooleanGame extends Component {
         </div>
         {this.state.gameState === "ongoing" ? null : this.state.gameState ===
           "won" ? (
-          <span className="result won">You Won!</span>
+          <span
+            className="result won"
+            ref={(ref) => {
+              if (document.body.contains(ref)) ref.scrollIntoView();
+            }}
+          >
+            You Won!
+          </span>
         ) : this.state.gameState === "lost" ? (
-          <span className="result lost">You lost 〠_〠</span>
+          <span
+            className="result lost"
+            ref={(ref) => {
+              if (document.body.contains(ref)) ref.scrollIntoView();
+            }}
+          >
+            You lost 〠_〠
+          </span>
         ) : (
           "UNEXPECTED STATE: " + this.state.gameState
         )}

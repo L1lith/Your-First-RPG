@@ -27,7 +27,7 @@ class SquareGame extends Component {
     };
   }
   render() {
-    console.log(this.state.board);
+    //console.log(this.state.board);
     return <p>{this.state.dimensions.join(", ")}</p>;
   }
 }

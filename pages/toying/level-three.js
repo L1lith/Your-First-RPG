@@ -2,7 +2,7 @@ import LevelThree from "../../components/BooleanGame/levels/LevelThree";
 import Link from "next/link";
 
 export default () => (
-  <div className="level-1">
+  <div className="level-3">
     <h2>#2.3 Level 3: Boolean Logic & the Coding Mindset</h2>
     <br />
     <p>

@@ -1,0 +1,67 @@
+@import "../pages/_variables.scss";
+
+
+.sandbox {
+    margin: 20px auto 40px auto;
+    display: block;
+    overflow: hidden;
+    border-radius: 1vw;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: $foreground;
+    color: $background;
+    position: relative;
+    width: 70vw;
+    height: 60vh;
+    &.short {
+        height: 20vh;
+        min-height: 250px;
+    }
+    min-height: 500px;
+    & > * {
+        display: block;
+    }
+    & > * > * {
+        display: inline-block;
+        width: 50%;
+        height: 100%;
+    }
+    .main-title {
+        font-size: 1.5em !important;
+        height: 50px;
+        line-height: 50px;
+        background-color: #202020;
+        color: #a7a7a7;
+    }
+    .titles {
+        height: 50px;
+        line-height: 50px;
+        width: 100%;
+        text-align: center;
+        position: relative;
+    }
+    .inner {
+        width: 100%;
+        height: calc(100% - 100px);
+        position: relative;
+        & > * {
+            position: absolute;
+            top: 0;
+            left: 0;
+            &:nth-child(2) {
+                left: 50%;
+            }
+        }
+    }
+    .output {
+        &:not(.valid) {
+            background-color: #202020;
+        padding: 20px;
+        width: calc(50% - 40px);
+        height: calc(100% - 40px);
+        }
+        &.error {
+            color: #ff0068;
+        }
+    }
+}

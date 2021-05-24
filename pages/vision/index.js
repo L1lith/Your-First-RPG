@@ -4,9 +4,20 @@ import "./index.scss";
 export default () => (
   <div className="vision-intro">
     <h1 className="title">Section 1: 👀 Visioning Mental Models</h1>
-    <br />
-    <br />
-    <h2>#1.0 Planning it out: Saving Monitors</h2>
+    <ol className="toc pages">
+      <h2>Pages</h2>
+      <li>
+        <Link href="/vision#lesson">
+          <a>#1.0 Planning it out: Saving Monitors</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/vision/logic-models-explained">
+          <a>#1.1 Level 1: Basic "Or" Boolean Logic</a>
+        </Link>
+      </li>
+    </ol>
+    <h2 id="lesson">#1.0 Planning it out: Saving Monitors</h2>
     <br />
     <span className="intro-card">
       <video autoPlay loop muted>

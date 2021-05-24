@@ -40,7 +40,7 @@ export default () => (
       and are confident you understand OR continue on to the next section to
       learn about NOT expressions 😊
     </p>
-    <Link href="/toying/level-2">
+    <Link href="/toying/level-two">
       <a className="next">Up next: Level 2: "Not" Expressions</a>
     </Link>
   </div>

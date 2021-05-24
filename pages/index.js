@@ -12,8 +12,7 @@ export default () => (
       In this course I will describe mental models to show how & why we apply
       them to coding and other tasks.
     </p>
-    <br />
-    <ol className="toc">
+    <ol className="toc sections">
       <h2>Sections</h2>
       <li>
         <Link href="/vision">
@@ -31,8 +30,6 @@ export default () => (
         </Link>
       </li>
     </ol>
-    <br />
-    <br />
     <div className="extras">
       <h2></h2>
       <Link href="/faq">
