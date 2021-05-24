@@ -1,5 +1,5 @@
-import Link from "next/link";
-import "./index.scss";
+import Link from 'next/link'
+import './index.scss'
 
 export default () => (
   <div className="home">
@@ -9,8 +9,8 @@ export default () => (
       🧠 Mental Modeling for Beginners
     </h1>
     <p>
-      In this course I will describe mental models to show how & why we apply
-      them to coding and other tasks.
+      In this course I will describe mental models to show how & why we apply them to coding and
+      other tasks.
     </p>
     <ol className="toc sections">
       <h2>Sections</h2>
@@ -40,4 +40,4 @@ export default () => (
       </Link>
     </div>
   </div>
-);
+)

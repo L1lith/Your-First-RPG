@@ -48,11 +48,7 @@ class CodeSandbox extends Component {
   getOutput(source) {
     try {
       const output = eval(source);
-      let outputSource = deval(output);
-      if (typeof output == "string") {
-        outputSource = `"${outputSource}"`;
-      }
-      console.log(source, output, outputSource);
+      let outputSource = inspect(output);
       return (
         <AceEditor
           className="output valid"
