@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import './logic-models-explained.scss'
 
 export default () => (
   <div className="logic-models">
@@ -16,6 +15,7 @@ export default () => (
       or false) logic and explain how to create a mental model when working with it. Modeling
       logical systems is a lot more useful than you might give it credit. The entire world is ruled
       by logic, like how you do your job, how you cross the street, or how you navigate a website.
+      TODO: Rephrase TODO: ADD BLENDER MEMES
       <br />
       <br />
       Let's say for example you are at a crosswalk and you see the traffic light in the direction
@@ -41,7 +41,12 @@ export default () => (
       information (we call this "input data"). The second thing is a set of rules (we call this the
       "code" or the "logic"). The final component is the output information (your "output data").
       Understanding each of these components is critical to building effective logic models. Let's
-      see how this applies to a crowded freeway.
+      see how this applies to a crowded freeway. TODO: Convert to a list
+      <ol>
+        <li>Input Data: An incoming source of information</li>
+        <li>Rules: </li>
+        <li>Output Data: </li>
+      </ol>
       <br />
       <br />
       Imagine you are a civil engineer trying to optimize the flow of traffic through a very busy
@@ -59,9 +64,9 @@ export default () => (
       <iframe
         src="https://www.youtube.com/embed/9XIjqdk69O4"
         title="YouTube video player"
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullscreen
+        allowFullScreen
       />
     </div>
     <p>
@@ -89,9 +94,9 @@ export default () => (
       <iframe
         src="https://www.youtube.com/embed/hZdLjyK89Cw"
         title="YouTube video player"
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullscreen
+        allowFullScreen
       />
     </div>
     <br />
@@ -134,9 +139,9 @@ export default () => (
         width="100%"
         src="https://www.youtube.com/embed/Av07QiqmsoA"
         title="YouTube video player"
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullscreen
+        allowFullScreen
       />
     </div>
   </div>

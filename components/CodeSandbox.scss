@@ -2,7 +2,8 @@
 
 
 .sandbox {
-    margin: 20px auto 40px auto;
+    margin: 2vw auto 4vw auto;
+    padding: 1vw;
     display: block;
     overflow: hidden;
     border-radius: 1vw;
@@ -11,26 +12,37 @@
     background-color: $foreground;
     color: $background;
     position: relative;
-    width: 70vw;
+    width: 100%;
     height: 50vh;
     min-height: 400px;
-    .reset {
-        font-size: 4vw;
+    transform: none;
+    @media screen and (max-width: $mini-width) {
+        margin-left: -5vw;
+      }
+    .icon {
+        &.play {
+            left: 4%;
+        }
+        &.reset {
+            right: 4%;
+        }
+        font-size: 40px;
         position: absolute;
         top: 0%;
         user-select: none;
-        right: 4%;
         //transform: translateY(-50%);
-        display: inline;
-        width: fit-content;
+        display: inline-block;
+        //width: fit-content !important;
+        // width: 50px;
+        // height: 50px;
+        width: auto;
+        height: auto;
+        line-height: 50px;
         cursor: pointer;
-        //transform-origin: top top;
-        &:hover {
-            transform: rotateZ(360deg);
-            transition: transform 0.5s linear;
-        }
+        transition: color 0.5s ease;
         &:active {
             color: white;
+            transition: none;
         }
     }
     @media screen and (max-width: $mini-width) {
@@ -55,7 +67,7 @@
         height: 50px;
         line-height: 50px;
         background-color: #202020;
-        color: #a7a7a7;
+        color: #39ff14;
     }
     .titles {
         height: 50px;

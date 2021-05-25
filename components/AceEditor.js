@@ -17,7 +17,10 @@ class IsomorphicEditor extends React.Component {
     this.setState({ mounted: true })
   }
 
-  render = () => (this.state.mounted ? <Editor {...this.props} /> : null)
+  render = () =>
+    this.state.mounted ? (
+      <Editor showGutter={this.props.showGutter !== true ? false : true} {...this.props} />
+    ) : null
 }
 
 export default IsomorphicEditor

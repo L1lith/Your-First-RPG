@@ -8,7 +8,7 @@ class CodeSandbox extends Component {
   constructor(props) {
     super(props)
     autoBind(this)
-    this.state = { value: this.props.value || '' }
+    this.state = { value: this.props.value || '', output: null }
   }
   render() {
     return (
@@ -17,16 +17,23 @@ class CodeSandbox extends Component {
           'sandbox' + (this.props.hasOwnProperty('className') ? ' ' + this.props.className : '')
         }>
         <h2 className="main-title">
-          JavaScript Expression Evaluator
+          {this.props.disableAutoRun === true ? (
+            <span className="icon play" onClick={this.run}>
+              ▶
+            </span>
+          ) : null}
+          JavaScript {this.props.consoleMode === true ? 'Terminal' : 'Expression Evaluator'}
+          {this.props.readOnly === true ? ' (Read Only)' : ''}
           {this.props.noRefresh !== true ? (
-            <span className="reset" onClick={this.reset}>
-              ↻
+            <span className="icon reset" onClick={this.reset}>
+              ⟳
             </span>
           ) : null}
         </h2>
+
         <div className="titles">
-          <h2 className="title">Input</h2>
-          <h2 className="title">Output</h2>
+          <h2 className="title">Code Input</h2>
+          <h2 className="title">{this.props.consoleMode === true ? 'Console' : 'Output'}</h2>
         </div>
         <div className="inner">
           <AceEditor
@@ -34,24 +41,76 @@ class CodeSandbox extends Component {
             height="100%"
             mode="javascript"
             theme="ambiance"
+            readOnly={this.props.readOnly === true}
             value={this.state.value}
             onChange={(...args) => {
               this.handleChange(...args)
             }}
           />
-          {this.state.value.trim().length > 0 ? (
-            this.getOutput(this.state.value)
-          ) : (
-            <span className="output empty">Type something to get started</span>
-          )}
+          {this.getOutput()}
         </div>
       </div>
     )
   }
-  getOutput(source) {
+  getOutput(skipAutoRun = false) {
+    let output = null
+    if (skipAutoRun !== true && this.props.disableAutoRun === true) {
+      output =
+        this.state.output !== null ? (
+          this.state.output
+        ) : (
+          <span className="output empty">Run the program to see your output</span>
+        )
+    } else if (this.state.value.trim().length > 0) {
+      output =
+        this.props.consoleMode === true
+          ? this.getConsoleOutput(this.state.value)
+          : this.getEvalOutput(this.state.value)
+    } else {
+      output = <span className="output empty">Type something to see the evaluated output</span>
+    }
+    return output
+  }
+  getConsoleOutput(source) {
+    const oldLog = console.log
+    const logOutput = []
+    console.log = (...args) => {
+      if (args.length > 1) {
+        logOutput.push(args)
+      } else {
+        logOutput.push(args[0])
+      }
+    }
+    try {
+      eval(source)
+      console.log = oldLog
+      if (logOutput.length < 1)
+        return (
+          <span className="output empty">
+            Try logging something to the console to see some output
+          </span>
+        )
+      return (
+        <AceEditor
+          className="output valid"
+          width="50%"
+          height="100%"
+          mode="javascript"
+          theme="ambiance"
+          readOnly
+          value={logOutput.map(value => inspect(value)).join(';\n')}
+        />
+      )
+    } catch (err) {
+      console.log = oldLog
+      return <span className="output error">{inspect(err)}</span>
+    }
+  }
+  getEvalOutput(source) {
     try {
       const output = eval(source)
       let outputSource = inspect(output)
+      //console.log('x', outputSource)
       return (
         <AceEditor
           className="output valid"
@@ -72,6 +131,9 @@ class CodeSandbox extends Component {
   }
   reset() {
     this.setState({ value: this.props.value || '' })
+  }
+  run() {
+    this.setState({ output: this.getOutput(true) })
   }
 }
 

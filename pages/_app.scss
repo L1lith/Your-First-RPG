@@ -1,15 +1,18 @@
-@import "./_variables.scss";
+@import "./_variables";
+@import "./normalize";
 
 @font-face {
   font-family: 'Droid';
   src: url('/static/fonts/droidSerifRegular.ttf');
   font-weight: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Droid';
   src: url('/static/fonts/droidSerifBold.ttf');
   //font-weight: 900;
   font-weight: bold;
+  font-display: swap;
 }
 
 * {
@@ -43,30 +46,36 @@ body {
   margin: 0 8vw;
   @media screen and (max-width: $mini-width) {
     margin: 0 1vw;
-    padding: 0 1vw;
+    font-size: 5vw;
   }
-  padding: 5vh 5vw 10vh 5vw;
+  @media screen and (min-width: $mega-width) {
+    font-size: 1.25vw;
+  }
+  font-size: 2vw;
+  padding: 5vh 10vw 10vh 10vw;
   min-height: 85vh;
   background-color: $background;
   @media screen and (min-width: $mini-width) {
     box-shadow: 0 0 10px $accent;
   }
-  & > .title {
+   & > .title, & > * > .title {
     text-shadow: $accent 1px 1px 7px;
-    font-size: 3.5em;
+    font-size: 4vw;
+  }
+  h3 {
+    font-size: 1.5em;
   }
   .intro-card {
     display: block;
     text-align: center;
     font-style: italic;
-    & > * {
+    margin: 20px auto;
+    & > *:not(.youtube-container) {
       display: block;
-    }
-    & > img, & > video {
-      width: 60%;
+      width: 80%;
       min-width: 300px;
       border-radius: 10px;
-      margin: 10px auto;
+      margin: 20px auto;
     }
     a {
       display: inline;
@@ -92,10 +101,13 @@ body {
     font-style: italic;
   }
   .toc {
-    margin: 20px auto;
+    border-bottom: 8px solid $foreground;
+    border-radius: 10px;
+    margin: 50px auto;
     font-size: 1.8em;
     &.pages {
       font-size: 1.2em;
+      list-style: disc;
     }
     list-style: none;
     display: table;
@@ -108,7 +120,7 @@ body {
         font-size: 1.4em;
         text-align:left;
         counter-increment: toc-counter;
-        border-bottom: 2px solid $foreground;
+        //border-bottom: 2px solid $foreground;
     }
     &.sections {
       li::before {
@@ -119,33 +131,44 @@ body {
       }
     }
 }
+
+a {
+  color: $accent-dark;
 }
 
 li a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 
 .youtube-container {
-    position: relative;
-    width: 80%;
-    @media screen and (max-width: $mini-width) {
-      width: 100%;
-    }
-    margin: 0 auto;
-    height: 0;
-    padding-bottom: 56.25%;
-    iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
+  position: relative;
+  width: 80%;
+  @media screen and (max-width: $mini-width) {
+    width: 100%;
+  } 
+  margin: 20px auto;
+  height: 0;
+  padding-bottom: 56.25%;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
 }
 
 .next {
-  margin: 40px 0 20px 0;
-  text-align: right;
-  display: block;
+  display: inline-block;
+  border: 4px solid black;
+  padding: 1vw 2vw;
+  font-size: 4.5vw;
+  font-weight: bold;
+  //white-space: nowrap;
+  text-align: center;
+  width: auto;
+  margin: 40px 0 20px auto;
 }

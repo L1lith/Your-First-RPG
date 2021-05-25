@@ -7,7 +7,15 @@ export default () => (
     <h2>#3.1 Coding with Primitives</h2>
     <br />
     <span className="intro-card">
-      <img src="/static/images/decimalStatue.jpg" type="img/jpg" />
+      <div className="youtube-container">
+        <iframe
+          src="https://www.youtube.com/embed/_4TPlwwHM8Q"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      </div>
       <span>
         You can read more{' '}
         <a href="https://www.aleksandrhovhannisyan.com/blog/binary-for-beginners/">here</a> if you'd
@@ -106,8 +114,8 @@ export default () => (
       In the next section we'll be using these primitive values so you can see a little bit more why
       they are useful.
     </p>
-    <Link href="/coding/basic-programs">
-      <a className="next">Up next: Building Basic Programs</a>
+    <Link href="/coding/building-blocks">
+      <a className="next">Up next: Coding Building Blocks</a>
     </Link>
   </div>
 )

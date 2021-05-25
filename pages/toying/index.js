@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import './index.scss'
 //import BooleanGame from "../../components/BooleanGame";
 
 export default () => (

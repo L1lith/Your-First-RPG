@@ -1,2 +1,5 @@
 const withSass = require('@zeit/next-sass')
-module.exports = withSass()
+
+module.exports = withSass({
+  basePath: process.env.NODE_ENV === 'development' ? '' : '/Intro-Coding-Concepts'
+})
