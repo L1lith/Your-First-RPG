@@ -8,7 +8,7 @@ export default () => (
     <h2>#2.1 Level 1: Basic "Or" Boolean Logic</h2>
     <br />
     <span className="intro-card">
-      <img src="/images/truthTable.png" type="img/png" />
+      <img src="/Intro-Coding-Concepts/images/truthTable.png" type="img/png" />
       Here you can see a chart of the basic boolean operations
     </span>
     <br />
