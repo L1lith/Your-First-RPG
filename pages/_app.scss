@@ -60,7 +60,12 @@ body {
   }
    & > .title, & > * > .title {
     text-shadow: $accent 1px 1px 7px;
-    font-size: 4vw;
+    
+  @media screen and (max-width: $mini-width) {
+    font-size: 1.5em;
+
+  }
+    font-size: 2em;
   }
   ol, ul {
     margin-bottom: 30px;
@@ -113,6 +118,10 @@ body {
       font-size: 1.2em;
       list-style: disc;
     }
+    
+  @media screen and (max-width: $mini-width) {
+    font-size: 1em !important;
+  }
     list-style: none;
     display: table;
     counter-reset: toc-counter;
