@@ -462,6 +462,82 @@ body {
     .home .resources .resource-list li {
       margin: 20px 0; }
 
+.boolean-game {
+  position: relative;
+  width: 60vw;
+  border: 2px solid #ec7eff;
+  padding: 10px 0 0 0;
+  margin: 0 auto;
+  background-color: #faddff; }
+  @media screen and (max-width: 640px) {
+    .boolean-game {
+      width: 80vw; } }
+  .boolean-game .result {
+    margin: 20px auto;
+    display: block;
+    font-size: 35px;
+    font-weight: bold; }
+    .boolean-game .result.won {
+      color: #00807b; }
+    .boolean-game .result.lost {
+      color: #ff0068; }
+  .boolean-game .replay {
+    margin: 2vw auto;
+    display: block;
+    font-size: 25px;
+    background-color: white;
+    border-color: black;
+    padding: 2vw 3vw;
+    border-radius: 2vw;
+    box-shadow: 0 0 8px #effffa; }
+  .boolean-game .board {
+    user-select: none;
+    box-shadow: 0 0 10px #00000069;
+    border-radius: 20px;
+    border: 2px solid #ec7eff;
+    margin: 10px auto;
+    width: 50vw;
+    height: 50vw;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap; }
+    @media screen and (max-width: 640px) {
+      .boolean-game .board {
+        width: 70vw;
+        height: 70vw; } }
+    .boolean-game .board .cell {
+      overflow: hidden;
+      position: relative;
+      border: 2px solid #0000008a;
+      box-sizing: border-box;
+      transition: border-color 0.5s ease;
+      cursor: pointer; }
+      .boolean-game .board .cell.failed {
+        border-color: red !important;
+        filter: none !important;
+        background-color: #ff6666 !important; }
+      .boolean-game .board .cell .inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 7vw; }
+      .boolean-game .board .cell:not(disabled):hover {
+        border-color: white;
+        transition: none; }
+      .boolean-game .board .cell:not(disabled):active {
+        filter: brightness(85%); }
+      .boolean-game .board .cell[disabled] {
+        filter: brightness(50%); }
+      .boolean-game .board .cell[horizontal="left"][vertical="top"] {
+        border-top-left-radius: 10px; }
+      .boolean-game .board .cell[horizontal="left"][vertical="bottom"] {
+        border-bottom-left-radius: 10px; }
+      .boolean-game .board .cell[horizontal="right"][vertical="bottom"] {
+        border-bottom-right-radius: 10px; }
+      .boolean-game .board .cell[horizontal="right"][vertical="top"] {
+        border-top-right-radius: 10px; }
+
 .sandbox {
   margin: 2vw auto 4vw auto;
   padding: 1vw;
@@ -599,82 +675,6 @@ body {
     content: counter(primitives-counter) ". ";
     color: #4747af;
     font-weight: bold; }
-
-.boolean-game {
-  position: relative;
-  width: 60vw;
-  border: 2px solid #ec7eff;
-  padding: 10px 0 0 0;
-  margin: 0 auto;
-  background-color: #faddff; }
-  @media screen and (max-width: 640px) {
-    .boolean-game {
-      width: 80vw; } }
-  .boolean-game .result {
-    margin: 20px auto;
-    display: block;
-    font-size: 35px;
-    font-weight: bold; }
-    .boolean-game .result.won {
-      color: #00807b; }
-    .boolean-game .result.lost {
-      color: #ff0068; }
-  .boolean-game .replay {
-    margin: 2vw auto;
-    display: block;
-    font-size: 25px;
-    background-color: white;
-    border-color: black;
-    padding: 2vw 3vw;
-    border-radius: 2vw;
-    box-shadow: 0 0 8px #effffa; }
-  .boolean-game .board {
-    user-select: none;
-    box-shadow: 0 0 10px #00000069;
-    border-radius: 20px;
-    border: 2px solid #ec7eff;
-    margin: 10px auto;
-    width: 50vw;
-    height: 50vw;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap; }
-    @media screen and (max-width: 640px) {
-      .boolean-game .board {
-        width: 70vw;
-        height: 70vw; } }
-    .boolean-game .board .cell {
-      overflow: hidden;
-      position: relative;
-      border: 2px solid #0000008a;
-      box-sizing: border-box;
-      transition: border-color 0.5s ease;
-      cursor: pointer; }
-      .boolean-game .board .cell.failed {
-        border-color: red !important;
-        filter: none !important;
-        background-color: #ff6666 !important; }
-      .boolean-game .board .cell .inner {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 7vw; }
-      .boolean-game .board .cell:not(disabled):hover {
-        border-color: white;
-        transition: none; }
-      .boolean-game .board .cell:not(disabled):active {
-        filter: brightness(85%); }
-      .boolean-game .board .cell[disabled] {
-        filter: brightness(50%); }
-      .boolean-game .board .cell[horizontal="left"][vertical="top"] {
-        border-top-left-radius: 10px; }
-      .boolean-game .board .cell[horizontal="left"][vertical="bottom"] {
-        border-bottom-left-radius: 10px; }
-      .boolean-game .board .cell[horizontal="right"][vertical="bottom"] {
-        border-bottom-right-radius: 10px; }
-      .boolean-game .board .cell[horizontal="right"][vertical="top"] {
-        border-top-right-radius: 10px; }
 
 .vision-intro > .title, .vision-intro > h2 {
   text-align: center; }

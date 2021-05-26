@@ -7,7 +7,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "deploy": "cross-env NODE_ENV=production npm run build && cross-env NODE_ENV=production next export -o ./docs"
+    "deploy": "cross-env NODE_ENV=production next build && cross-env NODE_ENV=production next export -o ./docs"
   },
   "keywords": [],
   "author": "",
