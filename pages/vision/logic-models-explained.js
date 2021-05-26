@@ -50,7 +50,7 @@ export default () => (
           rules decide what the result (or output) of our model is based on the input.
         </li>
         <li>
-          <span className="bold">Output Data:</span>What the result of your logic model is.
+          <span className="bold">Output Data: </span>What the result of your logic model is.
         </li>
       </ol>
       <br />
