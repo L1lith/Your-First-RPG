@@ -4,7 +4,8 @@ export default () => {
   return (
     <div>
       <NextSeo title="Support" />
-      Want to support me? Star my project on GitHub, it's free!
+      Want to support me? Star my project on GitHub, it's free! Also please consider sharing this
+      course with your friends if you enjoyed it, knowledge is power :)
       <br />
       <br />
       <a href="https://github.com/L1lith/Intro-Coding-Concepts/">
