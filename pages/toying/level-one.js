@@ -1,8 +1,10 @@
 import LevelOne from '../../components/BooleanGame/levels/LevelOne'
 import Link from 'next/link'
+import { NextSeo } from 'next-seo'
 
 export default () => (
   <div className="level-1">
+    <NextSeo title={'#2.1 "Or" Boolean Logic'} />
     <h2>#2.1 Level 1: Basic "Or" Boolean Logic</h2>
     <br />
     <span className="intro-card">
@@ -33,8 +35,8 @@ export default () => (
     </p>
     <LevelOne />
     <p>
-      Once you've become played the first level of the Matching Game a few times and are confident
-      you understand OR continue on to the next section to learn about NOT expressions 😊
+      Once you've played the first level of the Matching Game a few times and are confident you
+      understand OR continue on to the next section to learn about NOT expressions 😊
     </p>
     <Link href="/toying/level-two">
       <a className="next">Up next: Level 2: "Not" Expressions</a>

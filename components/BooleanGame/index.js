@@ -112,6 +112,8 @@ class BooleanGame extends Component {
     this.setState({ gameState: 'won' })
   }
   render() {
+    const notColors = this.state.rules.colorsDescription.startsWith('not')
+    const notShapes = this.state.rules.shapesDescription.startsWith('not')
     return (
       <div className="boolean-game">
         <h2 className="title">
@@ -119,9 +121,19 @@ class BooleanGame extends Component {
           {this.props.hasOwnProperty('title') ? ' - ' + this.props.title.trim() : null}
         </h2>
         <div className="rules">
-          <span className="colors">Colors: {this.state.rules.colorsDescription}</span>
+          {
+            (notColors ? '' : '(') +
+              this.state.rules.colorsDescription +
+              (notColors ? '' : ')') +
+              ' and ' +
+              (notShapes ? '' : '(') +
+              this.state.rules.shapesDescription +
+              (notShapes
+                ? ''
+                : ')') /*<span className="colors">Colors: {this.state.rules.colorsDescription}</span>
           <br />
-          <span className="shapes">Shapes: {this.state.rules.shapesDescription}</span>
+          <span className="shapes">Shapes: {this.state.rules.shapesDescription}</span>*/
+          }
         </div>
         {this.state.gameState === 'ongoing' ? null : this.state.gameState === 'won' ? (
           <span

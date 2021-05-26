@@ -1,19 +1,5 @@
 @import "./_variables.scss";
 
-// .blink {
-//     animation: blink-animation 1s steps(5, start) infinite;
-//     -webkit-animation: blink-animation 1s steps(5, start) infinite;
-//   }
-//   @keyframes blink-animation {
-//     to {
-//       visibility: hidden;
-//     }
-//   }
-//   @-webkit-keyframes blink-animation {
-//     to {
-//       visibility: hidden;
-//     }
-//   }
 
 .home {
     text-align: center;
@@ -24,6 +10,15 @@
         & > * {
             display: inline-block;
             margin: 0 20px;
+        }
+    }
+    .resources {
+        border: 2px solid black;
+        padding: 20px 10px;
+        .resource-list {
+            li {
+                margin: 20px 0;
+            }
         }
     }
 }

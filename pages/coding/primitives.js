@@ -1,9 +1,11 @@
 import Link from 'next/link'
 import CodeSandbox from '../../components/CodeSandbox'
 import './primitives.scss'
+import { NextSeo } from 'next-seo'
 
 export default () => (
   <div className="primitives">
+    <NextSeo title="#3.1 Primitives" />
     <h2>#3.1 Coding with Primitives</h2>
     <br />
     <span className="intro-card">
@@ -110,9 +112,18 @@ export default () => (
       </p>
       <CodeSandbox value="null" className="short" />
     </div>
+    <div className="equality">
+      <h2>Equality</h2>
+      <p>
+        To check whether two values are the same we can use the strict equality operator "===". This
+        will return true{' '}
+      </p>
+    </div>
+    <br />
     <p>
       In the next section we'll be using these primitive values so you can see a little bit more why
-      they are useful.
+      they are useful. You can read in greater detail about JS's data types{' '}
+      <a href="https://javascript.info/types">here</a>
     </p>
     <Link href="/coding/building-blocks">
       <a className="next">Up next: Coding Building Blocks</a>

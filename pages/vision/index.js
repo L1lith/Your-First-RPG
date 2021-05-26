@@ -1,8 +1,11 @@
 import Link from 'next/link'
 import './index.scss'
+import hoverVideo from '../../functions/hoverVideo'
+import { NextSeo } from 'next-seo'
 
 export default () => (
   <div className="vision-intro">
+    <NextSeo title="#1.0 Planning it out" />
     <h1 className="title">Section 1: 👀 Visioning Mental Models</h1>
     <ol className="toc pages">
       <h2>Pages</h2>
@@ -13,17 +16,15 @@ export default () => (
       </li>
       <li>
         <Link href="/vision/logic-models-explained">
-          <a>#1.1 Level 1: Basic "Or" Boolean Logic</a>
+          <a>#1.1 Logic Models Explained</a>
         </Link>
       </li>
     </ol>
     <h2 id="lesson">#1.0 Planning it out: Saving Monitors</h2>
-    <br />
     <span className="intro-card">
-      <video autoPlay loop muted>
+      <video autoPlay muted {...hoverVideo()}>
         <source src="/static/video/punchingMonitor.mp4" type="video/mp4" />
       </video>
-      <br />
       Don't let this be you
     </span>
     <p>

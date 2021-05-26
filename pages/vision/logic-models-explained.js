@@ -1,11 +1,14 @@
 import Link from 'next/link'
+import hoverVideo from '../../functions/hoverVideo'
+import { NextSeo } from 'next-seo'
 
 export default () => (
   <div className="logic-models">
+    <NextSeo title="#1.1 Logic Models Explained" />
     <h2>#1.1 Logic Models Explained</h2>
     <br />
     <span className="intro-card">
-      <video autoPlay loop muted>
+      <video autoPlay {...hoverVideo()} muted>
         <source src="/static/video/redstoneContraption.webm" type="video/webm" />
       </video>
       Minecraft is a great place to start your adventure :)
@@ -15,7 +18,6 @@ export default () => (
       or false) logic and explain how to create a mental model when working with it. Modeling
       logical systems is a lot more useful than you might give it credit. The entire world is ruled
       by logic, like how you do your job, how you cross the street, or how you navigate a website.
-      TODO: Rephrase TODO: ADD BLENDER MEMES
       <br />
       <br />
       Let's say for example you are at a crosswalk and you see the traffic light in the direction
@@ -37,15 +39,19 @@ export default () => (
       </span>
     </span>
     <p>
-      Your logic model should have 3 basic components. The first thing is an incoming source of
-      information (we call this "input data"). The second thing is a set of rules (we call this the
-      "code" or the "logic"). The final component is the output information (your "output data").
-      Understanding each of these components is critical to building effective logic models. Let's
-      see how this applies to a crowded freeway. TODO: Convert to a list
+      All logic models have 3 basic components
       <ol>
-        <li>Input Data: An incoming source of information</li>
-        <li>Rules: </li>
-        <li>Output Data: </li>
+        <li>
+          <span className="bold">Input Data:</span>An incoming source of data to your logic model
+          which you can use to make decisions.
+        </li>
+        <li>
+          <span className="bold">Rules:</span> this is the the "logic" or "code" of your model. The
+          rules decide what the result (or output) of our model is based on the input.
+        </li>
+        <li>
+          <span className="bold">Output Data:</span>What the result of your logic model is.
+        </li>
       </ol>
       <br />
       <br />
@@ -81,12 +87,13 @@ export default () => (
       <br />
       <br />
       In coding we have a set of software and methodology that makes describing our logical system
-      much easier. In the world of website development, we call this a "stack". Much like a civil
-      engineer must consider the efficacy of a roadway system, when building a website we must
-      consider many aspects of the system, like cyber safety (allowing unsafe input data has led to
-      many stolen identities and credit cards), user experience, and visual appeal. By better
-      understanding the logical rules behind our software we better understand where this issues
-      arise, preventing catastrophic database leaks and user rage-quits before they ever happen.
+      much easier. In the world of website development, we call this a{' '}
+      <span className="bold">stack</span>. Much like a civil engineer must consider the efficacy of
+      a roadway system, when building a website we must consider many aspects of the system, like
+      cyber safety (allowing unsafe input data has led to many stolen identities and credit cards),
+      user experience, and visual appeal. By better understanding the logical rules behind our
+      software we better understand where this issues arise, preventing catastrophic database leaks
+      and user rage-quits before they ever happen.
       <br />
       <br />
     </p>

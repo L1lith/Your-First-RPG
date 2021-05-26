@@ -1,8 +1,10 @@
 import Link from 'next/link'
+import { NextSeo } from 'next-seo'
 
 export default () => (
   <div className="coding-intro">
     <h1 className="title">Section 3: 🏆 Coding with Mental Models</h1>
+    <NextSeo title="#3.0 Stepping into Coding" />
     <ol className="toc pages">
       <h2>Pages</h2>
       <li>
@@ -20,9 +22,20 @@ export default () => (
           <a>#3.2 Coding Building Blocks</a>
         </Link>
       </li>
+
       <li>
         <Link href="/coding/text-rpg">
-          <a>#3.3 Your first RPG ⚔️</a>
+          <a>#3.3 Text RPG Tutorial ⚔️</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/coding/rpg-publishing">
+          <a>#3.4 Publishing your RPG 🏆</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/coding/summary">
+          <a>#3.5 Summary & Further Reading</a>
         </Link>
       </li>
     </ol>

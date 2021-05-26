@@ -1,8 +1,10 @@
 import LevelThree from '../../components/BooleanGame/levels/LevelThree'
 import Link from 'next/link'
+import { NextSeo } from 'next-seo'
 
 export default () => (
   <div className="level-3">
+    <NextSeo title="#2.3 the Coding Mindset" />
     <h2>#2.3 Level 3: Boolean Logic & the Coding Mindset</h2>
     <br />
     <p>

@@ -2,6 +2,7 @@ import Link from 'next/link'
 import CodeSandbox from '../../components/CodeSandbox'
 import './building-blocks.scss'
 import { Component } from 'react'
+import { NextSeo } from 'next-seo'
 
 class ShittyChecking extends Component {
   constructor(props) {
@@ -26,7 +27,9 @@ class ShittyChecking extends Component {
           )}
         </span>
         <span className="info">
-          Please close the app and wait for your next transaction notification.
+          {this.state.opened !== true
+            ? null
+            : 'Please close the app and wait for your next transaction notification.'}
         </span>
       </div>
     )
@@ -35,18 +38,18 @@ class ShittyChecking extends Component {
 
 export default () => (
   <div className="building-blocks">
+    <NextSeo title="#3.2 Building Blocks" />
     <h1 className="title">#3.2 Coding Building Blocks</h1>
     <span className="intro-card">
       <div className="youtube-container">
         <iframe
-          src="https://www.youtube.com/embed/fR-A3BNTUN4"
+          src="https://www.youtube.com/embed/himmatLe7aQ?start=32"
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         />
       </div>
-      <br />
       How do you swallow a coding lesson? One byte at a time
     </span>
     <p>
@@ -63,11 +66,12 @@ export default () => (
     <div className="variables">
       <h2>Variables</h2>
       <p>
-        We can create variables in order to store data values for later use. In a basic logic model
-        where we only have inputs and outputs it becomes incredibly difficult to deal with data that
-        persists (needs to be stored). Let's say you're writing a checking account app, but you're
-        not allowed to save any data. The user might see a notification saying "You just spent
-        $10.52", and yet every time they open the app they're greeted with this:
+        We can create variables in order to store (save) data values for later use. In a basic logic
+        model where we only have inputs and outputs it becomes incredibly difficult to deal with
+        data that persists (needs to be stored). Let's say you're writing a checking account app,
+        but you're not allowed to save any data. The user might see a notification saying "You just
+        spent $10.52", and yet every time they open the app they're greeted with this (try using the
+        app)
       </p>
 
       <ShittyChecking />
@@ -109,10 +113,7 @@ export default () => (
         value={'function add(a, b){\n    return a + b\n}'}
         className="short"
       />
-      <p>
-        The output is undefined because we made a <span className="bold">declaration</span> instead
-        of a <span className="bold">statement</span>.{' '}
-      </p>
+      <p>The output is empty because we didn't log anything to the console.</p>
     </div>
     <div className="console">
       <h2>More about the Console</h2>
@@ -122,16 +123,12 @@ export default () => (
       console.log function in real-time instead of seeing the output of the JS evaluation. We only
       need to output things to console.log when we as the developer (or coder) want to know what
       their values are.
-      <br />
-      <br />
-      In this way
     </div>
     <CodeSandbox
       consoleMode
       value={'function add(a, b){\n    return a + b\n}\nconsole.log(add(14, 16))'}
       className="short"
     />
-    <br />
     <div className="parenthesis">
       <h2>Parenthesis</h2>
       Not only can you use parenthesis to change the ordering of math expressions, but you can also
