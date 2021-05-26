@@ -51,7 +51,6 @@ export default () => (
           allowFullScreen
         />
       </div>
-      <br />
       don't ask about my math skills
     </span>
 
