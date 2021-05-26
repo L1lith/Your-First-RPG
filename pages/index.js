@@ -12,7 +12,8 @@ export default () => (
     </h1>
     <p>
       In this course I will describe mental models to show how & why we apply them to coding and
-      other tasks.
+      other tasks. I will also teach you JavaScript, and show you how to make your own text based
+      RPG and share it with your friends :)
     </p>
     <ol className="toc sections">
       <h2>Sections</h2>
@@ -32,7 +33,7 @@ export default () => (
         </Link>
       </li>
     </ol>
-    <div className="resources">
+    <div id="resources" className="resources">
       <h2>Resources</h2>
       This course focuses on being palatable for beginners, so if you'd like to learn about a coding
       and JavaScript I'd recommend the following resources:
@@ -64,6 +65,12 @@ export default () => (
           <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN</a> is the most
           extensive site for learning about web technologies. It is maintained by the Mozilla
           foundation, but it can be overly technical or lacking information in certain areas.
+        </li>
+        <li>
+          If you get stuck and something reeeally doesn't make sense, you can ask for help{' '}
+          <a href="https://github.com/L1lith/Intro-Coding-Concepts/issues">here</a>. Please be
+          considerate and don't spam the issue section, and check first if someone's asked that
+          question before or if it's already covered in the docs.
         </li>
       </ul>
     </div>
