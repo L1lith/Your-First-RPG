@@ -35,8 +35,8 @@ export default () => (
     </ol>
     <div id="resources" className="resources">
       <h2>Resources</h2>
-      This course focuses on being palatable for beginners, so if you'd like to learn about a coding
-      and JavaScript I'd recommend the following resources:
+      This course focuses on being palatable for beginners, so if you'd like to learn about
+      JavaScript in more depth, or you have questions I recommend the following resources:
       <ul className="resource-list">
         <li>
           Daniel Shiffman makes hilarious & creative YouTube videos on his channel{' '}
