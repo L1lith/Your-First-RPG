@@ -9,7 +9,7 @@ export default () => (
     <br />
     <span className="intro-card">
       <img src="/Intro-Coding-Concepts/images/truthTable.png" type="img/png" />
-      Here you can see a chart of the basic boolean operations
+      Here you can see a chart of the basic boolean operations (it's grouped by rows)
     </span>
     <br />
     <p>

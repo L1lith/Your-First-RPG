@@ -120,8 +120,10 @@ export default () => (
       Next you must think about every step in your code, and how these{' '}
       <span className="bold">rules</span> ultimately handles your users input and translates it into
       the program's <span className="bold">output</span>. Don't cut corners or leave problems for
-      someone else to deal with. Building the best software you can the first time will save you a
-      lot of time later on. Understand the deep inner workings of your software (or "stack") by{' '}
+      someone else to deal with. Building the best software you can the first time (you'll
+      definitely write some messy code starting out, but after you make your first draft of
+      something try to come back and look for ways to improve it) will save you a lot of time later
+      on. Understand the deep inner workings of your software (or "stack") by{' '}
       <span className="underline">toying around with it and asking questions</span>
       !
       <br />
