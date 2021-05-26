@@ -23,7 +23,7 @@ export default () => (
     <h2 id="lesson">#1.0 Planning it out: Saving Monitors</h2>
     <span className="intro-card">
       <video autoPlay muted {...hoverVideo()}>
-        <source src="/static/video/punchingMonitor.mp4" type="video/mp4" />
+        <source src="/video/punchingMonitor.mp4" type="video/mp4" />
       </video>
       Don't let this be you
     </span>

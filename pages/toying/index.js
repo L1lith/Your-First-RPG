@@ -34,7 +34,7 @@ export default () => (
     <h2 id="lesson">#2.0 Playing around with Logic Puzzles</h2>
     <br />
     <span className="intro-card">
-      <img src="/static/images/milleniumPuzzle.webp" />
+      <img src="/images/milleniumPuzzle.webp" />
       <br />
       *course not guaranteed to unlock the secrets of any card game universe*
     </span>

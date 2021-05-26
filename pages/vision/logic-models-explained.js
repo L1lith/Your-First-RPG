@@ -9,7 +9,7 @@ export default () => (
     <br />
     <span className="intro-card">
       <video autoPlay {...hoverVideo()} muted>
-        <source src="/static/video/redstoneContraption.webm" type="video/webm" />
+        <source src="/video/redstoneContraption.webm" type="video/webm" />
       </video>
       Minecraft is a great place to start your adventure :)
     </span>
@@ -29,7 +29,7 @@ export default () => (
       by breaking down the logical components of the system.
     </p>
     <span className="intro-card">
-      <img src="/static/images/spaghettiBowl.jpeg" />
+      <img src="/images/spaghettiBowl.jpeg" />
       <br />
       Nothing gets the blood pumping quite like being tail-gated around a 90° turn on the freeway.
       <br />
