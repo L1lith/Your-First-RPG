@@ -35,7 +35,7 @@ export default () => (
       , <a href="https://medium.com/edureka/learn-node-js-b3a9c6fb632c">Node.js</a> scripts (Node.js
       is how you run JavaScript without a browser, kind of like python, and it has a lot of cool
       functionality), and more. I've also included a list of resources on the{' '}
-      <Link href="/">home page</Link>.
+      <Link href="/#resources">home page</Link>.
       <br />
       <br />
       If you'd like to suggest an improvement you can open a ticket{' '}
