@@ -84,12 +84,16 @@ export default () => (
         Here we name a variable called balance (note we do not give it any value yet so it defaults
         to undefined)
       </p>
-      <CodeSandbox value={'var balance\nconsole.log(balance)'} consoleMode />
+      <CodeSandbox className="mini" value={'var balance\nconsole.log(balance)'} consoleMode />
       <p>
         We can set a value using the assignment operator "=" and providing a value after it, and
         once we have done this we can see our variable has a value now :)
       </p>
-      <CodeSandbox value={'var balance = 14.24\nconsole.log(balance)'} consoleMode />
+      <CodeSandbox
+        className="mini"
+        value={'var balance = 14.24\nconsole.log(balance)'}
+        consoleMode
+      />
     </div>
     <div className="functions">
       <h2>Functions</h2>
@@ -137,13 +141,13 @@ export default () => (
       <br />
       <br />
       <h3>Math Without Parenthesis</h3>
-      <CodeSandbox consoleMode value="console.log(10 * 3 + 4)" className="short" />
+      <CodeSandbox consoleMode value="console.log(10 * 3 + 4)" className="mini" />
       <h3>Math With Parenthesis</h3>
-      <CodeSandbox consoleMode value="console.log(10 * (3 + 4))" className="short" />
+      <CodeSandbox consoleMode value="console.log(10 * (3 + 4))" className="mini" />
       <h3>Boolean logic without Parenthesis</h3>
-      <CodeSandbox consoleMode value="console.log(false && true || true)" className="short" />
+      <CodeSandbox consoleMode value="console.log(false && true || true)" className="mini" />
       <h3>Boolean logic with Parenthesis</h3>
-      <CodeSandbox consoleMode value="console.log(false && (true || true))" className="short" />
+      <CodeSandbox consoleMode value="console.log(false && (true || true))" className="mini" />
     </div>
     <br />
     {

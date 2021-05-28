@@ -28,6 +28,8 @@ export default () => (
       recommending logging in to keep track of your game but it is not required.
       <br />
       <br />
+      <br />
+      <br />
       If you'd like to learn more about JavaScript, or you'd like to support me, continue on to the
       next page.
     </p>

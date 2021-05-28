@@ -32,10 +32,11 @@ export default () => (
       </p>
       <CodeSandbox
         value={
-          "alert('aesop rock is awesome') // This part doesn't have to be valid JavaScript code"
+          "alert('aesop rock is awesome')\n// This part doesn't have to be valid JavaScript code"
         }
         consoleMode
         disableAutoRun
+        className="mini"
       />
     </div>
     <div className="js-io">
@@ -47,7 +48,12 @@ export default () => (
         prompts, but from now on you must manually run the code. Try running the examples below:
       </p>
       <h3>Output: Alert</h3>
-      <CodeSandbox value="alert('Your princess is in another castle')" consoleMode disableAutoRun />
+      <CodeSandbox
+        value="alert('Your princess is in another castle')"
+        consoleMode
+        disableAutoRun
+        className="mini"
+      />
       <h3>Input: Prompt</h3>
       <p>We can ask a user for input and save it to a variable to use it later</p>
       <CodeSandbox
@@ -56,6 +62,7 @@ export default () => (
         }
         consoleMode
         disableAutoRun
+        className="mini"
       />
       <p>
         Note: In normal web development the use of the alert and prompt functions is discouraged.
@@ -83,6 +90,7 @@ export default () => (
         }
         consoleMode
         disableAutoRun
+        className="short"
       />
       <p>We can also chain multiple ifs together to have multiple outcomes</p>
 
@@ -92,6 +100,7 @@ export default () => (
         }
         consoleMode
         disableAutoRun
+        className="short"
       />
       <h3>while</h3>
       <p>
@@ -106,6 +115,7 @@ export default () => (
         value={
           'var name\nwhile(!name) {\n    name = prompt("What is your name adventurer?")\n}\nalert("You wake up on a strange beach. \'" + name + "\' is written on the inside of your shirt.")'
         }
+        className="short"
       />
     </div>
     <div>

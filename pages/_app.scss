@@ -110,7 +110,7 @@ body {
     font-style: italic;
   }
   .toc {
-    border-bottom: 8px solid $foreground;
+    border-bottom: 8px solid $accent;
     border-radius: 10px;
     margin: 50px auto;
     font-size: 1.8em;
@@ -141,6 +141,7 @@ body {
         content: counter(toc-counter) " ";
         color: $accent-dark;
         font-weight: bold;
+        text-shadow: 3px 2px 5px #d1d1ff;
       }
     }
 }
@@ -176,7 +177,9 @@ li a {
 
 .next {
   display: inline-block;
-  border: 4px solid black;
+  border: 4px solid $accent;
+  border-width: 0 4px;
+  border-radius: 8px;
   padding: 1vw 2vw;
   font-size: 2em;
   font-weight: bold;

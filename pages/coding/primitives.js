@@ -46,22 +46,22 @@ export default () => (
     <div className="type boolean">
       <h2>Booleans</h2>
       <p>JavaScript has integrated support for boolean values and boolean operations.</p>
-      <CodeSandbox value="true" className="short" />
-      <CodeSandbox value="false" className="short" />
+      <CodeSandbox value="true" className="mini" />
+      <CodeSandbox value="false" className="mini" />
       <h3>Or Operations</h3>
       <p>The or operator is written as "||" in JavaScript</p>
-      <CodeSandbox value="true || false" className="short" />
-      <CodeSandbox value="false || true" className="short" />
-      <CodeSandbox value="false || false" className="short" />
+      <CodeSandbox value="true || false" className="mini" />
+      <CodeSandbox value="false || true" className="mini" />
+      <CodeSandbox value="false || false" className="mini" />
       <h3>Not Operations</h3>
       <p>The not operator is written as "!" in JavaScript</p>
-      <CodeSandbox value="!true" className="short" />
-      <CodeSandbox value="!false" className="short" />
+      <CodeSandbox value="!true" className="mini" />
+      <CodeSandbox value="!false" className="mini" />
       <h3>And Operations</h3>
       <p>The and operator is written as "&&" in JavaScript</p>
-      <CodeSandbox value="true && true" className="short" />
-      <CodeSandbox value="true && false" className="short" />
-      <CodeSandbox value="false && false" className="short" />
+      <CodeSandbox value="true && true" className="mini" />
+      <CodeSandbox value="true && false" className="mini" />
+      <CodeSandbox value="false && false" className="mini" />
     </div>
     <div className="type numbers">
       <h2>Numbers</h2>
@@ -72,17 +72,17 @@ export default () => (
         in order to output boolean values.
       </p>
       <h3>Addition/Subtraction</h3>
-      <CodeSandbox value="12 + 12" className="short" />
-      <CodeSandbox value="30 - 12" className="short" />
+      <CodeSandbox value="12 + 12" className="mini" />
+      <CodeSandbox value="30 - 12" className="mini" />
       <h3>Greater than/Less than</h3>
       <p>The greater than and less than operators return boolean values</p>
-      <CodeSandbox value="12 > 10" className="short" />
-      <CodeSandbox value="12 < 10" className="short" />
-      <CodeSandbox value="5 >= 5" className="short" />
-      <CodeSandbox value="6 <= 5" className="short" />
+      <CodeSandbox value="12 > 10" className="mini" />
+      <CodeSandbox value="12 < 10" className="mini" />
+      <CodeSandbox value="5 >= 5" className="mini" />
+      <CodeSandbox value="6 <= 5" className="mini" />
       <h3>Multiply/Divide</h3>
-      <CodeSandbox value="32 * 11" className="short" />
-      <CodeSandbox value="4 / 12" className="short" />
+      <CodeSandbox value="32 * 11" className="mini" />
+      <CodeSandbox value="4 / 12" className="mini" />
     </div>
     <div className="type strings">
       <h2>Strings</h2>
@@ -90,11 +90,11 @@ export default () => (
         Strings are collections of text (like someones name, an address, etc). They are written by
         surrounding the text in single or double quotes.
       </p>
-      <CodeSandbox value={'"I like chocolate milk"'} className="short" />
-      <CodeSandbox value={"'my namea borat'"} className="short" />
+      <CodeSandbox value={'"I like chocolate milk"'} className="mini" />
+      <CodeSandbox value={"'my namea borat'"} className="mini" />
       <p>They can also be added together</p>
-      <CodeSandbox value={"'beep' + 'bop'"} className="short" />
-      <CodeSandbox value={"'9' + '10'"} className="short" />
+      <CodeSandbox value={"'beep' + 'bop'"} className="mini" />
+      <CodeSandbox value={"'9' + '10'"} className="mini" />
     </div>
     <div className="type undefined">
       <h2>undefined</h2>
@@ -102,7 +102,7 @@ export default () => (
         The value undefined is used to represent a value that has not been assigned anything else.
         It's basically the universal placeholder value.
       </p>
-      <CodeSandbox value="undefined" className="short" />
+      <CodeSandbox value="undefined" className="mini" />
     </div>
     <div className="type null">
       <h2>null</h2>
@@ -110,7 +110,7 @@ export default () => (
         The value null is used to represent the value "nothing". It's different from undefined in
         that it is intentionally nothing rather than just being missing a value.
       </p>
-      <CodeSandbox value="null" className="short" />
+      <CodeSandbox value="null" className="mini" />
     </div>
     <div className="equality">
       <h2>Equality</h2>
