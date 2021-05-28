@@ -14,4 +14,4 @@ Describe your issue in detail, and include any error messages in full
 
 
 ## Your code:
-Paste a link to your code below
+Paste a link to your code below (if your issue doesn't have to do with writing code you can ignore this part)
