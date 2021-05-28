@@ -33,7 +33,7 @@ export default () => (
         className="bold"
         href="https://github.com/L1lith/Intro-Coding-Concepts/issues/new?assignees=&labels=rpg+display&template=display-your-project-on-the-site.md">
         here
-      </a>
+      </a>{' '}
       😊
       <br />
       <br />
