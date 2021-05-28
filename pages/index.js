@@ -68,9 +68,11 @@ export default () => (
         </li>
         <li>
           If you get stuck and you've exhausted your other options, you can ask for help{' '}
-          <a href="https://github.com/L1lith/Intro-Coding-Concepts/issues">here</a>. Please be
-          considerate and don't spam the issue section, and check first if someone's asked that
-          question before or if it's already covered in the docs.
+          <a href="https://github.com/L1lith/Intro-Coding-Concepts/issues/new?assignees=&labels=help+request&template=help-request.md">
+            here
+          </a>
+          . Please be considerate and don't spam the issue section, and check first if someone's
+          asked that question before or if it's already covered in the docs.
         </li>
       </ul>
     </div>

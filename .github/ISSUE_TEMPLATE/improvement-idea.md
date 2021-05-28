@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-Stuck and can't figure out what to do? Try to solve your issue by viewing the resources [here](https://l1lith.github.io/Intro-Coding-Concepts#resources) or googling it. If you still can't find the answer, fill in this form and I'll help you if I can.
+Stuck and can't figure out what to do? Try to solve your issue by viewing the resources at https://l1lith.github.io/Intro-Coding-Concepts#resources or googling it. If you still can't find the answer, fill in this form and I'll help you if I can.
 
 ## Issue:
 Describe your issue in detail, and include any error messages in full

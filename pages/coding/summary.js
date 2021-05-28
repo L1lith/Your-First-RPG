@@ -39,8 +39,11 @@ export default () => (
       <br />
       <br />
       If you'd like to suggest an improvement you can open a ticket{' '}
-      <a href="https://github.com/L1lith/Intro-Coding-Concepts/issues">here</a>, or you can submit a
-      pull request <a href="https://github.com/L1lith/Intro-Coding-Concepts/pulls">here</a>.
+      <a href="https://github.com/L1lith/Intro-Coding-Concepts/issues/new?assignees=&labels=enhancement&template=improvement-idea.md">
+        here
+      </a>
+      , or you can submit a pull request{' '}
+      <a href="https://github.com/L1lith/Intro-Coding-Concepts/pulls">here</a>.
     </p>
     <Link href="/support">
       <a className="next">Consider supporting me 💜</a>
