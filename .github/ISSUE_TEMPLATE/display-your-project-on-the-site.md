@@ -2,7 +2,7 @@
 name: Display your project on the site :)
 about: Show off the awesome text RPG you made!
 title: ''
-labels: ''
+labels: 'rpg display'
 assignees: ''
 
 ---

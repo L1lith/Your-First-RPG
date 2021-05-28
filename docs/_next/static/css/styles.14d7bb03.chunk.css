@@ -391,7 +391,7 @@ body {
   #page .italic {
     font-style: italic; }
   #page .toc {
-    border-bottom: 8px solid black;
+    border-bottom: 8px solid #d1d1ff;
     border-radius: 10px;
     margin: 50px auto;
     font-size: 1.8em;
@@ -415,7 +415,8 @@ body {
       margin-right: 10px;
       content: counter(toc-counter) " ";
       color: #4747af;
-      font-weight: bold; }
+      font-weight: bold;
+      text-shadow: 3px 2px 5px #d1d1ff; }
   #page a {
     color: #4747af; }
   #page li a {
@@ -438,7 +439,9 @@ body {
 
 .next {
   display: inline-block;
-  border: 4px solid black;
+  border: 4px solid #d1d1ff;
+  border-width: 0 4px;
+  border-radius: 8px;
   padding: 1vw 2vw;
   font-size: 2em;
   font-weight: bold;
@@ -498,6 +501,9 @@ body {
   .sandbox.short {
     height: 20vh;
     min-height: 250px; }
+  .sandbox.mini {
+    height: 12vh;
+    min-height: 150px; }
   .sandbox > * {
     display: block; }
   .sandbox > * > * {
@@ -677,7 +683,9 @@ body {
     display: inline-block;
     margin: 0 20px; }
   .home .resources {
-    border: 2px solid black;
+    border: 2px solid #d1d1ff;
+    border-width: 2px 0;
+    border-radius: 4px;
     padding: 20px; }
     .home .resources .resource-list li {
       margin: 20px 0; }
