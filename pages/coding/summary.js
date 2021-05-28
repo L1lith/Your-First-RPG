@@ -10,14 +10,14 @@ export default () => (
     <div className="intro-card">
       <div className="youtube-container">
         <iframe
-          src="https://www.youtube.com/embed/_nuS86ITjIM"
+          src="https://www.youtube.com/embed/videoseries?list=PLRqwX-V7Uu6ZYJC7L-r6rX6utt6wwJCyi"
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         />
       </div>
-      Your imagination is your limit
+      Daniel Shiffman has so many good videos
     </div>
     <br />
     <p>
