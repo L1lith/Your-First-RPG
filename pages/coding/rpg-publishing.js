@@ -28,10 +28,13 @@ export default () => (
       recommending logging in to keep track of your game but it is not required.
       <br />
       <br />
-      Made a cool RPG? Open an issue
-      <a href="https://github.com/L1lith/Intro-Coding-Concepts/issues/new?assignees=&labels=rpg+display&template=display-your-project-on-the-site.md">
+      Made a cool RPG? Submit a request to have your game featured on this website{' '}
+      <a
+        className="bold"
+        href="https://github.com/L1lith/Intro-Coding-Concepts/issues/new?assignees=&labels=rpg+display&template=display-your-project-on-the-site.md">
         here
       </a>
+      😊
       <br />
       <br />
       If you'd like to learn more about JavaScript, or you'd like to support me, continue on to the
