@@ -6,9 +6,9 @@ export default () => (
   <div className="home">
     <NextSeo title="Home" />
     <h1 className="title">
-      <span className="smaller-text">Coding Intro:</span>
+      <span className="smaller-text">Thinking about Coding:</span>
       <br />
-      🧠 Mental Modeling for Beginners
+      Your first RPG
     </h1>
     <p>
       In this course I will describe mental models to show how & why we apply them to coding and
@@ -19,17 +19,17 @@ export default () => (
       <h2>Sections</h2>
       <li>
         <Link href="/vision">
-          <a>👀 Visioning Mental Models</a>
+          <a>👀 Visualizing Mental Models</a>
         </Link>
       </li>
       <li>
         <Link href="/toying">
-          <a>👐 Toying with Mental Models</a>
+          <a>👐 Toying with Logic Models</a>
         </Link>
       </li>
       <li>
         <Link href="/coding">
-          <a>🏆 Coding with Mental Models</a>
+          <a>🎮 Building an RPG</a>
         </Link>
       </li>
     </ol>

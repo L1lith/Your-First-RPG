@@ -29,7 +29,7 @@ export default () => (
       So where do I go from here? If you'd like to code websites you can read more about that{' '}
       <a href="https://developer.mozilla.org/en-US/docs/Learn">here</a>. JavaScript is a great entry
       point to a lot of different areas, like{' '}
-      <a href="https://medium.com/davao-js/2019-tutorial-creating-your-first-simple-discord-bot-47fc836a170b">
+      <a href="https://www.youtube.com/watch?v=7A-bnPlxj4k&list=PLRqwX-V7Uu6avBYxeBSwF48YhAnSn_sA4">
         discord bots
       </a>
       , <a href="https://medium.com/edureka/learn-node-js-b3a9c6fb632c">Node.js</a> scripts (Node.js

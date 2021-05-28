@@ -6,7 +6,7 @@ import { NextSeo } from 'next-seo'
 export default () => (
   <div className="vision-intro">
     <NextSeo title="#1.0 Planning it out" />
-    <h1 className="title">Section 1: 👀 Visioning Mental Models</h1>
+    <h1 className="title">Section 1: 👀 Visualizing Mental Models</h1>
     <ol className="toc pages">
       <h2>Pages</h2>
       <li>

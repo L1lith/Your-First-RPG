@@ -5,7 +5,7 @@ import { NextSeo } from 'next-seo'
 export default () => (
   <div className="toying-intro">
     <NextSeo title="#2.0 Logic Puzzles" />
-    <h1 className="title">Section 2: 👐 Toying with Mental Models</h1>
+    <h1 className="title">Section 2: 👐 Toying with Logic Models</h1>
     <ol className="toc pages">
       <h2>Pages</h2>
       <li>

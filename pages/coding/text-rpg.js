@@ -4,7 +4,7 @@ import { NextSeo } from 'next-seo'
 
 export default () => (
   <div className="logic-models">
-    <NextSeo title="#3.3 Text RPG Tutorial ⚔️" />
+    <NextSeo title="#3.3 Text RPG Tutorial 🎮" />
     <h2>#3.3 Text RPG Tutorial ⚔️</h2>
     <span className="intro-card">
       <div className="youtube-container">
@@ -27,8 +27,12 @@ export default () => (
       <h2>Comments</h2>
       <p>
         Comments allow us to write things in our code that is purely for notation (like writing
-        notes in your math). Anything in the same line that comes after "//" will not be treated as
-        part of the code
+        notes in your math). Anything in the same line that comes after "//" will not be used while
+        your code is running.
+        <br />
+        <br />
+        We can use comments for things like add a TODO message so you can come back to add something
+        later, or we can use it to help explain how our code works.
       </p>
       <CodeSandbox
         value={

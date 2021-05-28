@@ -14,10 +14,10 @@ export default () => (
       Minecraft is a great place to start your adventure :)
     </span>
     <p>
-      In this section I will start to explain boolean (boolean means something that is either true
-      or false) logic and explain how to create a mental model when working with it. Modeling
-      logical systems is a lot more useful than you might give it credit. The entire world is ruled
-      by logic, like how you do your job, how you cross the street, or how you navigate a website.
+      Next you will learn about boolean logic (boolean means something that is either true or false)
+      logic and explain how to create a mental model when working with it. Modeling logical systems
+      is a lot more useful than you might give it credit. The entire world is ruled by logic, like
+      how you do your job, how you cross the street, or how you navigate a website.
       <br />
       <br />
       Let's say for example you are at a crosswalk and you see the traffic light in the direction

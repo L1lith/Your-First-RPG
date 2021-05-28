@@ -3,7 +3,7 @@ import { NextSeo } from 'next-seo'
 
 export default () => (
   <div className="coding-intro">
-    <h1 className="title">Section 3: 🏆 Coding with Mental Models</h1>
+    <h1 className="title">Section 3: 🎮 Building an RPG</h1>
     <NextSeo title="#3.0 Stepping into Coding" />
     <ol className="toc pages">
       <h2>Pages</h2>
