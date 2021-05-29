@@ -6,7 +6,7 @@ import { NextSeo } from 'next-seo'
 export default () => (
   <div className="primitives">
     <NextSeo title="#3.1 Primitives" />
-    <h2>#3.1 Coding with Primitives</h2>
+    <h2>#3.1 Primitives: Basic Data Types 📊</h2>
     <br />
     <span className="intro-card">
       <div className="youtube-container">
@@ -125,8 +125,8 @@ export default () => (
       they are useful. You can read in greater detail about JS's data types{' '}
       <a href="https://javascript.info/types">here</a>
     </p>
-    <Link href="/coding/building-blocks">
-      <a className="next">Up next: Coding Building Blocks</a>
+    <Link href="/coding/essential-tools">
+      <a className="next">Up next: Essential Tools</a>
     </Link>
   </div>
 )

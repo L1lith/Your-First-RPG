@@ -5,7 +5,7 @@ import { NextSeo } from 'next-seo'
 export default () => (
   <div className="level-2">
     <NextSeo title={'#2.2 "Not" Expressions'} />
-    <h2>#2.2 Level 2: "Not" Expressions</h2>
+    <h2>#2.2 Level 2: Whats "Not" Allowed 🚫</h2>
     <br />
     <div className="youtube-container">
       <iframe

@@ -24,7 +24,7 @@ class MyApp extends App {
 
     return (
       <Container>
-        <DefaultSeo titleTemplate="%s - Coding Intro" defaultTitle="Coding Intro"></DefaultSeo>
+        <DefaultSeo titleTemplate="%s - Your First RPG" defaultTitle="Your First RPG"></DefaultSeo>
         <Header />
         <main id="page">
           {!isHome ? <HomeLink /> : null}

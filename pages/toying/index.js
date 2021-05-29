@@ -10,28 +10,28 @@ export default () => (
       <h2>Pages</h2>
       <li>
         <Link href="/toying#lesson">
-          <a>#2.0 Playing around with Logic Puzzles</a>
+          <a>#2.0 Playing around with Logic Puzzles 🧩</a>
         </Link>
       </li>
       <li>
         <Link href="/toying/level-one">
-          <a>#2.1 Level 1: Basic "Or" Boolean Logic</a>
+          <a>#2.1 Level 1: Basic "Or" Expressions 💬</a>
         </Link>
       </li>
       <li>
         <Link href="/toying/level-two">
-          <a>#2.2 Level 2: "Not" Expressions</a>
+          <a>#2.2 Level 2: Whats "Not" Allowed 🚫</a>
         </Link>
       </li>
       <li>
         <Link href="/toying/level-three">
-          <a>#2.3 Level 3: Boolean Logic & the Coding Mindset</a>
+          <a>#2.3 Level 3: Booleans for Coding Apps 💻</a>
         </Link>
       </li>
     </ol>
     <br />
     <br />
-    <h2 id="lesson">#2.0 Playing around with Logic Puzzles</h2>
+    <h2 id="lesson">#2.0 Playing around with Logic Puzzles 🧩</h2>
     <br />
     <span className="intro-card">
       <img src="/images/milleniumPuzzle.webp" />

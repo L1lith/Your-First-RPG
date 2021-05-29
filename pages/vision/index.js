@@ -11,16 +11,16 @@ export default () => (
       <h2>Pages</h2>
       <li>
         <Link href="/vision#lesson">
-          <a>#1.0 Planning it out: Saving Monitors</a>
+          <a>#1.0 Planning it out 🗺️</a>
         </Link>
       </li>
       <li>
         <Link href="/vision/logic-models-explained">
-          <a>#1.1 Logic Models Explained</a>
+          <a>#1.1 Logic Models Explained 🧠</a>
         </Link>
       </li>
     </ol>
-    <h2 id="lesson">#1.0 Planning it out: Saving Monitors</h2>
+    <h2 id="lesson">#1.0 Planning it out 🗺️</h2>
     <span className="intro-card">
       <video autoPlay muted {...hoverVideo()}>
         <source src="/video/punchingMonitor.mp4" type="video/mp4" />

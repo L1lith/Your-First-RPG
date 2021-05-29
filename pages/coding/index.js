@@ -9,17 +9,17 @@ export default () => (
       <h2>Pages</h2>
       <li>
         <Link href="/coding#lesson">
-          <a>#3.0 Stepping into Coding</a>
+          <a>#3.0 Stepping into Coding 🛣️</a>
         </Link>
       </li>
       <li>
         <Link href="/coding/primitives">
-          <a>#3.1 Coding with Primitives</a>
+          <a>#3.1 Primitives: Basic Data Types 📊</a>
         </Link>
       </li>
       <li>
-        <Link href="/coding/building-blocks">
-          <a>#3.2 Coding Building Blocks</a>
+        <Link href="/coding/essential-tools">
+          <a>#3.2 Essential Tools 🔨</a>
         </Link>
       </li>
 
@@ -35,11 +35,11 @@ export default () => (
       </li>
       <li>
         <Link href="/coding/summary">
-          <a>#3.5 Summary & Further Reading</a>
+          <a>#3.5 Summary & Further Reading 🔭</a>
         </Link>
       </li>
     </ol>
-    <h2 id="lesson">#3.0 Stepping into Coding</h2>
+    <h2 id="lesson">#3.0 Stepping into Coding 🛣️</h2>
     <br />
     <span className="intro-card">
       <div className="youtube-container">

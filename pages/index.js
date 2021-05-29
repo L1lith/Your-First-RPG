@@ -1,10 +1,8 @@
 import Link from 'next/link'
 import './index.scss'
-import { NextSeo } from 'next-seo'
 
 export default () => (
   <div className="home">
-    <NextSeo title="Home" />
     <h1 className="title">
       <span className="smaller-text">Thinking about Coding:</span>
       <br />
