@@ -5,7 +5,7 @@ import { NextSeo } from 'next-seo'
 export default () => (
   <div className="level-1">
     <NextSeo title={'#3.5 Summary & Further Reading'} />
-    <h2>#3.5 Summary & Further Reading</h2>
+    <h2>#3.5 Summary & Further Reading 🔭</h2>
     <br />
     <div className="intro-card">
       <div className="youtube-container">
