@@ -19,8 +19,17 @@ export default () => (
       </div>
       Daniel Shiffman has so many good videos
     </div>
+    <div className="stuck">
+      <h2>Feeling Stuck?</h2>
+      Check out the{' '}
+      <Link href="/resources">
+        <a>resources page here</a>
+      </Link>{' '}
+      to find some help
+    </div>
     <br />
-    <p>
+    <div className="further-reading">
+      <h2>Further Reading</h2>
       Thank you so much for taking my course, I hope you learned something. If you'd like me to make
       more courses (like going into more advanced JavaScript areas like interactive websites and
       scripting) consider supporting me below for free :)
@@ -44,7 +53,7 @@ export default () => (
       </a>
       , or you can submit a pull request{' '}
       <a href="https://github.com/L1lith/Intro-Coding-Concepts/pulls">here</a>.
-    </p>
+    </div>
     <Link href="/support">
       <a className="next">Consider supporting me 💜</a>
     </Link>

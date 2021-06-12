@@ -1,6 +1,7 @@
 import LevelOne from '../../components/BooleanGame/levels/LevelOne'
 import Link from 'next/link'
 import { NextSeo } from 'next-seo'
+import BooleanOps from '../../components/booleanOps'
 
 export default () => (
   <div className="level-1">
@@ -8,8 +9,8 @@ export default () => (
     <h2>#2.1 Level 1: 💬 Basic "Or" Expressions</h2>
     <br />
     <span className="intro-card">
-      <img src="/images/truthTable.png" type="img/png" />
-      Here you can see a chart of the basic boolean operations (it's grouped by rows)
+      <BooleanOps />
+      Here you can see a chart of the basic boolean operations (&amp; means AND, || means OR)
     </span>
     <br />
     <p>

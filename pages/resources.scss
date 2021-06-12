@@ -1,13 +1,16 @@
 @import "./_variables.scss";
 
-.resources {
+#resources {
     // border: 2px solid $accent;
     // border-width: 2px 0;
     // border-radius: 4px;
+    & > h2 {
+        margin-bottom: 30px;
+    }
     padding: 20px;
     .resource-list {
         li {
-            margin: 20px 0;
+            margin: 40px 0;
         }
     }
 }

@@ -30,9 +30,7 @@ export default () => (
     </p>
     <span className="intro-card">
       <img src="/images/spaghettiBowl.jpeg" />
-      <br />
       Nothing gets the blood pumping quite like being tail-gated around a 90° turn on the freeway.
-      <br />
       <span className="smaller-text">
         {' '}
         Credit to <a href="https://www.utahseagull.com/2019/10/">Utah Seagull</a>

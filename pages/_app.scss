@@ -73,11 +73,14 @@ body {
   h3 {
     font-size: 1.5em;
   }
+  & > h1, & > h2,  & > h3,  & > h4, & > h5, & > h6 {
+    margin: 20px auto;
+  }
   .intro-card {
     display: block;
     text-align: center;
     font-style: italic;
-    margin: 20px auto;
+    margin: 50px auto;
     & > *:not(.youtube-container) {
       display: block;
       width: 80%;
@@ -133,6 +136,7 @@ body {
         text-align:left;
         counter-increment: toc-counter;
         text-decoration: underline;
+        text-decoration-color: $accent;
         //border-bottom: 2px solid $foreground;
     }
     &.sections {
