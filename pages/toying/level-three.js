@@ -5,7 +5,7 @@ import { NextSeo } from 'next-seo'
 export default () => (
   <div className="level-3">
     <NextSeo title="#2.3 the Coding Mindset" />
-    <h2>#2.3 Level 3: Booleans for Coding Apps 💻</h2>
+    <h2>#2.3 Level 3: 💻 Booleans for Coding Apps</h2>
     <br />
     <p>
       How does boolean logic tie into coding? When a programmer is writing code they write in coding

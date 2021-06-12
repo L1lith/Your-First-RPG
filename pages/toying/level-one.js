@@ -5,7 +5,7 @@ import { NextSeo } from 'next-seo'
 export default () => (
   <div className="level-1">
     <NextSeo title={'#2.1 "Or" Boolean Logic'} />
-    <h2>#2.1 Level 1: Basic "Or" Expressions 💬</h2>
+    <h2>#2.1 Level 1: 💬 Basic "Or" Expressions</h2>
     <br />
     <span className="intro-card">
       <img src="/images/truthTable.png" type="img/png" />

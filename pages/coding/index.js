@@ -44,7 +44,7 @@ export default () => (
     <span className="intro-card">
       <div className="youtube-container">
         <iframe
-          src="https://www.youtube.com/embed/r7dZKOL5rcg"
+          src="https://www.youtube.com/embed/HluANRwPyNo"
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
