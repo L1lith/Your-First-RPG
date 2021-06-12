@@ -2,7 +2,6 @@ import React from 'react'
 import App, { Container } from 'next/app'
 import Header from '../components/header'
 import './_app.scss'
-import HomeLink from '../components/homeLink'
 import Head from 'next/head'
 import { useRouter, withRouter } from 'next/router'
 import { DefaultSeo } from 'next-seo'
@@ -20,14 +19,12 @@ class MyApp extends App {
 
   render() {
     const { Component, pageProps, router } = this.props
-    const isHome = router.route === '/'
 
     return (
       <Container>
         <DefaultSeo titleTemplate="%s - Your First RPG" defaultTitle="Your First RPG"></DefaultSeo>
         <Header />
         <main id="page">
-          {!isHome ? <HomeLink /> : null}
           <Component {...pageProps} />
         </main>
       </Container>

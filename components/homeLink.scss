@@ -9,4 +9,9 @@
     user-select: none;
     //position: fixed;
     text-shadow: 2px 2px 1px $accent-dark;
+    .site-icon {
+        text-shadow: 0 0 20px $background;
+        margin: 1vw !important;
+        padding: 0;
+    }
 }
