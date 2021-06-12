@@ -1,8 +1,9 @@
 @import "../pages/_variables.scss";
 
-.boolean-ops  {
+.boolean-ops {
   border-collapse:collapse;
   border-spacing:0;
+  border: 2px solid black;
   font-style: normal;
   margin-left: auto;
   margin-right: auto;
@@ -36,7 +37,7 @@
     padding:10px 5px;
     word-break: normal;
   }
-  .tg-73oq{
+  .table-member{
     border-color:#000000;
     text-align:left;
     vertical-align:top

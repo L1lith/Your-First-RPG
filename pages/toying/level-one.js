@@ -12,7 +12,6 @@ export default () => (
       <BooleanOps />
       Here you can see a chart of the basic boolean operations (&amp; means AND, || means OR)
     </span>
-    <br />
     <p>
       In this section we will be playing the Matching Rules game in order to learn about boolean
       logic. Boolean logic is the fundamental language that both electronic circuitry, and computers
