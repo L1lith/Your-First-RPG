@@ -5,7 +5,7 @@ export default () => (
   <h1 className="site-title">
     <Link href="/">
       <a className="home-link">
-        Your First RPG <span className="site-icon">🎮</span>
+        <span className="site-icon">🎮</span> Your First RPG
       </a>
     </Link>
   </h1>

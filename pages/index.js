@@ -4,7 +4,7 @@ import './index.scss'
 export default () => (
   <div className="home">
     <h1 className="title">
-      <span className="smaller-text">Thinking about Coding:</span>
+      <span className="smaller-text">Feeling out Coding:</span>
       <br />
       Your first RPG
     </h1>
