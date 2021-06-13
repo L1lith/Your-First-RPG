@@ -4,58 +4,53 @@ import { NextSeo } from 'next-seo'
 export default () => (
   <div className="coding-intro">
     <h1 className="title">Section 4: 🎮 Building an RPG</h1>
-    <NextSeo title="#3.0 Stepping into Coding" />
+    <NextSeo title="#4.0 Let's make a Game! 🎮" />
     <ol className="toc pages">
       <h2>Pages</h2>
 
       <li>
-        <Link href="/coding/text-rpg">
-          <a>#4.1 Text RPG Tutorial ⚔️</a>
+        <Link href="#lesson">
+          <a>#4.0 Let's make a Game! 🎮</a>
         </Link>
       </li>
       <li>
-        <Link href="/coding/rpg-publishing">
+        <Link href="/rpg/communication">
+          <a>#4.1 Communicating with the Player 🗣️</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/rpg/publishing">
           <a>#4.2 Publishing your RPG 🏆</a>
         </Link>
       </li>
       <li>
-        <Link href="/coding/summary">
+        <Link href="/rpg/summary">
           <a>#4.3 Summary & Further Reading 🔭</a>
         </Link>
       </li>
     </ol>
-    <h2 id="lesson">#3.0 Stepping into Coding 🛣️</h2>
+    <h2 id="lesson">#4.0 Let's make a Game! 🎮</h2>
     <br />
     <span className="intro-card">
       <div className="youtube-container">
         <iframe
-          src="https://www.youtube.com/embed/HluANRwPyNo"
+          src="https://www.youtube.com/embed/HBEKDNndVDI"
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         />
       </div>
-      don't ask about my math skills
+      Have fun with it!
     </span>
 
     <p>
-      How is JS (JavaScript) code written? JavaScript code is just a series of logical expressions
-      (like little logic models) that are evaluated (run by the JavaScript engine software called
-      the "interpreter") in a particular order. Each line is evaluated one at a time from top to
-      bottom. While individual lines are generally read left-to-right The JS interpreter also
-      understands and applies the rules of{' '}
-      <a href="https://www.mathsisfun.com/operation-order-pemdas.html">PEMDAS</a>. Every line of
-      code you write should combine cohesively in order to form a well functioning program.
-      <br />
-      <br />
-      Coding doesn't have to be frustrating, let's try to have some fun with it. In this section I
-      hope it will become clear how you can take an approached based on logic models to write basic
-      code. I'm going to be providing many examples, and if you get stuck it's okay to continue on
-      and come back later. Try to get a feel for what is going on overall by toying with the code.
+      In this section I'll go over how to create your own text RPG. I've been teaching you a lot
+      about how to code, and now I'd like you to take the reigns and be creative 😊 You can create
+      anything you can think of!
     </p>
-    <Link href="/coding/primitives">
-      <a className="next">Up next: Coding with Primitives</a>
+    <Link href="/rpg/communication">
+      <a className="next">Up next: #4.1 Talking to the Player 🗣️</a>
     </Link>
   </div>
 )
