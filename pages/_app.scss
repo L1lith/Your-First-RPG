@@ -21,6 +21,13 @@
 }
 
 body {
+  @media screen and (max-width: $mini-width) {
+    font-size: 5vw;
+  }
+  @media screen and (min-width: $mega-width) {
+    font-size: 1.25vw;
+  }
+  font-size: 2vw;
   position: relative;
   font-family: 'Droid';
   background-color: $background;
@@ -41,17 +48,12 @@ body {
 }
 
 #page {
+  @media screen and (max-width: $mini-width) {
+    margin: 0;
+  }
   text-align: center;
   //background-color: $background;
-  margin: 0 8vw;
-  @media screen and (max-width: $mini-width) {
-    margin: 0vw 4vw;
-    font-size: 5vw;
-  }
-  @media screen and (min-width: $mega-width) {
-    font-size: 1.25vw;
-  }
-  font-size: 2vw;
+  margin: 4vh 8vw 0 8vw;
   padding: 5vh 10vw 5vh 10vw;
   background-color: $background;
   @media screen and (min-width: $mini-width) {
@@ -81,6 +83,8 @@ body {
     text-align: center;
     font-style: italic;
     margin: 20px auto 35px auto;
+    border-bottom: 5px solid $accent;
+    border-radius: 10px;
     & > *:not(.youtube-container) {
       display: block;
       width: 80%;

@@ -27,6 +27,11 @@ export default () => (
       </li>
       <li>
         <Link href="/coding">
+          <a>💻 Learning to Code</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/rpg">
           <a>🎮 Building an RPG</a>
         </Link>
       </li>

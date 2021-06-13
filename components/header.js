@@ -8,9 +8,12 @@ class Header extends Component {
     const { router } = this.props
     return (
       <header id="main-header">
-        <HomeLink />
         <Link href="/resources">
           <a>Resources</a>
+        </Link>
+        <HomeLink />
+        <Link href="/support">
+          <a className="support">Support Me</a>
         </Link>
       </header>
     )

@@ -3,23 +3,24 @@ import { NextSeo } from 'next-seo'
 
 export default () => (
   <div className="coding-intro">
-    <h1 className="title">Section 3: 💻 Learning to Code</h1>
+    <h1 className="title">Section 4: 🎮 Building an RPG</h1>
     <NextSeo title="#3.0 Stepping into Coding" />
     <ol className="toc pages">
       <h2>Pages</h2>
+
       <li>
-        <Link href="/coding#lesson">
-          <a>#3.0 Stepping into Coding 🛣️</a>
+        <Link href="/coding/text-rpg">
+          <a>#4.1 Text RPG Tutorial ⚔️</a>
         </Link>
       </li>
       <li>
-        <Link href="/coding/primitives">
-          <a>#3.1 Primitives: Basic Data Types 📊</a>
+        <Link href="/coding/rpg-publishing">
+          <a>#4.2 Publishing your RPG 🏆</a>
         </Link>
       </li>
       <li>
-        <Link href="/coding/essential-tools">
-          <a>#3.2 Essential Tools 🔨</a>
+        <Link href="/coding/summary">
+          <a>#4.3 Summary & Further Reading 🔭</a>
         </Link>
       </li>
     </ol>

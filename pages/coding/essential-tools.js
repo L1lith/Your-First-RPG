@@ -160,8 +160,8 @@ export default () => (
       <CodeSandbox />
 </div>*/
     }
-    <Link href="/coding/text-rpg">
-      <a className="next">Up next: Completing your Basic Coding Mental Models</a>
+    <Link href="/rpg">
+      <a className="next">Up next: Building your Text RPG</a>
     </Link>
   </div>
 )
