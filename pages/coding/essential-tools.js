@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import CodeSandbox from '../../components/CodeSandbox'
-import './building-blocks.scss'
+import './essential-tools.scss'
 import { Component } from 'react'
 import { NextSeo } from 'next-seo'
 

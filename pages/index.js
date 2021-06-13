@@ -42,8 +42,8 @@ export default () => (
       <a>Frequently Asked Questions</a>
 </Link>*/
       }
-      <Link href="/support">
-        <a>Support Me</a>
+      <Link href="/resources">
+        <a>Remember to check out the resource section if you get stuck</a>
       </Link>
     </div>
   </div>
