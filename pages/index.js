@@ -4,9 +4,9 @@ import './index.scss'
 export default () => (
   <div className="home">
     <h1 className="title">
-      <span className="smaller-text">Feeling out Coding:</span>
+      <span className="smaller-text">Intro to Coding:</span>
       <br />
-      Your first RPG
+      Coding your first Role Playing Game
     </h1>
     <p>
       In this course I will describe mental models to show how & why we apply them to coding and
