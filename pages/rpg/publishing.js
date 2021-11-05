@@ -1,6 +1,7 @@
 import LevelOne from '../../components/BooleanGame/levels/LevelOne'
 import Link from 'next/link'
 import { NextSeo } from 'next-seo'
+import YTVideo from '../../components/YTVideo'
 
 export default () => (
   <div className="publishing">
@@ -8,15 +9,7 @@ export default () => (
     <h2>#4.2 Publishing your RPG 🏆</h2>
     <br />
     <div className="intro-card">
-      <div className="youtube-container">
-        <iframe
-          src="https://www.youtube.com/embed/_nuS86ITjIM"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        />
-      </div>
+      <YTVideo url="_nuS86ITjIM" />
       Your imagination is your limit
     </div>
     <p>

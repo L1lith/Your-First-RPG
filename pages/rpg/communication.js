@@ -1,21 +1,14 @@
 import Link from 'next/link'
 import CodeSandbox from '../../components/CodeSandbox'
 import { NextSeo } from 'next-seo'
+import YTVideo from '../../components/YTVideo'
 
 export default () => (
   <div className="communication">
     <NextSeo title="#4.1 Talking to the Player 🗣️" />
     <h2>#4.1 Talking to the Player 🗣️</h2>
     <span className="intro-card">
-      <div className="youtube-container">
-        <iframe
-          src="https://www.youtube.com/embed/7yeA7a0uS3A?start=29"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        />
-      </div>
+      <YTVideo url="7yeA7a0uS3A?start=29" />
       Half-dragon half-tiger sold separately
     </span>
     <p>

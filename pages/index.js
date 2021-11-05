@@ -1,13 +1,18 @@
 import Link from 'next/link'
+import YTVideo from '../components/YTVideo'
 import './index.scss'
 
 export default () => (
   <div className="home">
     <h1 className="title">
-      <span className="smaller-text">Intro to Coding:</span>
+      <span className="smaller-text">Coding Intro:</span>
       <br />
-      Coding your first Role Playing Game
+      Making a Game
     </h1>
+    <span className="intro-card">
+      <YTVideo url="-jRREn6ifEQ" />
+      Coding is a lot like human language, and they both need diversity
+    </span>
     <p>
       In this course I will describe mental models to show how & why we apply them to coding and
       other tasks. I will also teach you JavaScript, and show you how to make your own text based

@@ -1,6 +1,7 @@
 import LevelOne from '../../components/BooleanGame/levels/LevelOne'
 import Link from 'next/link'
 import { NextSeo } from 'next-seo'
+import YTVideo from '../../components/YTVideo'
 
 export default () => (
   <div className="summary">
@@ -8,15 +9,7 @@ export default () => (
     <h2>#4.3 Summary & Further Reading 🔭</h2>
     <br />
     <div className="intro-card">
-      <div className="youtube-container">
-        <iframe
-          src="https://www.youtube.com/embed/videoseries?list=PLRqwX-V7Uu6ZYJC7L-r6rX6utt6wwJCyi"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        />
-      </div>
+      <YTVideo url="videoseries?list=PLRqwX-V7Uu6ZYJC7L-r6rX6utt6wwJCyi" />
       Daniel Shiffman has so many good videos
     </div>
     <div className="stuck">

@@ -25,6 +25,8 @@
     "react-ace": "^9.4.0",
     "react-dom": "^16.14.0",
     "sandhands": "^1.8.9",
+    "scratchblocks": "^3.5.2",
+    "scratchblocks-react": "^1.0.1",
     "underscore": "^1.13.1"
   },
   "devDependencies": {

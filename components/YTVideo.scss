@@ -1,0 +1,19 @@
+@import "../pages/variables";
+
+.youtube-container {
+    position: relative;
+    width: 80%;
+    @media screen and (max-width: $mini-width) {
+      width: 100%;
+    } 
+    margin: 20px auto;
+    height: 0;
+    padding-bottom: 56.25%;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+}

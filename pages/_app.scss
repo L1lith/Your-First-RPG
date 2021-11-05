@@ -61,11 +61,9 @@ body {
   }
    & > .title, & > * > .title {
     text-shadow: $accent 1px 1px 7px;
-    
-  @media screen and (max-width: $mini-width) {
-    font-size: 1.5em;
-
-  }
+    @media screen and (max-width: $mini-width) {
+      font-size: 1.5em;
+    }
     font-size: 2em;
   }
   ol, ul {
@@ -125,9 +123,9 @@ body {
       list-style: disc;
     }
     
-  @media screen and (max-width: $mini-width) {
-    font-size: 1em !important;
-  }
+    @media screen and (max-width: $mini-width) {
+      font-size: 1em !important;
+    }
     list-style: none;
     display: table;
     counter-reset: toc-counter;
@@ -152,6 +150,7 @@ body {
         text-shadow: 3px 2px 5px #d1d1ff;
       }
     }
+  }
 }
 
 a {
@@ -160,27 +159,6 @@ a {
 
 li a {
   text-decoration: none;
-}
-
-
-.youtube-container {
-  position: relative;
-  width: 80%;
-  @media screen and (max-width: $mini-width) {
-    width: 100%;
-  } 
-  margin: 20px auto;
-  height: 0;
-  padding-bottom: 56.25%;
-  iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-}
-
 }
 
 .next {

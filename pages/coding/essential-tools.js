@@ -3,6 +3,7 @@ import CodeSandbox from '../../components/CodeSandbox'
 import './essential-tools.scss'
 import { Component } from 'react'
 import { NextSeo } from 'next-seo'
+import YTVideo from '../../components/YTVideo'
 
 class ShittyChecking extends Component {
   constructor(props) {
@@ -41,15 +42,7 @@ export default () => (
     <NextSeo title="#3.2 Essential Tools" />
     <h1 className="title">#3.2 Essential Tools 🔨</h1>
     <span className="intro-card">
-      <div className="youtube-container">
-        <iframe
-          src="https://www.youtube.com/embed/himmatLe7aQ?start=32"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        />
-      </div>
+      <YTVideo url="himmatLe7aQ?start=32" />
       How do you swallow a coding lesson? One byte at a time
     </span>
     <p>

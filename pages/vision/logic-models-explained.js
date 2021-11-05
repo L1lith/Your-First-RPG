@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import hoverVideo from '../../functions/hoverVideo'
 import { NextSeo } from 'next-seo'
+import YTVideo from '../../components/YTVideo'
 
 export default () => (
   <div className="logic-models">
@@ -64,15 +65,7 @@ export default () => (
       While watching this video try to notice all the factors civil engineers must pay attention to
       when designing highways.
     </p>
-    <div className="youtube-container">
-      <iframe
-        src="https://www.youtube.com/embed/9XIjqdk69O4"
-        title="YouTube video player"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      />
-    </div>
+    <YTVideo url="9XIjqdk69O4" />
     <p>
       "That's great... but how does this apply to coding?" I'm glad you asked! When we are coding we
       too are writing a logic system to handle the input flow of information (like mouse and
@@ -95,15 +88,7 @@ export default () => (
       <br />
       <br />
     </p>
-    <div className="youtube-container">
-      <iframe
-        src="https://www.youtube.com/embed/hZdLjyK89Cw"
-        title="YouTube video player"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      />
-    </div>
+    <YTVideo url="hZdLjyK89Cw" />
     <br />
     <span className="italic">it works perfectly 60% of the time!</span>
     <p>
@@ -141,15 +126,6 @@ export default () => (
     <br />
     <br />
     <p>Bonus: Liked the Rube Goldberg Machine?</p>
-    <div className="youtube-container">
-      <iframe
-        width="100%"
-        src="https://www.youtube.com/embed/Av07QiqmsoA"
-        title="YouTube video player"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      />
-    </div>
+    <YTVideo url="Av07QiqmsoA" />
   </div>
 )

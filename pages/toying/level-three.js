@@ -1,6 +1,7 @@
 import LevelThree from '../../components/BooleanGame/levels/LevelThree'
 import Link from 'next/link'
 import { NextSeo } from 'next-seo'
+import YTVideo from '../../components/YTVideo'
 
 export default () => (
   <div className="level-3">
@@ -43,15 +44,7 @@ export default () => (
       expressions, compare text, and more. Watch this video to see this in practice, and to see the
       relationship between the boolean logic and coding mental models.
     </p>
-    <div className="youtube-container">
-      <iframe
-        src="https://www.youtube.com/embed/_j9nvYKaOVE"
-        title="YouTube video player"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      />
-    </div>
+    <YTVideo url="_j9nvYKaOVE" />
     <Link href="/coding">
       <a className="next">Up next: Section 3: 🏆 Coding with Mental Models</a>
     </Link>

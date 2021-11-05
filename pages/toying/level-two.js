@@ -1,21 +1,14 @@
 import LevelTwo from '../../components/BooleanGame/levels/LevelTwo'
 import Link from 'next/link'
 import { NextSeo } from 'next-seo'
+import YTVideo from '../../components/YTVideo'
 
 export default () => (
   <div className="level-2">
     <NextSeo title={'#2.2 "Not" Expressions'} />
     <h2>#2.2 Level 2: 🚫 Whats "Not" Allowed</h2>
     <br />
-    <div className="youtube-container">
-      <iframe
-        src="https://www.youtube.com/embed/fhIdbRp6xeg"
-        title="YouTube video player"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      />
-    </div>
+    <YTVideo url="fhIdbRp6xeg" />
     <br />
     <h2>The "Not" Operator</h2>
     <p>

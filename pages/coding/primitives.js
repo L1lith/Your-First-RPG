@@ -2,6 +2,7 @@ import Link from 'next/link'
 import CodeSandbox from '../../components/CodeSandbox'
 import './primitives.scss'
 import { NextSeo } from 'next-seo'
+import YTVideo from '../../components/YTVideo'
 
 export default () => (
   <div className="primitives">
@@ -9,15 +10,7 @@ export default () => (
     <h2>#3.1 Primitives: Basic Data Types 📊</h2>
     <br />
     <span className="intro-card">
-      <div className="youtube-container">
-        <iframe
-          src="https://www.youtube.com/embed/_4TPlwwHM8Q"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        />
-      </div>
+      <YTVideo url="_4TPlwwHM8Q" />
       <span>
         You can read more{' '}
         <a href="https://www.aleksandrhovhannisyan.com/blog/binary-for-beginners/">here</a> if you'd
