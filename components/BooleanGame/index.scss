@@ -10,6 +10,14 @@
     @media screen and (max-width: $mini-width) {
         width: 80vw;
     }
+    .jserror {
+        color: #f00;
+        margin: 20px;
+        outline: 2px solid #f00;
+        font-size: 2em;
+        padding: 20px;
+        display: inline-block;
+    }
     .result {
         margin: 20px auto;
         display: block;

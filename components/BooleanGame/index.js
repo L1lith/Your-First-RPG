@@ -120,6 +120,9 @@ class BooleanGame extends Component {
           Matching Rules
           {this.props.hasOwnProperty('title') ? ' - ' + this.props.title.trim() : null}
         </h2>
+        <noscript>
+          <span className="jserror">JavaScript is required to play this game.</span>
+        </noscript>
         <div className="rules">
           {
             (notColors ? '' : '(') +
