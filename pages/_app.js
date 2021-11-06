@@ -25,7 +25,6 @@ class MyApp extends App {
         <DefaultSeo titleTemplate="%s - Your First RPG" defaultTitle="Your First RPG"></DefaultSeo>
         <Header />
         <main id="page">
-          <div className="note" />
           <Component {...pageProps} />
         </main>
       </Container>
