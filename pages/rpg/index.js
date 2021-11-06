@@ -33,7 +33,7 @@ export default () => (
     <h2 id="lesson">#4.0 Let's make a Game! 🎮</h2>
     <br />
     <span className="intro-card">
-      <YTVideo url="HBEKDNndVDI" />
+      <YTVideo url="eMR6c8xbgpc" />
       Have fun with it!
     </span>
 
