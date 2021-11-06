@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import './index.scss'
-import hoverVideo from '../../functions/hoverVideo'
 import { NextSeo } from 'next-seo'
+import YTVideo from '../../components/YTVideo'
 
 export default () => (
   <div className="vision-intro">
@@ -22,10 +22,8 @@ export default () => (
     </ol>
     <h2 id="lesson">#1.0 Planning it out 🗺️</h2>
     <span className="intro-card">
-      <video autoPlay muted {...hoverVideo()}>
-        <source src="/video/punchingMonitor.mp4" type="video/mp4" />
-      </video>
-      Don't let this be you
+      <YTVideo url="wiaamJZ-hHI" />
+      Take coding at your own pace and take time for yourself
     </span>
     <p>
       If you believe what you hear on the internet, you might be inclined to believe the modern
