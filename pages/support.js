@@ -13,7 +13,7 @@ export default () => {
       </a>
       <br />
       <br />
-      Once this project gets a significant number of stars I'll consider creating a follow-up course
+      Once this project gets attention from the community I'll consider creating a follow-up course
       :)
     </div>
   )
