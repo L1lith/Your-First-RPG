@@ -14,17 +14,17 @@ export default () => (
       </li>
       <li>
         <Link href="/rpg/communication">
-          <a>#4.1 Communicating with the Player 🗣️</a>
+          <a>#4.1 🗣️ Communicating with the Player</a>
         </Link>
       </li>
       <li>
         <Link href="/rpg/publishing">
-          <a>#4.2 Sharing your RPG 🏆</a>
+          <a>#4.2 🏆 Sharing your RPG</a>
         </Link>
       </li>
       <li>
         <Link href="/rpg/summary">
-          <a>#4.3 Summary & Further Reading 🔭</a>
+          <a>#4.3 🔭 Summary & Further Reading</a>
         </Link>
       </li>
     </ol>
