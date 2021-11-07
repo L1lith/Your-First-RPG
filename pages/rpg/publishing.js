@@ -24,7 +24,7 @@ export default () => (
       Made a cool RPG? Submit a request to have your game featured on this website{' '}
       <a
         className="bold"
-        href="https://github.com/L1lith/Intro-Coding-Concepts/issues/new?assignees=&labels=rpg+display&template=display-your-project-on-the-site.md">
+        href="https://github.com/L1lith/Your-First-RPG/issues/new?assignees=&labels=rpg+display&template=display-your-project-on-the-site.md">
         here
       </a>{' '}
       😊

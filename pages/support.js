@@ -8,8 +8,8 @@ export default () => {
       course with your friends if you enjoyed it, knowledge is power :)
       <br />
       <br />
-      <a href="https://github.com/L1lith/Intro-Coding-Concepts/">
-        https://github.com/L1lith/Intro-Coding-Concepts/
+      <a href="https://github.com/L1lith/Your-First-RPG/">
+        https://github.com/L1lith/Your-First-RPG/
       </a>
       <br />
       <br />

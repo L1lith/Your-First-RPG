@@ -61,7 +61,7 @@ export default () => (
         </tr>
         <tr>
           <td>
-            <a href="https://github.com/L1lith/Intro-Coding-Concepts/issues/new?assignees=&labels=help+request&template=help-request.md">
+            <a href="https://github.com/L1lith/Your-First-RPG/issues/new?assignees=&labels=help+request&template=help-request.md">
               YourFirstRPG Support (GitHub Issue Tracker)
             </a>
           </td>
