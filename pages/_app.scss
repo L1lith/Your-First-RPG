@@ -51,6 +51,7 @@ body {
   position: relative;
   @media screen and (max-width: $mini-width) {
     margin: 0;
+    padding: 2vh 5vw;
   }
   text-align: center;
   //background-color: $background;
