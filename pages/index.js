@@ -4,6 +4,7 @@ import './index.scss'
 
 export default () => (
   <div className="home">
+    <NextSeo description="Learn to make games in JavaScript for beginners" />
     <h1 className="title">
       <span className="smaller-text">Coding Intro:</span>
       <br />
