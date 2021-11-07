@@ -8,4 +8,4 @@ assignees: ''
 ---
 
 ## Improvement Idea:
-<!--What do you think YourFirstRPG could do better?-->
+<!-- How could YourFirstRPG be improved? -->
