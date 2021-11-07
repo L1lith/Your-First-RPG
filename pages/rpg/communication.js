@@ -5,7 +5,7 @@ import YTVideo from '../../components/YTVideo'
 
 export default () => (
   <div className="communication">
-    <NextSeo title="#4.1 🗣️ Talking to the Player" />
+    <NextSeo title="🗣️ Talking to the Player" />
     <h2>#4.1 🗣️ Talking to the Player</h2>
     <span className="intro-card">
       <YTVideo url="7yeA7a0uS3A?start=29" />
