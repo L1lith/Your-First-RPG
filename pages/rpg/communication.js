@@ -5,8 +5,8 @@ import YTVideo from '../../components/YTVideo'
 
 export default () => (
   <div className="communication">
-    <NextSeo title="#4.1 Talking to the Player 🗣️" />
-    <h2>#4.1 Talking to the Player 🗣️</h2>
+    <NextSeo title="#4.1 🗣️ Talking to the Player" />
+    <h2>#4.1 🗣️ Talking to the Player</h2>
     <span className="intro-card">
       <YTVideo url="7yeA7a0uS3A?start=29" />
       Half-dragon half-tiger sold separately
@@ -160,7 +160,7 @@ if(smartPrompt("Do you like oatmeal raisin cookies?").toLowerCase() === "yes") {
       />
     </div>
     <Link href="/rpg/publishing">
-      <a className="next">Next: #4.2 Publishing your RPG</a>
+      <a className="next">Next: #4.2 🏆 Sharing your RPG</a>
     </Link>
   </div>
 )

@@ -4,7 +4,7 @@ import { NextSeo } from 'next-seo'
 
 export default () => (
   <div className="toying-intro">
-    <NextSeo title="#2.0 Logic Puzzles" />
+    <NextSeo title="🧩 Logic Puzzles" />
     <h1 className="title">Chapter 2</h1>
     <ol className="toc pages">
       <li>
@@ -24,7 +24,7 @@ export default () => (
       </li>
       <li>
         <Link href="/toying/level-three">
-          <a>#2.3 Level 3: 💻 Booleans for Coding Apps</a>
+          <a>#2.3 💻 Booleans for Coding Apps</a>
         </Link>
       </li>
     </ol>
@@ -46,7 +46,7 @@ export default () => (
       code.
     </p>
     <Link href="/toying/level-one">
-      <a className="next">Next: #2.1 Basic "Or" Boolean Logic</a>
+      <a className="next">Next: #2.1 💬 Basic "Or" Boolean Logic</a>
     </Link>
   </div>
 )

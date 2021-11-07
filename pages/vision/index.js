@@ -5,21 +5,21 @@ import YTVideo from '../../components/YTVideo'
 
 export default () => (
   <div className="vision-intro">
-    <NextSeo title="#1.0 Planning it out" />
+    <NextSeo title="🗺️ Planning it out" />
     <h1 className="title">Chapter 1</h1>
     <ol className="toc pages">
       <li>
         <Link href="/vision#lesson">
-          <a>#1.0 Planning it out 🗺️</a>
+          <a>#1.0 🗺️ Planning it out</a>
         </Link>
       </li>
       <li>
         <Link href="/vision/logic-models-explained">
-          <a>#1.1 Logic Models Explained 🧠</a>
+          <a>#1.1 🧠 Logic Models Explained</a>
         </Link>
       </li>
     </ol>
-    <h2 id="lesson">#1.0 Planning it out 🗺️</h2>
+    <h2 id="lesson">#1.0 🗺️ Planning it out</h2>
     <span className="intro-card">
       <YTVideo url="wiaamJZ-hHI" />
       Take coding at your own pace and take time for yourself

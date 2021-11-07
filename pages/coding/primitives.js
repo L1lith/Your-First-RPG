@@ -6,8 +6,8 @@ import YTVideo from '../../components/YTVideo'
 
 export default () => (
   <div className="primitives">
-    <NextSeo title="#3.1 Basic Data Types 📊" />
-    <h2>#3.1 Basic Data Types 📊</h2>
+    <NextSeo title="📊 Data Types" />
+    <h2>#3.1 📊 Basic Data Types</h2>
     <br />
     <span className="intro-card">
       <YTVideo url="_4TPlwwHM8Q" />

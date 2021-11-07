@@ -5,8 +5,8 @@ import YTVideo from '../../components/YTVideo'
 
 export default () => (
   <div className="logic-models">
-    <NextSeo title="#1.1 Logic Models Explained" />
-    <h2>#1.1 Logic Models Explained 🧠</h2>
+    <NextSeo title="🧠 Logic Models Explained" />
+    <h2>#1.1 🧠 Logic Models Explained</h2>
     <br />
     <span className="intro-card">
       <video autoPlay {...hoverVideo()} muted>

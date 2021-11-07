@@ -39,8 +39,8 @@ class ShittyChecking extends Component {
 
 export default () => (
   <div className="essential-tools">
-    <NextSeo title="#3.2 Essential Tools" />
-    <h1 className="title">#3.2 Essential Tools 🔨</h1>
+    <NextSeo title="🔨 Essential Tools" />
+    <h1 className="title">#3.2 🔨 Essential Tools</h1>
     <span className="intro-card">
       <YTVideo url="himmatLe7aQ?start=32" />
       How do you swallow a coding lesson? One byte at a time

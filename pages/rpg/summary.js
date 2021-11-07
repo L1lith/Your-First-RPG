@@ -5,8 +5,8 @@ import YTVideo from '../../components/YTVideo'
 
 export default () => (
   <div className="summary">
-    <NextSeo title={'#4.3 Summary & Further Reading 🔭'} />
-    <h2>#4.3 Summary & Further Reading 🔭</h2>
+    <NextSeo title={'🔭 Further Reading'} />
+    <h2>#4.3 🔭 Summary & Further Reading</h2>
     <br />
     <div className="intro-card">
       <YTVideo url="videoseries?list=PLRqwX-V7Uu6ZYJC7L-r6rX6utt6wwJCyi" />

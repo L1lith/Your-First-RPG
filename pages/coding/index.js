@@ -5,25 +5,25 @@ import YTVideo from '../../components/YTVideo'
 export default () => (
   <div className="coding-intro">
     <h1 className="title">Chapter 3</h1>
-    <NextSeo title="#3.0 Stepping into Coding" />
+    <NextSeo title="🛣️ Stepping into Coding" />
     <ol className="toc pages">
       <li>
         <Link href="/coding#lesson">
-          <a>#3.0 Stepping into Coding 🛣️</a>
+          <a>#3.0 🛣️ Stepping into Coding</a>
         </Link>
       </li>
       <li>
         <Link href="/coding/primitives">
-          <a>#3.1 Primitives: Basic Data Types 📊</a>
+          <a>#3.1 📊 Basic Data Types</a>
         </Link>
       </li>
       <li>
         <Link href="/coding/essential-tools">
-          <a>#3.2 Essential Tools 🔨</a>
+          <a>#3.2 🔨 Essential Tools</a>
         </Link>
       </li>
     </ol>
-    <h2 id="lesson">#3.0 Stepping into Coding 🛣️</h2>
+    <h2 id="lesson">#3.0 🛣️ Stepping into Coding</h2>
     <br />
     <span className="intro-card">
       <YTVideo url="MAlSjtxy5ak" />
@@ -46,7 +46,7 @@ export default () => (
       and come back later. Try to get a feel for what is going on overall by toying with the code.
     </p>
     <Link href="/coding/primitives">
-      <a className="next">Next: #3.1 Basic Data Types 📊</a>
+      <a className="next">Next: #3.1 📊 Basic Data Types</a>
     </Link>
   </div>
 )

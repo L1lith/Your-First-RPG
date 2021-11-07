@@ -5,7 +5,7 @@ import YTVideo from '../../components/YTVideo'
 
 export default () => (
   <div className="level-3">
-    <NextSeo title="#2.3 💻 Booleans for coding Apps" />
+    <NextSeo title="💻 Booleans for Apps" />
     <h2>#2.3 💻 Booleans for coding Apps</h2>
     <br />
     <p>

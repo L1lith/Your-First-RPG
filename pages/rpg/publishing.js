@@ -5,8 +5,8 @@ import YTVideo from '../../components/YTVideo'
 
 export default () => (
   <div className="publishing">
-    <NextSeo title={'#4.2 Publishing your RPG'} />
-    <h2>#4.2 Publishing your RPG 🏆</h2>
+    <NextSeo title={'🏆 Sharing your RPG'} />
+    <h2>#4.2 🏆 Sharing your RPG</h2>
     <br />
     <div className="intro-card">
       <YTVideo url="_nuS86ITjIM" />
@@ -34,7 +34,7 @@ export default () => (
       next page.
     </p>
     <Link href="/rpg/summary">
-      <a className="next">Next: #4.3 Summary & Further Reading</a>
+      <a className="next">Next: #4.3 🔭 Summary & Further Reading</a>
     </Link>
   </div>
 )

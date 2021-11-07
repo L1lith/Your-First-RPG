@@ -5,7 +5,7 @@ import YTVideo from '../../components/YTVideo'
 
 export default () => (
   <div className="level-2">
-    <NextSeo title={'#2.2 🚫 Whats "Not" Allowed'} />
+    <NextSeo title={'🚫 Whats "Not" Allowed'} />
     <h2>#2.2 🚫 Whats "Not" Allowed</h2>
     <br />
     <YTVideo url="fhIdbRp6xeg" />

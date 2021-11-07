@@ -5,7 +5,7 @@ import BooleanOps from '../../components/booleanOps'
 
 export default () => (
   <div className="level-1">
-    <NextSeo title={'#2.1 💬 Basic "Or" Expressions'} />
+    <NextSeo title={'💬 "Or" Expressions'} />
     <h2>#2.1 💬 Basic "Or" Expressions</h2>
     <br />
     <span className="intro-card">

@@ -5,11 +5,11 @@ import YTVideo from '../../components/YTVideo'
 export default () => (
   <div className="coding-intro">
     <h1 className="title">Chapter 4</h1>
-    <NextSeo title="#4.0 Let's make a Game! 🎮" />
+    <NextSeo title="#4.0 🎮 Let's make a Game! " />
     <ol className="toc pages">
       <li>
         <Link href="#lesson">
-          <a>#4.0 Let's make a Game! 🎮</a>
+          <a>#4.0 🎮 Let's make a Game!</a>
         </Link>
       </li>
       <li>
@@ -19,7 +19,7 @@ export default () => (
       </li>
       <li>
         <Link href="/rpg/publishing">
-          <a>#4.2 Publishing your RPG 🏆</a>
+          <a>#4.2 Sharing your RPG 🏆</a>
         </Link>
       </li>
       <li>
