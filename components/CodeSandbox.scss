@@ -16,32 +16,6 @@
     height: 50vh;
     min-height: 400px;
     transform: none;
-    .icon {
-        &.play {
-            margin-right: auto;
-        }
-        &.reset {
-            margin-left: auto;
-        }
-        font-size: 40px;
-        //position: absolute;
-        top: 0%;
-        user-select: none;
-        //transform: translateY(-50%);
-        display: inline-block;
-        //width: fit-content !important;
-        // width: 50px;
-        // height: 50px;
-        width: auto;
-        height: auto;
-        line-height: 50px;
-        cursor: pointer;
-        transition: color 0.5s ease;
-        &:active {
-            color: white;
-            transition: none;
-        }
-    }
     @media screen and (max-width: $mini-width) {
         width: 90vw;
         font-size: 0.7em;
@@ -63,6 +37,30 @@
         height: 100%;
     }
     .main-title {
+        & > h2 {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        & > .icon {
+            font-size: 40px;
+            //position: absolute;
+            top: 0%;
+            user-select: none;
+            //transform: translateY(-50%);
+            display: inline-block;
+            //width: fit-content !important;
+            // width: 50px;
+            // height: 50px;
+            width: auto;
+            height: auto;
+            line-height: 50px;
+            cursor: pointer;
+            transition: color 0.5s ease;
+            &:active {
+                color: white;
+                transition: none;
+            }
+        }
         padding: 0 20px;
         align-items: center;
         display: flex;
