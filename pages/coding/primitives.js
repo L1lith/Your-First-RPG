@@ -119,7 +119,7 @@ export default () => (
       <a href="https://javascript.info/types">here</a>
     </p>
     <Link href="/coding/essential-tools">
-      <a className="next">Up next: Essential Tools</a>
+      <a className="next">Next: Essential Tools</a>
     </Link>
   </div>
 )

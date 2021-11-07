@@ -46,7 +46,7 @@ export default () => (
     </p>
     <YTVideo url="_j9nvYKaOVE" />
     <Link href="/coding">
-      <a className="next">Up next: Section 3: 🏆 Coding with Mental Models</a>
+      <a className="next">Next: Section 3: 🏆 Coding with Mental Models</a>
     </Link>
   </div>
 )

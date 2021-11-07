@@ -39,7 +39,7 @@ export default () => (
       understand OR continue on to the next section to learn about NOT expressions 😊
     </p>
     <Link href="/toying/level-two">
-      <a className="next">Up next: Level 2: "Not" Expressions</a>
+      <a className="next">Next: #2.1 🚫 Whats "Not" Allowed</a>
     </Link>
   </div>
 )

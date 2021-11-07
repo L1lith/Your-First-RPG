@@ -8,9 +8,19 @@
         margin-bottom: 30px;
     }
     padding: 20px;
-    .resource-list {
-        li {
-            margin: 40px 0;
+    .resources {
+        border: 10px solid #5a467b;
+        margin: 20px 0;
+        padding: 10px;
+        tr {
+            &:not(:last-child) {
+                td {
+                    border-bottom: 2px solid #5a467b;
+                }
+            }
+        }
+        td {
+            padding: 20px 0;
         }
     }
 }

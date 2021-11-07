@@ -22,7 +22,7 @@ export default () => (
     </p>
     <LevelTwo />
     <Link href="/toying/level-three">
-      <a className="next">Up next: Level 3: Boolean Logic & the Coding Mindset</a>
+      <a className="next">Next: #2.3 Level 3: 💻 Booleans for Coding Apps</a>
     </Link>
   </div>
 )

@@ -160,7 +160,7 @@ if(smartPrompt("Do you like oatmeal raisin cookies?").toLowerCase() === "yes") {
       />
     </div>
     <Link href="/rpg/publishing">
-      <a className="next">Up next: #4.2 Publishing your RPG</a>
+      <a className="next">Next: #4.2 Publishing your RPG</a>
     </Link>
   </div>
 )

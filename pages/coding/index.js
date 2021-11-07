@@ -47,7 +47,7 @@ export default () => (
       and come back later. Try to get a feel for what is going on overall by toying with the code.
     </p>
     <Link href="/coding/primitives">
-      <a className="next">Up next: Coding with Primitives</a>
+      <a className="next">Next: Basic Data Types 📊</a>
     </Link>
   </div>
 )

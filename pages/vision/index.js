@@ -48,7 +48,7 @@ export default () => (
       with data).
     </p>
     <Link href="/vision/logic-models-explained">
-      <a className="next">Up next: Logic Models Explained</a>
+      <a className="next">Next: #1.1 Logic Models Explained</a>
     </Link>
   </div>
 )

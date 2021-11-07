@@ -43,7 +43,7 @@ export default () => (
       anything you can think of!
     </p>
     <Link href="/rpg/communication">
-      <a className="next">Up next: #4.1 Talking to the Player 🗣️</a>
+      <a className="next">Next: #4.1 Talking to the Player 🗣️</a>
     </Link>
   </div>
 )

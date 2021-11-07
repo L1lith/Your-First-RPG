@@ -47,7 +47,7 @@ export default () => (
       code.
     </p>
     <Link href="/toying/level-one">
-      <a className="next">Up next: Level 1: Basic "Or" Boolean Logic</a>
+      <a className="next">Next: Level 1: Basic "Or" Boolean Logic</a>
     </Link>
   </div>
 )

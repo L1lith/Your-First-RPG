@@ -34,7 +34,7 @@ export default () => (
       next page.
     </p>
     <Link href="/rpg/summary">
-      <a className="next">Up next: #4.3 Summary & Further Reading</a>
+      <a className="next">Next: #4.3 Summary & Further Reading</a>
     </Link>
   </div>
 )
