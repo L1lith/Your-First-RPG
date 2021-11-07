@@ -5,7 +5,7 @@ import YTVideo from '../../components/YTVideo'
 
 export default () => (
   <div className="logic-models">
-    <NextSeo title="🧠 Logic Models Explained" />
+    <NextSeo description="Arranging Logic Models" title="🧠 Logic Models Explained" />
     <h2>#1.1 🧠 Logic Models Explained</h2>
     <br />
     <span className="intro-card">

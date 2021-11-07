@@ -22,7 +22,7 @@ class MyApp extends App {
 
     return (
       <Container>
-        <DefaultSeo titleTemplate="%s - Your First RPG" defaultTitle="Your First RPG"></DefaultSeo>
+        <DefaultSeo titleTemplate="%s - YFRPG" defaultTitle="Your First RPG"></DefaultSeo>
         <Header />
         <main id="page">
           <Component {...pageProps} />
