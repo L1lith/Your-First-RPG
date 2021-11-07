@@ -4,11 +4,9 @@ import YTVideo from '../../components/YTVideo'
 
 export default () => (
   <div className="coding-intro">
-    <h1 className="title">Section 4: 🎮 Building an RPG</h1>
+    <h1 className="title">Chapter 4</h1>
     <NextSeo title="#4.0 Let's make a Game! 🎮" />
     <ol className="toc pages">
-      <h2>Pages</h2>
-
       <li>
         <Link href="#lesson">
           <a>#4.0 Let's make a Game! 🎮</a>

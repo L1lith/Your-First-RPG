@@ -6,9 +6,8 @@ import YTVideo from '../../components/YTVideo'
 export default () => (
   <div className="vision-intro">
     <NextSeo title="#1.0 Planning it out" />
-    <h1 className="title">Section 1: 👀 Visualizing Mental Models</h1>
+    <h1 className="title">Chapter 1</h1>
     <ol className="toc pages">
-      <h2>Pages</h2>
       <li>
         <Link href="/vision#lesson">
           <a>#1.0 Planning it out 🗺️</a>

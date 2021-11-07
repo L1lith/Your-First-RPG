@@ -4,10 +4,9 @@ import YTVideo from '../../components/YTVideo'
 
 export default () => (
   <div className="coding-intro">
-    <h1 className="title">Section 3: 💻 Learning to Code</h1>
+    <h1 className="title">Chapter 3</h1>
     <NextSeo title="#3.0 Stepping into Coding" />
     <ol className="toc pages">
-      <h2>Pages</h2>
       <li>
         <Link href="/coding#lesson">
           <a>#3.0 Stepping into Coding 🛣️</a>
@@ -47,7 +46,7 @@ export default () => (
       and come back later. Try to get a feel for what is going on overall by toying with the code.
     </p>
     <Link href="/coding/primitives">
-      <a className="next">Next: Basic Data Types 📊</a>
+      <a className="next">Next: #3.1 Basic Data Types 📊</a>
     </Link>
   </div>
 )

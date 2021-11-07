@@ -5,8 +5,8 @@ import YTVideo from '../../components/YTVideo'
 
 export default () => (
   <div className="level-3">
-    <NextSeo title="#2.3 the Coding Mindset" />
-    <h2>#2.3 Level 3: 💻 Booleans for Coding Apps</h2>
+    <NextSeo title="#2.3 💻 Booleans for coding Apps" />
+    <h2>#2.3 💻 Booleans for coding Apps</h2>
     <br />
     <p>
       How does boolean logic tie into coding? When a programmer is writing code they write in coding
@@ -46,7 +46,7 @@ export default () => (
     </p>
     <YTVideo url="_j9nvYKaOVE" />
     <Link href="/coding">
-      <a className="next">Next: Section 3: 🏆 Coding with Mental Models</a>
+      <a className="next">Next: #3.0 🏆 Coding with Mental Models</a>
     </Link>
   </div>
 )

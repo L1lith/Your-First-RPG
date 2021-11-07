@@ -5,8 +5,8 @@ import YTVideo from '../../components/YTVideo'
 
 export default () => (
   <div className="level-2">
-    <NextSeo title={'#2.2 "Not" Expressions'} />
-    <h2>#2.2 Level 2: 🚫 Whats "Not" Allowed</h2>
+    <NextSeo title={'#2.2 🚫 Whats "Not" Allowed'} />
+    <h2>#2.2 🚫 Whats "Not" Allowed</h2>
     <br />
     <YTVideo url="fhIdbRp6xeg" />
     <br />
@@ -22,7 +22,7 @@ export default () => (
     </p>
     <LevelTwo />
     <Link href="/toying/level-three">
-      <a className="next">Next: #2.3 Level 3: 💻 Booleans for Coding Apps</a>
+      <a className="next">Next: #2.3 💻 Booleans for coding Apps</a>
     </Link>
   </div>
 )

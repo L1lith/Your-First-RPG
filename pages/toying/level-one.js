@@ -5,8 +5,8 @@ import BooleanOps from '../../components/booleanOps'
 
 export default () => (
   <div className="level-1">
-    <NextSeo title={'#2.1 "Or" Boolean Logic'} />
-    <h2>#2.1 Level 1: 💬 Basic "Or" Expressions</h2>
+    <NextSeo title={'#2.1 💬 Basic "Or" Expressions'} />
+    <h2>#2.1 💬 Basic "Or" Expressions</h2>
     <br />
     <span className="intro-card">
       <BooleanOps />
@@ -39,7 +39,7 @@ export default () => (
       understand OR continue on to the next section to learn about NOT expressions 😊
     </p>
     <Link href="/toying/level-two">
-      <a className="next">Next: #2.1 🚫 Whats "Not" Allowed</a>
+      <a className="next">Next: #2.2 🚫 Whats "Not" Allowed</a>
     </Link>
   </div>
 )

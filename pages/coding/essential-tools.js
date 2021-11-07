@@ -154,7 +154,7 @@ export default () => (
 </div>*/
     }
     <Link href="/rpg">
-      <a className="next">Next: Building your Text RPG</a>
+      <a className="next">Next: #4.0 Building your Text RPG</a>
     </Link>
   </div>
 )

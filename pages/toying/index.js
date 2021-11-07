@@ -5,9 +5,8 @@ import { NextSeo } from 'next-seo'
 export default () => (
   <div className="toying-intro">
     <NextSeo title="#2.0 Logic Puzzles" />
-    <h1 className="title">Section 2: 👐 Toying with Logic Models</h1>
+    <h1 className="title">Chapter 2</h1>
     <ol className="toc pages">
-      <h2>Pages</h2>
       <li>
         <Link href="/toying#lesson">
           <a>#2.0 🧩 Playing around with Logic Puzzles</a>
@@ -15,12 +14,12 @@ export default () => (
       </li>
       <li>
         <Link href="/toying/level-one">
-          <a>#2.1 Level 1: 💬 Basic "Or" Expressions</a>
+          <a>#2.1 💬 Basic "Or" Expressions</a>
         </Link>
       </li>
       <li>
         <Link href="/toying/level-two">
-          <a>#2.2 Level 2: 🚫 Whats "Not" Allowed</a>
+          <a>#2.2 🚫 Whats "Not" Allowed</a>
         </Link>
       </li>
       <li>
@@ -47,7 +46,7 @@ export default () => (
       code.
     </p>
     <Link href="/toying/level-one">
-      <a className="next">Next: Level 1: Basic "Or" Boolean Logic</a>
+      <a className="next">Next: #2.1 Basic "Or" Boolean Logic</a>
     </Link>
   </div>
 )

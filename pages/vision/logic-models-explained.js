@@ -121,7 +121,7 @@ export default () => (
       your software.
     </p>
     <Link href="/toying">
-      <a className="next">Next: Section 2: 👐 Toying with Mental Models</a>
+      <a className="next">Next: #2.0 🧩 Playing around with Logic Puzzles</a>
     </Link>
     <br />
     <br />
