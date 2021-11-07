@@ -1,4 +1,4 @@
-import { Component } from 'react'
+import { Component, Fragment } from 'react'
 import AceEditor from './AceEditor'
 import './CodeSandbox.scss'
 import { inspect } from 'util'
@@ -18,16 +18,23 @@ class CodeSandbox extends Component {
         }>
         <h2 className="main-title">
           {this.props.disableAutoRun === true ? (
-            <span className="icon play" onClick={this.run}>
+            <span title="Run" className="icon play" onClick={this.run}>
               ▶
             </span>
           ) : null}
-          JavaScript {this.props.consoleMode === true ? 'Terminal' : 'Expression Evaluator'}
-          {this.props.readOnly === true ? ' (Read Only)' : ''}
+          <h2>JavaScript {this.props.consoleMode === true ? 'Terminal' : 'Evaluator'}</h2>
+          {this.props.readOnly === true ? ' (Read Only)' : null}
           {this.props.noRefresh !== true ? (
-            <span className="icon reset" onClick={this.reset}>
-              ⟳
+            <span title="Reset" className="icon reset" onClick={this.reset}>
+              ❌
             </span>
+          ) : null}
+          {this.props.sharing == true ? (
+            <Fragment>
+              <span title="Share" className="icon share" onClick={this.reset}>
+                ☁️
+              </span>
+            </Fragment>
           ) : null}
         </h2>
 

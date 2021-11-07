@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import YTVideo from '../components/YTVideo'
 import './index.scss'
+import { NextSeo } from 'next-seo'
 
 export default () => (
   <div className="home">

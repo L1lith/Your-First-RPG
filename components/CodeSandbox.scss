@@ -16,18 +16,15 @@
     height: 50vh;
     min-height: 400px;
     transform: none;
-    @media screen and (max-width: $mini-width) {
-        margin-left: -5vw;
-      }
     .icon {
         &.play {
-            left: 4%;
+            margin-right: auto;
         }
         &.reset {
-            right: 4%;
+            margin-left: auto;
         }
         font-size: 40px;
-        position: absolute;
+        //position: absolute;
         top: 0%;
         user-select: none;
         //transform: translateY(-50%);
@@ -66,10 +63,12 @@
         height: 100%;
     }
     .main-title {
+        padding: 0 20px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
         position: relative;
         font-size: 1.5em !important;
-        height: 50px;
-        line-height: 50px;
         background-color: #202020;
         color: #39ff14;
     }
