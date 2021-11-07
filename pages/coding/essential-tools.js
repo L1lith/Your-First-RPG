@@ -61,8 +61,8 @@ export default () => (
       <p>
         We can create variables in order to store (save) data values for later use. In a basic logic
         model where we only have inputs and outputs it becomes incredibly difficult to deal with
-        data that persists (needs to be stored). Let's say you're writing a checking account app,
-        but you're not allowed to save any data. The user might see a notification saying "You just
+        data that persists (needs to be saved). Let's say you're writing a checking account app, but
+        you're not allowed to save any data. The user might see a notification saying "You just
         spent $10.52", and yet every time they open the app they're greeted with this (try using the
         app)
       </p>
@@ -70,8 +70,8 @@ export default () => (
       <ShittyChecking />
 
       <p>
-        Sounds... wonderful. Instead of doing this we store variables in our memory (or in this case
-        the computer's memory) by names, and then retrieve or modify them later.
+        This would be so annoying! Instead of doing this we store variables in our memory (or in
+        this case the computer's memory) by names, and then retrieve or modify them later.
         <br />
         <br />
         Here we name a variable called balance (note we do not give it any value yet so it defaults
