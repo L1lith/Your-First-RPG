@@ -24,7 +24,7 @@ class CodeSandbox extends Component {
           ) : null}
           <h2>JavaScript {this.props.consoleMode === true ? 'Terminal' : 'Evaluator'}</h2>
           {this.props.readOnly === true ? ' (Read Only)' : null}
-          {this.props.noRefresh !== true ? (
+          {this.props.noReset !== true ? (
             <span title="Reset" className="icon reset" onClick={this.reset}>
               ❌
             </span>

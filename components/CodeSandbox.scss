@@ -47,11 +47,13 @@
                 transition: text-shadow 0.15s linear;
                 filter: none;
             }
+            // @media (hover: hover) {
+            //     filter: grayscale(100%);
+            // }
             &:active {
                 text-shadow: 1px 2px 5px #39ff14;
                 transition: none;
             }
-            filter: grayscale(100%);
             transition: none;
             font-size: 40px;
             //position: absolute;
