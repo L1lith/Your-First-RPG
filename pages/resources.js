@@ -68,7 +68,7 @@ export default () => (
           <td>
             If you get stuck and you've exhausted your other options, you can ask for help here.
             Please be considerate and don't spam the issue section, and check first if someone's
-            asked that question before or if it's already covered in the docs.
+            asked that question before.
           </td>
         </tr>
       </tbody>
