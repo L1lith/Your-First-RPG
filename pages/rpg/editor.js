@@ -1,5 +1,7 @@
 import CodeSandbox from '../../components/CodeSandbox'
 import { NextSeo } from 'next-seo'
+import { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
 
 const defaultGame = `function smartPrompt(question) {
   var output = null
@@ -47,6 +49,13 @@ const direction = getAction("As you leave the beach you reach the edge of a divi
 // TODO: Continue the adventure :)`
 
 function Editor() {
+  const router = useRouter()
+  console.log(router.query)
+  // useEffect(() => {
+  //   const params = new URLSearchParams(window.location.search)
+  //   const gameCode = params.get('code')
+  //   if (typeof gameCode == 'string' && gameCode.length > 1) setCode(gameCode)
+  // })
   return (
     <div className="game-editor">
       <NextSeo title="Game Editor" description="Build a game of your own" />
@@ -55,7 +64,7 @@ function Editor() {
         Build your own game! Be sure to press the ☁️ button and share your url.
         <br /> Warning: You must save your URL or your game data could be lost.
       </p>
-      <CodeSandbox value={defaultGame} consoleMode sharing disableAutoRun />
+      <CodeSandbox value={router.query.code || ourCode} consoleMode sharing disableAutoRun />
     </div>
   )
 }

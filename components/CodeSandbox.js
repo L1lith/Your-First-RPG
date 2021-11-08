@@ -19,7 +19,12 @@ class CodeSandbox extends Component {
         {typeof this.state.shareURL == 'string' ? (
           <span className="share-popup">
             Your Sharing URL:
-            <a href={this.state.shareURL}>{this.state.shareURL}</a>
+            <a className="url" href={this.state.shareURL}>
+              Right Click and Copy This Link
+            </a>
+            <span className="icon close" onClick={this.closeSharing}>
+              ❌
+            </span>
           </span>
         ) : null}
         <h2 className="main-title">
@@ -149,10 +154,12 @@ class CodeSandbox extends Component {
     this.setState({ output: this.getOutput(true) })
   }
   share() {
-    this.setState({ shareURL: 'google.com' })
+    this.setState({
+      shareURL: 'https://yourfirstrpg.com/rpg/editor?code=' + encodeURIComponent(this.state.value)
+    })
   }
-  getShareURL() {
-    return 'google.com'
+  closeSharing() {
+    this.setState({ shareURL: null })
   }
 }
 
