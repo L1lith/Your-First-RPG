@@ -70,7 +70,7 @@ function CodeSandbox(props) {
               setCode(
                 router.query.hasOwnProperty(props.codeQueryParam)
                   ? router.query[props.codeQueryParam]
-                  : defaultCode
+                  : this.props.value || ''
               )
             }}>
             ❌
