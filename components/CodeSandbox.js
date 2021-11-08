@@ -16,8 +16,12 @@ function CodeSandbox(props) {
   const [output, setOutput] = useState(
     props.disableAutoRun === true ? null : getOutput(code, props.consoleMode)
   )
-  //console.log(router.query.hasOwnProperty(props.codeQueryParam), router.query, props.codeQueryParam)
   useEffect(() => {
+    console.log(
+      router.query.hasOwnProperty(props.codeQueryParam),
+      router.query,
+      props.codeQueryParam
+    )
     if (router.query.hasOwnProperty(props.codeQueryParam)) {
       const queryParam = router.query[props.codeQueryParam]
       if (code !== queryParam) {
