@@ -8,7 +8,6 @@ import { useRouter } from 'next/router'
 function CodeSandbox(props) {
   const [shareURL, setShareURL] = useState(null)
   const router = useRouter()
-  console.log('x', router)
   const [code, setCode] = useState(
     router.query.hasOwnProperty(props.codeQueryParam)
       ? router.query[props.codeQueryParam]
@@ -61,13 +60,15 @@ function CodeSandbox(props) {
             ❌
           </span>
         ) : null}
-        {props.sharing == true ? (
+        {props.hasOwnProperty('codeQueryParam') == true ? (
           <Fragment>
             <span
               title="Share"
               className="icon share"
               onClick={() => {
-                setShareURL(router.basePath + '/rpg/editor?code=' + encodeURIComponent(code))
+                setShareURL(
+                  `${router.basePath}/rpg/editor?${codeQueryParam}=${encodeURIComponent(code)}`
+                )
               }}>
               ☁️
             </span>
