@@ -3,7 +3,7 @@ import AceEditor from './AceEditor'
 import './CodeSandbox.scss'
 import { inspect } from 'util'
 import autoBind from 'auto-bind'
-import { useRouter } from 'next/router'
+import { useRouter, withRouter } from 'next/router'
 
 function CodeSandbox(props) {
   const [shareURL, setShareURL] = useState(null)
@@ -183,4 +183,4 @@ function getEvalOutput(code) {
   }
 }
 
-export default CodeSandbox
+export default withRouter(CodeSandbox)
