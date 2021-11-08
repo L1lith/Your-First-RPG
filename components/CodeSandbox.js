@@ -1,9 +1,9 @@
-import { Component, Fragment, useState } from 'react'
+import { Component, Fragment, useState, useEffect } from 'react'
 import AceEditor from './AceEditor'
 import './CodeSandbox.scss'
 import { inspect } from 'util'
 import autoBind from 'auto-bind'
-import { useRouter, useEffect } from 'next/router'
+import { useRouter } from 'next/router'
 
 function CodeSandbox(props) {
   const [shareURL, setShareURL] = useState(null)
@@ -16,6 +16,7 @@ function CodeSandbox(props) {
   const [output, setOutput] = useState(
     props.disableAutoRun === true ? null : getOutput(code, props.consoleMode)
   )
+  console.log(router.query.hasOwnProperty(props.codeQueryParam), router.query, props.codeQueryParam)
   useEffect(() => {
     if (router.query.hasOwnProperty(props.codeQueryParam)) {
       const queryParam = router.query[props.codeQueryParam]
