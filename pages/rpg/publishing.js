@@ -18,7 +18,7 @@ export default () => (
       <Link href="/rpg/editor">
         <a className="to-editor">Game Editor</a>
       </Link>
-      . Make sure to save your URL so you don't lose your game forever! You can share the URl with
+      . Make sure to save your URL so you don't lose your game forever! You can share the URL with
       your friends and they can play your game!
       <br />
       <br />
