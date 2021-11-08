@@ -14,9 +14,11 @@ export default () => (
     </div>
     <p>
       Congratulations, that you've learned basic JavaScript you're ready to make your own game! To
-      begin work open the
-      <a href="https://jseditor.io/?key=e7643a5fbde711eb877e00224d6bfcd5-ver-4">Game Editor</a>.
-      Make sure to save your URL so you don't lose your game forever! You can share the URl with
+      begin work open the{' '}
+      <Link href="/rpg/editor">
+        <a className="to-editor">Game Editor</a>
+      </Link>
+      . Make sure to save your URL so you don't lose your game forever! You can share the URl with
       your friends and they can play your game!
       <br />
       <br />

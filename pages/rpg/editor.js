@@ -64,7 +64,7 @@ function Editor() {
         Build your own game! Be sure to press the ☁️ button and share your url.
         <br /> Warning: You must save your URL or your game data could be lost.
       </p>
-      <CodeSandbox value={router.query.code || ourCode} consoleMode sharing disableAutoRun />
+      <CodeSandbox value={router.query.code || defaultGame} consoleMode sharing disableAutoRun />
     </div>
   )
 }
