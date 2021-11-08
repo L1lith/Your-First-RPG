@@ -16,6 +16,9 @@ class CodeSandbox extends Component {
         className={
           'sandbox' + (this.props.hasOwnProperty('className') ? ' ' + this.props.className : '')
         }>
+        {this.state.sharePopup === true ? (
+          <span className="share-popup">Your Sharing URL: {this.getShareURL()}</span>
+        ) : null}
         <h2 className="main-title">
           {this.props.disableAutoRun === true ? (
             <span title="Run" className="icon play" onClick={this.run}>
@@ -31,7 +34,7 @@ class CodeSandbox extends Component {
           ) : null}
           {this.props.sharing == true ? (
             <Fragment>
-              <span title="Share" className="icon share" onClick={this.reset}>
+              <span title="Share" className="icon share" onClick={this.share}>
                 ☁️
               </span>
             </Fragment>
@@ -141,6 +144,12 @@ class CodeSandbox extends Component {
   }
   run() {
     this.setState({ output: this.getOutput(true) })
+  }
+  share() {
+    this.setState({ sharePopup: true })
+  }
+  getShareURL() {
+    return 'google.com'
   }
 }
 

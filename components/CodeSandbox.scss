@@ -16,6 +16,15 @@
     height: 50vh;
     min-height: 400px;
     transform: none;
+    & > .share-popup {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.459);
+    }
     @media screen and (max-width: $mini-width) {
         width: 90vw;
         font-size: 0.7em;
@@ -31,7 +40,7 @@
     & > * {
         display: block;
     }
-    & > * > * {
+    & > .titles > * {
         display: inline-block;
         width: 50%;
         height: 100%;
