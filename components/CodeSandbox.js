@@ -13,6 +13,7 @@ function CodeSandbox(props) {
       ? router.query[props.codeQueryParam]
       : props.value || ''
   )
+  console.log('f', router, code, props)
   const [output, setOutput] = useState(
     props.disableAutoRun === true ? null : getOutput(code, props.consoleMode)
   )
