@@ -83,7 +83,9 @@ function CodeSandbox(props) {
               className="icon share"
               onClick={() => {
                 setShareURL(
-                  `${router.basePath}/rpg/editor?${codeQueryParam}=${encodeURIComponent(code)}`
+                  `${router.basePath}/rpg/editor?${props.codeQueryParam}=${encodeURIComponent(
+                    code
+                  )}`
                 )
               }}>
               ☁️

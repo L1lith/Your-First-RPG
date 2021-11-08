@@ -171,6 +171,10 @@ body {
   }
 }
 
+.icon {
+  user-select: none;
+}
+
 a {
   color: $highlight-dark;
 }

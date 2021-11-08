@@ -2,6 +2,9 @@
 
 
 .sandbox {
+    .icon {
+        cursor: pointer;
+    }
     margin: 2vw auto 4vw auto;
     padding: 1vw;
     display: block;
@@ -87,7 +90,6 @@
             font-size: 40px;
             //position: absolute;
             top: 0%;
-            user-select: none;
             //transform: translateY(-50%);
             display: inline-block;
             //width: fit-content !important;
