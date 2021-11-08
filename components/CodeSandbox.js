@@ -3,7 +3,7 @@ import AceEditor from './AceEditor'
 import './CodeSandbox.scss'
 import { inspect } from 'util'
 import autoBind from 'auto-bind'
-import { useRouter } from 'next/router'
+import { useRouter, useEffect } from 'next/router'
 
 function CodeSandbox(props) {
   const [shareURL, setShareURL] = useState(null)
@@ -13,10 +13,17 @@ function CodeSandbox(props) {
       ? router.query[props.codeQueryParam]
       : props.value || ''
   )
-  console.log('f', router, code, props)
   const [output, setOutput] = useState(
     props.disableAutoRun === true ? null : getOutput(code, props.consoleMode)
   )
+  useEffect(() => {
+    if (router.query.hasOwnProperty(props.codeQueryParam)) {
+      const queryParam = router.query[props.codeQueryParam]
+      if (code !== queryParam) {
+        setCode(queryParam)
+      }
+    }
+  })
   return (
     <div className={'sandbox' + (props.hasOwnProperty('className') ? ' ' + props.className : '')}>
       {typeof shareURL == 'string' ? (
