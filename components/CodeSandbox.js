@@ -16,7 +16,10 @@ function CodeSandbox(props) {
   const [output, setOutput] = useState(
     props.disableAutoRun === true ? null : getOutput(code, props.consoleMode)
   )
+  let hasCheckedQuery = false
   useEffect(() => {
+    if (!router.isReady || hasCheckedQuery) return
+    hasCheckedQuery = true
     console.log(
       router.query.hasOwnProperty(props.codeQueryParam),
       router.query,
@@ -28,7 +31,7 @@ function CodeSandbox(props) {
         setCode(queryParam)
       }
     }
-  }, [])
+  })
   return (
     <div className={'sandbox' + (props.hasOwnProperty('className') ? ' ' + props.className : '')}>
       {typeof shareURL == 'string' ? (
