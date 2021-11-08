@@ -1,6 +1,6 @@
 import { Component, Fragment, useState, useEffect } from 'react'
 import AceEditor from './AceEditor'
-import './CodeSandbox.scss'
+import styles from '../styles/CodeSandbox.module.scss'
 import { inspect } from 'util'
 import autoBind from 'auto-bind'
 import { useRouter, withRouter } from 'next/router'
@@ -29,7 +29,7 @@ function CodeSandbox(props) {
     }
   })
   return (
-    <div className={'sandbox' + (props.hasOwnProperty('className') ? ' ' + props.className : '')}>
+    <div className={styles.sandbox}>
       {typeof shareURL == 'string' ? (
         <span className="share-popup">
           Your Sharing URL:

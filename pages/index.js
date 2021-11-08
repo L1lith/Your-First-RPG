@@ -1,10 +1,10 @@
 import Link from 'next/link'
 import YTVideo from '../components/YTVideo'
-import './index.scss'
+import styles from '../styles/index.module.scss'
 import { NextSeo } from 'next-seo'
 
 export default () => (
-  <div className="home">
+  <div className={styles.home}>
     <NextSeo description="Learn to make games in JavaScript for beginners" />
     <h1 className="title">
       <span className="smaller-text">Coding Intro:</span>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './header.scss'
+import styles from '../styles/header.module.scss'
 import HomeLink from './homeLink'
 import Link from 'next/link'
 
@@ -7,7 +7,7 @@ class Header extends Component {
   render() {
     const { router } = this.props
     return (
-      <header id="main-header">
+      <header className={styles['main-header']}>
         <Link href="/resources">
           <a>Resources</a>
         </Link>

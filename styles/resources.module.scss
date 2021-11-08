@@ -1,6 +1,6 @@
-@import "./_variables.scss";
+@import "variables";
 
-#resources {
+.resources {
     // border: 2px solid $accent;
     // border-width: 2px 0;
     // border-radius: 4px;
@@ -8,7 +8,7 @@
         margin-bottom: 30px;
     }
     padding: 20px;
-    .resources {
+    .resource-list {
         border: 10px solid #5a467b;
         margin: 20px 0;
         padding: 10px;

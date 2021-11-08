@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import CodeSandbox from '../../components/CodeSandbox'
-import './essential-tools.scss'
+import styles from '../../styles/coding/essential-tools.module.scss'
 import { Component } from 'react'
 import { NextSeo } from 'next-seo'
 import YTVideo from '../../components/YTVideo'
@@ -12,7 +12,7 @@ class ShittyChecking extends Component {
   }
   render() {
     return (
-      <div className="checking-example">
+      <div className={styles['checking-example']}>
         <span className="app-title">🍎 Accounting</span>
         <span className="balance">
           {this.state.opened === true ? (
@@ -38,7 +38,7 @@ class ShittyChecking extends Component {
 }
 
 export default () => (
-  <div className="essential-tools">
+  <div>
     <NextSeo title="🔨 Essential Tools" />
     <h1 className="title">#3.2 🔨 Essential Tools</h1>
     <span className="intro-card">

@@ -1,6 +1,6 @@
-@import "../pages/_variables.scss";
+@import "variables.scss";
 
-#main-header {
+.main-header {
     @media screen and (max-width: $mini-width) {
         margin: 0;
         font-size: 1em;

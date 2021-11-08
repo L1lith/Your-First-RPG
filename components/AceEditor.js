@@ -1,3 +1,5 @@
+import { Component } from 'react'
+
 const Editor = props => {
   if (typeof window !== 'undefined') {
     const Ace = require('react-ace').default
@@ -10,7 +12,7 @@ const Editor = props => {
   return null
 }
 
-class IsomorphicEditor extends React.Component {
+class IsomorphicEditor extends Component {
   state = { mounted: false }
 
   componentDidMount() {

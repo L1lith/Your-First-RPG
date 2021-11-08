@@ -1,11 +1,11 @@
 import Link from 'next/link'
 import CodeSandbox from '../../components/CodeSandbox'
-import './primitives.scss'
+import styles from '../../styles/coding/primitives.module.scss'
 import { NextSeo } from 'next-seo'
 import YTVideo from '../../components/YTVideo'
 
 export default () => (
-  <div className="primitives">
+  <div className={styles.primitives}>
     <NextSeo title="📊 Data Types" />
     <h2>#3.1 📊 Basic Data Types</h2>
     <br />

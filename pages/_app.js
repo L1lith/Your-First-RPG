@@ -1,35 +1,20 @@
-import React from 'react'
-import App, { Container } from 'next/app'
 import Header from '../components/header'
-import './_app.scss'
-import Head from 'next/head'
-import { useRouter, withRouter } from 'next/router'
+import styles from '../styles/_app.module.scss'
+import '../styles/_normalize.scss'
+import '../styles/_global.scss'
 import { DefaultSeo } from 'next-seo'
+import { Fragment } from 'react'
 
-class MyApp extends App {
-  static async getInitialProps({ Component, ctx }) {
-    let pageProps = {}
-
-    if (Component.getInitialProps) {
-      pageProps = await Component.getInitialProps(ctx)
-    }
-
-    return { pageProps }
-  }
-
-  render() {
-    const { Component, pageProps, router } = this.props
-
-    return (
-      <Container>
-        <DefaultSeo titleTemplate="%s - YFRPG" defaultTitle="Your First RPG"></DefaultSeo>
-        <Header />
-        <main id="page">
-          <Component {...pageProps} />
-        </main>
-      </Container>
-    )
-  }
+function MyApp({ Component, pageProps }) {
+  return (
+    <Fragment>
+      <DefaultSeo titleTemplate="%s - YFRPG" defaultTitle="Your First RPG"></DefaultSeo>
+      <Header />
+      <main className={styles.page}>
+        <Component {...pageProps} />
+      </main>
+    </Fragment>
+  )
 }
 
-export default withRouter(MyApp)
+export default MyApp

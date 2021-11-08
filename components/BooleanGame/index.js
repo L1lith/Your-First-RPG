@@ -1,7 +1,7 @@
 import { Component } from 'react'
 import { sanitize } from 'sandhands'
 import randomBetween from '../../functions/randomBetween'
-import './index.scss'
+import styles from '../../styles/BooleanGame.module.scss'
 import autoBind from 'auto-bind'
 import generateRules from '../../functions/generateRules'
 
@@ -115,7 +115,7 @@ class BooleanGame extends Component {
     const notColors = this.state.rules.colorsDescription.startsWith('not')
     const notShapes = this.state.rules.shapesDescription.startsWith('not')
     return (
-      <div className="boolean-game">
+      <div className={styles['boolean-game']}>
         <h2 className="title">
           Matching Rules
           {this.props.hasOwnProperty('title') ? ' - ' + this.props.title.trim() : null}

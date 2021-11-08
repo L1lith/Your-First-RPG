@@ -1,7 +1,7 @@
-import './BooleanOps.scss'
+import styles from '../styles/BooleanOps.module.scss'
 
 export default () => (
-  <table className="boolean-ops">
+  <table className={styles['boolean-ops']}>
     <thead>
       <tr>
         <th className="table-member"></th>

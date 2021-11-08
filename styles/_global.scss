@@ -1,0 +1,112 @@
+@import "variables";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.icon {
+    user-select: none;
+}
+
+a {
+    color: $highlight-dark;
+}
+
+li a {
+    text-decoration: none;
+}
+.intro-card {
+    display: block;
+    text-align: center;
+    font-style: italic;
+    margin: 20px auto 35px auto;
+    border-bottom: 5px solid $accent;
+    border-radius: 10px;
+    & > *:not(.youtube-container) {
+        display: block;
+        width: 80%;
+        min-width: 300px;
+        border-radius: 10px;
+        margin: 20px auto;
+    }
+    a {
+        display: inline;
+    }
+}
+a:visited, a:link {
+    color: $accent-dark;
+}
+
+.smaller-text {
+    font-size: 0.75em;
+}
+p {
+    margin: 20px 0;
+}
+.bold {
+    font-weight: bold;
+}
+.underline {
+    text-decoration: underline;
+}
+.italic {
+    font-style: italic;
+}
+ol, ul {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+h3 {
+    font-size: 1.5em;
+}
+
+
+.toc {
+    border-bottom: 8px solid $accent;
+    border-radius: 10px;
+    margin: 50px auto;
+    font-size: 1.8em;
+    &.pages {
+        font-size: 1.2em;
+        list-style: disc;
+    }
+}
+.next {
+    display: inline-block;
+    border: 4px solid $accent;
+    border-width: 0 4px;
+    border-radius: 8px;
+    padding: 1vw 2vw;
+    font-size: 2em;
+    font-weight: bold;
+    //white-space: nowrap;
+    text-align: center;
+    width: auto;
+    margin: 40px 0 20px auto;
+  }
+#next {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+body {
+    @media screen and (max-width: $mini-width) {
+        font-size: 5vw;
+    }
+    @media screen and (min-width: $mega-width) {
+        font-size: 1.25vw;
+    }
+    font-size: 2vw;
+    position: relative;
+    font-family: 'Droid';
+    background-color: $background;
+    color: $foreground;
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow-y: visible;
+    overflow-x: hidden;
+    background-attachment: fixed;
+    background-color: $highlight;
+    //background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23d1d1ff' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E");
+}

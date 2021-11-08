@@ -1,0 +1,15 @@
+@import "variables";
+
+
+.home {
+    text-align: center;
+    & > * {
+        margin: 20px 0;
+    }
+    & > .extras {
+        & > * {
+            display: inline-block;
+            margin: 0 20px;
+        }
+    }
+}

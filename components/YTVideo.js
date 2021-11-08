@@ -1,4 +1,4 @@
-import './YTVideo.scss'
+import styles from '../styles/YTVideo.module.scss'
 
 function YTVideo(props) {
   if (typeof props.url !== 'string') throw new Error('Expected a video url')
@@ -10,7 +10,8 @@ function YTVideo(props) {
     <div
       {...parentProps}
       className={
-        'youtube-container' + (typeof props.className == 'string' ? ' ' + props.className : '')
+        styles['youtube-container']
+        // 'youtube-container' + (typeof props.className == 'string' ? ' ' + props.className : '')
       }>
       <iframe
         src={'https://www.youtube.com/embed/' + props.url}
