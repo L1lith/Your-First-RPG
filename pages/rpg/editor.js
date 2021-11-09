@@ -1,5 +1,6 @@
 import CodeSandbox from '../../components/CodeSandbox'
 import { NextSeo } from 'next-seo'
+import Link from 'next/link'
 
 const defaultGame = `function smartPrompt(question) {
   var output = null
@@ -55,12 +56,15 @@ function Editor() {
   return (
     <div className="game-editor">
       <NextSeo title="Game Editor" description="Build a game of your own" />
-      <h1>Game Editor</h1>
+      <h1>#4.3 🛠️ The Game Editor</h1>
       <p>
         Build your own game! Be sure to press the ☁️ button and share your url.
         <br /> Warning: You must save your URL or your game data could be lost.
       </p>
       <CodeSandbox codeQueryParam={'code'} value={defaultGame} consoleMode disableAutoRun />
+      <Link href="/rpg/summary">
+        <a className="next">Next: #4.4 🔭 Summary & Further Reading</a>
+      </Link>
     </div>
   )
 }

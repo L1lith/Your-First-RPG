@@ -5,7 +5,7 @@ import YTVideo from '../../components/YTVideo'
 export default () => (
   <div className="coding-intro">
     <h1 className="title">Chapter 4</h1>
-    <NextSeo title="🎮 Let's make a Game! " />
+    <NextSeo title="🎮 Let's make a Game!" />
     <ol className="toc pages">
       <li>
         <Link href="#lesson">
@@ -23,8 +23,13 @@ export default () => (
         </Link>
       </li>
       <li>
+        <Link href="/rpg/editor">
+          <a>#4.3 🛠️ The Game Editor</a>
+        </Link>
+      </li>
+      <li>
         <Link href="/rpg/summary">
-          <a>#4.3 🔭 Summary & Further Reading</a>
+          <a>#4.4 🔭 Summary & Further Reading</a>
         </Link>
       </li>
     </ol>
