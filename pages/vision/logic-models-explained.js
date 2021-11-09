@@ -2,6 +2,7 @@ import Link from 'next/link'
 import hoverVideo from '../../functions/hoverVideo'
 import { NextSeo } from 'next-seo'
 import YTVideo from '../../components/YTVideo'
+import EasterEgg from '../../components/EasterEgg'
 
 export default () => (
   <div className="logic-models">
@@ -125,7 +126,9 @@ export default () => (
     </Link>
     <br />
     <br />
-    <p>Bonus: Liked the Rube Goldberg Machine?</p>
-    <YTVideo url="Av07QiqmsoA" />
+    <EasterEgg>
+      <p>Bonus: Liked the Rube Goldberg Machine?</p>
+      <YTVideo url="Av07QiqmsoA" />
+    </EasterEgg>
   </div>
 )
