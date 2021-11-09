@@ -26,13 +26,13 @@ function CodeSandbox(props) {
   return (
     <div className={styles.sandbox}>
       {typeof shareURL == 'string' ? (
-        <span className="share-popup">
+        <span className={styles['share-popup']}>
           Your Sharing URL:
-          <a className="url" href={shareURL}>
+          <a className={styles.url} href={shareURL}>
             Right Click and Copy This Link
           </a>
           <span
-            className={styles.icon}
+            className={styles.icon + ' ' + styles.close}
             onClick={() => {
               setShareURL(null)
             }}>
