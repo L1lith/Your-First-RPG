@@ -1,5 +1,49 @@
+@keyframes rainbow{
+    100%,0%{
+        filter: sepia(100%) saturate(1000%) hue-rotate(0deg);
+    }
+    8%{
+        filter: sepia(100%) saturate(1000%) hue-rotate(28.8deg);
+    }
+    16%{
+        filter: sepia(100%) saturate(1000%) hue-rotate(57.6deg);
+    }
+    25%{
+        filter: sepia(100%) saturate(1000%) hue-rotate(90deg);
+    }
+    33%{
+        filter: sepia(100%) saturate(1000%) hue-rotate(118.8deg);
+    }
+    41%{
+        filter: sepia(100%) saturate(1000%) hue-rotate(147.6deg);
+    }
+    50%{
+        filter: sepia(100%) saturate(1000%) hue-rotate(180deg);
+    }
+    58%{
+        filter: sepia(100%) saturate(1000%) hue-rotate(208.8deg);
+    }
+    66%{
+        filter: sepia(100%) saturate(1000%) hue-rotate(237.6deg);
+        color: rgb(0,0,255);
+    }
+    75%{
+        filter: sepia(100%) saturate(1000%) hue-rotate(270deg);
+    }
+    83%{
+        filter: sepia(100%) saturate(1000%) hue-rotate(298.8deg);
+    }
+    91%{
+        filter: sepia(100%) saturate(1000%) hue-rotate(327.6deg);
+    }
+}
+
 .easter-egg {
     font-size: 2.5em;
     cursor: pointer;
     user-select: none;
+    &:hover {
+        animation: rainbow 2.5s infinite;
+
+    }
 }
