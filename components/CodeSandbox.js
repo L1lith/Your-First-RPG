@@ -8,6 +8,7 @@ import { useRouter, withRouter } from 'next/router'
 function CodeSandbox(props) {
   const [shareURL, setShareURL] = useState(null)
   const router = useRouter()
+  const queryCode = router.query.code
   const [code, setCode] = useState(
     router.query.hasOwnProperty(props.codeQueryParam)
       ? router.query[props.codeQueryParam]
@@ -18,16 +19,10 @@ function CodeSandbox(props) {
   )
   let hasAppliedQuery = false
   useEffect(() => {
-    if (!router.isReady || hasAppliedQuery) return
-    console.log(router.query.hasOwnProperty(props.codeQueryParam), router, props.codeQueryParam)
-    if (router.query.hasOwnProperty(props.codeQueryParam)) {
-      hasAppliedQuery = true
-      const queryParam = router.query[props.codeQueryParam]
-      if (code !== queryParam) {
-        setCode(queryParam)
-      }
-    }
-  })
+    if (!queryCode) return
+    setCode(queryCode)
+  }, [queryCode])
+
   return (
     <div className={styles.sandbox}>
       {typeof shareURL == 'string' ? (
