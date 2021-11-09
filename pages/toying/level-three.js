@@ -34,9 +34,9 @@ export default () => (
       <br />
       <br />
       Like speaking any language (human or machine), learning how to better express yourself (i.e.
-      clean code and effective design patterns) allows you to say more in fewer lines. Spending more
-      time to think about your code from a design perspective will allow you to save countless hours
-      dealing with mind-numbing bugs and other issues.
+      clean code and effective design patterns) allows you to say more while writing less. Spending
+      more time to think about your code from a design perspective will allow you to save countless
+      hours dealing with mind-numbing bugs and other issues.
     </p>
     <p>
       Many programming languages have the capabilities to compare and transform more complex data

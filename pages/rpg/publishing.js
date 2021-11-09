@@ -34,7 +34,7 @@ export default () => (
       If you'd like to learn more about JavaScript, or you'd like to support me, continue on to the
       next page.
     </p>
-    <Link href="/rpg/summary">
+    <Link href="/rpg/editor">
       <a className="next">#4.3 🛠️ The Game Editor</a>
     </Link>
   </div>

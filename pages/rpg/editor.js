@@ -55,7 +55,7 @@ function Editor() {
   // })
   return (
     <div className="game-editor">
-      <NextSeo title="Game Editor" description="Build a game of your own" />
+      <NextSeo title="🛠️ Game Editor" description="Build a game of your own" />
       <h1>#4.3 🛠️ The Game Editor</h1>
       <p>
         Build your own game! Be sure to press the ☁️ button and share your url.

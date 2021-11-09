@@ -2,6 +2,7 @@ import LevelOne from '../../components/BooleanGame/levels/LevelOne'
 import Link from 'next/link'
 import { NextSeo } from 'next-seo'
 import YTVideo from '../../components/YTVideo'
+import styles from '../../styles/rpg/summary.module.scss'
 
 export default () => (
   <div className="summary">
@@ -12,6 +13,10 @@ export default () => (
       <YTVideo url="videoseries?list=PLRqwX-V7Uu6ZYJC7L-r6rX6utt6wwJCyi" />
       Daniel Shiffman has so many good videos
     </div>
+    <p className={styles.congratulations}>
+      🎂 🍰 🥧
+      <br /> Congratulations on finishing the course!!{' '}
+    </p>
     <div className="stuck">
       <h2>Feeling Stuck?</h2>
       Check out the{' '}
