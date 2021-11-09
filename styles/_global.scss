@@ -13,10 +13,6 @@
     a {
         color: $highlight-dark;
     }
-    
-    li a {
-        text-decoration: none;
-    }
     .intro-card {
         display: block;
         text-align: center;
@@ -89,8 +85,10 @@
 }
 #next {
     display: block;
-    width: 100%;
-    height: 100%;
+}
+html {
+   height: 100vh;
+   width: 100vw;
 }
 body {
     @media screen and (max-width: $mini-width) {
