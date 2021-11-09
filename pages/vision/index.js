@@ -25,26 +25,23 @@ export default () => (
       Take coding at your own pace and take time for yourself
     </span>
     <p>
-      If you believe what you hear on the internet, you might be inclined to believe the modern
-      programmer might be more easily replaced by a gang of monkeys randomly hammering away on
-      type-writers, and sometimes you might be right. Many beginners meet their demise after hearing
-      "just read the docs" (docs is short for documentation), and aren't given a proper chance to
-      understand why coders do what they do.
+      Programmers are great at writing code only they can understand. Many beginners can feel
+      alienated after hearing "just read the docs" (docs is short for documentation), and aren't
+      given a proper chance to understand why coders do what they do.
       <br />
       <br />
       Documentation sites like{' '}
       <Link href="https://nodejs.org/docs/latest-v15.x/api/">
         <a>this one</a>
       </Link>{' '}
-      can be a valuable glossary to experienced programmers, but as a learning tool it's the
-      equivalent of throwing a thesaurus at your students' foreheads. This can often leave the
-      reader confused & frustrated, as it fails to explain fundamental programming concepts and why
-      we use them.
+      can be a valuable tool for experienced programmers, but for a beginner it's a total headache.
+      It's important to understand the concepts in simple terms so you can begin to visualize what
+      you are trying to do.
       <br />
       <br />
-      Another barrier to learning is the lack of approachable hands-on work. In this section I will
-      guide you through fundamental coding concepts (like problem solving, logic rules, and working
-      with data).
+      Another key to learning is to practice. In this section I will guide you through basic coding
+      concepts like problem solving, logic rules, and working with data. In the next chapter we will
+      cement these concepts with hands-on activities.
     </p>
     <Link href="/vision/logic-models-explained">
       <a className="next">Next: #1.1 Logic Models Explained</a>

@@ -16,15 +16,15 @@ export default () => (
       Coding is a lot like human language, and they both need diversity
     </span>
     <p>
-      In this course I will describe mental models to show how & why we apply them to coding and
-      other tasks. I will also teach you JavaScript, and show you how to make your own text based
-      RPG and share it with your friends :)
+      In this course I will explain how to visualize coding & how we can use it to make awesome
+      things. I will teach you the basics of the JavaScript language, and show you how to make your
+      own text based game and share it with your friends :)
     </p>
     <ol className="toc sections">
       <h2>Sections</h2>
       <li>
         <Link href="/vision">
-          <a>👀 Visualizing Mental Models</a>
+          <a>👀 Visualizing Logic Models</a>
         </Link>
       </li>
       <li>

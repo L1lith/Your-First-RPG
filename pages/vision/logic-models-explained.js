@@ -3,6 +3,7 @@ import hoverVideo from '../../functions/hoverVideo'
 import { NextSeo } from 'next-seo'
 import YTVideo from '../../components/YTVideo'
 import EasterEgg from '../../components/EasterEgg'
+import styles from '../../styles/vision/logic-models-explained.module.scss'
 
 export default () => (
   <div className="logic-models">
@@ -16,10 +17,10 @@ export default () => (
       Minecraft is a great place to start your adventure :)
     </span>
     <p>
-      Next you will learn about boolean logic (boolean means something that is either true or false)
-      logic and explain how to create a mental model when working with it. Modeling logical systems
-      is a lot more useful than you might give it credit. The entire world is ruled by logic, like
-      how you do your job, how you cross the street, or how you navigate a website.
+      Next you will learn about boolean logic (a boolean is something that is either true or false)
+      and how to visualize them. Visualizing logical systems is very useful. The entire world
+      operates using logic; like how you do your job, how you cross the street, or how you navigate
+      a website. A lot of decisions we make without realizing we made them.
       <br />
       <br />
       Let's say for example you are at a crosswalk and you see the traffic light in the direction
@@ -29,6 +30,24 @@ export default () => (
       to cross (please abide by all proper safety rules, and use the crosswalk signs). The entire
       traffic system is designed to make the rules as efficient and safe as possible, and it is done
       by breaking down the logical components of the system.
+      <table className={styles['traffic-stop']}>
+        <tr>
+          <th>Situation</th>
+          <th>Decision</th>
+        </tr>
+        <tr>
+          <td>Light is red</td>
+          <td>Come to a smooth stop before the intersection.</td>
+        </tr>
+        <tr>
+          <td>Light is yellow</td>
+          <td>Pay attention to the intersection. If you can stop, stop quickly.</td>
+        </tr>
+        <tr>
+          <td>Light is green</td>
+          <td>Look ahead to ensure the traffic is clear, and continue on.</td>
+        </tr>
+      </table>
     </p>
     <span className="intro-card">
       <img src="/images/spaghettiBowl.jpeg" />
@@ -59,8 +78,7 @@ export default () => (
       area. Our input data is the flow of cars into the freeway and their intended destinations. Our
       output data is the flow of cars out of the freeway. As a civil engineer our logic model will
       not only make the difference when someone's trying to get to work quickly, but our decision
-      will ultimately be the difference between life and death when reckless driving happens (please
-      be a considerate driver).
+      will ultimately be the difference between life and death when reckless driving happens.
       <br />
       <br />
       While watching this video try to notice all the factors civil engineers must pay attention to
