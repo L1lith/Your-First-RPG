@@ -42,11 +42,11 @@ export default () => (
       All logic models have 3 basic components
       <ol>
         <li>
-          <span className="bold">Input Data:</span>An incoming source of data to your logic model
+          <span className="bold">Input Data: </span>An incoming source of data to your logic model
           which you can use to make decisions.
         </li>
         <li>
-          <span className="bold">Rules:</span> this is the the "logic" or "code" of your model. The
+          <span className="bold">Rules:</span> This is the the "logic" or "code" of your model. The
           rules decide what the result (or output) of our model is based on the input.
         </li>
         <li>
