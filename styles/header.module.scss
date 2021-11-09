@@ -1,6 +1,7 @@
 @import "variables.scss";
 
 .main-header {
+    color: white;
     @media screen and (max-width: $mini-width) {
         margin: 0;
         font-size: 1em;
@@ -23,7 +24,7 @@
     overflow-x: auto;
     white-space: nowrap;
     *, a {
-        color: $background;
+        color: inherit;
         padding: 0;
         margin: 0 2vw;
         font-size: 1em;

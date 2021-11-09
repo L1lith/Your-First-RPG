@@ -5,71 +5,73 @@
     padding: 0;
 }
 
-.icon {
-    user-select: none;
-}
-
-a {
-    color: $highlight-dark;
-}
-
-li a {
-    text-decoration: none;
-}
-.intro-card {
-    display: block;
-    text-align: center;
-    font-style: italic;
-    margin: 20px auto 35px auto;
-    border-bottom: 5px solid $accent;
-    border-radius: 10px;
-    & > *:not(.youtube-container) {
-        display: block;
-        width: 80%;
-        min-width: 300px;
-        border-radius: 10px;
-        margin: 20px auto;
+.page {
+    .icon {
+        user-select: none;
     }
+    
     a {
-        display: inline;
+        color: $highlight-dark;
     }
-}
-a:visited, a:link {
-    color: $accent-dark;
-}
-
-.smaller-text {
-    font-size: 0.75em;
-}
-p {
-    margin: 20px 0;
-}
-.bold {
-    font-weight: bold;
-}
-.underline {
-    text-decoration: underline;
-}
-.italic {
-    font-style: italic;
-}
-ol, ul {
-    margin-bottom: 30px;
-    margin-top: 30px;
-}
-h3 {
-    font-size: 1.5em;
-}
-
-
-.toc {
-    border-bottom: 8px solid $accent;
-    border-radius: 10px;
-    margin: 50px auto;
-    font-size: 1.8em;
-    &.pages {
-        font-size: 1.2em;
-        list-style: disc;
+    
+    li a {
+        text-decoration: none;
+    }
+    .intro-card {
+        display: block;
+        text-align: center;
+        font-style: italic;
+        margin: 20px auto 35px auto;
+        border-bottom: 5px solid $accent;
+        border-radius: 10px;
+        & > *:not(.youtube-container) {
+            display: block;
+            width: 80%;
+            min-width: 300px;
+            border-radius: 10px;
+            margin: 20px auto;
+        }
+        a {
+            display: inline;
+        }
+    }
+    a:visited, a:link {
+        color: $accent-dark;
+    }
+    
+    .smaller-text {
+        font-size: 0.75em;
+    }
+    p {
+        margin: 20px 0;
+    }
+    .bold {
+        font-weight: bold;
+    }
+    .underline {
+        text-decoration: underline;
+    }
+    .italic {
+        font-style: italic;
+    }
+    ol, ul {
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+    
+    
+    .toc {
+        border-bottom: 8px solid $accent;
+        border-radius: 10px;
+        margin: 50px auto;
+        font-size: 1.8em;
+        &.pages {
+            font-size: 1.2em;
+            list-style: disc;
+        }
     }
 }
 .next {
@@ -84,7 +86,7 @@ h3 {
     text-align: center;
     width: auto;
     margin: 40px 0 20px auto;
-  }
+}
 #next {
     display: block;
     width: 100%;

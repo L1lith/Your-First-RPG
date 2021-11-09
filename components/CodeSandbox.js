@@ -37,7 +37,7 @@ function CodeSandbox(props) {
             Right Click and Copy This Link
           </a>
           <span
-            className="icon close"
+            className={styles.icon}
             onClick={() => {
               setShareURL(null)
             }}>
@@ -45,11 +45,11 @@ function CodeSandbox(props) {
           </span>
         </span>
       ) : null}
-      <h2 className="main-title">
+      <h2 className={styles['main-title']}>
         {props.disableAutoRun === true ? (
           <span
             title="Run"
-            className="icon play"
+            className={styles.icon}
             onClick={() => {
               setOutput(getOutput(code, props.consoleMode))
             }}>
@@ -61,7 +61,7 @@ function CodeSandbox(props) {
         {props.noReset !== true ? (
           <span
             title="Reset"
-            className="icon reset"
+            className={styles.icon}
             onClick={() => {
               setCode(
                 router.query.hasOwnProperty(props.codeQueryParam)
@@ -76,7 +76,7 @@ function CodeSandbox(props) {
           <Fragment>
             <span
               title="Share"
-              className="icon share"
+              className={styles.icon}
               onClick={() => {
                 setShareURL(
                   `${router.basePath}/rpg/editor?${props.codeQueryParam}=${encodeURIComponent(
@@ -90,11 +90,11 @@ function CodeSandbox(props) {
         ) : null}
       </h2>
 
-      <div className="titles">
-        <h2 className="title">Code Input</h2>
-        <h2 className="title">{props.consoleMode === true ? 'Console' : 'Output'}</h2>
+      <div className={styles.titles}>
+        <h2 className={styles.title}>Code Input</h2>
+        <h2 className={styles.title}>{props.consoleMode === true ? 'Console' : 'Output'}</h2>
       </div>
-      <div className="inner">
+      <div className={styles.inner}>
         <AceEditor
           width="50%"
           height="100%"

@@ -1,47 +1,15 @@
 import Link from 'next/link'
 import CodeSandbox from '../../components/CodeSandbox'
-import styles from '../../styles/coding/essential-tools.module.scss'
 import { Component } from 'react'
 import { NextSeo } from 'next-seo'
 import YTVideo from '../../components/YTVideo'
-
-class ShittyChecking extends Component {
-  constructor(props) {
-    super(props)
-    this.state = { opened: false }
-  }
-  render() {
-    return (
-      <div className={styles['checking-example']}>
-        <span className="app-title">🍎 Accounting</span>
-        <span className="balance">
-          {this.state.opened === true ? (
-            'Balance: Unavailable'
-          ) : (
-            <button
-              onClick={() => {
-                this.setState({ opened: true })
-              }}
-              className="enter">
-              View your Balance
-            </button>
-          )}
-        </span>
-        <span className="info">
-          {this.state.opened !== true
-            ? null
-            : 'Please close the app and wait for your next transaction notification.'}
-        </span>
-      </div>
-    )
-  }
-}
+import ShittyChecking from '../../components/ShittyChecking'
 
 export default () => (
   <div>
     <NextSeo title="🔨 Essential Tools" />
-    <h1 className="title">#3.2 🔨 Essential Tools</h1>
-    <span className="intro-card">
+    <h1>#3.2 🔨 Essential Tools</h1>
+    <span>
       <YTVideo url="himmatLe7aQ?start=32" />
       How do you swallow a coding lesson? One byte at a time
     </span>
@@ -56,7 +24,7 @@ export default () => (
       some things that say "console.log(...)", and our program output will be whatever is inside the
       parenthesis.
     </p>
-    <div className="variables">
+    <div>
       <h2>Variables</h2>
       <p>
         We can create variables in order to store (save) data values for later use. In a basic logic

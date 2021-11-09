@@ -1,11 +1,11 @@
-import styles from '../styles/resources.scss'
+import styles from '../styles/resources.module.scss'
 
 export default () => (
   <div className={styles.resources}>
     <h2>Resources</h2>
     This course focuses on being palatable for beginners, so if you'd like to learn about JavaScript
     in more depth, or you have questions I recommend the following resources:
-    <table className="resource-list">
+    <table className={styles['resource-list']}>
       <thead>
         <tr>
           <th>Title/Type</th>

@@ -5,7 +5,6 @@ import Link from 'next/link'
 
 class Header extends Component {
   render() {
-    const { router } = this.props
     return (
       <header className={styles['main-header']}>
         <Link href="/resources">
@@ -13,7 +12,7 @@ class Header extends Component {
         </Link>
         <HomeLink />
         <Link href="/support">
-          <a className="support">Support Me</a>
+          <a className={styles.support}>Support Me</a>
         </Link>
       </header>
     )

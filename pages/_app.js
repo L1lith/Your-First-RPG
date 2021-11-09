@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
     <Fragment>
       <DefaultSeo titleTemplate="%s - YFRPG" defaultTitle="Your First RPG"></DefaultSeo>
       <Header />
-      <main className={styles.page}>
+      <main className={'page ' + styles.page}>
         <Component {...pageProps} />
       </main>
     </Fragment>

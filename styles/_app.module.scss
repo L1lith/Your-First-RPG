@@ -46,6 +46,9 @@
   & > h2 {
       font-style: italic;
   }
+  ol {
+    display: inline-block;
+  }
   li {
     
     @media screen and (max-width: $mini-width) {
@@ -71,15 +74,15 @@
       text-decoration-color: $accent;
       //border-bottom: 2px solid $foreground;
   }
-  &.sections {
-    li::before {
-      margin-right: 10px;
-      content: counter(toc-counter) " ";
-      color: $accent-dark;
-      font-weight: bold;
-      text-shadow: 3px 2px 5px #d1d1ff;
-    }
-  }
+  // &.sections {
+  //   li::before {
+  //     margin-right: 10px;
+  //     content: counter(toc-counter) " ";
+  //     color: $accent-dark;
+  //     font-weight: bold;
+  //     text-shadow: 3px 2px 5px #d1d1ff;
+  //   }
+  // }
 }
 
 

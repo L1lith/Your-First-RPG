@@ -116,14 +116,14 @@ class BooleanGame extends Component {
     const notShapes = this.state.rules.shapesDescription.startsWith('not')
     return (
       <div className={styles['boolean-game']}>
-        <h2 className="title">
+        <h2 className={styles.title}>
           Matching Rules
           {this.props.hasOwnProperty('title') ? ' - ' + this.props.title.trim() : null}
         </h2>
         <noscript>
-          <span className="jserror">JavaScript is required to play this game.</span>
+          <span className={styles.jserror}>JavaScript is required to play this game.</span>
         </noscript>
-        <div className="rules">
+        <div className={styles.rules}>
           {
             (notColors ? '' : '(') +
               this.state.rules.colorsDescription +
@@ -140,7 +140,7 @@ class BooleanGame extends Component {
         </div>
         {this.state.gameState === 'ongoing' ? null : this.state.gameState === 'won' ? (
           <span
-            className="result won"
+            className={[styles.result, styles.won].join(' ')}
             ref={ref => {
               if (document.body.contains(ref)) ref.scrollIntoView()
             }}>
@@ -148,7 +148,7 @@ class BooleanGame extends Component {
           </span>
         ) : this.state.gameState === 'lost' ? (
           <span
-            className="result lost"
+            className={[styles.result, styles.lost].join(' ')}
             ref={ref => {
               if (document.body.contains(ref)) ref.scrollIntoView()
             }}>
@@ -169,7 +169,7 @@ class BooleanGame extends Component {
   renderBoard() {
     const { width, height } = this.state
     return (
-      <div className="board">
+      <div className={styles.board}>
         {this.state.board.map((content, i) => {
           const y = Math.floor(i / width)
           const x = i % width
@@ -200,7 +200,7 @@ function CellRenderer(props) {
 
   return (
     <span
-      className={'cell ' + shape + (failed === true ? ' failed' : '')}
+      className={styles.cell + (failed === true ? ' failed' : '')}
       vertical={verticalEdge}
       horizontal={horizontalEdge}
       style={{
@@ -212,7 +212,7 @@ function CellRenderer(props) {
         activateCell(cell, index)
       }}
       disabled={active !== true}>
-      <span className="inner">{shape}</span>
+      <span className={styles.inner}>{shape}</span>
     </span>
   )
 }
