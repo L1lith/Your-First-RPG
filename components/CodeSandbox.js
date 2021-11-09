@@ -84,7 +84,7 @@ function CodeSandbox(props) {
           </Fragment>
         ) : null}
       </h2>
-
+      <noscript>Please Enable JavaScript</noscript>
       <div className={styles.titles}>
         <h2 className={styles.title}>Code Input</h2>
         <h2 className={styles.title}>{props.consoleMode === true ? 'Console' : 'Output'}</h2>
