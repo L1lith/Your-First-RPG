@@ -23,7 +23,7 @@ export default () => (
       In this section we will upgrade from working with just boolean logic to writing functional
       JavaScript! Primitives are the basic data types in JavaScript. Here are the basic primitives:
     </p>
-    <ul className="primitives-list">
+    <ul className={styles['primitives-list']}>
       <li>Boolean</li>
       <li>Number</li>
       <li>String</li>
