@@ -51,18 +51,16 @@ function CodeSandbox(props) {
             ▶
           </span>
         ) : null}
-        <h2>JavaScript {props.consoleMode === true ? 'Terminal' : 'Evaluator'}</h2>
+        <h2 className={styles.mode}>
+          JavaScript {props.consoleMode === true ? 'Terminal' : 'Evaluator'}
+        </h2>
         {props.readOnly === true ? ' (Read Only)' : null}
         {props.noReset !== true ? (
           <span
             title="Reset"
             className={styles.icon}
             onClick={() => {
-              setCode(
-                router.query.hasOwnProperty(props.codeQueryParam)
-                  ? router.query[props.codeQueryParam]
-                  : this.props.value || ''
-              )
+              setCode('')
             }}>
             ❌
           </span>
@@ -87,12 +85,16 @@ function CodeSandbox(props) {
       <noscript>Please Enable JavaScript</noscript>
       <div className={styles.titles}>
         <h2 className={styles.title}>Code Input</h2>
-        <h2 className={styles.title}>{props.consoleMode === true ? 'Console' : 'Output'}</h2>
+        <h2 className={styles.title + ' ' + styles.mode}>
+          {props.consoleMode === true ? 'Console' : 'Output'}
+        </h2>
       </div>
       <div className={styles.inner}>
         <AceEditor
           width="50%"
-          height="100%"
+          maxLines={Infinity}
+          className={styles['ace-editor']}
+          height="auto"
           mode="javascript"
           theme="ambiance"
           readOnly={props.readOnly === true}
@@ -105,7 +107,9 @@ function CodeSandbox(props) {
           }}
         />
         {output === null ? (
-          <span className="output empty">Run the program to see your output</span>
+          <span className={styles.output + ' ' + styles.empty}>
+            Run the program to see your output
+          </span>
         ) : (
           output
         )}
@@ -118,7 +122,11 @@ function getOutput(code, consoleMode) {
   if (code.length > 0) {
     return consoleMode === true ? getConsoleOutput(code) : getEvalOutput(code)
   } else {
-    return <span className="output empty">Type something to see the evaluated output</span>
+    return (
+      <span className={styles.output + ' ' + styles.empty}>
+        Type something to see the evaluated output
+      </span>
+    )
   }
 }
 
@@ -137,13 +145,13 @@ function getConsoleOutput(code) {
     console.log = oldLog
     if (logOutput.length < 1)
       return (
-        <span className="output empty">
+        <span className={styles.output + ' ' + styles.empty}>
           Try logging something to the console to see some output
         </span>
       )
     return (
       <AceEditor
-        className="output valid"
+        className={styles.output + ' ' + styles.valid}
         width="50%"
         height="100%"
         mode="javascript"
@@ -154,7 +162,7 @@ function getConsoleOutput(code) {
     )
   } catch (err) {
     console.log = oldLog
-    return <span className="output error">{inspect(err)}</span>
+    return <span className={styles.output + ' ' + styles.error}>{inspect(err)}</span>
   }
 }
 
@@ -174,7 +182,7 @@ function getEvalOutput(code) {
       />
     )
   } catch (err) {
-    return <span className="output error">{inspect(err)}</span>
+    return <span className={styles.output + ' ' + styles.error}>{inspect(err)}</span>
   }
 }
 
