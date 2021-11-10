@@ -21,28 +21,6 @@ export default () => (
       and how to visualize them. Visualizing logical systems is very useful. The entire world
       operates using logic; like how you do your job, how you cross the street, or how you navigate
       a website. A lot of decisions we make without realizing we made them.
-      <br />
-      <br />
-      Here's a table describing the logic model we use when we are at a traffic light. Your brain
-      provides the decision-making rules of the logic model.
-      <table className={styles['traffic-stop']}>
-        <tr>
-          <th>Input</th>
-          <th>Output</th>
-        </tr>
-        <tr>
-          <td>Light is red</td>
-          <td>Come to a smooth stop before the intersection.</td>
-        </tr>
-        <tr>
-          <td>Light is yellow</td>
-          <td>Pay attention to the intersection. If you can stop, stop quickly.</td>
-        </tr>
-        <tr>
-          <td>Light is green</td>
-          <td>Look ahead to ensure the traffic is clear, and continue on.</td>
-        </tr>
-      </table>
     </p>
     <span className="intro-card">
       <img src="/images/spaghettiBowl.jpeg" />
@@ -89,8 +67,28 @@ export default () => (
       a computer or a roadway from scratch might be incredibly complex, computer, civil, and all
       kinds of engineers all take advantage of the technology and methodology that has been been in
       development for much longer than we have been alive.
-      <br />
-      <br />
+    </p>
+    Here's a table describing the logic model we use when we are at a traffic light. Your brain
+    provides the decision-making rules of the logic model.
+    <table className={styles['traffic-stop']}>
+      <tr>
+        <th>Input</th>
+        <th>Output</th>
+      </tr>
+      <tr>
+        <td>Light is red</td>
+        <td>Come to a smooth stop before the intersection.</td>
+      </tr>
+      <tr>
+        <td>Light is yellow</td>
+        <td>Pay attention to the intersection. If you can stop, stop quickly.</td>
+      </tr>
+      <tr>
+        <td>Light is green</td>
+        <td>Look ahead to ensure the traffic is clear, and continue on.</td>
+      </tr>
+    </table>
+    <p>
       In coding we have a set of software and methodology that makes describing our logical system
       much easier. In the world of website development, we call this a{' '}
       <span className="bold">stack</span>. Much like a civil engineer must consider the efficacy of
