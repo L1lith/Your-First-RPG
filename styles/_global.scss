@@ -37,6 +37,9 @@
     
     .smaller-text {
         font-size: 0.75em;
+        @media screen and (max-width: $mini-width) {
+            font-size: 1em;
+        }
     }
     p {
         margin: 20px 0;
@@ -133,7 +136,6 @@ table {
           border-style: solid;
           border-width: 0;
           font-family:Arial, sans-serif;
-          font-size:14px;
           overflow:hidden;
           padding:10px 5px;
           word-break:normal;
