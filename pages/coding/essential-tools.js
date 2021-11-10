@@ -10,7 +10,7 @@ export default () => (
     <NextSeo title="🔨 Essential Tools" />
     <h1>#3.2 🔨 Essential Tools</h1>
     <span>
-      <YTVideo url="himmatLe7aQ?start=32" />
+      <YTVideo url="himmatLe7aQ" query={{ start: 32 }} />
       How do you swallow a coding lesson? One byte at a time
     </span>
     <p>
