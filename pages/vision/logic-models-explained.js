@@ -23,17 +23,12 @@ export default () => (
       a website. A lot of decisions we make without realizing we made them.
       <br />
       <br />
-      Let's say for example you are at a crosswalk and you see the traffic light in the direction
-      you are heading just turned red. It is now a fairly safe assumption that the street you are
-      trying to cross is about to be filled with cars, and it would be a very bad idea to try to
-      cross now. However, once that light turns green again you can assume that it's probably safe
-      to cross (please abide by all proper safety rules, and use the crosswalk signs). The entire
-      traffic system is designed to make the rules as efficient and safe as possible, and it is done
-      by breaking down the logical components of the system.
+      Here's a table describing the logic model we use when we are at a traffic light. Your brain
+      provides the decision-making rules of the logic model.
       <table className={styles['traffic-stop']}>
         <tr>
-          <th>Situation</th>
-          <th>Decision</th>
+          <th>Input</th>
+          <th>Output</th>
         </tr>
         <tr>
           <td>Light is red</td>
