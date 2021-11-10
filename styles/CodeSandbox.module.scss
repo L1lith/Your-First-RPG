@@ -139,6 +139,7 @@
         & > * {
             width: 50%;
             max-width: 100%;
+            overflow: auto;
             @media screen and (max-width: $mini-width) {
                 width: 100% !important;
             }
