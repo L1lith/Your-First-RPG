@@ -8,7 +8,7 @@ export default () => (
     <NextSeo title="🗣️ Talking to the Player" />
     <h2>#4.1 🗣️ Talking to the Player</h2>
     <span className="intro-card">
-      <YTVideo url="7yeA7a0uS3A" query={{ start: 29 }} />
+      <YTVideo url="7yeA7a0uS3A" query={{ start: 29 }} thumbnail="/images/heman-title.jpg" />
       Half-dragon half-tiger sold separately
     </span>
     <p>

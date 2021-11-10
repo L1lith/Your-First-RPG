@@ -10,7 +10,11 @@ export default () => (
     <h2>#4.4 🔭 Summary & Further Reading</h2>
     <br />
     <div className="intro-card">
-      <YTVideo url="videoseries" query={{ list: 'PLRqwX-V7Uu6ZYJC7L-r6rX6utt6wwJCyi' }} />
+      <YTVideo
+        url="videoseries"
+        query={{ list: 'PLRqwX-V7Uu6ZYJC7L-r6rX6utt6wwJCyi' }}
+        thumbnail="/images/dan-schiff.jpg"
+      />
       Daniel Shiffman has so many good videos
     </div>
     <p className={styles.congratulations}>

@@ -36,7 +36,7 @@ export default () => (
     <h2 id="lesson">#4.0 Let's make a Game! 🎮</h2>
     <br />
     <span className="intro-card">
-      <YTVideo url="eMR6c8xbgpc" />
+      <YTVideo url="eMR6c8xbgpc" thumbnail="/images/heart-of-the-forest.jpg" />
       Have fun with it!
     </span>
 

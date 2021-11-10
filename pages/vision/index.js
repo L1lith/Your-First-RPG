@@ -21,7 +21,7 @@ export default () => (
     </ol>
     <h2 id="lesson">#1.0 🗺️ Planning it out</h2>
     <span className="intro-card">
-      <YTVideo url="wiaamJZ-hHI" />
+      <YTVideo url="wiaamJZ-hHI" thumbnail="/images/how-to-avoid-burnout.jpg" />
       Take coding at your own pace and take time for yourself
     </span>
     <p>

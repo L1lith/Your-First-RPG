@@ -57,7 +57,7 @@ export default () => (
       While watching this video try to notice all the factors civil engineers must pay attention to
       when designing highways.
     </p>
-    <YTVideo url="9XIjqdk69O4" />
+    <YTVideo url="9XIjqdk69O4" thumbnail="/images/highway-geometry.jpg" />
     <p>
       "That's great... but how does this apply to coding?" I'm glad you asked! When we are coding we
       too are writing a logic system to handle the input flow of information (like mouse and
@@ -100,7 +100,7 @@ export default () => (
       <br />
       <br />
     </p>
-    <YTVideo url="hZdLjyK89Cw" />
+    <YTVideo url="hZdLjyK89Cw" thumbnail="/images/self-operating-napkin.jpg" />
     <br />
     <span className="italic">it works perfectly 60% of the time!</span>
     <p>
@@ -139,7 +139,7 @@ export default () => (
     <br />
     <EasterEgg>
       <p>Bonus: Liked the Rube Goldberg Machine?</p>
-      <YTVideo url="Av07QiqmsoA" />
+      <YTVideo url="Av07QiqmsoA" thumbnail="/images/lifes-lemons.jpg" />
     </EasterEgg>
   </div>
 )

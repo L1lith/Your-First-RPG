@@ -44,7 +44,7 @@ export default () => (
       expressions, compare text, and more. Watch this video to see this in practice, and to see the
       relationship between the boolean logic and coding mental models.
     </p>
-    <YTVideo url="_j9nvYKaOVE" />
+    <YTVideo url="_j9nvYKaOVE" thumbnail="/images/cs-discoveries.jpg" />
     <Link href="/coding">
       <a className="next">Next: #3.0 🛣️ Stepping into Coding</a>
     </Link>

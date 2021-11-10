@@ -26,7 +26,7 @@ export default () => (
     <h2 id="lesson">#3.0 🛣️ Stepping into Coding</h2>
     <br />
     <span className="intro-card">
-      <YTVideo url="MAlSjtxy5ak" />
+      <YTVideo url="MAlSjtxy5ak" thumbnail="/images/coding-tutorial-meme.jpg" />
       (this video is a joke)
     </span>
 

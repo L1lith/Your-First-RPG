@@ -9,7 +9,7 @@ export default () => (
     <h2>#4.2 🏆 Sharing your RPG</h2>
     <br />
     <div className="intro-card">
-      <YTVideo url="_nuS86ITjIM" />
+      <YTVideo url="_nuS86ITjIM" thumbnail="/images/sanctuary-rpg.jpg" />
       Your imagination is your limit
     </div>
     <p>

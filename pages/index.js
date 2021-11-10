@@ -12,7 +12,7 @@ export default () => (
       Making a Game
     </h1>
     <span className="intro-card">
-      <YTVideo url="-jRREn6ifEQ" />
+      <YTVideo url="-jRREn6ifEQ" thumbnail="/images/poetry-of-programming.jpg" />
       Coding is a lot like human language, and they both need diversity
     </span>
     <p>

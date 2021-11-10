@@ -10,7 +10,7 @@ export default () => (
     <h2>#3.1 📊 Basic Data Types</h2>
     <br />
     <span className="intro-card">
-      <YTVideo url="_4TPlwwHM8Q" />
+      <YTVideo url="_4TPlwwHM8Q" thumbnail="/images/blender-horror.jpg" />
       <span>
         You can read more{' '}
         <a href="https://www.aleksandrhovhannisyan.com/blog/binary-for-beginners/">here</a> if you'd
