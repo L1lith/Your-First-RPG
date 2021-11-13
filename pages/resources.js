@@ -34,9 +34,9 @@ export default () => (
             </a>
           </td>
           <td>
-            StackOverflow is a little like the yahoo answers of the programming world (but please
-            don't spam silly questions). If you have an issue chances are someones had the exact
-            same one before. If you're stuck and can't figure something out search on there,{' '}
+            StackOverflow is a little like the yahoo answers of the coding world (but please don't
+            spam silly questions). If you have an issue chances are someones had the exact same one
+            before. If you're stuck and can't figure something out search on there,{' '}
             <span className="bold">google it</span>, and if you still can't find the answer feel
             free to open a new question.
           </td>

@@ -84,10 +84,10 @@ export default () => (
       <h2>More about the Console</h2>
       On the previous page I was using the "JavaScript Expression Evaluator". On the right you would
       see what output of the JS interpreter evaluating the code on the left side. Normally when
-      we're programming we are running our code from a terminal, and we see the output of the
-      console.log function in real-time instead of seeing the output of the JS evaluation. We only
-      need to output things to console.log when we as the developer (or coder) want to know what
-      their values are.
+      we're coding we are running our code from a terminal, and we see the output of the console.log
+      function in real-time instead of seeing the output of the JS evaluation. We only need to
+      output things to console.log when we as the developer (or coder) want to know what their
+      values are.
     </div>
     <CodeSandbox
       consoleMode
