@@ -163,7 +163,7 @@ class BooleanGame extends Component {
           'UNEXPECTED STATE: ' + this.state.gameState
         )}
         {this.state.gameState !== 'ongoing' ? (
-          <button className="replay" onClick={this.reset}>
+          <button className={styles.replay} onClick={this.reset}>
             Replay
           </button>
         ) : null}
