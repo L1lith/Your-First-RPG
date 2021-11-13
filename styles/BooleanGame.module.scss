@@ -1,6 +1,11 @@
 @import "variables.scss";
 
 .boolean-game {
+    .rules {
+        h2 {
+            padding: 10px 0;
+        }
+    }
     position: relative;
     width: 60vw;
     border: 2px solid #ec7eff;

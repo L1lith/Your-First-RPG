@@ -23,7 +23,7 @@ export default () => (
       a website. A lot of decisions we make without realizing we made them.
     </p>
     <span className="intro-card">
-      <img src="/images/spaghettiBowl.jpeg" />
+      <img src="/images/spaghettiBowl.jpeg" alt="SLC Spaghetti Bowl" />
       Nothing gets the blood pumping quite like being tail-gated around a 90° turn on the freeway.
       <span className="smaller-text">
         {' '}

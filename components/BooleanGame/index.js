@@ -4,6 +4,8 @@ import randomBetween from '../../functions/randomBetween'
 import styles from '../../styles/BooleanGame.module.scss'
 import autoBind from 'auto-bind'
 import generateRules from '../../functions/generateRules'
+import AceEditor from '../AceEditor'
+import ScratchBlocks from '../ScratchBlocks'
 
 const propsFormat = {
   _: {
@@ -59,17 +61,7 @@ class BooleanGame extends Component {
   canActivate(cell, rules) {
     rules = rules || this.state.rules
     const { color, shape } = cell
-    if (rules.notColors) {
-      if (rules.allowedColors.includes(color)) return false
-    } else {
-      if (!rules.allowedColors.includes(color)) return false
-    }
-    if (rules.notShapes) {
-      if (rules.allowedShapes.includes(shape)) return false
-    } else {
-      if (!rules.allowedShapes.includes(shape)) return false
-    }
-    return true
+    return rules.validate(color, shape)
   }
   reset() {
     this.setState({
@@ -125,6 +117,7 @@ class BooleanGame extends Component {
           <span className={styles.jserror}>JavaScript is required to play this game.</span>
         </noscript>
         <div className={styles.rules}>
+          <h2>Rules</h2>
           {
             (notColors ? '' : '(') +
               this.state.rules.colorsDescription +
@@ -137,6 +130,17 @@ class BooleanGame extends Component {
                 : ')') /*<span className="colors">Colors: {this.state.rules.colorsDescription}</span>
           <br />
           <span className="shapes">Shapes: {this.state.rules.shapesDescription}</span>*/
+          }
+          {
+            null /*<h2>Rules in JavaScript</h2>
+          {
+            null /*<AceEditor
+            mode="javascript"
+            theme="ambiance"
+            width="100%"
+            height="120px"
+            value={this.state.rules.sourceCode}
+          readOnly></AceEditor>{<ScratchBlocks>{this.state.rules.sourceCode}</ScratchBlocks>} */
           }
         </div>
         {this.state.gameState === 'ongoing' ? null : this.state.gameState === 'won' ? (

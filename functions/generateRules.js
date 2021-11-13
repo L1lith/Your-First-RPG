@@ -51,7 +51,26 @@ function generateRules(
     notShapes,
     notColors,
     colorsDescription,
-    shapesDescription
+    shapesDescription,
+    sourceCode: `function validate(chosenColor, chosenShape, rules) { // Returns true or false depending on whether the button the user picked was correct
+  const colorInRules = ${allowedColors.map(color => `chosenColor === "${color}"`).join(' || ')}
+  ${
+    notColors
+      ? `if (colorInRules) {
+  return false // That color was one of the banned colors`
+      : `if (not(colorInRules)) {
+  return false // That color wasn't one of the allowed colors`
+  } else {
+    
+  }
+  return true // Nothing was wrong with it so we say it's valid :)`,
+    validate: (color, shape) => {
+      const inColors = allowedColors.includes(color)
+      if (notColors == inColors) return false
+      const inShapes = allowedShapes.includes(shape)
+      if (notShapes == inShapes) return false
+      return true
+    }
   }
 }
 

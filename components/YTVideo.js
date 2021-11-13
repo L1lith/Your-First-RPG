@@ -13,7 +13,7 @@ function YTVideo(props = { url }) {
     console.warn(new Error('Expected a video url'))
     return null
   }
-  if (!query.hasOwnProperty('autoplay')) query.autoplay = '1'
+  query.autoplay = 1 // Currently autoplay is broken, it is always applied when the video loads, but the video only loads after you click the image and at the moment there's no way to skip clicking the image so we just enforce autoplay for the hot-swapped youtube embed
   if (!urlRegex.test(url)) throw new Error('This url is invalid')
   const videoURL =
     'https://www.youtube.com/embed/' +
