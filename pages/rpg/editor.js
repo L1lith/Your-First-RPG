@@ -62,7 +62,10 @@ function Editor() {
         <br /> Warning: You must save your URL or your game data could be lost.
       </p>
       <CodeSandbox codeQueryParam={'code'} value={defaultGame} consoleMode disableAutoRun />
-      <p>Feel free to press the ❌ to delete the starter code.</p>
+      <p>
+        Feel free to press the ❌ to delete the starter code. On desktop you must use the arrow keys
+        in the editor to make the horizontal scrollbar appear.
+      </p>
       <Link href="/rpg/summary">
         <a className="next">Next: #4.4 🔭 Summary & Further Reading</a>
       </Link>

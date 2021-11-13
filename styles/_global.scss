@@ -151,7 +151,7 @@ table {
         font-family:Arial, sans-serif;
         overflow:hidden;
         word-break:normal;
-        background: linear-gradient(to top, #e4deee, transparent);
+        background: linear-gradient(to top, #e4deee, #fcfaff);
         &:not(:first-child) {
             border-left-width: 0;
         }
