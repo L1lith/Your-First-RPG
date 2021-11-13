@@ -6,7 +6,13 @@ function generateRules(
   shapes = ['square', 'triangle'],
   options = {}
 ) {
-  let { allowNots = true, minColors = 1, minShapes = 1, notColors, notShapes } = options
+  let {
+    allowNots = true,
+    minColors = 1,
+    minShapes = 1,
+    notColors = false,
+    notShapes = false
+  } = options
   let allowedColors = randomSubset(colors, minColors)
   let allowedShapes = randomSubset(shapes, minShapes)
   //console.log(notColors, notShapes);
@@ -69,6 +75,7 @@ function generateRules(
       if (notColors == inColors) return false
       const inShapes = allowedShapes.includes(shape)
       if (notShapes == inShapes) return false
+      console.log(color, shape, inColors, inShapes, notColors, notShapes)
       return true
     }
   }
