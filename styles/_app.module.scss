@@ -15,8 +15,7 @@
 }
 .page {
   position: relative;
-  width: 64vw;
-  
+  width: auto;
   @media screen and (max-width: $mini-width) {
     margin: 0;
     padding: 2vh 5vw;
@@ -24,12 +23,9 @@
   }
   text-align: center;
   //background-color: $background;
-  margin: 4vh 8vw 0 8vw;
+  //margin: 4vh 4vw 0 4vw;
   padding: 5vh 10vw 5vh 10vw;
   background-color: $background;
-  @media screen and (min-width: $mini-width) {
-    box-shadow: 0 0 10px $accent;
-  }
   & > .title, & > * > .title {
     text-shadow: $accent 1px 1px 7px;
     @media screen and (max-width: $mini-width) {

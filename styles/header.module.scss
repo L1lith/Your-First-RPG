@@ -2,21 +2,20 @@
 
 .main-header {
     color: white;
+    width: auto;
     @media screen and (max-width: $mini-width) {
         margin: 0;
         font-size: 1em;
         padding: 3vh 4vw;
         justify-content: space-around;
         white-space: initial;
-        width: 92vw;
     }
     @media screen and (min-width: $mega-width) {
         font-size: 1.75em;
     }
-    margin: 0 8vw;
     padding: 4vh 4vw;
     background-color: #68508e;
-    background: linear-gradient(to right, rgb(70, 54, 96), rgb(104, 80, 142), rgb(70, 54, 96));
+    //background: linear-gradient(to right, rgb(70, 54, 96), rgb(104, 80, 142), rgb(70, 54, 96));
     display: flex;
     flex-direction: row;
     justify-content: space-between;

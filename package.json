@@ -29,6 +29,7 @@
     "underscore": "^1.13.1"
   },
   "devDependencies": {
+    "babel-plugin-inline-import-data-uri": "^1.0.1",
     "cross-env": "^7.0.3"
   }
 }
