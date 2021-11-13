@@ -20,7 +20,6 @@ export default () => (
       things. I will teach you the basics of the JavaScript language, and show you how to make your
       own text based game and share it with your friends :)
     </p>
-    <br />
     <h2>Sections</h2>
     <ol className="toc sections">
       <li>

@@ -1,17 +1,22 @@
 @import "variables";
 
 .home-link {
-    font-size: 40px;
     text-align: center;
-    display: block;
+    display: flex;
     text-decoration: none;
     margin-bottom: 30px;
     user-select: none;
     //position: fixed;
     text-shadow: 2px 2px 1px $accent-dark;
     .site-icon {
+        @media screen and (max-width: $mini-width) {
+            display: none;
+        }
+        filter: drop-shadow(0 0  4px #000093);
+        width: 1.5em;
+        height: 1.5em;
         text-shadow: 0 0 20px $background;
-        margin: 1vw !important;
+        margin: 0 10px;
         padding: 0;
     }
 }
