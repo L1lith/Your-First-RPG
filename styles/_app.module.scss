@@ -16,6 +16,7 @@
 .page {
   position: relative;
   width: auto;
+  margin: auto;
   @media screen and (max-width: $mini-width) {
     margin: 0;
     padding: 2vh 5vw;
