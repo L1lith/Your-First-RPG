@@ -7,5 +7,5 @@ module.exports = withPWA({
     runtimeCaching,
     dest: 'public'
   },
-  buildExcludes: [/middleware-manifest\.json$/, /_middleware.js$/, /_middleware.js.map$/]
+  buildExcludes: [/middleware-manifest\.json$/]
 })
