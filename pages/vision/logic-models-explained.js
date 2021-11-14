@@ -71,10 +71,10 @@ export default () => (
     Here's a table describing the logic model we use when we are at a traffic light. Your brain
     provides the decision-making rules of the logic model.
     <table className={styles['traffic-stop']}>
-      <tr>
+      <thead>
         <th>Input</th>
         <th>Output</th>
-      </tr>
+      </thead>
       <tr>
         <td>Light is red</td>
         <td>Come to a smooth stop before the intersection.</td>
