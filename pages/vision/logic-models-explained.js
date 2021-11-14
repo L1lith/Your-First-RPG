@@ -34,7 +34,7 @@ export default () => (
     }
     <p>
       All logic models have 3 basic components
-      <ol>
+      <ol className={styles['logic-model-chart']}>
         <li>
           <span className="bold">Input Data: </span>An incoming source of data to your logic model
           which you can use to make decisions.
