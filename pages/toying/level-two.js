@@ -8,7 +8,9 @@ export default () => (
     <NextSeo title={'🚫 Whats "Not" Allowed'} />
     <h2>#2.2 🚫 Whats "Not" Allowed</h2>
     <br />
-    <YTVideo url="fhIdbRp6xeg" thumbnail="/images/borat-not-joke.jpg" />
+    <span className="intro-card">
+      <YTVideo url="fhIdbRp6xeg" thumbnail="/images/borat-not-joke.jpg" />
+    </span>
     <br />
     <h2>The "Not" Operator</h2>
     <p>

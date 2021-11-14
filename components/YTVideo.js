@@ -29,7 +29,7 @@ function YTVideo(props = { url }) {
     <div
       {...parentProps}
       className={
-        styles['youtube-container']
+        styles['youtube-container'] + ' youtube-container'
         // 'youtube-container' + (typeof props.className == 'string' ? ' ' + props.className : '')
       }>
       <iframe
@@ -38,11 +38,43 @@ function YTVideo(props = { url }) {
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
-        srcDoc={`<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=${videoURL}><img src=${
-          props.hasOwnProperty('thumbnail')
-            ? props.thumbnail
-            : `https://img.youtube.com/vi/${url}/hqdefault.jpg`
-        } alt='Youtube Video'><span>▶</span></a>`}
+        srcDoc={`<style>*{
+          padding:0;margin:0;overflow:hidden
+          }
+          html,body
+          {
+          height:100%;
+          background-color: black;
+          }
+          img{
+          width:100%;
+          height: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          }
+          span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font:48px/1.5 sans-serif;
+            color:white;
+            filter: drop-shadow(0 0 0.5em black);
+            pointer-events: none;
+            cursor: pointer;
+          }
+          a {
+            display: block;
+          }
+          </style>
+          <a href=${videoURL}>
+          <img src=${
+            props.hasOwnProperty('thumbnail')
+              ? props.thumbnail
+              : `https://img.youtube.com/vi/${url}/hqdefault.jpg`
+          } alt='Youtube Video'></a><span>▶</span>`}
       />
     </div>
   )
