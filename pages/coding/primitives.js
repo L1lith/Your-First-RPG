@@ -111,6 +111,9 @@ export default () => (
         To check whether two values are exactly the same we can use the strict equality operator
         "==="
       </p>
+      <CodeSandbox value="1 === 1" className="mini" />
+      <CodeSandbox value={'1 === "1"'} className="mini" />
+      <CodeSandbox value={'1 === 1.1'} className="mini" />
     </div>
     <br />
     <p>
