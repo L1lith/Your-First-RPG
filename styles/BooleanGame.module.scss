@@ -1,17 +1,25 @@
 @import "variables.scss";
 
 .boolean-game {
+    & > h2 {
+        border-bottom: 2px solid  #68508e;
+        padding: 25px 10px;
+        @media screen and (max-width: $mini-width) {
+            padding: 10px;
+        }
+    }
     .rules {
         h2 {
             padding: 10px 0;
         }
+        padding-bottom: 10px;
     }
     position: relative;
     width: 60vw;
-    border: 2px solid #ec7eff;
-    padding: 10px 0 0 0;
+    border: 2px solid  #68508e;
     margin: 0 auto;
-    background-color: #faddff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     @media screen and (max-width: $mini-width) {
         width: 80vw;
     }
