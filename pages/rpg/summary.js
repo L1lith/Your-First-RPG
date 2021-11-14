@@ -18,8 +18,8 @@ export default () => (
       Daniel Shiffman has so many good videos
     </div>
     <p className={styles.congratulations}>
-      🎂 🍰 🥧
-      <br /> Congratulations on finishing the course!!{' '}
+      <span className={styles.dessert}>🎂 🍰 🥧</span>
+      Congratulations you finished the course
     </p>
     <div className="stuck">
       <h2>Feeling Stuck?</h2>
