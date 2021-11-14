@@ -1,0 +1,16 @@
+{
+    "name": "Your First RPG",
+    "short_name": "Your1stRPG",
+    "icons": [
+      {
+        "src": "/images/site-icon.png",
+        "sizes": "128x128",
+        "type": "image/png"
+      }
+    ],
+    "theme_color": "#FFFFFF",
+    "background_color": "#FFFFFF",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait"
+  }
