@@ -59,9 +59,9 @@ function YTVideo(props = { url }) {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font:48px/1.5 sans-serif;
-            color:white;
-            filter: drop-shadow(0 0 0.5em black);
+            font: 80px/1.5 sans-serif;
+            color: white;
+            filter: drop-shadow(0 0 5px #000000e6);
             pointer-events: none;
             cursor: pointer;
           }
