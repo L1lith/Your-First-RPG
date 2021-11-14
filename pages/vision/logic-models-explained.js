@@ -22,14 +22,16 @@ export default () => (
       operates using logic; like how you do your job, how you cross the street, or how you navigate
       a website. A lot of decisions we make without realizing we made them.
     </p>
-    <span className="intro-card">
+    {
+      null /*<span className="intro-card">
       <img src="/images/spaghettiBowl.jpeg" alt="SLC Spaghetti Bowl" />
       Nothing gets the blood pumping quite like being tail-gated around a 90° turn on the freeway.
       <span className="smaller-text">
         {' '}
         Credit to <a href="https://www.utahseagull.com/2019/10/">Utah Seagull</a>
       </span>
-    </span>
+    </span> */
+    }
     <p>
       All logic models have 3 basic components
       <ol>
