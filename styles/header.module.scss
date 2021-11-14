@@ -1,7 +1,7 @@
 @import "variables.scss";
 
 .main-header {
-    color: white;
+    //color: white;
     width: auto;
     @media screen and (max-width: $mini-width) {
         margin: 0;
@@ -14,7 +14,7 @@
         font-size: 1.75em;
     }
     padding: 4vh 4vw;
-    background-color: #68508e;
+    border-bottom: 2px solid #68508e;
     //background: linear-gradient(to right, rgb(70, 54, 96), rgb(104, 80, 142), rgb(70, 54, 96));
     display: flex;
     flex-direction: row;

@@ -7,14 +7,14 @@
     margin-bottom: 30px;
     user-select: none;
     //position: fixed;
-    text-shadow: 2px 2px 1px $accent-dark;
+    //text-shadow: 2px 2px 1px $accent-dark;
     .site-icon {
         @media screen and (max-width: $mini-width) {
             display: none;
         }
-        filter: drop-shadow(0 0  4px #004193);
-        width: 1.5em;
-        height: 1.5em;
+        //filter: drop-shadow(0 0  4px #004193);
+        width: 1em;
+        height: 1em;
         text-shadow: 0 0 20px $background;
         margin: 0 10px;
         padding: 0;
