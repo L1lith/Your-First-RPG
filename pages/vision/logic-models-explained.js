@@ -101,7 +101,6 @@ export default () => (
       <br />
     </p>
     <YTVideo url="hZdLjyK89Cw" thumbnail="/images/self-operating-napkin.jpg" />
-    <br />
     <span className="italic">it works perfectly 60% of the time!</span>
     <p>
       When designing software systems it's important to think it through from beginning to end. Most
