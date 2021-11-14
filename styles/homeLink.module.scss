@@ -12,6 +12,7 @@
         @media screen and (max-width: $mini-width) {
             display: none;
         }
+        image-rendering: optimizeSpeed; 
         //filter: drop-shadow(0 0  4px #004193);
         width: 1em;
         height: 1em;
