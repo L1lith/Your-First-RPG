@@ -66,7 +66,7 @@
         border-bottom: 8px solid $accent;
         border-radius: 10px;
         margin: 0 auto 50px auto;
-        font-size: 1.8em;
+        //font-size: 1.8em; // TODO: Remove this? the font is way too big on desktop for some reason
         &.pages {
             font-size: 1.2em;
             list-style: disc;
