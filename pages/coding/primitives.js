@@ -108,8 +108,8 @@ export default () => (
     <div className="equality">
       <h2>Equality</h2>
       <p>
-        To check whether two values are the same we can use the strict equality operator "===". This
-        will return true{' '}
+        To check whether two values are exactly the same we can use the strict equality operator
+        "==="
       </p>
     </div>
     <br />
