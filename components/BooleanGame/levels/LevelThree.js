@@ -4,7 +4,7 @@ export default () => {
   return (
     <BooleanGame
       shapes={['▢', '⧍', '○', '◊']}
-      colors={['#ff7af5', '#00ff00', '#00b8ff', '#fbff00']}
+      colors={['#ffccfb', '#00ff00', '#0080b3', '#fdff80']}
       title={'Level 3'}
       size={5}
     />

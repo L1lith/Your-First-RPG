@@ -8,6 +8,28 @@
             padding: 10px;
         }
     }
+    .color-list {
+        margin-top: 5px;
+        text-align: center;
+        li {
+            list-style-type: none !important;
+            text-decoration: none;
+        }
+        li::before {
+            content: none;
+        }
+        .color {
+            border: 2px solid black;
+            border-radius: 5px;
+            display: block;
+            min-width: 40%;
+            padding: 10px;
+            width: fit-content;
+            text-align: center;
+            margin: 0 auto !important;
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.733);
+        }
+    }
     .rules {
         h2 {
             padding: 10px 0;
@@ -57,7 +79,7 @@
         user-select: none;
         box-shadow: 0 0 10px #00000069;
         border-radius: 20px;
-        border: 2px solid #ec7eff;
+        border: 2px solid #68508e;
         margin: 10px auto;
         width: 50vw;
         height: 50vw;

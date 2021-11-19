@@ -4,6 +4,7 @@ import randomBetween from '../../functions/randomBetween'
 import styles from '../../styles/BooleanGame.module.scss'
 import autoBind from 'auto-bind'
 import generateRules from '../../functions/generateRules'
+import ntc from 'ntcjs'
 import AceEditor from '../AceEditor'
 import ScratchBlocks from '../ScratchBlocks'
 
@@ -21,7 +22,7 @@ const propsFormat = {
   allOptional: true
 }
 
-const defaultColors = ['#ff7af5', '#00ff00', '#00b8ff']
+const defaultColors = ['#ffccfb', '#00ff00', '#0080b3']
 const defaultShapes = ['▢', '⧍', '○']
 
 class BooleanGame extends Component {
@@ -117,6 +118,16 @@ class BooleanGame extends Component {
           <span className={styles.jserror}>JavaScript is required to play this game.</span>
         </noscript>
         <div className={styles.rules}>
+          <h2>Color Palette</h2>
+          <ul className={styles['color-list']}>
+            {this.state.colors.map(color => (
+              <li>
+                <span className={styles.color} style={{ backgroundColor: color }}>
+                  {ntc.name(color)[1]}
+                </span>
+              </li>
+            ))}
+          </ul>
           <h2>Rules</h2>
           {
             (notColors ? '' : '(') +
