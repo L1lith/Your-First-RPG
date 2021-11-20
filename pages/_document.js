@@ -10,9 +10,8 @@ class MyDocument extends Document {
           <meta name="apple-mobile-web-app-status-bar-style" content="default" />
           <meta name="apple-mobile-web-app-title" content="Your First RPG" />
           <meta name="description" content="Learn to code by making a text RPG game" />
-          <meta name="format-detection" content="telephone=no" />
           <meta name="mobile-web-app-capable" content="yes" />
-          <meta name="msapplication-config" content="/icons/browserconfig.xml" />
+          <meta name="msapplication-config" content="none" />
           <meta name="msapplication-TileColor" content="#ffffff" />
           <meta name="msapplication-tap-highlight" content="no" />
           <meta name="theme-color" content="#ffffff" />
