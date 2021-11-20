@@ -120,8 +120,8 @@ class BooleanGame extends Component {
         <div className={styles.rules}>
           <h2>Color Palette</h2>
           <ul className={styles['color-list']}>
-            {this.state.colors.map(color => (
-              <li>
+            {this.state.colors.map((color, i) => (
+              <li key={i}>
                 <span className={styles.color} style={{ backgroundColor: color }}>
                   {ntc.name(color)[1]}
                 </span>

@@ -96,7 +96,6 @@ function CodeSandbox(props) {
           className={styles['ace-editor']}
           mode="javascript"
           theme="ambiance"
-          style={{ 'min-height': '50px' }}
           readOnly={props.readOnly === true}
           value={code}
           onChange={newCode => {
@@ -152,11 +151,10 @@ function getConsoleOutput(code) {
     return (
       <AceEditor
         maxLines={Infinity}
-        className={styles.output + ' ' + styles.valid}
+        className={styles['ace-editor'] + ' ' + styles.output + ' ' + styles.valid}
         width="50%"
         mode="javascript"
         height="auto"
-        style={{ 'min-height': '50px' }}
         theme="ambiance"
         readOnly
         value={logOutput.map(value => inspect(value)).join(';\n')}
@@ -175,9 +173,8 @@ function getEvalOutput(code) {
     return (
       <AceEditor
         maxLines={Infinity}
-        className="output valid"
+        className={styles['ace-editor'] + ' output valid'}
         width="50%"
-        style={{ 'min-height': '50px' }}
         mode="javascript"
         theme="ambiance"
         readOnly

@@ -5,7 +5,6 @@ module.exports = withPWA({
   // other next config
   pwa: {
     runtimeCaching,
-    dest: 'public',
     buildExcludes: [/middleware-manifest\.json$/]
   }
 })

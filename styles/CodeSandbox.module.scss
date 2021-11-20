@@ -20,6 +20,8 @@
     width: 100%;
     transform: none;
     .ace-editor {
+        min-height: '50px';
+        font-size: 1em !important;
         position: relative !important;
         display: inline-block;
         min-height: 90px;
