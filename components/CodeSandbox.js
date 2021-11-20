@@ -83,35 +83,38 @@ function CodeSandbox(props) {
         ) : null}
       </h2>
       <noscript>Please Enable JavaScript</noscript>
-      <div className={styles.titles}>
-        <h2 className={styles.title}>Code Input</h2>
-        <h2 className={styles.title + ' ' + styles.mode}>
-          {props.consoleMode === true ? 'Console' : 'Output'}
-        </h2>
-      </div>
+      <div className={styles.titles}></div>
       <div className={styles.inner}>
-        <AceEditor
-          width="50%"
-          maxLines={Infinity}
-          className={styles['ace-editor']}
-          mode="javascript"
-          theme="ambiance"
-          readOnly={props.readOnly === true}
-          value={code}
-          onChange={newCode => {
-            setCode(newCode)
-            if (props.disableAutoRun !== true) {
-              setOutput(getOutput(newCode, props.consoleMode))
-            }
-          }}
-        />
-        {output === null ? (
-          <span className={styles.output + ' ' + styles.empty}>
-            Run the program to see your output
-          </span>
-        ) : (
-          output
-        )}
+        <div className={styles.section}>
+          <h2 className={styles.title}>Code Input</h2>
+          <AceEditor
+            width="50%"
+            maxLines={Infinity}
+            className={styles['ace-editor']}
+            mode="javascript"
+            theme="ambiance"
+            readOnly={props.readOnly === true}
+            value={code}
+            onChange={newCode => {
+              setCode(newCode)
+              if (props.disableAutoRun !== true) {
+                setOutput(getOutput(newCode, props.consoleMode))
+              }
+            }}
+          />
+        </div>
+        <div className={styles.section}>
+          <h2 className={styles.title + ' ' + styles.mode}>
+            {props.consoleMode === true ? 'Console' : 'Output'}
+          </h2>
+          {output === null ? (
+            <span className={styles.output + ' ' + styles.empty}>
+              Run the program to see your output
+            </span>
+          ) : (
+            output
+          )}
+        </div>
       </div>
     </div>
   )

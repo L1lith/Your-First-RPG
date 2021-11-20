@@ -20,6 +20,7 @@
     width: 100%;
     transform: none;
     .ace-editor {
+        width: 100% !important;
         min-height: '50px';
         font-size: 1em !important;
         position: relative !important;
@@ -77,9 +78,9 @@
         //height: 100%;
     }
     .mode {
-        @media screen and (max-width: $mini-width) {
-            display: none;
-        }
+        // @media screen and (max-width: $mini-width) {
+        //     display: none;
+        // }
     }
     .main-title {
         & > h2 {
@@ -130,6 +131,14 @@
         text-align: center;
         position: relative;
     }
+    .section {
+        
+        width: 50%;
+        max-width: 100%;
+        @media screen and (max-width: $mini-width) {
+            width: 100% !important;
+        }
+    }
     & > .inner {
         overflow: hidden;
         display: flex;
@@ -138,17 +147,6 @@
         position: relative;
         @media screen and (max-width: $mini-width) {
             flex-direction: column;
-        }
-        & > * {
-            width: 50%;
-            max-width: 100%;
-            overflow: auto;
-            @media screen and (max-width: $mini-width) {
-                width: 100% !important;
-            }
-            
-            // display: inline-block;
-            // vertical-align: top;
         }
         // & > * {
         //     position: absolute;
