@@ -1,6 +1,7 @@
 import CodeSandbox from '../../components/CodeSandbox'
 import { NextSeo } from 'next-seo'
 import Link from 'next/link'
+import styles from '../../styles/rpg/editor.module.scss'
 
 const defaultGame = `function smartPrompt(question) {
   var output = null
@@ -54,18 +55,21 @@ function Editor() {
   //   if (typeof gameCode == 'string' && gameCode.length > 1) setCode(gameCode)
   // })
   return (
-    <div className="game-editor">
+    <div className={styles['game-editor']}>
       <NextSeo title="🛠️ Game Editor" description="Build a game of your own" />
       <h1>#4.3 🛠️ The Game Editor</h1>
       <p>
         Build your own game! Be sure to press the ☁️ button and share your url.
         <br /> Warning: You must save your URL or your game data could be lost.
       </p>
-      <CodeSandbox codeQueryParam={'code'} value={defaultGame} consoleMode disableAutoRun />
-      <p>
-        Feel free to press the ❌ to delete the starter code. On desktop you must use the arrow keys
-        in the editor to make the horizontal scrollbar appear.
-      </p>
+      <CodeSandbox
+        className={styles['editor-module']}
+        codeQueryParam={'code'}
+        value={defaultGame}
+        consoleMode
+        disableAutoRun
+      />
+      <p>Feel free to press the ❌ to delete the starter code.</p>
       <Link href="/rpg/summary">
         <a className="next">Next: #4.4 🔭 Summary & Further Reading</a>
       </Link>

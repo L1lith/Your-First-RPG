@@ -24,7 +24,10 @@ function CodeSandbox(props) {
   }, [queryCode])
 
   return (
-    <div className={styles.sandbox}>
+    <div
+      className={
+        (typeof props.className == 'string' ? props.className + ' ' : '') + styles.sandbox
+      }>
       {typeof shareURL == 'string' ? (
         <span className={styles['share-popup']}>
           Your Sharing URL:

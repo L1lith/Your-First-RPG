@@ -5,7 +5,6 @@ import { NextSeo } from 'next-seo'
 
 export default () => (
   <div className={styles.home}>
-    <NextSeo description="Learn to make games in JavaScript for beginners" />
     <h1 className="title">
       <span className="smaller-text">Coding Intro:</span>
       <br />

@@ -101,7 +101,7 @@
                 transition: none;
             }
             transition: none;
-            font-size: 40px;
+            //font-size: 40px; // Why was this here?
             //position: absolute;
             top: 0%;
             //transform: translateY(-50%);
@@ -138,6 +138,11 @@
         @media screen and (max-width: $mini-width) {
             width: 100% !important;
         }
+        & > * {
+            display: block;
+            width: 100%;
+        }
+        padding-bottom: 20px;
     }
     & > .inner {
         overflow: hidden;
@@ -158,12 +163,10 @@
         // }
     }
     .output {
-        &:not(.valid) {
-            background-color: #202020;
-        padding: 20px;
-        width: calc(50% - 40px);
-        //height: calc(100% - 40px);
-        }
+        // &:not(.valid) {
+        //     background-color: #202020;
+        // //height: calc(100% - 40px);
+        // }
         &.error {
             color: #ff0068;
         }

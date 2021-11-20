@@ -10,6 +10,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <Fragment>
       <DefaultSeo titleTemplate="%s - YFRPG" defaultTitle="Your First RPG"></DefaultSeo>
+      <DefaultSeo description="Learn to make games in JavaScript for beginners" />
       <Head>
         <link rel="shortcut icon" href="/images/site-icon.png" />
       </Head>
