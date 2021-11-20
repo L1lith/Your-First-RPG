@@ -86,7 +86,6 @@ function CodeSandbox(props) {
         ) : null}
       </h2>
       <noscript>Please Enable JavaScript</noscript>
-      <div className={styles.titles}></div>
       <div className={styles.inner}>
         <div className={styles.section}>
           <h2 className={styles.title}>Code Input</h2>
