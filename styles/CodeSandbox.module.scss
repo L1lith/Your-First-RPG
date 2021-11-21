@@ -132,12 +132,9 @@
         position: relative;
     }
     .section {
-        
-        width: 50%;
-        max-width: 100%;
-        @media screen and (max-width: $mini-width) {
-            width: 100% !important;
-        }
+        width: 100%;
+        // width: 50%;
+        // max-width: 100%;
         & > * {
             display: block;
             width: 100%;
@@ -151,6 +148,9 @@
         width: 100%;
         position: relative;
         @media screen and (max-width: $mini-width) {
+            flex-direction: column;
+        }
+        &.vertical {
             flex-direction: column;
         }
         // & > * {

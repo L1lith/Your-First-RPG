@@ -6,6 +6,7 @@ import autoBind from 'auto-bind'
 import { useRouter, withRouter } from 'next/router'
 
 function CodeSandbox(props) {
+  console.log('hi')
   const [shareURL, setShareURL] = useState(null)
   const router = useRouter()
   const queryCode = router.query.code
@@ -14,6 +15,7 @@ function CodeSandbox(props) {
       ? router.query[props.codeQueryParam]
       : props.value || ''
   )
+  const vertical = !!props.vertical
   const [output, setOutput] = useState(
     props.disableAutoRun === true ? null : getOutput(code, props.consoleMode)
   )
@@ -26,7 +28,9 @@ function CodeSandbox(props) {
   return (
     <div
       className={
-        (typeof props.className == 'string' ? props.className + ' ' : '') + styles.sandbox
+        (vertical === true ? styles.vertical + ' ' : '') +
+        (typeof props.className == 'string' ? props.className + ' ' : '') +
+        styles.sandbox
       }>
       {typeof shareURL == 'string' ? (
         <span className={styles['share-popup']}>
@@ -86,8 +90,8 @@ function CodeSandbox(props) {
         ) : null}
       </h2>
       <noscript>Please Enable JavaScript</noscript>
-      <div className={styles.inner}>
-        <div className={styles.section}>
+      <div className={(vertical ? styles.vertical + ' ' : '') + styles.inner}>
+        <div className={'section ' + styles.section}>
           <h2 className={styles.title}>Code Input</h2>
           <AceEditor
             width="50%"
@@ -105,7 +109,7 @@ function CodeSandbox(props) {
             }}
           />
         </div>
-        <div className={styles.section}>
+        <div className={'section ' + styles.section}>
           <h2 className={styles.title + ' ' + styles.mode}>
             {props.consoleMode === true ? 'Console' : 'Output'}
           </h2>

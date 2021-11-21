@@ -66,6 +66,7 @@ function Editor() {
         className={styles['editor-module']}
         codeQueryParam={'code'}
         value={defaultGame}
+        vertical
         consoleMode
         disableAutoRun
       />
