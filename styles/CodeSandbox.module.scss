@@ -19,6 +19,7 @@
     position: relative;
     width: 100%;
     transform: none;
+    overflow: none;
     .ace-editor {
         width: 100% !important;
         min-height: '50px';
@@ -31,7 +32,7 @@
         padding-top: 10vh;
         position: absolute;
         top: 0;
-        height: 100%;
+        height: calc(100% - 10vh);
         left: 0;
         align-items:center;
         & > * {
