@@ -70,7 +70,10 @@ function Editor() {
         consoleMode
         disableAutoRun
       />
-      <p>Feel free to press the ❌ to delete the starter code.</p>
+      <p>
+        Feel free to press the ❌ to delete the starter code. Try flipping your phone sideways if
+        you're on mobile!
+      </p>
       <Link href="/rpg/summary">
         <a className="next">Next: #4.4 🔭 Summary & Further Reading</a>
       </Link>

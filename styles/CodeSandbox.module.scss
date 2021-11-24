@@ -20,6 +20,15 @@
     width: 100%;
     transform: none;
     overflow: none;
+    .settings {
+        margin-top: 100px;
+        .auto-play {
+            input {
+                width: 0.5em;
+                height: 0.5em;
+            }
+        }
+    }
     .ace-editor {
         width: 100% !important;
         min-height: '50px';
@@ -76,13 +85,8 @@
         width: 50%;
         //height: 100%;
     }
-    .mode {
-        // @media screen and (max-width: $mini-width) {
-        //     display: none;
-        // }
-    }
     .main-title {
-        & > h2 {
+        .mode {
             margin-left: auto;
             margin-right: auto;
         }
@@ -141,7 +145,7 @@
         padding-bottom: 20px;
     }
     & > .inner {
-        overflow: hidden;
+        //overflow: hidden;
         display: flex;
         justify-content: stretch;
         width: 100%;

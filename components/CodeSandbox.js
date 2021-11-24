@@ -1,4 +1,4 @@
-import { Component, Fragment, useState, useEffect } from 'react'
+import { Component, Fragment, useState, useEffect, useRef } from 'react'
 import AceEditor from './AceEditor'
 import styles from '../styles/CodeSandbox.module.scss'
 import { inspect } from 'util'
@@ -6,10 +6,14 @@ import autoBind from 'auto-bind'
 import { useRouter, withRouter } from 'next/router'
 
 function CodeSandbox(props) {
-  console.log('hi')
   const [shareURL, setShareURL] = useState(null)
   const router = useRouter()
+  const [shareAutoPlay, setShareAutoPlay] = useState(
+    router.query.hasOwnProperty('autoPlay') ? router.query.autoPlay : null
+  )
+  const autoPlayInput = useRef(null)
   const queryCode = router.query.code
+  const autoPlayQuery = router.query.autoPlay
   const [code, setCode] = useState(
     router.query.hasOwnProperty(props.codeQueryParam)
       ? router.query[props.codeQueryParam]
@@ -24,6 +28,16 @@ function CodeSandbox(props) {
     if (!queryCode) return
     setCode(queryCode)
   }, [queryCode])
+  useEffect(() => {
+    if (shareAutoPlay !== null) return
+    if (!autoPlayQuery) return
+    setShareAutoPlay(autoPlayQuery === '1')
+  }, [autoPlayQuery])
+  // let hasAutorun = false
+  // useEffect(() => {
+  //   if (shareAutoPlay === null || !code) return
+  //   setOutput(getOutput(code, props.consoleMode))
+  // }, [shareAutoPlay, code])
 
   return (
     <div
@@ -45,6 +59,20 @@ function CodeSandbox(props) {
             }}>
             ❌
           </span>
+          <div className={styles.settings}>
+            <h2>Settings</h2>
+            <span className={styles['auto-play']}>
+              Autoplay{' '}
+              <input
+                ref={autoPlayInput}
+                onChange={() => {
+                  setShareAutoPlay(!shareAutoPlay)
+                }}
+                checked={shareAutoPlay}
+                type="checkbox"
+              />
+            </span>
+          </div>
         </span>
       ) : null}
       <h2 className={styles['main-title']}>
@@ -58,9 +86,9 @@ function CodeSandbox(props) {
             ▶
           </span>
         ) : null}
-        <h2 className={styles.mode}>
+        <span className={styles.mode}>
           JavaScript {props.consoleMode === true ? 'Terminal' : 'Evaluator'}
-        </h2>
+        </span>
         {props.readOnly === true ? ' (Read Only)' : null}
         {props.noReset !== true ? (
           <span
@@ -81,7 +109,7 @@ function CodeSandbox(props) {
                 setShareURL(
                   `${router.basePath}/rpg/editor?${props.codeQueryParam}=${encodeURIComponent(
                     code
-                  )}`
+                  )}${shareAutoPlay ? '&autoPlay=1' : ''}`
                 )
               }}>
               ☁️
