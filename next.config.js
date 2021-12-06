@@ -7,10 +7,10 @@ module.exports = withPWA({
   get headers() {
     return Object.entries(securityHeaders).map(([key, value]) => ({ key, value }))
   },
-  i18n: {
-    locales: ['en-US', 'fr'],
-    defaultLocale: 'en-US'
-  },
+  //   i18n: {
+  //     locales: ['en-US', 'fr'],
+  //     defaultLocale: 'en-US'
+  //   },
   pwa: {
     runtimeCaching,
     buildExcludes: [/middleware-manifest\.json$/]
