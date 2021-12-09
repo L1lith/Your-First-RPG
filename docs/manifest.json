@@ -15,6 +15,12 @@
         "purpose": "any maskable"
       },
       {
+        "src": "/images/app-icon-huge.png",
+        "type": "image/png",
+        "size": "512x512",
+        "purpose": "any maskable"
+      },
+      {
         "src": "/favicon.ico",
         "type": "image/x-icon",
         "size": "32x32",

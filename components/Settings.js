@@ -21,7 +21,9 @@ const Settings = props => {
             className={styles['close'] + ' emoji-button grayscale'}>
             ❌
           </button>
-          <button>Download the App!</button>
+          <a href="https://support.google.com/chrome/answer/9658361">
+            <button>Download the App!</button>
+          </a>
         </div>
       </Fragment>
     )
