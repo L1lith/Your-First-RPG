@@ -5,14 +5,12 @@
       {
         "src": "/images/site-icon.svg",
         "type": "image/svg",
-        "sizes": "36x36 48x48 72x72 96x96 120x120 128x128 144x144 152x152 180x180 192x192 384x384 512x512 any",
-        "purpose": "any"
+        "sizes": "36x36 48x48 72x72 96x96 120x120 128x128 144x144 152x152 180x180 192x192 384x384 512x512 any"
       },
       {
         "src": "/images/site-icon.svg",
         "type": "image/svg",
-        "sizes": "512x512",
-        "purpose": "any"
+        "sizes": "512x512"
       },
       {
         "src": "/images/app-icon-huge.png",
@@ -23,8 +21,7 @@
       {
         "src": "/favicon.ico",
         "type": "image/x-icon",
-        "size": "32x32",
-        "purpose": "any maskable"
+        "size": "32x32"
       }
     ],
     "theme_color": "#0069ed",

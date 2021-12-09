@@ -5,8 +5,6 @@ import styles from '../../styles/BooleanGame.module.scss'
 import autoBind from 'auto-bind'
 import generateRules from '../../functions/generateRules'
 import ntc from 'ntcjs'
-import AceEditor from '../AceEditor'
-import ScratchBlocks from '../ScratchBlocks'
 
 const propsFormat = {
   _: {
