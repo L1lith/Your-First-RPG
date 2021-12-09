@@ -15,6 +15,7 @@
     height: calc(100vh - 40px);
     background-color: white;
     border: 20px inset #0069ed;
+    overflow: auto;
     .close {
         position: absolute;
         top: 2%;

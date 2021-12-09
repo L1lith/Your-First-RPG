@@ -1,8 +1,10 @@
 import styles from '../styles/YTVideo.module.scss'
+import { useState, Fragment } from 'react'
 
 const urlRegex = /^[0-9A-Za-z_-]{10}[048AEIMQUYcgkosw]$/i
 
 function YTVideo(props = { url }) {
+  const [isOpen, setOpen] = useState(false)
   const { url, query = {} } = props
   if (
     props.hasOwnProperty('query') &&
@@ -32,50 +34,28 @@ function YTVideo(props = { url }) {
         styles['youtube-container'] + ' youtube-container'
         // 'youtube-container' + (typeof props.className == 'string' ? ' ' + props.className : '')
       }>
-      <iframe
-        src={videoURL}
-        title="YouTube video player"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-        srcDoc={`<style>*{
-          padding:0;margin:0;overflow:hidden
-          }
-          html,body
-          {
-          height:100%;
-          background-color: black;
-          }
-          img{
-          width:100%;
-          height: 100%;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          }
-          span {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font: 80px/1.5 sans-serif;
-            color: white;
-            filter: drop-shadow(0 0 5px #000000e6);
-            pointer-events: none;
-            cursor: pointer;
-          }
-          a {
-            display: block;
-          }
-          </style>
-          <a href=${videoURL}>
-          <img src=${
-            props.hasOwnProperty('thumbnail')
-              ? props.thumbnail
-              : `https://img.youtube.com/vi/${url}/hqdefault.jpg`
-          } alt='Youtube Video'></a><span>▶</span>`}
-      />
+      {!isOpen ? (
+        <Fragment>
+          <img
+            onClick={() => setOpen(true)}
+            src={
+              props.hasOwnProperty('thumbnail')
+                ? props.thumbnail
+                : `https://img.youtube.com/vi/${url}/hqdefault.jpg`
+            }
+            alt="Youtube Video"
+          />
+          <span>▶</span>
+        </Fragment>
+      ) : (
+        <iframe
+          src={videoURL}
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      )}
     </div>
   )
 }

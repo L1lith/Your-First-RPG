@@ -14,7 +14,12 @@ const Header = () => (
         <a className={styles['home-link']}>Your First RPG</a>
       </Link>
     </h1>
-    <img alt="site logo" className={styles['site-icon']} src="/images/site-icon.svg" />
+    <img
+      alt="site logo"
+      type="image/svg"
+      className={styles['site-icon']}
+      src="/images/site-icon.svg"
+    />
     {
       null /*<Link href="/support">
       <a className={styles.support}>Support Me</a>

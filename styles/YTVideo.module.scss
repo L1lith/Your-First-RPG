@@ -1,6 +1,28 @@
 @import "variables";
 
 .youtube-container {
+  img{
+    display: block;
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font: 80px/1.5 sans-serif;
+      color: white;
+      filter: drop-shadow(0 0 5px #000000e6);
+      pointer-events: none;
+      cursor: pointer;
+    }
+    a {
+    }
     position: relative;
     width: 80%;
     @media screen and (max-width: $mini-width) {
