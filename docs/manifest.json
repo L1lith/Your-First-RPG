@@ -4,7 +4,13 @@
     "icons": [
       {
         "src": "/images/site-icon.svg",
-        "type": "image/svg"
+        "type": "image/svg",
+        "sizes": "any"
+      },
+      {
+        "src": "/favicon.ico",
+        "type": "image/x-icon",
+        "size": "32x32"
       }
     ],
     "theme_color": "#0069ed",
