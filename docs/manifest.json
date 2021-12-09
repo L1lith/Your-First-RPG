@@ -5,7 +5,8 @@
       {
         "src": "/images/site-icon.svg",
         "type": "image/svg",
-        "sizes": "any"
+        "sizes": "36x36 48x48 72x72 96x96 120x120 128x128 144x144 152x152 180x180 192x192 384x384 512x512 any",
+        "purpose": "any maskable"
       },
       {
         "src": "/favicon.ico",

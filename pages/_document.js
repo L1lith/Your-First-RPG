@@ -1,12 +1,9 @@
-import { DefaultSeo } from 'next-seo'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <DefaultSeo titleTemplate="%s - YFRPG" defaultTitle="Your First RPG"></DefaultSeo>
-        <DefaultSeo description="Learn to make games in JavaScript for beginners" />
         <Head>
           <link rel="shortcut icon" href="/images/site-icon.svg" />
           <meta
