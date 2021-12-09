@@ -1,4 +1,4 @@
-const withPWA = require('next-pwa')
+const withOffline = require('next-offline')
 const runtimeCaching = require('next-pwa/cache')
 const securityHeaders = require('./security-headers')
 //const { i18n } = require('./next-i18next.config')
@@ -8,7 +8,7 @@ const securityHeaders = require('./security-headers')
 //   en: 'en-US',
 //   fr: 'fr'
 // }
-module.exports = withPWA({
+module.exports = withOffline({
   // other next config
   //rewrites: async () => nextI18NextRewrites(localeSubpaths),
   get headers() {
