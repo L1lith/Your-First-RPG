@@ -9,9 +9,16 @@
         "purpose": "any maskable"
       },
       {
+        "src": "/images/site-icon.svg",
+        "type": "image/svg",
+        "sizes": "512x512",
+        "purpose": "any maskable"
+      },
+      {
         "src": "/favicon.ico",
         "type": "image/x-icon",
-        "size": "32x32"
+        "size": "32x32",
+        "purpose": "any maskable"
       }
     ],
     "theme_color": "#0069ed",
