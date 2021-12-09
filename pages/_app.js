@@ -3,6 +3,7 @@ import styles from '../styles/_app.module.scss'
 import '../styles/_normalize.scss'
 import '../styles/_global.scss'
 import { Fragment } from 'react'
+import { appWithTranslation } from 'next-i18next'
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -15,4 +16,4 @@ function MyApp({ Component, pageProps }) {
   )
 }
 
-export default MyApp
+export default appWithTranslation(MyApp)

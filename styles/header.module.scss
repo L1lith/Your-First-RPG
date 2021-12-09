@@ -1,6 +1,34 @@
 @import "variables.scss";
 
 .main-header {
+    align-items: center;
+    .home-link {
+        color: #0069ed;
+        text-align: center;
+        display: flex;
+        text-decoration: none;
+        margin-bottom: 30px;
+        user-select: none;
+        //position: fixed;
+        //text-shadow: 2px 2px 1px $accent-dark;
+    }
+    .site-icon {
+        @media screen and (max-width: $mini-width) {
+            display: none;
+        }
+        //filter: drop-shadow(0 0  4px #004193);
+        height: 1.5em;
+        text-shadow: 0 0 20px $background;
+        //margin: 0 10px;
+        padding: 0;
+        // image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+        // image-rendering: -moz-crisp-edges;          /* Firefox                        */
+        // image-rendering: -o-crisp-edges;            /* Opera                          */
+        // image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+        // image-rendering: pixelated; /* Chrome */
+        // image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+        // -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+    }
     @media screen and (max-width: $mini-width) {
         margin: 0;
         font-size: 1em;
@@ -23,10 +51,11 @@
     font-size: 1.5em;
     overflow-x: auto;
     white-space: nowrap;
-    *, a {
+    * {
         color: inherit;
         padding: 0;
-        margin: 0 2vw;
+        margin: 0 !important;
+        //margin: 0 2vw;
         font-size: 1em;
         text-decoration: none;
     }
