@@ -4,11 +4,10 @@ const securityHeaders = require('./security-headers')
 const { i18n } = require('./next-i18next.config')
 //const { nextI18NextRewrites } = require('next-i18next/rewrites')
 
-const localeSubpaths = {
-  en: 'en-US',
-  fr: 'fr'
-}
-
+// const localeSubpaths = {
+//   en: 'en-US',
+//   fr: 'fr'
+// }
 module.exports = withPWA({
   // other next config
   //rewrites: async () => nextI18NextRewrites(localeSubpaths),

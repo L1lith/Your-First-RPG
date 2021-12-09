@@ -94,6 +94,9 @@ html {
    width: 100vw;
 }
 body {
+    &.disabled {
+        overflow: hidden;
+    }
     @media screen and (max-width: $mini-width) {
         font-size: 5vw;
     }
@@ -156,4 +159,19 @@ table {
             border-left-width: 0;
         }
     }
+}
+
+.emoji-button {
+    &:hover {
+        filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.466));
+        transition: none;
+    }
+    transition: filter 0.2s ease-out;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.grayscale {
+    filter: grayscale(100%);
 }

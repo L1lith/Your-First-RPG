@@ -2,13 +2,19 @@
 
 .main-header {
     align-items: center;
+    .resources {
+        margin-right: auto;
+    }
+    .settings {
+        margin-left: auto;
+    }
     .home-link {
         color: #0069ed;
         text-align: center;
         display: flex;
         text-decoration: none;
-        margin-bottom: 30px;
         user-select: none;
+        margin-right: 0;
         //position: fixed;
         //text-shadow: 2px 2px 1px $accent-dark;
     }
@@ -17,10 +23,10 @@
             display: none;
         }
         //filter: drop-shadow(0 0  4px #004193);
-        height: 1.5em;
+        height: 2em;
         text-shadow: 0 0 20px $background;
+        margin-left: 0;
         //margin: 0 10px;
-        padding: 0;
         // image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
         // image-rendering: -moz-crisp-edges;          /* Firefox                        */
         // image-rendering: -o-crisp-edges;            /* Opera                          */
@@ -31,13 +37,13 @@
     }
     @media screen and (max-width: $mini-width) {
         margin: 0;
-        font-size: 1em;
+        font-size: 1.5em;
         padding: 3vh 4vw;
-        justify-content: space-around;
+        //justify-content: space-around;
         white-space: initial;
     }
     @media screen and (min-width: $mega-width) {
-        font-size: 1.75em;
+        font-size: 2.75em;
     }
     //color: white;
     width: auto;
@@ -46,17 +52,31 @@
     //background: linear-gradient(to right, rgb(70, 54, 96), rgb(104, 80, 142), rgb(70, 54, 96));
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2.5em;
     overflow-x: auto;
     white-space: nowrap;
+    // & > * {
+    //     padding: 0 20px;
+    //     @media screen and (max-width: $mini-width) {
+    //         padding: 0 5px;
+    //     }
+    //     @media screen and (min-width: $mega-width) {
+    //         padding: 0 20px;
+    //     }
+    // }
     * {
         color: inherit;
-        padding: 0;
-        margin: 0 !important;
+        margin: 20px;
+        @media screen and (max-width: $mini-width) {
+            margin: 5px;
+        }
+        margin-bottom: 0 !important;
+        margin-top: 0 !important;
+        //margin: 0 !important;
         //margin: 0 2vw;
-        font-size: 1em;
+        font-size: inherit;
         text-decoration: none;
     }
 }
