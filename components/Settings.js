@@ -14,10 +14,12 @@ const Settings = props => {
         <span className={styles['dom-blocker']} />
         <div className={styles['settings-menu']}>
           <button
-            onClick={() => {
-              setOpen(false)
-              document.body.classList.remove('disabled')
-            }}
+            {
+              ...{} /*onClick={() => { // Enable to enable the settings
+              //   setOpen(false)
+              //   document.body.classList.remove('disabled')
+              // }} */
+            }
             className={styles['close'] + ' emoji-button grayscale'}>
             ❌
           </button>
