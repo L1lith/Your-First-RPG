@@ -40,7 +40,7 @@ export default () => (
           which you can use to make decisions.
         </li>
         <li>
-          <span className="bold">Rules:</span> This is the the "logic" or "code" of your model. The
+          <span className="bold">Rules:</span> This is the "logic" or "code" of your model. The
           rules decide what the result (or output) of our model is based on the input.
         </li>
         <li>

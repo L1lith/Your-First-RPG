@@ -64,9 +64,9 @@ export default () => (
         multiple times with different inputs. Functions use parenthesis to create their inputs, and
         later after they've been created we use parenthesis again to call it (calling a function
         means to run it). The "console.log" part of our code is an example of a function (in this
-        case to output some data). It's called with parenthesis and is provided with the input of
-        what we want to output (which in the previous example was the balance variable's current
-        value).
+        case to output some data). It's called (to call a function means to run it) with parenthesis
+        and is provided with the input of what we want to output (which in the previous example was
+        the balance variable's current value).
       </p>
       <h2>Addition Function</h2>
       <p>
