@@ -1,4 +1,3 @@
-import LevelOne from '../../components/BooleanGame/levels/LevelOne'
 import Link from 'next/link'
 import { NextSeo } from 'next-seo'
 import YTVideo from '../../components/YTVideo'

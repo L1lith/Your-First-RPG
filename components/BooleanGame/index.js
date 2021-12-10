@@ -103,7 +103,6 @@ class BooleanGame extends Component {
     this.setState({ gameState: 'won' })
   }
   render() {
-    console.log(this.state.rules)
     const notColors = this.state.rules.colorsDescription.startsWith('not')
     const notShapes = this.state.rules.shapesDescription.startsWith('not')
     return (
