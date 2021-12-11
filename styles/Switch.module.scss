@@ -16,6 +16,8 @@
         font-weight: normal;
         position: absolute;
         font-size: 0.5em;
+        top: 50%;
+        transform: translateY(-50%);
     }
     .onLabel {
         left: 110px;

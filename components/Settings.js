@@ -24,8 +24,17 @@ const Settings = props => {
             ❌
           </button>
           <span>
-            <h2>Coding Language</h2>
-            <Switch rounded default="on" onLabel="JavaScript" offLabel="Scratch" />
+            <h2>JavaScript Editor</h2>
+            <Switch
+              onChange={value => {
+                localStorage.codeLanguage = value ? 'js' : 'scratch'
+              }}
+              value={localStorage.codeLanguage !== 'scratch' /* Default language is JS */}
+              rounded
+              default="on"
+              onLabel="Text Editor"
+              offLabel="Blocks"
+            />
           </span>
           <a target="_blank" href="https://support.google.com/chrome/answer/9658361">
             <button>Download the App!</button>

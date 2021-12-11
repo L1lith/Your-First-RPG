@@ -2,7 +2,7 @@ import styles from '../styles/Switch.module.scss'
 import { useState, useRef } from 'react'
 
 function Switch(props) {
-  const { rounded = false, offLabel, onLabel, onChange, value = false } = props
+  const { rounded = true, offLabel, onLabel, onChange, value = false } = props
   const [isActive, setActive] = useState(!!value)
   const inputRef = useRef(null)
   return (
