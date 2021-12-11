@@ -29,7 +29,7 @@ export default () => (
       </li>
       <li>
         <Link href="/rpg/summary">
-          <a>#4.4 🔭 Summary & Further Reading</a>
+          <a>#4.4 🔭 You Won! Further Reading</a>
         </Link>
       </li>
     </ol>

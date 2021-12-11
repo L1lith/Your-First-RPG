@@ -75,7 +75,7 @@ function Editor() {
         you're on mobile!
       </p>
       <Link href="/rpg/summary">
-        <a className="next">Next: #4.4 🔭 Summary & Further Reading</a>
+        <a className="next">Next: #4.4 🔭 You Won! Further Reading</a>
       </Link>
     </div>
   )
