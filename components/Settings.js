@@ -1,5 +1,7 @@
 import styles from '../styles/Settings.module.scss'
 import { useState, Fragment } from 'react'
+import isDev from '../functions/isDev'
+import Switch from './Switch'
 
 const Settings = props => {
   const [isOpen, setOpen] = useState(false)
@@ -21,6 +23,10 @@ const Settings = props => {
             className={styles['close'] + ' emoji-button grayscale'}>
             ❌
           </button>
+          <span>
+            <h2>Coding Language</h2>
+            <Switch rounded default="on" onLabel="JavaScript" offLabel="Scratch" />
+          </span>
           <a target="_blank" href="https://support.google.com/chrome/answer/9658361">
             <button>Download the App!</button>
           </a>
@@ -32,7 +38,7 @@ const Settings = props => {
     <Fragment>
       <button
         onClick={() => {
-          return // The settings menu is temporarily disabled
+          if (!isDev()) return // The settings menu is currently dev only
           setOpen(true)
           document.body.classList.add('disabled')
         }}

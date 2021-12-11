@@ -1,0 +1,53 @@
+.switch {
+    display: inline-block;
+    //border: 2px solid black;
+    width: 100px;
+    height: 50px;
+    position: relative;
+    background-color: #e4ecf8;
+    transition: background-color 0.2s ease;
+    &.switch-active {
+        background-color: #0069ed;
+    }
+    &.rounded {
+        border-radius: 100px;
+    }
+    .onLabel, .offLabel {
+        font-weight: normal;
+        position: absolute;
+        font-size: 0.5em;
+    }
+    .onLabel {
+        left: 110px;
+    }
+    .offLabel {
+        right: 110px;
+    }
+    .slider {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10px;
+        transition: left 0.2s ease;
+        border-radius: 100px;
+        background-color: white;
+        &.slider-active {
+            left: 50px;
+        }
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        margin: 0;
+        pointer-events: none;
+    }
+    input {
+        cursor: pointer;
+        margin: 0;
+        position: absolute;
+        opacity: 0;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

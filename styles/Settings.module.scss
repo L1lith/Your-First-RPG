@@ -5,7 +5,7 @@
 .settings-menu {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     position: fixed;
     z-index: 100;
@@ -24,6 +24,9 @@
     button {
         padding: 10px 20px;
         width: fit-content;
+    }
+    & > * {
+        margin: 20px 0;
     }
 }
 
