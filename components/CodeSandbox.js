@@ -4,6 +4,7 @@ import styles from '../styles/CodeSandbox.module.scss'
 import { inspect } from 'util'
 import autoBind from 'auto-bind'
 import { useRouter, withRouter } from 'next/router'
+import Output from './Dictionary/Output'
 
 function CodeSandbox(props) {
   const [shareURL, setShareURL] = useState(null)
@@ -143,7 +144,7 @@ function CodeSandbox(props) {
           </h2>
           {output === null ? (
             <span className={styles.output + ' ' + styles.empty}>
-              Run the program to see your output
+              Run the program to see your <Output />
             </span>
           ) : (
             output

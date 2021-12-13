@@ -2,7 +2,9 @@
     position: relative;
     color: #0069ed;
     font-weight: bold;
+    cursor: pointer;
     text-decoration: underline;
+    display: inline !important;
 }
 
 .definition {

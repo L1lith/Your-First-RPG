@@ -1,5 +1,6 @@
 import useClickToggle from './useClickToggle'
 import useHover from './useHover'
+import mergeRefs from './mergeRefs'
 import { useRef, useEffect, useState } from 'react'
 
 function useSmartToggle() {
@@ -9,14 +10,11 @@ function useSmartToggle() {
   const [hoverRef, isHovered] = useHover()
   const [toggleRef, isToggled] = useClickToggle()
 
-  useEffect(() => {
-    hoverRef.current = myRef.current
-    toggleRef.current = myRef.current
-  }, [myRef.current])
-  useEffect(() => {
-    setActive(isHovered || isToggled)
-  }, [isHovered, isToggled])
-  return [myRef, active]
+  const shouldBeActive = isHovered || isToggled
+  if (shouldBeActive !== active) {
+    setActive(shouldBeActive)
+  }
+  return [mergeRefs(hoverRef, toggleRef), active]
 }
 
 export default useSmartToggle

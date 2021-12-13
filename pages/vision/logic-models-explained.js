@@ -4,6 +4,9 @@ import { NextSeo } from 'next-seo'
 import YTVideo from '../../components/YTVideo'
 import EasterEgg from '../../components/EasterEgg'
 import styles from '../../styles/vision/logic-models-explained.module.scss'
+import Stack from '../../components/Dictionary/Stack'
+import Output from '../../components/Dictionary/Output'
+import BooleanDef from '../../components/Dictionary/BooleanDef'
 
 export default () => (
   <div className="logic-models">
@@ -17,10 +20,10 @@ export default () => (
       Minecraft is a great place to start your adventure :)
     </span>
     <p>
-      Next you will learn about boolean logic (a boolean is something that is either true or false)
-      and how to visualize them. Visualizing logical systems is very useful. The entire world
-      operates using logic; like how you do your job, how you cross the street, or how you navigate
-      a website. We make a lot of decisions without realizing we made them.
+      Next you will learn about <BooleanDef /> logic and how to visualize them. Visualizing logical
+      systems is very useful. The entire world operates using logic; like how you do your job, how
+      you cross the street, or how you navigate a website. We make a lot of decisions without
+      realizing we made them.
     </p>
     {
       null /*<span className="intro-card">
@@ -50,8 +53,8 @@ export default () => (
       <br />
       <br />
       Imagine you are a civil engineer trying to optimize the flow of traffic through a very busy
-      area. Our input data is the flow of cars into the freeway and their intended destinations. Our
-      output data is the flow of cars out of the freeway. As a civil engineer our logic model will
+      area. Our input data is the flow of cars into the freeway and their intended destinations. Our{' '}
+      <Output /> is the flow of cars out of the freeway. As a civil engineer our logic model will
       not only make the difference when someone's trying to get to work quickly, but our decision
       will ultimately be the difference between life and death when reckless driving happens.
       <br />
@@ -63,12 +66,12 @@ export default () => (
     <p>
       "That's great... but how does this apply to coding?" I'm glad you asked! When we are coding we
       too are writing a logic system to handle the input flow of information (like mouse and
-      keyboard input when navigating a webpage) and the output flow of information (like displaying
-      a webpage or rendering a video-game). As a coder you write (or "code") the logical rules of
-      the system (like when the user clicks this link, take them to that page). While say inventing
-      a computer or a roadway from scratch might be incredibly complex, computer, civil, and all
-      kinds of engineers all take advantage of the technology and methodology that has been been in
-      development for much longer than we have been alive.
+      keyboard input when navigating a webpage) and the <Output /> flow of information (like
+      displaying a webpage or rendering a video-game). As a coder you write (or "code") the logical
+      rules of the system (like when the user clicks this link, take them to that page). While say
+      inventing a computer or a roadway from scratch might be incredibly complex, computer, civil,
+      and all kinds of engineers all take advantage of the technology and methodology that has been
+      been in development for much longer than we have been alive.
     </p>
     Here's a table describing the logic model we use when we are at a traffic light. Your brain
     provides the decision-making rules of the logic model.
@@ -92,13 +95,12 @@ export default () => (
     </table>
     <p>
       In coding we have a set of software and methodology that makes describing our logical system
-      much easier. In the world of website development, we call this a{' '}
-      <span className="bold">stack</span>. Much like a civil engineer must consider the efficacy of
-      a roadway system, when building a website we must consider many aspects of the system, like
-      cyber safety (allowing unsafe input data has led to many stolen identities and credit cards),
-      user experience, and visual appeal. By better understanding the logical rules behind our
-      software we better understand where this issues arise, preventing catastrophic database leaks
-      and user rage-quits before they ever happen.
+      much easier. In the world of website development, we call this a <Stack />. Much like a civil
+      engineer must consider the efficacy of a roadway system, when building a website we must
+      consider many aspects of the system, like cyber safety (allowing unsafe input data has led to
+      many stolen identities and credit cards), user experience, and visual appeal. By better
+      understanding the logical rules behind our software we better understand where this issues
+      arise, preventing catastrophic database leaks and user rage-quits before they ever happen.
       <br />
       <br />
     </p>
@@ -115,16 +117,16 @@ export default () => (
       <br />
       Next you must think about every step in your code, and how these{' '}
       <span className="bold">rules</span> ultimately handles your users input and translates it into
-      the program's <span className="bold">output</span>. Don't cut corners or leave problems for
-      someone else to deal with. Building the best software you can the first time (you'll
-      definitely write some messy code starting out, but after you make your first draft of
-      something try to come back and look for ways to improve it) will save you a lot of time later
-      on. Understand the deep inner workings of your software (or "stack") by{' '}
+      the program's <Output />. Don't cut corners or leave problems for someone else to deal with.
+      Building the best software you can the first time (you'll definitely write some messy code
+      starting out, but after you make your first draft of something try to come back and look for
+      ways to improve it) will save you a lot of time later on. Understand the deep inner workings
+      of your <Stack /> by{' '}
       <span className="underline">toying around with it and asking questions</span>
       !
       <br />
       <br />
-      The output is what the users of your software experience (this is a{' '}
+      The <Output /> is what the users of your software experience (this is a{' '}
       <span className="underline">critical</span> aspect of your logic model), so when coding you
       must always think about what your users are trying to achieve, and not only all the possible
       issues and bugs they could run into, but also how to make your software straightforward and

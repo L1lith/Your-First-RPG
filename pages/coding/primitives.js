@@ -3,8 +3,9 @@ import CodeSandbox from '../../components/CodeSandbox'
 import styles from '../../styles/coding/primitives.module.scss'
 import { NextSeo } from 'next-seo'
 import YTVideo from '../../components/YTVideo'
+import Operator from '../../components/Dictionary/Operator'
 
-export default () => (
+const Primitives = () => (
   <div className={styles.primitives}>
     <NextSeo title="📊 Data Types" />
     <h2>#3.1 📊 Basic Data Types</h2>
@@ -31,11 +32,11 @@ export default () => (
       <li>null</li>
     </ul>
     <p>
-      I will now detail each type of data and their operators, then in the next page I will provide
-      some more examples of how they can be used together. Additionally, you can edit the input of
-      all the code examples below. If your syntax is invalid (this means your coding grammer is
-      incorrect) you will receive an error instead of your output because the JS interpreter will
-      become confused.
+      I will now detail each type of data and their <Operator>operators</Operator>, then in the next
+      page I will provide some more examples of how they can be used together. Additionally, you can
+      edit the input of all the code examples below. If your syntax is invalid (this means your
+      coding grammer is incorrect) you will receive an error instead of your output because the JS
+      interpreter will become confused.
     </p>
     <div className="type boolean">
       <h2>Booleans</h2>
@@ -43,16 +44,22 @@ export default () => (
       <CodeSandbox value="true" className="mini" />
       <CodeSandbox value="false" className="mini" />
       <h3>Or Operations</h3>
-      <p>The or operator is written as "||" in JavaScript</p>
+      <p>
+        The or <Operator /> is written as "||" in JavaScript
+      </p>
       <CodeSandbox value="true || false" className="mini" />
       <CodeSandbox value="false || true" className="mini" />
       <CodeSandbox value="false || false" className="mini" />
       <h3>Not Operations</h3>
-      <p>The not operator is written as "!" in JavaScript</p>
+      <p>
+        The not <Operator /> is written as "!" in JavaScript
+      </p>
       <CodeSandbox value="!true" className="mini" />
       <CodeSandbox value="!false" className="mini" />
       <h3>And Operations</h3>
-      <p>The and operator is written as "&&" in JavaScript</p>
+      <p>
+        The and <Operator /> is written as "&&" in JavaScript
+      </p>
       <CodeSandbox value="true && true" className="mini" />
       <CodeSandbox value="true && false" className="mini" />
       <CodeSandbox value="false && false" className="mini" />
@@ -69,7 +76,9 @@ export default () => (
       <CodeSandbox value="12 + 12" className="mini" />
       <CodeSandbox value="30 - 12" className="mini" />
       <h3>Greater than/Less than</h3>
-      <p>The greater than and less than operators return boolean values</p>
+      <p>
+        The greater than and less than <Operator>operators</Operator> return boolean values
+      </p>
       <CodeSandbox value="12 > 10" className="mini" />
       <CodeSandbox value="12 < 10" className="mini" />
       <CodeSandbox value="5 >= 5" className="mini" />
@@ -109,7 +118,9 @@ export default () => (
     <div className="equality">
       <h2>Equality</h2>
       <p>
-        To check whether two values are exactly the same we can use the strict equality operator
+        To check whether two values are exactly the same we can use the strict equality{' ' + ''}
+        <Operator />
+        {' ' + ''}
         "==="
       </p>
       <CodeSandbox value="1 === 1" className="mini" />
@@ -129,3 +140,5 @@ export default () => (
     </Link>
   </div>
 )
+
+export default Primitives

@@ -2,6 +2,7 @@ import LevelOne from '../../components/BooleanGame/levels/LevelOne'
 import Link from 'next/link'
 import { NextSeo } from 'next-seo'
 import BooleanOps from '../../components/booleanOps'
+import Operator from '../../components/Dictionary/Operator'
 
 export default () => (
   <div className="level-1">
@@ -10,7 +11,8 @@ export default () => (
     <br />
     <span className="intro-card">
       <BooleanOps />
-      Here you can see a chart of the basic boolean operations (&amp; means AND, || means OR)
+      Here you can see a chart of the basic boolean <Operator>operations</Operator> (&amp; means
+      AND, || means OR)
     </span>
     <p>
       In this section we will be playing the Matching Rules game in order to learn about boolean
@@ -20,18 +22,16 @@ export default () => (
       <br />
       <br />
       Boolean logic contains a set of expressions (kind of like coding language) that allow us to
-      perform basic operations on data. True or false statements (boolean values like yes or no) are
-      the main type of data handled with boolean logic. We can ask the computer yes or no questions
-      using code to tell it what to do.
+      perform basic <Operator>operations</Operator> on data. True or false statements (boolean
+      values like yes or no) are the main type of data handled with boolean logic. We can ask the
+      computer yes or no questions using code to tell it what to do.
     </p>
     <br />
     <h2>The "Or" Operator</h2>
     <p>
-      Or is a logical operator (an operator is a tool that does something) that means that any of
-      values we input to it may be true. The Or expression will only return (return means to output)
-      true if at least one of it's inputs are true. In the first level of the Matching Game we will
-      experiment with the Or operator. Choose each of the tiles whose colors and shapes are allowed
-      to win.
+      Or is a logical <Operator /> that will only output true if at least one of it's inputs are
+      true. In the first level of the Matching Game we will experiment with the Or operator. Choose
+      each of the tiles whose colors and shapes are allowed to win.
     </p>
     <LevelOne />
     <p>

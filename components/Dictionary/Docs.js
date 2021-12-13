@@ -4,7 +4,7 @@ const docs = props => (
   <HoverDefinition
     definition="docs is short for documentation, which is a site that describes something"
     {...props}>
-    docs
+    {props.children || 'docs'}
   </HoverDefinition>
 )
 
