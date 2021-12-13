@@ -4,6 +4,8 @@ import styles from '../../styles/coding/primitives.module.scss'
 import { NextSeo } from 'next-seo'
 import YTVideo from '../../components/YTVideo'
 import Operator from '../../components/Dictionary/Operator'
+import BooleanDef from '../../components/Dictionary/BooleanDef'
+import StringDef from '../../components/Dictionary/StringDef'
 
 const Primitives = () => (
   <div className={styles.primitives}>
@@ -21,13 +23,18 @@ const Primitives = () => (
     </span>
     <br />
     <p>
-      In this section we will upgrade from working with just boolean logic to writing functional
-      JavaScript! Primitives are the basic data types in JavaScript. Here are the basic primitives:
+      In this section we will upgrade from working with just <BooleanDef /> logic to writing
+      functional JavaScript! Primitives are the basic data types in JavaScript. Here are the basic
+      primitives:
     </p>
     <ul className={styles['primitives-list']}>
-      <li>Boolean</li>
+      <li>
+        <BooleanDef>Boolean</BooleanDef>
+      </li>
       <li>Number</li>
-      <li>String</li>
+      <li>
+        <StringDef>String</StringDef>
+      </li>
       <li>undefined</li>
       <li>null</li>
     </ul>
@@ -40,25 +47,30 @@ const Primitives = () => (
     </p>
     <div className="type boolean">
       <h2>Booleans</h2>
-      <p>JavaScript has integrated support for boolean values and boolean operations.</p>
+      <p>
+        JavaScript has built in support for <BooleanDef>booleans</BooleanDef>.
+      </p>
       <CodeSandbox value="true" className="mini" />
       <CodeSandbox value="false" className="mini" />
       <h3>Or Operations</h3>
       <p>
-        The or <Operator /> is written as "||" in JavaScript
+        The or <Operator /> is written as "||" in JavaScript, and it is used to compare two{' '}
+        <BooleanDef>booleans</BooleanDef>. It returns true if either of the{' '}
+        <BooleanDef>booleans</BooleanDef> beside it are true, otherwise it returns false.
       </p>
       <CodeSandbox value="true || false" className="mini" />
       <CodeSandbox value="false || true" className="mini" />
       <CodeSandbox value="false || false" className="mini" />
       <h3>Not Operations</h3>
       <p>
-        The not <Operator /> is written as "!" in JavaScript
+        The not <Operator /> is written as "!" in JavaScript, and it returns the opposite.
       </p>
       <CodeSandbox value="!true" className="mini" />
       <CodeSandbox value="!false" className="mini" />
       <h3>And Operations</h3>
       <p>
-        The and <Operator /> is written as "&&" in JavaScript
+        The and <Operator /> is written as "&&" in JavaScript. It returns true if both of the{' '}
+        <BooleanDef>booleans</BooleanDef> next to it are true, otherwise it returns false.
       </p>
       <CodeSandbox value="true && true" className="mini" />
       <CodeSandbox value="true && false" className="mini" />

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { NextSeo } from 'next-seo'
 import YTVideo from '../../components/YTVideo'
+import Interpreter from '../../components/Dictionary/Interpreter'
 
 export default () => (
   <div className="coding-intro">
@@ -32,10 +33,10 @@ export default () => (
 
     <p>
       How is JS (JavaScript) code written? JavaScript code is just a series of logical expressions
-      (like little logic models) that are evaluated (run by the JavaScript software called the
-      "interpreter" like the engine for your code) in a particular order. Each line is evaluated one
-      at a time from top to bottom and left-to-right like English. The JS interpreter also
-      understands and applies the rules of{' '}
+      (like little logic models) that are run by the{' '}
+      <Interpreter>JavaScript Interpreter</Interpreter> in a particular order. Each line is
+      evaluated one at a time from top to bottom and left-to-right like English. The <Interpreter />{' '}
+      also understands and applies the rules of{' '}
       <a href="https://www.mathsisfun.com/operation-order-pemdas.html">PEMDAS</a>. Every line of
       code you write should combine cohesively in order to form a well functioning program.
       <br />

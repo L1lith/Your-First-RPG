@@ -2,6 +2,7 @@ import LevelTwo from '../../components/BooleanGame/levels/LevelTwo'
 import Link from 'next/link'
 import { NextSeo } from 'next-seo'
 import YTVideo from '../../components/YTVideo'
+import Operator from '../../components/Dictionary/Operator'
 
 export default () => (
   <div className="level-2">
@@ -14,8 +15,9 @@ export default () => (
     <br />
     <h2>The "Not" Operator</h2>
     <p>
-      Now that we've learned the most basic expression OR, it's time to move onto NOT. The NOT
-      operator returns false when it's input is true, and true when it's input is false. You can
+      Now that we've learned the most basic <Operator /> OR, it's time to move onto NOT. The NOT
+      {' ' + ''}
+      <Operator /> returns false when it's input is true, and true when it's input is false. You can
       think of this like an inversion (inversion meaning it returns the opposite).
     </p>
     <p>
