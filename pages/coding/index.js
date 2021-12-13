@@ -32,9 +32,9 @@ export default () => (
 
     <p>
       How is JS (JavaScript) code written? JavaScript code is just a series of logical expressions
-      (like little logic models) that are evaluated (run by the JavaScript engine software called
-      the "interpreter") in a particular order. Each line is evaluated one at a time from top to
-      bottom. While individual lines are generally read left-to-right The JS interpreter also
+      (like little logic models) that are evaluated (run by the JavaScript software called the
+      "interpreter" like the engine for your code) in a particular order. Each line is evaluated one
+      at a time from top to bottom and left-to-right like English. The JS interpreter also
       understands and applies the rules of{' '}
       <a href="https://www.mathsisfun.com/operation-order-pemdas.html">PEMDAS</a>. Every line of
       code you write should combine cohesively in order to form a well functioning program.

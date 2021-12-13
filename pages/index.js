@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import YTVideo from '../components/YTVideo'
 import styles from '../styles/index.module.scss'
+import RPG from '../components/Dictionary/RPG'
 
 const Home = () => (
   <div className={styles.home}>
@@ -16,7 +17,7 @@ const Home = () => (
     <p>
       In this course I will explain how to visualize coding & how we can use it to make awesome
       things. I will teach you the basics of the JavaScript language, and show you how to make your
-      own text based game and share it with your friends :)
+      own text based <RPG /> game and share it with your friends :)
     </p>
     <h2>Sections</h2>
     <ol className="toc sections">

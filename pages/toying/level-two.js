@@ -15,8 +15,8 @@ export default () => (
     <h2>The "Not" Operator</h2>
     <p>
       Now that we've learned the most basic expression OR, it's time to move onto NOT. The NOT
-      operator outputs false when it's input is true, and true when it's input is false. You can
-      think of this like an inversion, returning what was NOT specified.
+      operator returns false when it's input is true, and true when it's input is false. You can
+      think of this like an inversion (inversion meaning it returns the opposite).
     </p>
     <p>
       When playing the second level, make sure NOT to select any colors or shapes that are prefixed

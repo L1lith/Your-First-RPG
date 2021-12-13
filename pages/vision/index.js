@@ -2,6 +2,7 @@ import Link from 'next/link'
 import styles from '../../styles/vision/index.module.scss'
 import { NextSeo } from 'next-seo'
 import YTVideo from '../../components/YTVideo'
+import Docs from '../../components/Dictionary/Docs'
 
 export default () => (
   <div className={styles['vision-intro']}>
@@ -26,14 +27,14 @@ export default () => (
     </span>
     <p>
       Programmers are great at writing code only they can understand. Many beginners can feel
-      alienated after hearing "just read the docs" (docs is short for documentation), and aren't
-      given a proper chance to understand why coders do what they do.
+      alienated after hearing "just read the <Docs />
+      ", and aren't given a proper chance to understand why coders do what they do.
       <br />
       <br />
       Documentation sites like{' '}
-      <Link href="https://nodejs.org/docs/latest-v15.x/api/">
-        <a>this one</a>
-      </Link>{' '}
+      <a target="_blank" href="https://nodejs.org/docs/latest-v15.x/api/">
+        this one
+      </a>{' '}
       can be a valuable tool for experienced programmers, but for a beginner it's a total headache.
       It's important to understand the concepts in simple terms so you can begin to visualize what
       you are trying to do.

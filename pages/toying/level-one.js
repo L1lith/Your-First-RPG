@@ -15,23 +15,23 @@ export default () => (
     <p>
       In this section we will be playing the Matching Rules game in order to learn about boolean
       logic. Boolean logic is the fundamental language that both electronic circuitry, and computers
-      themselves are made out of, and it happens to be a great tool for introducing the reasoning
-      behind the way we communicate with computers.
+      themselves are made out of, and it happens to be a great tool for learning how we talk to
+      computers.
       <br />
       <br />
       Boolean logic contains a set of expressions (kind of like coding language) that allow us to
-      perform basic operations on information. True or false statements (boolean values) are the
-      main type of data handled with boolean logic. We can represent all kinds of other information
-      by combining many true or false statements together, however that is out of the scope of this
-      section.
+      perform basic operations on data. True or false statements (boolean values like yes or no) are
+      the main type of data handled with boolean logic. We can ask the computer yes or no questions
+      using code to tell it what to do.
     </p>
     <br />
     <h2>The "Or" Operator</h2>
     <p>
-      Or is a logical operator that means that any of values we input to it may be true. The Or
-      expression will only output false when none of it's inputs are true. In the first level of the
-      Matching Game we will experiment with the Or operator. Choose each of the tiles whose colors
-      and shapes are allowed to win.
+      Or is a logical operator (an operator is a tool that does something) that means that any of
+      values we input to it may be true. The Or expression will only return (return means to output)
+      true if at least one of it's inputs are true. In the first level of the Matching Game we will
+      experiment with the Or operator. Choose each of the tiles whose colors and shapes are allowed
+      to win.
     </p>
     <LevelOne />
     <p>

@@ -74,7 +74,9 @@ export default () => (
         logic. You might say something along the lines of "if x is true then do y, or else do z". It
         allows us to create flexible code that chooses the appropriate path to take in order to
         properly complete the task. You can read more about flow control{' '}
-        <a href="https://exploringjs.com/impatient-js/ch_control-flow.html">here.</a>
+        <a target="_blank" href="https://exploringjs.com/impatient-js/ch_control-flow.html">
+          here.
+        </a>
       </p>
       <h3>if/else</h3>
       <p>

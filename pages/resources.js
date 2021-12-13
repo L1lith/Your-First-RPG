@@ -15,7 +15,10 @@ export default () => (
       <tbody>
         <tr>
           <td>
-            <a className="bold" href="https://www.youtube.com/c/TheCodingTrain/featured">
+            <a
+              target="_blank"
+              className="bold"
+              href="https://www.youtube.com/c/TheCodingTrain/featured">
               The Coding Train (YouTube Channel)
             </a>
           </td>
@@ -28,6 +31,7 @@ export default () => (
         <tr>
           <td>
             <a
+              target="_blank"
               href="
   https://stackoverflow.com/">
               StackOverflow (Questions & Answers)
@@ -43,13 +47,15 @@ export default () => (
         </tr>
         <tr>
           <td>
-            <a href="https://javascript.info">JavaScript.info (Glossary)</a>
+            <a target="_blank" href="https://javascript.info">
+              JavaScript.info (Glossary)
+            </a>
           </td>
           <td>JavaScript.info is a great resource to get clarification on specific JS concepts</td>
         </tr>
         <tr>
           <td>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+            <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
               Mozilla Developer Network (Glossary)
             </a>
           </td>
@@ -61,7 +67,9 @@ export default () => (
         </tr>
         <tr>
           <td>
-            <a href="https://github.com/L1lith/Your-First-RPG/issues/new?assignees=&labels=help+request&template=help-request.md">
+            <a
+              target="_blank"
+              href="https://github.com/L1lith/Your-First-RPG/issues/new?assignees=&labels=help+request&template=help-request.md">
               YourFirstRPG Support (GitHub Issue Tracker)
             </a>
           </td>

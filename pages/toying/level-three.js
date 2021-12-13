@@ -9,10 +9,10 @@ export default () => (
     <h2>#2.3 💻 Booleans for coding Apps</h2>
     <br />
     <p>
-      How does boolean logic tie into coding? When a programmer is writing code they write in coding
-      language. Every language has a syntax (a syntax is a language with a set of rules, kind of
-      like any spoken language, and like boolean logic too!). Every coding language can have
-      different syntax (or rules), but ultimately it is just a more advanced form of a logic model.
+      How does boolean logic tie into coding? When a programmer is coding they write in a special
+      coding language. Every language has a syntax (a syntax is a language with a set of rules, kind
+      of like english, and like boolean logic too!). Every coding language can have different syntax
+      (or rules), but ultimately it is just a more advanced form of a logic model.
       <br />
       <br />
       Rather than writing enormous combinations of ORs, NOTs, and other logical operators, software

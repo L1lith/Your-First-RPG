@@ -8,7 +8,7 @@ export default () => {
       course with your friends if you enjoyed it, knowledge is power :)
       <br />
       <br />
-      <a href="https://github.com/L1lith/Your-First-RPG/">
+      <a target="_blank" href="https://github.com/L1lith/Your-First-RPG/">
         https://github.com/L1lith/Your-First-RPG/
       </a>
       <br />

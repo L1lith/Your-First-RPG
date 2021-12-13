@@ -33,8 +33,9 @@ export default () => (
     <p>
       I will now detail each type of data and their operators, then in the next page I will provide
       some more examples of how they can be used together. Additionally, you can edit the input of
-      all the code examples below (note: if your syntax is invalid you will receive an error instead
-      of your output)
+      all the code examples below. If your syntax is invalid (this means your coding grammer is
+      incorrect) you will receive an error instead of your output because the JS interpreter will
+      become confused.
     </p>
     <div className="type boolean">
       <h2>Booleans</h2>
@@ -119,7 +120,9 @@ export default () => (
     <p>
       In the next section we'll be using these primitive values so you can see a little bit more why
       they are useful. You can read in greater detail about JS's data types{' '}
-      <a href="https://javascript.info/types">here</a>
+      <a target="_blank" href="https://javascript.info/types">
+        here
+      </a>
     </p>
     <Link href="/coding/essential-tools">
       <a className="next">Next: #3.2 Essential Tools</a>

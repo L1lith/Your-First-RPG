@@ -59,14 +59,18 @@ export default () => (
     <div className="functions">
       <h2>Functions</h2>
       <p>
-        Functions let you section off individual logic models that serve as a utility. Functions
-        have a name, a set of inputs, a code section, and an output. You can re-use your function
-        multiple times with different inputs. Functions use parenthesis to create their inputs, and
-        later after they've been created we use parenthesis again to call it (calling a function
-        means to run it). The "console.log" part of our code is an example of a function (in this
-        case to output some data). It's called (to call a function means to run it) with parenthesis
-        and it can different things depending on what the input is (which in the previous example
-        was the balance variable's current value).
+        Functions let you make re-usable pieces of code that serve as a tool (like a blueprint of
+        how to do something). Functions have a name, a set of inputs, a code section, and an output
+        (we use "return" to specify the output). Functions can save you a lot of time because you
+        can re-use your function multiple times with different inputs, rather than having to write
+        that piece of code over and over. Functions use parenthesis to create their inputs, and
+        brackets (they look like this {'{}'}). After we've create our function we use parenthesis
+        again to call it (calling a function means to run it). The "console.log" part of our code is
+        an example of a function (in this case to output some data). This function doesn't have to
+        be created by us because it's given to us automatically by the JS interpreter. It's called
+        (to call a function means to run it) with parenthesis and it can different things depending
+        on what the input is (which in the previous example was the balance variable's current
+        value).
       </p>
       <h2>Addition Function</h2>
       <p>
@@ -87,7 +91,7 @@ export default () => (
       we're coding we are running our code from a terminal, and we see the output of the console.log
       function in real-time instead of seeing the output of the JS evaluation. We only need to
       output things to console.log when we as the developer (or coder) want to know what their
-      values are.
+      values are, that way our output doesn't get super cluttered.
     </div>
     <CodeSandbox
       consoleMode
