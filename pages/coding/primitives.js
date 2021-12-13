@@ -16,9 +16,11 @@ const Primitives = () => (
       <YTVideo url="_4TPlwwHM8Q" thumbnail="/images/blender-horror.jpg" />
       <span>
         You can read more{' '}
-        <a href="https://www.aleksandrhovhannisyan.com/blog/binary-for-beginners/">here</a> if you'd
-        like to learn about how binary values are converted into more complex data types like
-        strings and numbers.
+        <a target="_blank" href="https://www.aleksandrhovhannisyan.com/blog/binary-for-beginners/">
+          here
+        </a>{' '}
+        if you'd like a more in-depth explanation about how binary values are converted into more
+        complex data types.
       </span>
     </span>
     <br />
@@ -89,7 +91,7 @@ const Primitives = () => (
       <CodeSandbox value="30 - 12" className="mini" />
       <h3>Greater than/Less than</h3>
       <p>
-        The greater than and less than <Operator>operators</Operator> return boolean values
+        The greater than and less than <Operator>operators</Operator> return boolean values.
       </p>
       <CodeSandbox value="12 > 10" className="mini" />
       <CodeSandbox value="12 < 10" className="mini" />
@@ -102,8 +104,8 @@ const Primitives = () => (
     <div className="type strings">
       <h2>Strings</h2>
       <p>
-        Strings are collections of text (like someones name, an address, etc). They are written by
-        surrounding the text in single or double quotes.
+        <StringDef>Strings</StringDef> are collections of text (like someones name, an address,
+        etc). They are written by surrounding the text in single or double quotes.
       </p>
       <CodeSandbox value={'"I like chocolate milk"'} className="mini" />
       <CodeSandbox value={"'my namea borat'"} className="mini" />
