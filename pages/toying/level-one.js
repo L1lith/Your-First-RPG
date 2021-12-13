@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { NextSeo } from 'next-seo'
 import BooleanOps from '../../components/booleanOps'
 import Operator from '../../components/Dictionary/Operator'
+import BooleanDef from '../../components/Dictionary/BooleanDef'
 
 export default () => (
   <div className="level-1">
@@ -15,23 +16,24 @@ export default () => (
       AND, || means OR)
     </span>
     <p>
-      In this section we will be playing the Matching Rules game in order to learn about boolean
-      logic. Boolean logic is the fundamental language that both electronic circuitry, and computers
-      themselves are made out of, and it happens to be a great tool for learning how we talk to
-      computers.
+      In this section we will be playing the Matching Rules game in order to learn about{' '}
+      <BooleanDef /> logic. <BooleanDef>Boolean</BooleanDef> logic is the fundamental language that
+      both electronic circuitry, and computers themselves are made out of, and it happens to be a
+      great tool for learning how we talk to computers.
       <br />
       <br />
-      Boolean logic contains a set of expressions (kind of like coding language) that allow us to
-      perform basic <Operator>operations</Operator> on data. True or false statements (boolean
-      values like yes or no) are the main type of data handled with boolean logic. We can ask the
-      computer yes or no questions using code to tell it what to do.
+      <BooleanDef>Boolean</BooleanDef> logic contains a set of expressions (kind of like coding
+      language) that allow us to perform basic <Operator>operations</Operator> on data. True or
+      false statements (boolean values like yes or no) are the main type of expressions handled with{' '}
+      <BooleanDef /> logic. This means we can ask the computer yes or no questions using code to
+      tell it what to do.
     </p>
     <br />
     <h2>The "Or" Operator</h2>
     <p>
       Or is a logical <Operator /> that will only output true if at least one of it's inputs are
-      true. In the first level of the Matching Game we will experiment with the Or operator. Choose
-      each of the tiles whose colors and shapes are allowed to win.
+      true. In the first level of the Matching Game we will experiment with the Or <Operator />.
+      Choose only the tiles whose colors and shapes are allowed to win.
     </p>
     <LevelOne />
     <p>

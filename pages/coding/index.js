@@ -42,7 +42,7 @@ export default () => (
       <br />
       <br />
       Coding doesn't have to be frustrating, let's try to have some fun with it. In this section I
-      hope it will become clear how you can take an approached based on logic models to write basic
+      hope it will become clear how you can take an approach based on logic models to write basic
       code. I'm going to be providing many examples, and if you get stuck it's okay to continue on
       and come back later. Try to get a feel for what is going on overall by toying with the code.
     </p>

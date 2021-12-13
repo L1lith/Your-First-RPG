@@ -35,7 +35,7 @@ export default () => (
       <p>
         We can create <Variable>variables</Variable> in order to store (save) data values for later
         use. In a basic logic model where we only have <Input>inputs</Input> and{' '}
-        <Output>outputs</Output> it becomes incredibly difficult to deal with data that persists
+        <Output>outputs</Output>, so it becomes incredibly difficult to deal with data that persists
         (needs to be saved). Let's say you're writing a checking account app, but you're not allowed
         to save any data. The user might see a notification saying "You just spent $10.52", and yet
         every time they open the app they're greeted with this{' '}
@@ -46,8 +46,8 @@ export default () => (
 
       <p>
         This would be so annoying! Instead of doing this we store <Variable>variables</Variable> in
-        our memory (or in this case the computer's memory) by names, and then retrieve or modify
-        them later.
+        our memory (or in this case the computer's memory) by giving them names, and then we can
+        retrieve or modify them later when we need them.
         <br />
         <br />
         Here we name a <Variable /> called balance (note we do not give it any value yet so it
@@ -55,8 +55,8 @@ export default () => (
       </p>
       <CodeSandbox className="mini" value={'var balance\nconsole.log(balance)'} consoleMode />
       <p>
-        We can set a value using the assignment operator "=" and providing a value after it, and
-        once we have done this we can see our <Variable /> has a value now :)
+        We can set a value by using the assignment operator "=" and putting the value we want after
+        it, and once we have done this we can see our <Variable /> has a value now :)
       </p>
       <CodeSandbox
         className="mini"
@@ -74,13 +74,13 @@ export default () => (
         time because you can re-use your function multiple times with different inputs, rather than
         having to write that piece of code over and over. <FunctionDef>Functions</FunctionDef> use
         parenthesis to create their inputs, and brackets (they look like this {'{}'}). After we've
-        create our <FunctionDef /> we use parenthesis again to call it (calling a <FunctionDef />{' '}
-        means to run it). The "console.log" part of our code is an example of a function (in this
+        created our <FunctionDef /> we use parenthesis again to call it (calling a <FunctionDef />{' '}
+        means to run it) The "console.log" part of our code is an example of a function (in this
         case to <Output /> some data). This <FunctionDef /> doesn't have to be created by us because
         it's given to us automatically by the <Interpreter>JS interpreter</Interpreter>. It's called
-        (to call a <FunctionDef /> means to run it) with parenthesis and it can different things
-        depending on what the <Input /> is (which in the previous example was the balance{' '}
-        <Variable>variable's</Variable> current value).
+        (to call a <FunctionDef /> means to run it) with parenthesis and it can do different things
+        depending on what the <Input /> we put inside it is (which in the previous example was the
+        balance <Variable>variable's</Variable> current value).
       </p>
       <h2>Addition Function</h2>
       <p>
@@ -128,16 +128,6 @@ export default () => (
       <CodeSandbox consoleMode value="console.log(false && (true || true))" className="mini" />
     </div>
     <br />
-    {
-      null /*<div className="user-sandbox">
-      <h2>Sandbox</h2>
-      <p>
-        This is an extra editor you can use in case you have work going on in the editors and need
-        an empty space to code.
-      </p>
-      <CodeSandbox />
-</div>*/
-    }
     <Link href="/rpg">
       <a className="next">Next: #4.0 Building your Text RPG</a>
     </Link>

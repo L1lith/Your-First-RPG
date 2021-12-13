@@ -21,7 +21,7 @@ export default () => (
       <br />
       Rather than writing enormous combinations of ORs, NOTs, and other logical{' '}
       <Operator>operators</Operator>, software engineers conveniently created coding languages
-      packed in with features that allow us to better express what we are trying to do. In fact,
+      packed in with features that allow us to say what we are trying to do more easily. In fact,
       nearly every coding language has support for <BooleanDef /> logic built-in, which is an
       essential part of your toolkit as a coder.
       <br />
@@ -45,10 +45,10 @@ export default () => (
       countless hours dealing with mind-numbing bugs and other issues.
     </p>
     <p>
-      Many coding languages have the capabilities to compare and transform more complex data types
-      than <BooleanDef>booleans</BooleanDef>, which is very powerful. We can do things like evaluate
-      math expressions, compare text, and more. Watch this video to see this in practice, and to see
-      the relationship between the boolean logic and coding mental models.
+      Many coding languages have the capabilities to compare and transform other kinds of data more
+      advanced than <BooleanDef>booleans</BooleanDef>, which is very powerful. We can do things like
+      evaluate math expressions, compare text, and more. Watch this video to see this in practice,
+      and to see the relationship between the <BooleanDef /> logic and coding mental models.
     </p>
     <YTVideo url="_j9nvYKaOVE" thumbnail="/images/cs-discoveries.jpg" />
     <Link href="/coding">

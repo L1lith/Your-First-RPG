@@ -8,6 +8,8 @@ import BooleanDef from '../../components/Dictionary/BooleanDef'
 import StringDef from '../../components/Dictionary/StringDef'
 import JS from '../../components/Dictionary/JS'
 import Input from '../../components/Dictionary/Input'
+import Output from '../../components/Dictionary/Output'
+import Interpreter from '../../components/Dictionary/Interpreter'
 
 const Primitives = () => (
   <div className={styles.primitives}>
@@ -27,8 +29,8 @@ const Primitives = () => (
     </span>
     <br />
     <p>
-      In this section we will upgrade from working with just <BooleanDef /> logic to writing
-      functional JavaScript! Primitives are the basic data types in JavaScript. Here are the basic
+      In this section we will upgrade from working with just <BooleanDef /> logic to writing working
+      JavaScript! Primitives are the basic kinds of data in JavaScript. Here are the basic
       primitives:
     </p>
     <ul className={styles['primitives-list']}>
@@ -44,10 +46,10 @@ const Primitives = () => (
     </ul>
     <p>
       I will now detail each type of data and their <Operator>operators</Operator>, then in the next
-      page I will provide some more examples of how they can be used together. Additionally, you can
-      edit the <Input /> of all the code examples below. If your syntax is invalid (this means your
-      coding grammer is incorrect) you will receive an error instead of your output because the JS
-      interpreter will become confused.
+      page I will provide more examples of how they can be used together. Additionally, you can edit
+      the <Input /> of all the code examples below. If your syntax is invalid (this means your
+      coding grammar is incorrect) you will receive an error instead the <Output /> you expected
+      because the <Interpreter>JS interpreter</Interpreter> will become confused.
     </p>
     <div className="type boolean">
       <h2>Booleans</h2>
@@ -83,17 +85,17 @@ const Primitives = () => (
     <div className="type numbers">
       <h2>Numbers</h2>
       <p>
-        Numbers can be integers (whole numbers like 33) or floats (short for floating point decimals
-        like 45.512). Some basic operations are adding, multiplication, division, and subtraction.
-        Besides changing the numbers you can also compare them (using symbols like &gt;, &lt;, or ≥)
-        in order to output boolean values.
+        Numbers can be integers (whole numbers like 33) or floats (meaning decimals like 45.512).
+        Some basic operations are adding, multiplication, division, and subtraction. Besides
+        changing the numbers you can also compare them (using symbols like &gt;, &lt;, or ≥) in
+        order to <Output /> <BooleanDef /> values.
       </p>
       <h3>Addition/Subtraction</h3>
       <CodeSandbox value="12 + 12" className="mini" />
       <CodeSandbox value="30 - 12" className="mini" />
       <h3>Greater than/Less than</h3>
       <p>
-        The greater than and less than <Operator>operators</Operator> return boolean values.
+        The greater than and less than <Operator>operators</Operator> return <BooleanDef /> values.
       </p>
       <CodeSandbox value="12 > 10" className="mini" />
       <CodeSandbox value="12 < 10" className="mini" />
@@ -111,7 +113,9 @@ const Primitives = () => (
       </p>
       <CodeSandbox value={'"I like chocolate milk"'} className="mini" />
       <CodeSandbox value={"'my namea borat'"} className="mini" />
-      <p>They can also be added together</p>
+      <p>
+        They can also be added together (they are simply squished together, not added like numbers)
+      </p>
       <CodeSandbox value={"'beep' + 'bop'"} className="mini" />
       <CodeSandbox value={"'9' + '10'"} className="mini" />
     </div>
@@ -119,15 +123,17 @@ const Primitives = () => (
       <h2>undefined</h2>
       <p>
         The value undefined is used to represent a value that has not been assigned anything else.
-        It's basically the universal placeholder value.
+        It's basically the universal placeholder value. Undefined is the value given to{' '}
+        <Variables>variables</Variables> if we don't given them a value ourselves.
       </p>
       <CodeSandbox value="undefined" className="mini" />
     </div>
     <div className="type null">
       <h2>null</h2>
       <p>
-        The value null is used to represent the value "nothing". It's different from undefined in
-        that it is intentionally nothing rather than just being missing a value.
+        The value null is used to represent the value "nothing". It's different from undefined
+        because it means the coder intentionally made it nothing rather than it just being a missing
+        value.
       </p>
       <CodeSandbox value="null" className="mini" />
     </div>
