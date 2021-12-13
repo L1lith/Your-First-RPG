@@ -6,6 +6,8 @@ import YTVideo from '../../components/YTVideo'
 import Operator from '../../components/Dictionary/Operator'
 import BooleanDef from '../../components/Dictionary/BooleanDef'
 import StringDef from '../../components/Dictionary/StringDef'
+import JS from '../../components/Dictionary/JS'
+import Input from '../../components/Dictionary/Input'
 
 const Primitives = () => (
   <div className={styles.primitives}>
@@ -43,7 +45,7 @@ const Primitives = () => (
     <p>
       I will now detail each type of data and their <Operator>operators</Operator>, then in the next
       page I will provide some more examples of how they can be used together. Additionally, you can
-      edit the input of all the code examples below. If your syntax is invalid (this means your
+      edit the <Input /> of all the code examples below. If your syntax is invalid (this means your
       coding grammer is incorrect) you will receive an error instead of your output because the JS
       interpreter will become confused.
     </p>
@@ -144,7 +146,7 @@ const Primitives = () => (
     <br />
     <p>
       In the next section we'll be using these primitive values so you can see a little bit more why
-      they are useful. You can read in greater detail about JS's data types{' '}
+      they are useful. You can read in greater detail about <JS>JS's</JS> data types{' '}
       <a target="_blank" href="https://javascript.info/types">
         here
       </a>
