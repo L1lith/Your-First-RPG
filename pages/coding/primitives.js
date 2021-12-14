@@ -6,6 +6,7 @@ import YTVideo from '../../components/YTVideo'
 import Operator from '../../components/Dictionary/Operator'
 import BooleanDef from '../../components/Dictionary/BooleanDef'
 import StringDef from '../../components/Dictionary/StringDef'
+import Variable from '../../components/Dictionary/Variable'
 import JS from '../../components/Dictionary/JS'
 import Input from '../../components/Dictionary/Input'
 import Output from '../../components/Dictionary/Output'
@@ -124,7 +125,7 @@ const Primitives = () => (
       <p>
         The value undefined is used to represent a value that has not been assigned anything else.
         It's basically the universal placeholder value. Undefined is the value given to{' '}
-        <Variables>variables</Variables> if we don't given them a value ourselves.
+        <Variable>variables</Variable> if we don't given them a value ourselves.
       </p>
       <CodeSandbox value="undefined" className="mini" />
     </div>

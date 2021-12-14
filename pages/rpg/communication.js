@@ -2,6 +2,9 @@ import Link from 'next/link'
 import CodeSandbox from '../../components/CodeSandbox'
 import { NextSeo } from 'next-seo'
 import YTVideo from '../../components/YTVideo'
+import RPG from '../../components/Dictionary/RPG'
+import Variable from '../../components/Dictionary/Variable'
+import BooleanDef from '../../components/Dictionary/BooleanDef'
 
 export default () => (
   <div className="communication">
@@ -13,8 +16,8 @@ export default () => (
     </span>
     <p>
       Now that we've laid out the basics, let's apply ourselves and have some fun 😊 Before you
-      build your RPG we first must learn how to get input and send messages to the player. There's
-      no use in coding an adventure if there's no way to interact with it.
+      build your <RPG /> we first must learn how to get input and send messages to the player.
+      There's no use in coding an adventure if there's no way to interact with it.
     </p>
     <div className="comments">
       <h2>Comments</h2>
@@ -52,7 +55,9 @@ export default () => (
         className="mini"
       />
       <h3>Input: Prompt</h3>
-      <p>We can ask a user for input and save it to a variable to use it later</p>
+      <p>
+        We can ask a user for input and save it to a <Variable /> to use it later
+      </p>
       <CodeSandbox
         value={
           "var user = prompt('What is your name?')\nalert('Wishing ' + user + ' good fortune 💰')"
@@ -70,18 +75,19 @@ export default () => (
     <div className="flow-control">
       <h2>Flow Control</h2>
       <p>
-        Flow control allows us to establish branching choices in our logic model using boolean
-        logic. You might say something along the lines of "if x is true then do y, or else do z". It
-        allows us to create flexible code that chooses the appropriate path to take in order to
-        properly complete the task. You can read more about flow control{' '}
+        Flow control allows us to establish branching choices in our logic model using{' '}
+        <BooleanDef /> logic. You might say something along the lines of "if x is true then do y, or
+        else do z". It allows us to create flexible code that chooses the appropriate path to take
+        in order to properly complete the task. You can read more about flow control{' '}
         <a target="_blank" href="https://exploringjs.com/impatient-js/ch_control-flow.html">
           here.
         </a>
       </p>
       <h3>if/else</h3>
       <p>
-        You can use combinations of if and else to make powerful decision making models. Here we
-        have an example of doing something based on the user's input
+        You can use combinations of if and else to make powerful decision making models using
+        expressions that return <BooleanDef>booleans</BooleanDef> to ask yes or no questions. Here
+        we have an example of doing something based on the user's input
       </p>
       <CodeSandbox
         value={
@@ -103,10 +109,10 @@ export default () => (
       />
       <h3>while</h3>
       <p>
-        You can use the while loop to keep doing something until the boolean expression returns
-        false. Look here how we can repeatedly ask the user for their name until they return a valid
-        name (if a name is missing it is invalid, if the user exits the prompt the prompt it returns
-        null so we must retry).
+        You can use the while loop to keep doing something until the <BooleanDef /> expression
+        returns false. Look here how we can repeatedly ask the user for their name until they return
+        a valid name (if a name is missing it is invalid, if the user exits the prompt the prompt it
+        returns null so we must retry).
       </p>
       <CodeSandbox
         disableAutoRun

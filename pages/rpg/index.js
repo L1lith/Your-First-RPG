@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { NextSeo } from 'next-seo'
 import YTVideo from '../../components/YTVideo'
+import RPG from '../../components/Dictionary/RPG'
 
 export default () => (
   <div className="coding-intro">
@@ -41,9 +42,9 @@ export default () => (
     </span>
 
     <p>
-      In this section I'll go over how to create your own text RPG game. I've been teaching you a
-      lot about how to code, and now I'd like you to take the reigns and be creative 😊 You can
-      create anything you can think of!
+      In this section I'll go over how to create your own text based <RPG /> game. I've been
+      teaching you a lot about how to code, and now I'd like you to take the reigns and be creative
+      😊 You can create anything you can think of!
     </p>
     <Link href="/rpg/communication">
       <a className="next">Next: #4.1 🗣️ Talking to the Player</a>
