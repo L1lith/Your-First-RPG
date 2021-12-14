@@ -5,6 +5,8 @@ import YTVideo from '../../components/YTVideo'
 import RPG from '../../components/Dictionary/RPG'
 import Variable from '../../components/Dictionary/Variable'
 import BooleanDef from '../../components/Dictionary/BooleanDef'
+import StringDef from '../../components/Dictionary/StringDef'
+import FunctionDef from '../../components/Dictionary/FunctionDef'
 
 export default () => (
   <div className="communication">
@@ -138,7 +140,8 @@ export default () => (
         consoleMode
         value={`function smartPrompt(question) {
     var output = null
-    while(output === null || output.trim().length < 1) {
+    // While will keep running the code inside it over and over until the expression evaluates to false
+    while(output === null || output.trim().length < 1) { 
         output = prompt(question)
     }
     return output.trim()
@@ -149,9 +152,9 @@ var name = smartPrompt("What is your name adventurer?")
 alert("You wake up on a strange beach. '" + name + "' is written on the inside of your shirt.")`}
       />
       <p>
-        Here we combine the .toLowerCase function (it's available to all strings) and our
-        smartPrompt function. Notice how when we run it it still recognizes a yes input even if it
-        has whitespace around it or isn't lowercase.
+        Here we combine the .toLowerCase <FunctionDef /> (you can use it to make any <StringDef />{' '}
+        lowercase) and our smartPrompt <FunctionDef />. Notice how when we run it it still
+        recognizes a yes input even if it has whitespace around it or isn't lowercase.
       </p>
       <CodeSandbox
         value={`function smartPrompt(question) {
