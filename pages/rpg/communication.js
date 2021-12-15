@@ -9,6 +9,7 @@ import StringDef from '../../components/Dictionary/StringDef'
 import FunctionDef from '../../components/Dictionary/FunctionDef'
 import Expression from '../../components/Dictionary/Expression'
 import styles from '../../styles/rpg/communication.module.scss'
+import Scope from '../../components/Dictionary/Scope'
 
 export default () => (
   <div className="communication">
@@ -44,7 +45,7 @@ export default () => (
     <div className="js-io">
       <h2>Input/Output for Communicating with the Player</h2>
       <p>
-        While modifying the content of a webpage (done via HTML) is outside of the scope of this
+        While modifying the content of a webpage (done via HTML) is outside of the <Scope /> of this
         project, we can still communicate with the player from inside JavaScript! We can do this
         using the prompt and alert functions. From now on if you wish to run the code in the editors{' '}
         <span className="bold">
