@@ -37,6 +37,11 @@ const Home = () => (
     <Link href="/resources">
       <a>Remember to check out the resource section if you get stuck</a>
     </Link>
+    <div className={styles.extra}>
+      <h2 className={styles.enticement}>Scared of Coding? Don't be!</h2>
+      Check out this inspiring talk by Linda Liukas
+      <YTVideo url="-jRREn6ifEQ" thumbnail="/images/poetry-of-programming.jpg" />
+    </div>
   </div>
 )
 
