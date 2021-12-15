@@ -8,6 +8,7 @@ import BooleanDef from '../../components/Dictionary/BooleanDef'
 import StringDef from '../../components/Dictionary/StringDef'
 import FunctionDef from '../../components/Dictionary/FunctionDef'
 import Expression from '../../components/Dictionary/Expression'
+import styles from '../../styles/rpg/communication.module.scss'
 
 export default () => (
   <div className="communication">
@@ -34,9 +35,7 @@ export default () => (
         later, or we can use it to help explain how our code works.
       </p>
       <CodeSandbox
-        value={
-          "alert('aesop rock is awesome')\n// This part doesn't have to be valid JavaScript code"
-        }
+        value={"console.log(4 + 6)\n// This part doesn't have to be valid JavaScript code"}
         consoleMode
         disableAutoRun
         className="mini"
@@ -47,8 +46,11 @@ export default () => (
       <p>
         While modifying the content of a webpage (done via HTML) is outside of the scope of this
         project, we can still communicate with the player from inside JavaScript! We can do this
-        using the prompt and alert functions. I've disabled auto-running so it won't spam you with
-        prompts, but from now on you must manually run the code. Try running the examples below:
+        using the prompt and alert functions. From now on if you wish to run the code in the editors{' '}
+        <span className="bold">
+          you must press the <span className={styles.play}>▶</span> button
+        </span>{' '}
+        first. Try running the examples below:
       </p>
       <h3>Output: Alert</h3>
       <CodeSandbox
@@ -88,7 +90,7 @@ export default () => (
       </p>
       <h3>if/else</h3>
       <p>
-        You can use combinations of if and else to make powerful decision making models using
+        You can use combinations of if and else to make powerful decision making models using{' '}
         <Expression>expressions</Expression> that return <BooleanDef>booleans</BooleanDef> to ask
         yes or no questions. Here we have an example of doing something based on the user's input
       </p>
@@ -112,7 +114,7 @@ export default () => (
       />
       <h3>while</h3>
       <p>
-        You can use the while loop to keep doing something until the <BooleanDef /> expression
+        You can use the while loop to keep doing something until the <BooleanDef /> <Expression />{' '}
         returns false. Look here how we can repeatedly ask the user for their name until they return
         a valid name (if a name is missing it is invalid, if the user exits the prompt the prompt it
         returns null so we must retry).
