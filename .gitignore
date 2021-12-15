@@ -1,5 +1,6 @@
 node_modules/
 .next
-**/public/workbox-*.js
 **/public/sw.js
+**/public/sw.js.map
 **/public/worker-*.js
+**/public/workbox-*.js.map
