@@ -4,6 +4,7 @@
   background-color: black;
   color: white; // to display the alt text properly
   img{
+    user-select: none;
     cursor: pointer;
     display: block;
     width:100%;
@@ -14,6 +15,7 @@
     transform: translate(-50%, -50%);
     }
     span {
+      user-select: none;
       position: absolute;
       top: 50%;
       left: 50%;
