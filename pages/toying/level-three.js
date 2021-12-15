@@ -5,6 +5,7 @@ import YTVideo from '../../components/YTVideo'
 import Syntax from '../../components/Dictionary/Syntax'
 import Operator from '../../components/Dictionary/Operator'
 import BooleanDef from '../../components/Dictionary/BooleanDef'
+import Expression from '../../components/Dictionary/Expression'
 
 export default () => (
   <div className="level-3">
@@ -47,8 +48,9 @@ export default () => (
     <p>
       Many coding languages have the capabilities to compare and transform other kinds of data more
       advanced than <BooleanDef>booleans</BooleanDef>, which is very powerful. We can do things like
-      evaluate math expressions, compare text, and more. Watch this video to see this in practice,
-      and to see the relationship between the <BooleanDef /> logic and coding mental models.
+      evaluate math <Expression>expressions</Expression>, compare text, and more. Watch this video
+      to see this in practice, and to see the relationship between the <BooleanDef /> logic and
+      coding mental models.
     </p>
     <YTVideo url="_j9nvYKaOVE" thumbnail="/images/cs-discoveries.jpg" />
     <Link href="/coding">

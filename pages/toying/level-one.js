@@ -4,6 +4,7 @@ import { NextSeo } from 'next-seo'
 import BooleanOps from '../../components/booleanOps'
 import Operator from '../../components/Dictionary/Operator'
 import BooleanDef from '../../components/Dictionary/BooleanDef'
+import Expression from '../../components/Dictionary/Expression'
 
 export default () => (
   <div className="level-1">
@@ -22,11 +23,11 @@ export default () => (
       great tool for learning how we talk to computers.
       <br />
       <br />
-      <BooleanDef>Boolean</BooleanDef> logic contains a set of expressions (kind of like coding
-      language) that allow us to perform basic <Operator>operations</Operator> on data. True or
-      false statements (boolean values like yes or no) are the main type of expressions handled with{' '}
-      <BooleanDef /> logic. This means we can ask the computer yes or no questions using code to
-      tell it what to do.
+      <BooleanDef>Boolean</BooleanDef> logic contains a set of <Expression>expressions</Expression>{' '}
+      (kind of like coding language) that allow us to perform basic <Operator>operations</Operator>{' '}
+      on data. True or false statements (boolean values like yes or no) are the main type of{' '}
+      <Expression>expressions</Expression> handled with <BooleanDef /> logic. This means we can ask
+      the computer yes or no questions using code to tell it what to do.
     </p>
     <br />
     <h2>The "Or" Operator</h2>
@@ -38,7 +39,8 @@ export default () => (
     <LevelOne />
     <p>
       Once you've played the first level of the Matching Game a few times and are confident you
-      understand OR continue on to the next section to learn about NOT expressions 😊
+      understand OR continue on to the next section to learn about NOT{' '}
+      <Expression>expressions</Expression> 😊
     </p>
     <Link href="/toying/level-two">
       <a className="next">Next: #2.2 🚫 Whats "Not" Allowed</a>

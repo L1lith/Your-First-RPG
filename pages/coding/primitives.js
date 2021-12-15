@@ -11,6 +11,7 @@ import JS from '../../components/Dictionary/JS'
 import Input from '../../components/Dictionary/Input'
 import Output from '../../components/Dictionary/Output'
 import Interpreter from '../../components/Dictionary/Interpreter'
+import Expression from '../../components/Dictionary/Expression'
 
 const Primitives = () => (
   <div className={styles.primitives}>
@@ -51,6 +52,12 @@ const Primitives = () => (
       the <Input /> of all the code examples below. If your syntax is invalid (this means your
       coding grammar is incorrect) you will receive an error instead the <Output /> you expected
       because the <Interpreter>JS interpreter</Interpreter> will become confused.
+      <br />
+      <br />
+      The left side of the editor is the code we give to the <Interpreter />, and the right side is
+      the output it gives us. We are currently in the "<Expression>Expression</Expression>{' '}
+      Evaluator" mode, meaning that it will take whatever our code is on the left side and reduce it
+      to a single value on the right side.
     </p>
     <div className="type boolean">
       <h2>Booleans</h2>

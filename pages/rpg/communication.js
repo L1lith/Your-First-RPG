@@ -7,6 +7,7 @@ import Variable from '../../components/Dictionary/Variable'
 import BooleanDef from '../../components/Dictionary/BooleanDef'
 import StringDef from '../../components/Dictionary/StringDef'
 import FunctionDef from '../../components/Dictionary/FunctionDef'
+import Expression from '../../components/Dictionary/Expression'
 
 export default () => (
   <div className="communication">
@@ -88,8 +89,8 @@ export default () => (
       <h3>if/else</h3>
       <p>
         You can use combinations of if and else to make powerful decision making models using
-        expressions that return <BooleanDef>booleans</BooleanDef> to ask yes or no questions. Here
-        we have an example of doing something based on the user's input
+        <Expression>expressions</Expression> that return <BooleanDef>booleans</BooleanDef> to ask
+        yes or no questions. Here we have an example of doing something based on the user's input
       </p>
       <CodeSandbox
         value={

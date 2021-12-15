@@ -88,7 +88,7 @@ function CodeSandbox(props) {
           </span>
         ) : null}
         <span className={styles.mode}>
-          JavaScript {props.consoleMode === true ? 'Terminal' : 'Evaluator'}
+          {props.consoleMode === true ? 'Terminal' : 'Expression Evaluator'}
         </span>
         {props.readOnly === true ? ' (Read Only)' : null}
         {props.noReset !== true ? (

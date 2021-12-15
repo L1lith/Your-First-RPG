@@ -9,6 +9,7 @@ import Variable from '../../components/Dictionary/Variable'
 import Input from '../../components/Dictionary/Input'
 import Output from '../../components/Dictionary/Output'
 import Interpreter from '../../components/Dictionary/Interpreter'
+import Expression from '../../components/Dictionary/Expression'
 
 export default () => (
   <div>
@@ -26,9 +27,10 @@ export default () => (
       section you will know basic coding! If you feel overwhelmed consider taking a break.
       <br />
       <br />
-      We will also be using something called "console output" in our editors, so you'll be seeing
-      some things that say "console.log(...)", and our program output will be whatever is inside the
-      parenthesis (this is called a <FunctionDef />, there is more on this below).
+      We will also be using terminal mode instead of the expression evaluator mode in our editors,
+      so you'll be seeing some things that say "console.log(...)", and our program output will be
+      whatever is inside the parenthesis (this is called a <FunctionDef />, there is more on this
+      below).
     </p>
     <div>
       <h2>Variables</h2>
@@ -113,9 +115,10 @@ export default () => (
     />
     <div className="parenthesis">
       <h2>Parenthesis</h2>
-      Not only can you use parenthesis to change the ordering of math expressions, but you can also
-      use parenthesis to change the ordering of any other kind of expression. Here are some example
-      of changing the order of code evaluation using parenthesis for math and non-math purposes.
+      Not only can you use parenthesis to change the ordering of math{' '}
+      <Expression>expressions</Expression>, but you can also use parenthesis to change the ordering
+      of any other kind of <Expression />. Here are some example of changing the order of code
+      evaluation using parenthesis for math and non-math purposes.
       <br />
       <br />
       <h3>Math Without Parenthesis</h3>
