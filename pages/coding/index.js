@@ -38,8 +38,11 @@ export default () => (
       <Interpreter>JavaScript Interpreter</Interpreter> in a particular order. Each line is
       evaluated one at a time from top to bottom and left-to-right like English. The <Interpreter />{' '}
       also understands and applies the rules of{' '}
-      <a href="https://www.mathsisfun.com/operation-order-pemdas.html">PEMDAS</a>. Every line of
-      code you write should combine cohesively in order to form a well functioning program.
+      <a target="_blank" href="https://www.mathsisfun.com/operation-order-pemdas.html">
+        PEMDAS
+      </a>
+      . Every line of code you write should combine cohesively in order to form a well functioning
+      program.
       <br />
       <br />
       Coding doesn't have to be frustrating, let's try to have some fun with it. In this section I
