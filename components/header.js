@@ -18,7 +18,7 @@ const Header = () => (
       alt="site logo"
       type="image/svg"
       className={styles['site-icon']}
-      src="/images/site-icon.svg"
+      src="/images/icons/site-icon.svg"
     />
     {
       null /*<Link href="/support">
