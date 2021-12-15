@@ -3,10 +3,16 @@
 .main-header {
     align-items: center;
     .resources {
-        margin-right: auto;
+        margin-left: auto;
+        @media screen and (max-width: $mini-width) {
+            display: none;
+        }
     }
     .settings {
-        margin-left: auto;
+        margin: 20px;
+        @media screen and (max-width: $mini-width) {
+            margin-left: auto;
+        }
     }
     .home-link {
         color: #0069ed;
@@ -19,9 +25,9 @@
         //text-shadow: 2px 2px 1px $accent-dark;
     }
     .site-icon {
-        @media screen and (max-width: $mini-width) {
-            display: none;
-        }
+        // @media screen and (max-width: $mini-width) {
+        //     display: none;
+        // }
         //filter: drop-shadow(0 0  4px #004193);
         height: 2em;
         text-shadow: 0 0 20px $background;
@@ -46,9 +52,11 @@
         font-size: 2.75em;
     }
     //color: white;
-    width: auto;
-    padding: 4vh 4vw;
-   border-bottom: 2px solid #68508e;
+    max-width: 92vw;
+    width: 92vw;
+    padding: 1vh 4vw;
+    border-bottom: 2px solid #68508e;
+    //border-radius: 20px;
     //background: linear-gradient(to right, rgb(70, 54, 96), rgb(104, 80, 142), rgb(70, 54, 96));
     display: flex;
     flex-direction: row;
@@ -67,7 +75,6 @@
     //     }
     // }
     & > * {
-        color: inherit;
         margin: 20px;
         @media screen and (max-width: $mini-width) {
             margin: 5px;

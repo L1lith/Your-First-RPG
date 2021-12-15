@@ -2,29 +2,14 @@ import Link from 'next/link'
 import YTVideo from '../components/YTVideo'
 import styles from '../styles/index.module.scss'
 import RPG from '../components/Dictionary/RPG'
-import { useEffect } from 'react'
-import deepGimp from '../functions/deepGimp'
 
 const Home = () => (
   <div className={styles.home}>
-    {(null &&
-      useEffect(() => {
-        deepGimp()
-      })) ||
-      null}
-    <h1 className="title">
-      <span className="smaller-text">Coding Intro:</span>
-      <br />
-      Making a Game
-    </h1>
-    <span className="intro-card">
-      <YTVideo url="-jRREn6ifEQ" thumbnail="/images/poetry-of-programming.jpg" />
-      Coding is a lot like human language, and they both need diversity
-    </span>
+    <h1 className="title">Your First RPG</h1>
     <p>
-      In this course I will explain how to visualize coding & how we can use it to make awesome
-      things. I will teach you the basics of the JavaScript language, and show you how to make your
-      own text based <RPG /> game and share it with your friends :)
+      In this course I will explain the basics of coding in JavaScript. You will make your own text
+      based <RPG /> game that you can share with your friends 😃 I hope that I can make learning to
+      code simple for you.
     </p>
     <h2>Sections</h2>
     <ol className="toc sections">
@@ -49,16 +34,9 @@ const Home = () => (
         </Link>
       </li>
     </ol>
-    <div className="extras">
-      {
-        null /*<Link href="/faq">
-      <a>Frequently Asked Questions</a>
-</Link>*/
-      }
-      <Link href="/resources">
-        <a>Remember to check out the resource section if you get stuck</a>
-      </Link>
-    </div>
+    <Link href="/resources">
+      <a>Remember to check out the resource section if you get stuck</a>
+    </Link>
   </div>
 )
 

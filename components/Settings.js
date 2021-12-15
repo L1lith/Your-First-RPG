@@ -2,6 +2,7 @@ import styles from '../styles/Settings.module.scss'
 import { useState, Fragment } from 'react'
 import isDev from '../functions/isDev'
 import Switch from './Switch'
+import Link from 'next/link'
 
 const Settings = props => {
   const [isOpen, setOpen] = useState(false)
@@ -39,6 +40,15 @@ const Settings = props => {
           <a target="_blank" href="https://support.google.com/chrome/answer/9658361">
             <button>Download the App!</button>
           </a>
+          <Link href="/resources">
+            <a
+              onClick={() => {
+                setOpen(false)
+              }}
+              className={styles.resources}>
+              Stuck?
+            </a>
+          </Link>
         </div>
       </Fragment>
     )

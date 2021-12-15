@@ -2,7 +2,11 @@
 
 
 .home {
+    & > * {
+        display: block;
+    }
     text-align: center;
+
     & > h2 {
         margin-top: 40px;
     }
