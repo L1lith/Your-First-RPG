@@ -59,7 +59,8 @@ function Editor() {
       <NextSeo title="🛠️ Game Editor" description="Build a game of your own" />
       <h1>#4.3 🛠️ The Game Editor</h1>
       <p>
-        Build your own game! Be sure to press the ☁️ button and share your url.
+        Build your own game! Be sure to press the ☁️ button and share your url. JavaScript must be
+        enabled in your browser to use the game editor.
         <br /> Warning: You must save your URL or your game data could be lost.
       </p>
       <CodeSandbox

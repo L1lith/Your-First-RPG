@@ -5,14 +5,14 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link rel="shortcut icon" href="/images/site-icon.svg" />
+          <link rel="shortcut icon" href="/images/icons/site-icon.svg" />
           <meta
             httpEquiv="Content-Security-Policy"
             content="default-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; frame-src youtube.com www.youtube.com; worker-src 'self';"
           />
           <meta name="application-name" content="Your First RPG" />
           <link rel="manifest" href="/manifest.json" />
-          <link rel="apple-touch-icon" href="/images/site-icon.svg" />
+          <link rel="apple-touch-icon" href="/images/icons/site-icon.svg" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta name="apple-mobile-web-app-status-bar-style" content="default" />
           <meta name="apple-mobile-web-app-title" content="Your First RPG" />
@@ -27,7 +27,7 @@ class MyDocument extends Document {
           <meta property="og:description" content="Learn to code by making a text RPG game" />
           <meta property="og:site_name" content="Your First RPG" />
           <meta property="og:url" content="https://yourfirstrpg.com" />
-          <meta property="og:image" content="https://yourfirstrpg.com/images/site-icon.svg" />
+          <meta property="og:image" content="https://yourfirstrpg.com/images/icons/site-icon.svg" />
         </Head>
         <body>
           <Main />

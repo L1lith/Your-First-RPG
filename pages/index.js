@@ -2,9 +2,16 @@ import Link from 'next/link'
 import YTVideo from '../components/YTVideo'
 import styles from '../styles/index.module.scss'
 import RPG from '../components/Dictionary/RPG'
+import { useEffect } from 'react'
+import deepGimp from '../functions/deepGimp'
 
 const Home = () => (
   <div className={styles.home}>
+    {(null &&
+      useEffect(() => {
+        deepGimp()
+      })) ||
+      null}
     <h1 className="title">
       <span className="smaller-text">Coding Intro:</span>
       <br />
