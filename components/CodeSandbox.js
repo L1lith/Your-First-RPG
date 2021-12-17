@@ -26,7 +26,6 @@ function CodeSandbox(props) {
   const [output, setOutput] = useState(
     props.disableAutoRun === true ? null : getOutput(code, props.consoleMode)
   )
-  let hasAppliedQuery = false
   useEffect(() => {
     if (!queryCode) return
     setCode(queryCode)
