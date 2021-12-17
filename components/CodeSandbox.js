@@ -7,7 +7,6 @@ import { useRouter, withRouter } from 'next/router'
 import Output from './Dictionary/Output'
 
 function CodeSandbox(props) {
-  const [shareURL, setShareURL] = useState(null)
   const router = useRouter()
   const [shareAutoPlay, setShareAutoPlay] = useState(
     router.query.hasOwnProperty('autoPlay') ? router.query.autoPlay : null
@@ -20,6 +19,9 @@ function CodeSandbox(props) {
       ? router.query[props.codeQueryParam]
       : props.value || ''
   )
+  const shareURL = `${router.basePath}/rpg/editor?${props.codeQueryParam}=${encodeURIComponent(
+    code
+  )}${shareAutoPlay === true ? '&autoPlay=1' : ''}`
   const vertical = !!props.vertical
   const [output, setOutput] = useState(
     props.disableAutoRun === true ? null : getOutput(code, props.consoleMode)
@@ -33,6 +35,11 @@ function CodeSandbox(props) {
     if (shareAutoPlay !== null) return
     if (!autoPlayQuery) return
     setShareAutoPlay(autoPlayQuery === '1')
+  }, [autoPlayQuery])
+  useEffect(() => {
+    if (autoPlayQuery === '1') {
+      setOutput(getOutput(code, props.consoleMode))
+    }
   }, [autoPlayQuery])
   // let hasAutorun = false
   // useEffect(() => {
@@ -103,16 +110,7 @@ function CodeSandbox(props) {
         ) : null}
         {props.hasOwnProperty('codeQueryParam') == true ? (
           <Fragment>
-            <span
-              title="Share"
-              className={styles.icon}
-              onClick={() => {
-                setShareURL(
-                  `${router.basePath}/rpg/editor?${props.codeQueryParam}=${encodeURIComponent(
-                    code
-                  )}${shareAutoPlay ? '&autoPlay=1' : ''}`
-                )
-              }}>
+            <span title="Share" className={styles.icon}>
               ☁️
             </span>
           </Fragment>
