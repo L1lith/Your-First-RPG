@@ -1,6 +1,6 @@
 import CodeSandbox from '../../components/CodeSandbox'
 import { NextSeo } from 'next-seo'
-import Link from 'next/link'
+import Link from 'next-translate-routes/link'
 import styles from '../../styles/rpg/editor.module.scss'
 
 const defaultGame = `function smartPrompt(question) {

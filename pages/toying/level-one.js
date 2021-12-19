@@ -1,5 +1,5 @@
 import LevelOne from '../../components/BooleanGame/levels/LevelOne'
-import Link from 'next/link'
+import Link from 'next-translate-routes/link'
 import { NextSeo } from 'next-seo'
 import BooleanOps from '../../components/booleanOps'
 import Operator from '../../components/Dictionary/Operator'

@@ -1,5 +1,5 @@
 import LevelOne from '../../components/BooleanGame/levels/LevelOne'
-import Link from 'next/link'
+import Link from 'next-translate-routes/link'
 import { NextSeo } from 'next-seo'
 import YTVideo from '../../components/YTVideo'
 import styles from '../../styles/rpg/summary.module.scss'

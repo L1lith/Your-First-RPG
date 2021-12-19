@@ -75,7 +75,7 @@ function generateRules(
       if (notColors == inColors) return false
       const inShapes = allowedShapes.includes(shape)
       if (notShapes == inShapes) return false
-      console.log(color, shape, inColors, inShapes, notColors, notShapes)
+      //console.log(color, shape, inColors, inShapes, notColors, notShapes)
       return true
     }
   }

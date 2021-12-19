@@ -2,7 +2,6 @@ import { Component, Fragment, useState, useEffect, useRef } from 'react'
 import AceEditor from './AceEditor'
 import styles from '../styles/CodeSandbox.module.scss'
 import { inspect } from 'util'
-import autoBind from 'auto-bind'
 import { useRouter, withRouter } from 'next/router'
 import Output from './Dictionary/Output'
 
@@ -27,6 +26,7 @@ function CodeSandbox(props) {
     props.disableAutoRun === true ? null : getOutput(code, props.consoleMode)
   )
   useEffect(() => {
+    f
     if (!queryCode) return
     setCode(queryCode)
   }, [queryCode])

@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from 'next-translate-routes/link'
 import hoverVideo from '../../functions/hoverVideo'
 import { NextSeo } from 'next-seo'
 import YTVideo from '../../components/YTVideo'

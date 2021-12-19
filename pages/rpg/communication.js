@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from 'next-translate-routes/link'
 import CodeSandbox from '../../components/CodeSandbox'
 import { NextSeo } from 'next-seo'
 import YTVideo from '../../components/YTVideo'

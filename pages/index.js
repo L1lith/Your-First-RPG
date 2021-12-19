@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from 'next-translate-routes/link'
 import YTVideo from '../components/YTVideo'
 import styles from '../styles/index.module.scss'
 import RPG from '../components/Dictionary/RPG'
