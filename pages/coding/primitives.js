@@ -1,4 +1,4 @@
-import Link from 'next-translate-routes/link'
+import Link from 'next-multilingual/link'
 import CodeSandbox from '../../components/CodeSandbox'
 import styles from '../../styles/coding/primitives.module.scss'
 import { NextSeo } from 'next-seo'

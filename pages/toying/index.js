@@ -1,4 +1,4 @@
-import Link from 'next-translate-routes/link'
+import Link from 'next-multilingual/link'
 //import BooleanGame from "../../components/BooleanGame";
 import { NextSeo } from 'next-seo'
 

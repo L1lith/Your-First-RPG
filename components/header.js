@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styles from '../styles/header.module.scss'
-import Link from 'next-translate-routes/link'
+import Link from 'next-multilingual/link'
 import Settings from './Settings'
 
 const Header = () => (

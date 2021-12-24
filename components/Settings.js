@@ -2,7 +2,7 @@ import styles from '../styles/Settings.module.scss'
 import { useState, Fragment } from 'react'
 import isDev from '../functions/isDev'
 import Switch from './Switch'
-import Link from 'next-translate-routes/link'
+import Link from 'next-multilingual/link'
 
 const Settings = props => {
   const [isOpen, setOpen] = useState(false)

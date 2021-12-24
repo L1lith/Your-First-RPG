@@ -1,9 +1,15 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
+import { getActualLocale, normalizeLocale } from 'next-multilingual'
 
 class MyDocument extends Document {
   render() {
+    const { locale, locales, defaultLocale, props } = this.props.__NEXT_DATA__
+    const pagePropsActualLocale = props?.pageProps?.resolvedLocale
+    const actualLocale = pagePropsActualLocale
+      ? pagePropsActualLocale
+      : getActualLocale(locale, defaultLocale, locales)
     return (
-      <Html lang="en">
+      <Html lang={normalizeLocale(actualLocale)}>
         <Head>
           <link rel="shortcut icon" href="/images/icons/site-icon.svg" />
           <meta

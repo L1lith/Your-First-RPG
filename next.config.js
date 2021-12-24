@@ -1,7 +1,7 @@
 const withPWA = require('next-pwa')
 const runtimeCaching = require('next-pwa/cache')
 const securityHeaders = require('./security-headers')
-const withTranslateRoutes = require('next-translate-routes/plugin')
+const { getConfig } = require('next-multilingual/config')
 //const { i18n } = require('./next-i18next.config')
 //const { nextI18NextRewrites } = require('next-i18next/rewrites')
 
@@ -9,17 +9,17 @@ const withTranslateRoutes = require('next-translate-routes/plugin')
 //   en: 'en-US',
 //   fr: 'fr'
 // }
-module.exports = withTranslateRoutes(
-  withPWA({
+module.exports = withPWA(
+  getConfig('yFRPG', ['en-US', 'fr-CA', 'es-MX'], {
     // other next config
     //rewrites: async () => nextI18NextRewrites(localeSubpaths),
     get headers() {
       return Object.entries(securityHeaders).map(([key, value]) => ({ key, value }))
     },
-    i18n: {
-      locales: ['en-US', 'es'],
-      defaultLocale: 'en-US'
-    },
+    // i18n: {
+    //   locales: ['en-US', 'es'],
+    //   defaultLocale: 'en-US'
+    // },
     pwa: {
       dest: 'public',
       runtimeCaching,
