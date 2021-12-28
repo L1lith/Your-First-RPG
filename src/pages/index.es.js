@@ -1,6 +1,6 @@
 import { Link } from 'gatsby'
 import YTVideo from '../components/YTVideo'
-import { home, extra, enticement } from '../styles/index.module.scss'
+import { home, extra } from '../styles/index.module.scss'
 import RPG from '../components/Dictionary/RPG'
 
 const Home = () => (
