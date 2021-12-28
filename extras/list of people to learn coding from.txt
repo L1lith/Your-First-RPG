@@ -1,4 +1,0 @@
-1. Rich Hickey
-2. Uncle Bob
-3. Douglas Crockford
-4. Kevlin Henney

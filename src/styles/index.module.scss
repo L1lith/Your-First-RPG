@@ -1,0 +1,16 @@
+@import "variables";
+
+
+.home {
+    & > * {
+        display: block;
+    }
+    text-align: center;
+
+    & > h2 {
+        margin-top: 40px;
+    }
+    .extra {
+        margin-top: 50px;
+    }
+}

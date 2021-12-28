@@ -1,0 +1,25 @@
+@import "../variables";
+
+.primitives {
+    .primitivesList {
+        margin: 20px auto;
+        list-style: none;
+        display: table;
+        counter-reset: primitives-counter;
+        & > h2 {
+            font-style: italic;
+        }
+        li {
+            margin: 10px 0;
+            font-size: 1.4em;
+            text-align:left;
+            counter-increment: primitives-counter;
+        }
+        li::before {
+            margin-right: 10px;
+            content: counter(primitives-counter) ". ";
+            color: $accent-dark;
+            font-weight: bold;
+        }
+    }
+}

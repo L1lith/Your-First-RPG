@@ -1,0 +1,52 @@
+@import "variables";
+
+.youtubeContainer {
+  background-color: black;
+  color: white; // to display the alt text properly
+  overflow: hidden;
+  img{
+    user-select: none;
+    cursor: pointer;
+    display: block;
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    span {
+      font-style: normal;
+      user-select: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: calc(5vw + 5vh);
+      color: white;
+      filter: drop-shadow(0 0 5px #000000e6);
+      pointer-events: none;
+      cursor: pointer;
+    }
+    a {
+    }
+    position: relative;
+    width: 80%;
+    @media screen and (max-width: $mini-width) {
+      width: 100%;
+    } 
+    margin: 20px auto;
+    height: 0;
+    padding-bottom: 56.25%;
+    iframe {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: translateY(-50%);
+      &.disabled {
+        display: none;
+      }
+    }
+}

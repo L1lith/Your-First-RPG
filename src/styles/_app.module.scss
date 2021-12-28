@@ -1,0 +1,87 @@
+@import "variables";
+
+@font-face {
+  font-family: 'Droid';
+  src: url('/fonts/droidSerifRegular.ttf');
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Droid';
+  src: url('/fonts/droidSerifBold.ttf');
+  //font-weight: 900;
+  font-weight: bold;
+  font-display: swap;
+}
+.page {
+  position: relative;
+  width: auto;
+  margin: auto;
+  @media screen and (max-width: $mini-width) {
+    margin: 0;
+    padding: 2vh 5vw;
+    width: 90vw;
+  }
+  text-align: center;
+  //background-color: $background;
+  //margin: 4vh 4vw 0 4vw;
+  padding: 5vh 10vw 5vh 10vw;
+  background-color: $background;
+  & > .title, & > * > .title {
+    text-shadow: $accent 1px 1px 7px;
+    @media screen and (max-width: $mini-width) {
+      font-size: 1.5em;
+    }
+    font-size: 2em;
+  }
+  @media screen and (max-width: $mini-width) {
+    font-size: 1em !important;
+  }
+  list-style: none;
+  display: table;
+  counter-reset: toc-counter;
+  & > h2 {
+      font-style: italic;
+  }
+  ol {
+    display: inline-block;
+  }
+  li {
+    
+    @media screen and (max-width: $mini-width) {
+      font-size: 5vw;
+    }
+    @media screen and (min-width: $mini-width) {
+      &::before {
+        content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        color: #000085; /* Change the color */
+        font-weight: bold; /* If you want it to be bold */
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 1em; /* Also needed for space (tweak if needed) */
+        margin-left: -1em; /* Also needed for space (tweak if needed) */
+      }
+    }
+    list-style: none;
+    
+      margin: 10px 0;
+      font-size: 1.4em;
+      text-align:left;
+      counter-increment: toc-counter;
+      text-decoration: underline;
+      text-decoration-color: $accent;
+      //border-bottom: 2px solid $foreground;
+  }
+  // &.sections {
+  //   li::before {
+  //     margin-right: 10px;
+  //     content: counter(toc-counter) " ";
+  //     color: $accent-dark;
+  //     font-weight: bold;
+  //     text-shadow: 3px 2px 5px #d1d1ff;
+  //   }
+  // }
+}
+
+
+
+

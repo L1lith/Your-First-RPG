@@ -1,0 +1,10 @@
+{
+    "resources": {
+        "default": "resources",
+        "es": "recursos"
+    },
+    "support": {
+        "default": "support",
+        "es": "apoyo"
+    }
+}
