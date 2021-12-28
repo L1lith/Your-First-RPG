@@ -1,9 +1,11 @@
-import { NextSeo } from 'next-seo'
+import { Helmet } from 'react-helmet'
 
-export default () => {
+export default function Support() {
   return (
     <div>
-      <NextSeo title="Support" />
+      <Helmet>
+        <title>Support</title>
+      </Helmet>
       Want to support me? Star my project on GitHub, it's free! Also please consider sharing this
       course with your friends if you enjoyed it, knowledge is power :)
       <br />

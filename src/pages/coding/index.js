@@ -1,5 +1,5 @@
 import { Link } from 'gatsby'
-import { NextSeo } from 'next-seo'
+import { Helmet } from 'react-helmet'
 import YTVideo from '../../components/YTVideo'
 import Interpreter from '../../components/Dictionary/Interpreter'
 import Expression from '../../components/Dictionary/Expression'
@@ -7,7 +7,9 @@ import Expression from '../../components/Dictionary/Expression'
 export default () => (
   <div className="coding-intro">
     <h1 className="title">Chapter 3</h1>
-    <NextSeo title="🛣️ Stepping into Coding" />
+    <Helmet>
+      <title>🛣️ Stepping into Coding</title>
+    </Helmet>
     <ol className="toc pages">
       <li>
         <Link href="/coding#lesson">

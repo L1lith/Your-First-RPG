@@ -1,10 +1,10 @@
 @import 'variables';
 
-.settings-button {
+.settingsButton {
     margin-left: auto;
 }
 
-.settings-menu {
+.settingsMenu {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,7 +41,7 @@
     }
 }
 
-.dom-blocker {
+.domBlocker {
     position: fixed;
     z-index: 99;
     left: 0;

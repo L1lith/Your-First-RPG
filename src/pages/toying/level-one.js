@@ -1,6 +1,6 @@
 import LevelOneGame from '../../components/BooleanGame/levels/LevelOne'
-import Link from 'next/link'
-import { NextSeo } from 'next-seo'
+import { Link } from 'gatsby'
+import { Helmet } from 'react-helmet'
 import BooleanOps from '../../components/booleanOps'
 import Operator from '../../components/Dictionary/Operator'
 import BooleanDef from '../../components/Dictionary/BooleanDef'
@@ -9,7 +9,9 @@ import Expression from '../../components/Dictionary/Expression'
 export default function LevelOne() {
   return (
     <div className="level-1">
-      <NextSeo title={'💬 "Or" Expressions'} />
+      <Helmet>
+        <title>💬 "Or" Expressions</title>
+      </Helmet>
       <h2>#2.1 💬 Basic "Or" Expressions</h2>
       <br />
       <span className="introCard">

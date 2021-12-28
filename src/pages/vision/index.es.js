@@ -1,13 +1,16 @@
 import { Link } from 'gatsby'
 import { visionIntro } from '../../styles/vision/index.module.scss'
-import { NextSeo } from 'next-seo'
+import { Helmet } from 'react-helmet'
 import YTVideo from '../../components/YTVideo'
 import Docs from '../../components/Dictionary/Docs'
 
 export default function CodingMindset() {
   return (
     <div className={visionIntro}>
-      <NextSeo description="Getting in the coding mindset" title="🗺️ Planning it out" />
+      <Helmet>
+        <meta name="description" content="Getting in the coding mindset" />
+        <title>🗺️ Planning it out</title>
+      </Helmet>
       <h1 className="title">Chapter 1</h1>
       <ol className="toc pages">
         <li>

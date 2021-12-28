@@ -1,11 +1,13 @@
-import Link from 'next/link'
+import { Link } from 'gatsby'
 //import BooleanGame from "../../components/BooleanGame";
-import { NextSeo } from 'next-seo'
+import { Helmet } from 'react-helmet'
 
 export default function ToyingIntro() {
   return (
     <div className="toying-intro">
-      <NextSeo title="🧩 Logic Puzzles" />
+      <Helmet>
+        <title>🧩 Logic Puzzles</title>
+      </Helmet>
       <h1 className="title">Chapter 2</h1>
       <ol className="toc pages">
         <li>

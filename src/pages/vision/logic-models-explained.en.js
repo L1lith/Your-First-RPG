@@ -1,6 +1,6 @@
 import { Link } from 'gatsby'
 import hoverVideo from '../../functions/hoverVideo'
-import { NextSeo } from 'next-seo'
+import { Helmet } from 'react-helmet'
 import YTVideo from '../../components/YTVideo'
 import EasterEgg from '../../components/EasterEgg'
 import {
@@ -14,7 +14,10 @@ import BooleanDef from '../../components/Dictionary/BooleanDef'
 export default function LogicModelsExplained() {
   return (
     <div className="logic-models">
-      <NextSeo description="Arranging Logic Models" title="🧠 Logic Models Explained" />
+      <Helmet>
+        <meta name="description" content="Arranging Logic Models" />
+        <title>🧠 Logic Models Explained</title>
+      </Helmet>
       <h2>#1.1 🧠 Logic Models Explained</h2>
       <br />
       <span className="introCard">

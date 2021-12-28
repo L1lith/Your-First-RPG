@@ -1,4 +1,4 @@
-import styles from '../styles/Settings.module.scss'
+import { domBlocker, settingsMenu } from '../styles/Settings.module.scss'
 import { useState, Fragment } from 'react'
 import isDev from '../functions/isDev'
 import SwitchComponent from './SwitchComponent'
@@ -10,12 +10,12 @@ const Settings = props => {
     (typeof props.className == 'string' ? props.className + ' ' : '') +
     ' emojiButton ' +
     styles['settings-button']
-  let settingsMenu = null
+  let settingsMenuElement = null
   if (isOpen) {
-    settingsMenu = (
+    settingsMenuElement = (
       <Fragment>
-        <span className={styles['dom-blocker']} />
-        <div className={styles['settings-menu']}>
+        <span className={domBlocker} />
+        <div className={settingsMenu}>
           <button
             onClick={() => {
               setOpen(false)
@@ -44,8 +44,7 @@ const Settings = props => {
             <a
               onClick={() => {
                 setOpen(false)
-              }}
-              className={styles.resources}>
+              }}>
               Stuck?
             </a>
           </Link>
@@ -64,7 +63,7 @@ const Settings = props => {
         className={className}>
         ⚙️
       </button>
-      {settingsMenu}
+      {settingsMenuElement}
     </Fragment>
   )
 }

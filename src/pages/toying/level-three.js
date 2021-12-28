@@ -1,6 +1,6 @@
 import LevelThreeGame from '../../components/BooleanGame/levels/LevelThree'
 import { Link } from 'gatsby'
-import { NextSeo } from 'next-seo'
+import { Helmet } from 'react-helmet'
 import YTVideo from '../../components/YTVideo'
 import Syntax from '../../components/Dictionary/Syntax'
 import Operator from '../../components/Dictionary/Operator'
@@ -10,7 +10,9 @@ import Expression from '../../components/Dictionary/Expression'
 export default function LevelThree() {
   return (
     <div className="level-3">
-      <NextSeo title="💻 Booleans for Apps" />
+      <Helmet>
+        <title>💻 Booleans for Apps</title>
+      </Helmet>
       <h2>#2.3 💻 Booleans for coding Apps</h2>
       <br />
       <p>

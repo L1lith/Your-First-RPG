@@ -5,14 +5,12 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: 'gatsby-plugin-sass',
-      options: {
-        //additionalData: `@import "${__dirname}\\src\\styles\\_global.scss";`
-      }
+      resolve: 'gatsby-plugin-sass'
     },
     'gatsby-plugin-image',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sharp',
+    'gatsby-plugin-use-query-params',
     'gatsby-transformer-sharp',
     `gatsby-plugin-provide-react`,
     {

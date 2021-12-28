@@ -1,5 +1,5 @@
 import CodeSandbox from '../../components/CodeSandbox'
-import { NextSeo } from 'next-seo'
+import { Helmet } from 'react-helmet'
 import { Link } from 'gatsby'
 import { editorModule } from '../../styles/rpg/editor.module.scss'
 
@@ -56,7 +56,10 @@ function Editor() {
   // })
   return (
     <div>
-      <NextSeo title="🛠️ Game Editor" description="Build a game of your own" />
+      <Helmet>
+        <title>🛠️ Game Editor</title>
+        <meta name="description" content="Build a game of your own" />
+      </Helmet>
       <h1>#4.3 🛠️ The Game Editor</h1>
       <p>
         Build your own game! Be sure to press the ☁️ button and share your url. JavaScript must be

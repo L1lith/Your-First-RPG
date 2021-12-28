@@ -15,40 +15,31 @@ import {
   outputSpan,
   aceEditor
 } from '../styles/CodeSandbox.module.scss'
-import { inspect } from 'util'
-import { useRouter, withRouter } from 'next/router'
+import inspect from '../functions/inspect'
 import Output from './Dictionary/Output'
+import { useQueryParam, BooleanParam, StringParam } from 'use-query-params'
 
 function CodeSandbox(props) {
-  const router = useRouter()
-  const [shareAutoPlay, setShareAutoPlay] = useState(
-    router.query.hasOwnProperty('autoPlay') ? router.query.autoPlay : null
-  )
+  const [autoPlay, setAutoPlay] = useQueryParam('autoPlay', BooleanParam)
+  const [codeInput, setCodeQuery] = useQueryParam('code', StringParam)
   const autoPlayInput = useRef(null)
-  const queryCode = router.query.code
-  const autoPlayQuery = router.query.autoPlay
-  const [code, setCode] = useState(
-    router.query.hasOwnProperty(props.codeQueryParam)
-      ? router.query[props.codeQueryParam]
-      : props.value || ''
-  )
+  const [code, setCode] = useState(codeInput || props.value || '')
   const shareURL = `${router.basePath}/rpg/editor?${props.codeQueryParam}=${encodeURIComponent(
     code
-  )}${shareAutoPlay === true ? '&autoPlay=1' : ''}`
+  )}${autoPlay === true ? '&autoPlay=1' : ''}`
   const vert = !!props.vertical
   const [output, setOutput] = useState(
     props.disableAutoRun === true ? null : getOutput(code, props.consoleMode)
   )
-  useEffect(() => {
-    f
-    if (!queryCode) return
-    setCode(queryCode)
-  }, [queryCode])
-  useEffect(() => {
-    if (shareAutoPlay !== null) return
-    if (!autoPlayQuery) return
-    setShareAutoPlay(autoPlayQuery === '1')
-  }, [autoPlayQuery])
+  // useEffect(() => {
+  //   if (!queryCode) return
+  //   setCode(queryCode)
+  // }, [queryCode])
+  // useEffect(() => {
+  //   if (shareAutoPlay !== null) return
+  //   if (!autoPlayQuery) return
+  //   setShareAutoPlay(autoPlayQuery === '1')
+  // }, [autoPlayQuery])
   useEffect(() => {
     if (autoPlayQuery === '1') {
       setOutput(getOutput(code, props.consoleMode))
@@ -85,9 +76,9 @@ function CodeSandbox(props) {
               <input
                 ref={autoPlayInput}
                 onChange={() => {
-                  setShareAutoPlay(!shareAutoPlay)
+                  setAutoPlay(!autoPlay)
                 }}
-                checked={shareAutoPlay}
+                checked={autoPlay}
                 type="checkbox"
               />
             </span>
@@ -115,6 +106,7 @@ function CodeSandbox(props) {
             className={icon}
             onClick={() => {
               setCode('')
+              setCodeQuery('')
             }}>
             ❌
           </span>
@@ -141,6 +133,7 @@ function CodeSandbox(props) {
             value={code}
             onChange={newCode => {
               setCode(newCode)
+              setCodeQuery(newCode)
               if (props.disableAutoRun !== true) {
                 setOutput(getOutput(newCode, props.consoleMode))
               }
@@ -233,4 +226,4 @@ function getEvalOutput(code) {
   }
 }
 
-export default withRouter(CodeSandbox)
+export default CodeSandbox

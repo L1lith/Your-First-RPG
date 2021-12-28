@@ -1,7 +1,7 @@
 import { Link } from 'gatsby'
 import CodeSandbox from '../../components/CodeSandbox'
 import { primitives } from '../../styles/coding/primitives.module.scss'
-import { NextSeo } from 'next-seo'
+import { Helmet } from 'react-helmet'
 import YTVideo from '../../components/YTVideo'
 import Operator from '../../components/Dictionary/Operator'
 import BooleanDef from '../../components/Dictionary/BooleanDef'
@@ -15,7 +15,9 @@ import Expression from '../../components/Dictionary/Expression'
 
 const Primitives = () => (
   <div className={primitives}>
-    <NextSeo title="📊 Data Types" />
+    <Helmet>
+      <title>📊 Data Types</title>
+    </Helmet>
     <h2>#3.1 📊 Basic Data Types</h2>
     <br />
     <span className="introCard">

@@ -2,7 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import '../styles/_global.scss'
 import { page } from '../styles/_app.module.scss'
-import Header from '../../../components/header'
+import Header from '../components/header'
 
 class Application extends React.Component {
   render() {

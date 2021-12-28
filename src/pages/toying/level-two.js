@@ -1,13 +1,15 @@
 import LevelTwoGame from '../../components/BooleanGame/levels/LevelTwo'
 import { Link } from 'gatsby'
-import { NextSeo } from 'next-seo'
+import { Helmet } from 'react-helmet'
 import YTVideo from '../../components/YTVideo'
 import Operator from '../../components/Dictionary/Operator'
 
 export default function LevelTwo() {
   return (
     <div className="level-2">
-      <NextSeo title={'🚫 Whats "Not" Allowed'} />
+      <Helmet>
+        <title>🚫 Whats "Not" Allowed</title>
+      </Helmet>
       <h2>#2.2 🚫 Whats "Not" Allowed</h2>
       <br />
       <span className="introCard">

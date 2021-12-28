@@ -1,7 +1,6 @@
 import { Link } from 'gatsby'
 import CodeSandbox from '../../components/CodeSandbox'
 import { Component } from 'react'
-import { NextSeo } from 'next-seo'
 import YTVideo from '../../components/YTVideo'
 import ShittyChecking from '../../components/ShittyChecking'
 import FunctionDef from '../../components/Dictionary/FunctionDef'
@@ -10,10 +9,13 @@ import Input from '../../components/Dictionary/Input'
 import Output from '../../components/Dictionary/Output'
 import Interpreter from '../../components/Dictionary/Interpreter'
 import Expression from '../../components/Dictionary/Expression'
+import { Helmet } from 'react-helmet'
 
 export default () => (
   <div>
-    <NextSeo title="🔨 Essential Tools" />
+    <Helmet>
+      <title>🔨 Essential Tools</title>
+    </Helmet>
     <h1>#3.2 🔨 Essential Tools</h1>
     <span className="introCard">
       <YTVideo url="himmatLe7aQ" query={{ start: 32 }} thumbnail="/images/melinda-mae.jpg" />

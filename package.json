@@ -15,6 +15,10 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "anser": "^2.1.0",
+    "auto-bind": "^5.0.1",
+    "brace": "^0.11.1",
+    "fs-extra": "^10.0.0",
     "gatsby": "^4.4.0",
     "gatsby-plugin-gatsby-cloud": "^4.4.0",
     "gatsby-plugin-i18n": "^1.0.1",
@@ -23,12 +27,19 @@
     "gatsby-plugin-react-helmet": "^5.4.0",
     "gatsby-plugin-sass": "^5.4.0",
     "gatsby-plugin-sharp": "^4.4.0",
+    "gatsby-plugin-use-query-params": "^1.0.1",
     "gatsby-source-filesystem": "^4.4.0",
     "gatsby-transformer-sharp": "^4.4.0",
     "i18next": "^21.6.3",
+    "ntcjs": "^1.1.2",
+    "postcss": "^8.4.5",
     "react": "^17.0.1",
+    "react-ace": "^9.5.0",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "sass": "^1.45.1"
+    "react-refresh": "^0.11.0",
+    "sandhands": "^1.8.9",
+    "sass": "^1.45.1",
+    "use-query-params": "^1.2.3"
   }
 }

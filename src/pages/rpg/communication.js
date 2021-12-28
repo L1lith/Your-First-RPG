@@ -1,6 +1,6 @@
 import { Link } from 'gatsby'
 import CodeSandbox from '../../components/CodeSandbox'
-import { NextSeo } from 'next-seo'
+import { Helmet } from 'react-helmet'
 import YTVideo from '../../components/YTVideo'
 import RPG from '../../components/Dictionary/RPG'
 import Variable from '../../components/Dictionary/Variable'
@@ -14,7 +14,9 @@ import Scope from '../../components/Dictionary/Scope'
 export default function Communication() {
   return (
     <div className="communication">
-      <NextSeo title="🗣️ Talking to the Player" />
+      <Helmet>
+        <title>🗣️ Talking to the Player</title>
+      </Helmet>
       <h2>#4.1 🗣️ Talking to the Player</h2>
       <span className="introCard">
         <YTVideo url="7yeA7a0uS3A" query={{ start: 29 }} thumbnail="/images/heman-title.jpg" />
