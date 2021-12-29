@@ -5,20 +5,24 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: 'gatsby-plugin-sass'
-    },
-    'gatsby-plugin-image',
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sharp',
-    'gatsby-plugin-use-query-params',
-    'gatsby-transformer-sharp',
-    `gatsby-plugin-provide-react`,
-    {
       resolve: 'gatsby-plugin-i18n',
       options: {
         langKeyDefault: 'en',
         useLangKeyLayout: false
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`./src/pages/_app.js`)
+      }
+    },
+    'gatsby-plugin-sass',
+    'gatsby-plugin-image',
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sharp',
+    'gatsby-plugin-use-query-params',
+    'gatsby-transformer-sharp',
+    `gatsby-plugin-provide-react`
   ]
 }

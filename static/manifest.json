@@ -1,0 +1,41 @@
+{
+    "name": "Your First RPG",
+    "short_name": "YourFirstRPG",
+    "icons": [
+      {
+        "src": "images/icons/site-icon.svg",
+        "type": "image/svg",
+        "sizes": "36x36 48x48 72x72 96x96 120x120 128x128 144x144 152x152 180x180 192x192 384x384 512x512",
+        "purpose": "any"
+      },
+      {
+        "src": "images/icons/site-icon.svg",
+        "type": "image/svg",
+        "sizes": "any",
+        "purpose": "any"
+      },
+      {
+        "src": "images/icons/app-icon-huge.png",
+        "type": "image/png",
+        "size": "512x512",
+        "purpose": "any"
+      },
+      {
+        "src": "favicon.ico",
+        "type": "image/x-icon",
+        "size": "32x32",
+        "purpose": "any"
+      },
+      {
+        "src": "images/icons/maskable-icon.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable any"
+      }
+    ],
+    "theme_color": "#0069ed",
+    "background_color": "#FFFFFF",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait"
+  }
