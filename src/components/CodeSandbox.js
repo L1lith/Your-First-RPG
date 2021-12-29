@@ -13,7 +13,8 @@ import {
   inner,
   section,
   outputSpan,
-  aceEditor
+  aceEditor,
+  valid
 } from '../styles/CodeSandbox.module.scss'
 import inspect from '../functions/inspect'
 import Output from './Dictionary/Output'
@@ -161,11 +162,7 @@ function getOutput(code, consoleMode) {
   if (code.length > 0) {
     return consoleMode === true ? getConsoleOutput(code) : getEvalOutput(code)
   } else {
-    return (
-      <span className={styles.output + ' ' + styles.empty}>
-        Type something to see the evaluated output
-      </span>
-    )
+    return <span className={outputSpan}>Type something to see the evaluated output</span>
   }
 }
 
@@ -184,14 +181,12 @@ function getConsoleOutput(code) {
     console.log = oldLog
     if (logOutput.length < 1)
       return (
-        <span className={styles.output + ' ' + styles.empty}>
-          Try logging something to the console to see some output
-        </span>
+        <span className={outputSpan}>Try logging something to the console to see some output</span>
       )
     return (
       <AceEditor
         maxLines={Infinity}
-        className={styles['ace-editor'] + ' ' + styles.output + ' ' + styles.valid}
+        className={aceEditor + ' ' + outputSpan}
         width="50%"
         mode="javascript"
         height="auto"
@@ -202,7 +197,7 @@ function getConsoleOutput(code) {
     )
   } catch (err) {
     console.log = oldLog
-    return <span className={styles.output + ' ' + styles.error}>{inspect(err)}</span>
+    return <span className={outputSpan + ' ' + error}>{inspect(err)}</span>
   }
 }
 
@@ -213,7 +208,7 @@ function getEvalOutput(code) {
     return (
       <AceEditor
         maxLines={Infinity}
-        className={styles['ace-editor'] + ' output valid'}
+        className={aceEditor + outputSpan}
         width="50%"
         mode="javascript"
         theme="ambiance"
@@ -222,7 +217,7 @@ function getEvalOutput(code) {
       />
     )
   } catch (err) {
-    return <span className={styles.output + ' ' + styles.error}>{inspect(err)}</span>
+    return <span className={outputSpan + ' ' + error}>{inspect(err)}</span>
   }
 }
 

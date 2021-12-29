@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://www.yourdomain.tld',
+    siteUrl: 'https://www.yourfirstrpg.com',
     title: 'Your First RPG'
   },
   plugins: [

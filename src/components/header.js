@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { siteIcon, mainHeader, homeLink, resources } from '../styles/header.module.scss'
+import { siteIcon, mainHeader, homeLink, resources, settings } from '../styles/header.module.scss'
 import { Link } from 'gatsby'
 import Settings from './Settings'
 
@@ -19,7 +19,7 @@ const Header = () => (
       <a className={styles.support}>Support Me</a>
 </Link>*/
     }
-    <Settings className={styles.settings} />
+    <Settings className={settings} />
   </header>
 )
 

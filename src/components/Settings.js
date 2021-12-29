@@ -1,4 +1,4 @@
-import { domBlocker, settingsMenu } from '../styles/Settings.module.scss'
+import { domBlocker, settingsMenu, settingsButton, close } from '../styles/Settings.module.scss'
 import { useState, Fragment } from 'react'
 import isDev from '../functions/isDev'
 import SwitchComponent from './SwitchComponent'
@@ -9,7 +9,7 @@ const Settings = props => {
   const className =
     (typeof props.className == 'string' ? props.className + ' ' : '') +
     ' emojiButton ' +
-    styles['settings-button']
+    settingsButton
   let settingsMenuElement = null
   if (isOpen) {
     settingsMenuElement = (
@@ -21,7 +21,7 @@ const Settings = props => {
               setOpen(false)
               document.body.classList.remove('disabled')
             }}
-            className={styles['close'] + ' emojiButton grayscale'}>
+            className={close + ' emojiButton grayscale'}>
             ❌
           </button>
           <span>

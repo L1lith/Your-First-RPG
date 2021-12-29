@@ -8,7 +8,7 @@ function SwitchComponent(props) {
   return (
     <label
       className={
-        component + (rounded ? ' ' + styles.rounded : '') + (isActive ? ' ' + switchActive : '')
+        component + (rounded ? ' ' + roundedStyle : '') + (isActive ? ' ' + switchActive : '')
       }>
       <input
         ref={inputRef}

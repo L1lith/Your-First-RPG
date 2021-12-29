@@ -1,6 +1,6 @@
 import { Link } from 'gatsby'
 import CodeSandbox from '../../components/CodeSandbox'
-import { primitives } from '../../styles/coding/primitives.module.scss'
+import { primitives, primitivesList } from '../../styles/coding/primitives.module.scss'
 import { Helmet } from 'react-helmet'
 import YTVideo from '../../components/YTVideo'
 import Operator from '../../components/Dictionary/Operator'
@@ -37,7 +37,7 @@ const Primitives = () => (
       JavaScript! Primitives are the basic kinds of data in JavaScript. Here are the basic
       primitives:
     </p>
-    <ul className={styles['primitives-list']}>
+    <ul className={primitivesList}>
       <li>
         <BooleanDef>Boolean</BooleanDef>
       </li>

@@ -1,7 +1,21 @@
 import { Component } from 'react'
 import { sanitize } from 'sandhands'
 import randomBetween from '../../functions/randomBetween'
-import { jserror, booleanGame, colorList, colorSpan } from '../../styles/BooleanGame.module.scss'
+import {
+  jserror,
+  booleanGame,
+  colorList,
+  colorSpan,
+  won,
+  lost,
+  result,
+  replay,
+  board,
+  inner,
+  rulesStyles,
+  failedStyle,
+  cellStyle
+} from '../../styles/BooleanGame.module.scss'
 import autoBind from 'auto-bind'
 import generateRules from '../../functions/generateRules'
 import ntc from 'ntcjs'
@@ -114,7 +128,7 @@ class BooleanGame extends Component {
         <noscript>
           <span className={jserror}>JavaScript is required to play this game.</span>
         </noscript>
-        <div className={rules}>
+        <div className={rulesStyles}>
           <h2>Color Palette</h2>
           <ul className={colorList}>
             {this.state.colors.map((color, i) => (
@@ -153,7 +167,7 @@ class BooleanGame extends Component {
         </div>
         {this.state.gameState === 'ongoing' ? null : this.state.gameState === 'won' ? (
           <span
-            className={[styles.result, styles.won].join(' ')}
+            className={[result, won].join(' ')}
             ref={ref => {
               if (document.body.contains(ref)) ref.scrollIntoView()
             }}>
@@ -161,7 +175,7 @@ class BooleanGame extends Component {
           </span>
         ) : this.state.gameState === 'lost' ? (
           <span
-            className={[styles.result, styles.lost].join(' ')}
+            className={[result, lost].join(' ')}
             ref={ref => {
               if (document.body.contains(ref)) ref.scrollIntoView()
             }}>
@@ -171,7 +185,7 @@ class BooleanGame extends Component {
           'UNEXPECTED STATE: ' + this.state.gameState
         )}
         {this.state.gameState !== 'ongoing' ? (
-          <button className={styles.replay} onClick={this.reset}>
+          <button className={replay} onClick={this.reset}>
             Replay
           </button>
         ) : null}
@@ -182,7 +196,7 @@ class BooleanGame extends Component {
   renderBoard() {
     const { width, height } = this.state
     return (
-      <div className={styles.board}>
+      <div className={board}>
         {this.state.board.map((content, i) => {
           const y = Math.floor(i / width)
           const x = i % width
@@ -213,7 +227,7 @@ function CellRenderer(props) {
 
   return (
     <span
-      className={styles.cell + (failed === true ? ' failed' : '')}
+      className={cellStyle + (failed === true ? ' ' + failedStyle : '')}
       vertical={verticalEdge}
       horizontal={horizontalEdge}
       style={{
@@ -225,7 +239,7 @@ function CellRenderer(props) {
         activateCell(cell, index)
       }}
       disabled={active !== true}>
-      <span className={styles.inner}>{shape}</span>
+      <span className={inner}>{shape}</span>
     </span>
   )
 }

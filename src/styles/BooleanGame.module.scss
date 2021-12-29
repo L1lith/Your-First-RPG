@@ -30,7 +30,7 @@
             text-shadow: 0 0 8px rgba(255, 255, 255, 0.733);
         }
     }
-    .rules {
+    .rulesStyles {
         h2 {
             padding: 10px 0;
         }
@@ -96,14 +96,14 @@
         display: flex;
         flex-wrap: wrap;
   //justify-content: space-between;
-        .cell {
+        .cellStyle {
             overflow: hidden;
             position: relative;
             border: 2px solid #0000008a;
             box-sizing: border-box;
             transition: border-color 0.5s ease;
             cursor: pointer;
-            &.failed {
+            &.failedStyle {
                 border-color: red !important;
                 filter: none !important;
                 background-color: #ff6666 !important;
