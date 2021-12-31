@@ -10,7 +10,7 @@ const exportDirectory = join(__dirname, 'docs')
 //   }
 // }
 
-// exports.onPostBuild = () => {
-//   rmdirSync(exportDirectory, { recursive: true })
-//   renameSync(path.join(__dirname, 'public'), exportDirectory)
-// }
+exports.onPostBuild = () => {
+  rmdirSync(exportDirectory, { recursive: true })
+  renameSync(path.join(__dirname, 'public'), exportDirectory)
+}

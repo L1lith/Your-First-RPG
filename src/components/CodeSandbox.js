@@ -13,21 +13,27 @@ import {
   section,
   outputSpan,
   aceEditor,
+  title,
   valid
 } from '../styles/CodeSandbox.module.scss'
 import AceEditor from './AceEditor'
 import Output from './Dictionary/Output'
+import Link from './TranslatedLink'
+import { useLocation } from '@reach/router'
 import { Component, Fragment, useState, useEffect, useRef } from 'react'
 import { useQueryParam, BooleanParam, StringParam } from 'use-query-params'
 
 function CodeSandbox(props) {
-  const [autoPlay, setAutoPlay] = useQueryParam('autoPlay', BooleanParam)
-  const [codeInput, setCodeQuery] = useQueryParam('code', StringParam)
+  const [autoPlayQuery] = useQueryParam('autoPlay', BooleanParam)
+  const [autoPlay, setAutoPlay] = useState(false) //useQueryParam('autoPlay', BooleanParam)
+  const [codeInput, setCodeQuery] = useState(codeInput || '') //useQueryParam('code', StringParam)
   const autoPlayInput = useRef(null)
   const [code, setCode] = useState(codeInput || props.value || '')
-  const shareURL = `${this.props.location.basePath}/rpg/editor?${
-    props.codeQueryParam
-  }=${encodeURIComponent(code)}${autoPlay === true ? '&autoPlay=1' : ''}`
+  const [shareOpen, setSharingOpen] = useState(false)
+  const location = useLocation()
+  const shareURL = `${location.origin}/rpg/editor?${props.codeQueryParam}=${encodeURIComponent(
+    code
+  )}${autoPlay === true ? '&autoPlay=1' : ''}`
   const vert = !!props.vertical
   const [output, setOutput] = useState(
     props.disableAutoRun === true ? null : getOutput(code, props.consoleMode)
@@ -42,7 +48,7 @@ function CodeSandbox(props) {
   //   setShareAutoPlay(autoPlayQuery === '1')
   // }, [autoPlayQuery])
   useEffect(() => {
-    if (autoPlayQuery === '1') {
+    if (autoPlayQuery) {
       setOutput(getOutput(code, props.consoleMode))
     }
   }, [autoPlayQuery])
@@ -58,18 +64,16 @@ function CodeSandbox(props) {
         (vert === true ? vertical + ' ' : '') +
         (typeof props.className == 'string' ? props.className + ' ' : '') +
         sandbox
-      }
-    >
-      {typeof shareURL == 'string' ? (
+      }>
+      {shareOpen ? (
         <span className={sharePopup}>
           Your Sharing URL:
-          <a href={shareURL}>Right Click and Copy This Link</a>
+          <Link to={shareURL}>Right Click and Copy This Link</Link>
           <span
             className={icon + ' ' + close}
             onClick={() => {
-              setShareURL(null)
-            }}
-          >
+              setSharingOpen(false)
+            }}>
             ❌
           </span>
           <div className={settings}>
@@ -95,8 +99,7 @@ function CodeSandbox(props) {
             className={icon}
             onClick={() => {
               setOutput(getOutput(code, props.consoleMode))
-            }}
-          >
+            }}>
             ▶
           </span>
         ) : null}
@@ -111,14 +114,18 @@ function CodeSandbox(props) {
             onClick={() => {
               setCode('')
               setCodeQuery('')
-            }}
-          >
+            }}>
             ❌
           </span>
         ) : null}
         {props.hasOwnProperty('codeQueryParam') == true ? (
           <Fragment>
-            <span title="Share" className={icon}>
+            <span
+              title="Share"
+              onClick={() => {
+                setSharingOpen(true)
+              }}
+              className={icon}>
               ☁️
             </span>
           </Fragment>
@@ -129,7 +136,6 @@ function CodeSandbox(props) {
         <div className={'section ' + section}>
           <h2 className={title}>Code Input</h2>
           <AceEditor
-            width="50%"
             maxLines={Infinity}
             className={aceEditor}
             mode="javascript"
@@ -191,7 +197,6 @@ function getConsoleOutput(code) {
       <AceEditor
         maxLines={Infinity}
         className={aceEditor + ' ' + outputSpan}
-        width="50%"
         mode="javascript"
         height="auto"
         theme="ambiance"
@@ -212,8 +217,7 @@ function getEvalOutput(code) {
     return (
       <AceEditor
         maxLines={Infinity}
-        className={aceEditor + outputSpan}
-        width="50%"
+        className={aceEditor + ' ' + outputSpan}
         mode="javascript"
         theme="ambiance"
         readOnly

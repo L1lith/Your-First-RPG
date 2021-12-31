@@ -22,7 +22,7 @@
     transform: none;
     overflow: none;
     .settings {
-        margin-top: 100px;
+        //margin-top: 100px;
         .autoPlay {
             input {
                 width: 0.5em;
@@ -39,10 +39,11 @@
         min-height: 90px;
     }
     & > .sharePopup {
-        padding-top: 10vh;
+        overflow: auto;
+        padding-top: 5vh;
         position: absolute;
         top: 0;
-        height: calc(100% - 10vh);
+        height: calc(100% - 5vh);
         left: 0;
         align-items:center;
         & > * {
@@ -64,7 +65,7 @@
         width: 100%;
         text-shadow: 0px 0px 5px black;
         font-size: 2em;
-        background-color: rgba(255, 255, 255, 0.856);
+        background-color: rgba(255, 255, 255, 0.91);
     }
     @media screen and (max-width: $mini-width) {
         width: 90vw;
@@ -167,6 +168,7 @@
         // }
     }
     .outputSpan {
+        //width: 100%;
         // &:not(.valid) {
         //     background-color: #202020;
         // //height: calc(100% - 40px);
