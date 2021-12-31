@@ -1,7 +1,7 @@
-import { Link } from 'gatsby'
-import { Helmet } from 'react-helmet'
-import YTVideo from '../../components/YTVideo'
 import RPG from '../../components/Dictionary/RPG'
+import Link from '../../components/TranslatedLink'
+import YTVideo from '../../components/YTVideo'
+import { Helmet } from 'react-helmet'
 
 export default function LetsMakeAGame() {
   return (
@@ -12,27 +12,27 @@ export default function LetsMakeAGame() {
       </Helmet>
       <ol className="toc pages">
         <li>
-          <Link href="#lesson">
+          <Link to="#lesson">
             <a>#4.0 🎮 Let's make a Game!</a>
           </Link>
         </li>
         <li>
-          <Link href="/rpg/communication">
+          <Link to="/rpg/communication">
             <a>#4.1 🗣️ Communicating with the Player</a>
           </Link>
         </li>
         <li>
-          <Link href="/rpg/publishing">
+          <Link to="/rpg/publishing">
             <a>#4.2 🏆 Sharing your RPG</a>
           </Link>
         </li>
         <li>
-          <Link href="/rpg/editor">
+          <Link to="/rpg/editor">
             <a>#4.3 🛠️ The Game Editor</a>
           </Link>
         </li>
         <li>
-          <Link href="/rpg/summary">
+          <Link to="/rpg/summary">
             <a>#4.4 🔭 You Won! Further Reading</a>
           </Link>
         </li>
@@ -49,7 +49,7 @@ export default function LetsMakeAGame() {
         teaching you a lot about how to code, and now I'd like you to take the reigns and be
         creative 😊 You can create anything you can think of!
       </p>
-      <Link href="/rpg/communication">
+      <Link to="/rpg/communication">
         <a className="next">Next: #4.1 🗣️ Talking to the Player</a>
       </Link>
     </div>

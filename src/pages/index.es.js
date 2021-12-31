@@ -1,7 +1,7 @@
-import { Link } from 'gatsby'
+import RPG from '../components/Dictionary/RPG'
+import Link from '../components/TranslatedLink'
 import YTVideo from '../components/YTVideo'
 import { home, extra } from '../styles/index.module.scss'
-import RPG from '../components/Dictionary/RPG'
 
 const Home = () => (
   <div className={home}>
@@ -14,27 +14,27 @@ const Home = () => (
     <h2>Sections</h2>
     <ol className="toc sections">
       <li>
-        <Link href="/vision">
+        <Link to="/vision">
           <a>👀 Visualizing Logic Models</a>
         </Link>
       </li>
       <li>
-        <Link href="/toying">
+        <Link to="/toying">
           <a>👐 Toying with Logic Models</a>
         </Link>
       </li>
       <li>
-        <Link href="/coding">
+        <Link to="/coding">
           <a>💻 Learning to Code</a>
         </Link>
       </li>
       <li>
-        <Link href="/rpg">
+        <Link to="/rpg">
           <a>🎮 Building an RPG</a>
         </Link>
       </li>
     </ol>
-    <Link href="/resources">
+    <Link to="/resources">
       <a>Remember to check out the resource section if you get stuck</a>
     </Link>
     <div className={extra}>

@@ -1,4 +1,10 @@
-import { component, slider, offLabelStyle, onLabelStyle } from '../styles/SwitchModule.module.scss'
+import {
+  component,
+  slider,
+  offLabelStyle,
+  onLabelStyle,
+  roundedStyle
+} from '../styles/SwitchModule.module.scss'
 import { useState, useRef } from 'react'
 
 function SwitchComponent(props) {
@@ -9,7 +15,8 @@ function SwitchComponent(props) {
     <label
       className={
         component + (rounded ? ' ' + roundedStyle : '') + (isActive ? ' ' + switchActive : '')
-      }>
+      }
+    >
       <input
         ref={inputRef}
         type="checkbox"

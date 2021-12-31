@@ -1,7 +1,7 @@
 import CodeSandbox from '../../components/CodeSandbox'
-import { Helmet } from 'react-helmet'
-import { Link } from 'gatsby'
+import Link from '../../components/TranslatedLink'
 import { editorModule } from '../../styles/rpg/editor.module.scss'
+import { Helmet } from 'react-helmet'
 
 const defaultGame = `function smartPrompt(question) {
   var output = null
@@ -78,7 +78,7 @@ function Editor() {
         Feel free to press the ❌ to delete the starter code. Try flipping your phone sideways if
         you're on mobile!
       </p>
-      <Link href="/rpg/summary">
+      <Link to="/rpg/summary">
         <a className="next">Next: #4.4 🔭 You Won! Further Reading</a>
       </Link>
     </div>

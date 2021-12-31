@@ -1,6 +1,6 @@
-import { Link } from 'gatsby'
-import { Helmet } from 'react-helmet'
+import Link from '../../components/TranslatedLink'
 import YTVideo from '../../components/YTVideo'
+import { Helmet } from 'react-helmet'
 
 export default function Publishing() {
   return (
@@ -17,7 +17,7 @@ export default function Publishing() {
       <p>
         Congratulations, that you've learned basic JavaScript you're ready to make your own game! To
         begin work open the{' '}
-        <Link href="/rpg/editor">
+        <Link to="/rpg/editor">
           <a className="to-editor">Game Editor</a>
         </Link>
         . Make sure to save your URL so you don't lose your game forever! You can share the URL with
@@ -27,7 +27,8 @@ export default function Publishing() {
         Made a cool RPG? Submit a request to have your game featured on this website{' '}
         <a
           className="bold"
-          href="https://github.com/L1lith/Your-First-RPG/issues/new?assignees=&labels=rpg+display&template=display-your-project-on-the-site.md">
+          href="https://github.com/L1lith/Your-First-RPG/issues/new?assignees=&labels=rpg+display&template=display-your-project-on-the-site.md"
+        >
           here
         </a>{' '}
         😊
@@ -36,7 +37,7 @@ export default function Publishing() {
         If you'd like to learn more about JavaScript, or you'd like to support me, continue on to
         the next page.
       </p>
-      <Link href="/rpg/editor">
+      <Link to="/rpg/editor">
         <a className="next">#4.3 🛠️ The Game Editor</a>
       </Link>
     </div>

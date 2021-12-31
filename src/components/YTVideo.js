@@ -33,7 +33,8 @@ function YTVideo(props = { url }) {
       className={
         youtubeContainer + ' youtube-container'
         // 'youtube-container' + (typeof props.className == 'string' ? ' ' + props.className : '')
-      }>
+      }
+    >
       {!isOpen ? (
         <Fragment>
           <img

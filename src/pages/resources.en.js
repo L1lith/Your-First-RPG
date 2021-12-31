@@ -19,7 +19,8 @@ export default function Resources() {
               <a
                 target="_blank"
                 className="bold"
-                href="https://www.youtube.com/c/TheCodingTrain/featured">
+                href="https://www.youtube.com/c/TheCodingTrain/featured"
+              >
                 The Coding Train (YouTube Channel)
               </a>
             </td>
@@ -34,7 +35,8 @@ export default function Resources() {
               <a
                 target="_blank"
                 href="
-  https://stackoverflow.com/">
+  https://stackoverflow.com/"
+              >
                 StackOverflow (Questions & Answers)
               </a>
             </td>
@@ -72,7 +74,8 @@ export default function Resources() {
             <td>
               <a
                 target="_blank"
-                href="https://github.com/L1lith/Your-First-RPG/issues/new?assignees=&labels=help+request&template=help-request.md">
+                href="https://github.com/L1lith/Your-First-RPG/issues/new?assignees=&labels=help+request&template=help-request.md"
+              >
                 YourFirstRPG Support (GitHub Issue Tracker)
               </a>
             </td>

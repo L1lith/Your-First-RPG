@@ -14,7 +14,10 @@
             margin-left: auto;
         }
     }
-    .home-link {
+    .siteTitle {
+        margin-right: auto;
+    }
+    .homeLink {
         color: #0069ed;
         text-align: center;
         display: flex;
@@ -24,7 +27,7 @@
         //position: fixed;
         //text-shadow: 2px 2px 1px $accent-dark;
     }
-    .site-icon {
+    .siteIcon {
         // @media screen and (max-width: $mini-width) {
         //     display: none;
         // }

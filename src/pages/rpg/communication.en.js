@@ -1,15 +1,15 @@
-import { Link } from 'gatsby'
 import CodeSandbox from '../../components/CodeSandbox'
-import { Helmet } from 'react-helmet'
-import YTVideo from '../../components/YTVideo'
-import RPG from '../../components/Dictionary/RPG'
-import Variable from '../../components/Dictionary/Variable'
 import BooleanDef from '../../components/Dictionary/BooleanDef'
-import StringDef from '../../components/Dictionary/StringDef'
-import FunctionDef from '../../components/Dictionary/FunctionDef'
 import Expression from '../../components/Dictionary/Expression'
-import { play } from '../../styles/rpg/communication.module.scss'
+import FunctionDef from '../../components/Dictionary/FunctionDef'
+import RPG from '../../components/Dictionary/RPG'
 import Scope from '../../components/Dictionary/Scope'
+import StringDef from '../../components/Dictionary/StringDef'
+import Variable from '../../components/Dictionary/Variable'
+import Link from '../../components/TranslatedLink'
+import YTVideo from '../../components/YTVideo'
+import { play } from '../../styles/rpg/communication.module.scss'
+import { Helmet } from 'react-helmet'
 
 export default function Communication() {
   return (
@@ -178,7 +178,7 @@ if(smartPrompt("Do you like oatmeal raisin cookies?").toLowerCase() === "yes") {
           disableAutoRun
         />
       </div>
-      <Link href="/rpg/publishing">
+      <Link to="/rpg/publishing">
         <a className="next">Next: #4.2 🏆 Sharing your RPG</a>
       </Link>
     </div>

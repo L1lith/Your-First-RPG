@@ -1,8 +1,8 @@
-import React from 'react'
-import { Helmet } from 'react-helmet'
+import Header from '../components/header'
 //import '../styles/_global.scss'
 import { page } from '../styles/_app.module.scss'
-import Header from '../components/header'
+import React from 'react'
+import { Helmet } from 'react-helmet'
 
 class Application extends React.Component {
   render() {

@@ -1,5 +1,4 @@
-import { Component } from 'react'
-import { sanitize } from 'sandhands'
+import generateRules from '../../functions/generateRules'
 import randomBetween from '../../functions/randomBetween'
 import {
   jserror,
@@ -17,8 +16,9 @@ import {
   cellStyle
 } from '../../styles/BooleanGame.module.scss'
 import autoBind from 'auto-bind'
-import generateRules from '../../functions/generateRules'
 import ntc from 'ntcjs'
+import { Component } from 'react'
+import { sanitize } from 'sandhands'
 
 const propsFormat = {
   _: {
@@ -170,7 +170,8 @@ class BooleanGame extends Component {
             className={[result, won].join(' ')}
             ref={ref => {
               if (document.body.contains(ref)) ref.scrollIntoView()
-            }}>
+            }}
+          >
             You Won!
           </span>
         ) : this.state.gameState === 'lost' ? (
@@ -178,7 +179,8 @@ class BooleanGame extends Component {
             className={[result, lost].join(' ')}
             ref={ref => {
               if (document.body.contains(ref)) ref.scrollIntoView()
-            }}>
+            }}
+          >
             You lost 〠_〠
           </span>
         ) : (
@@ -238,7 +240,8 @@ function CellRenderer(props) {
       onClick={() => {
         activateCell(cell, index)
       }}
-      disabled={active !== true}>
+      disabled={active !== true}
+    >
       <span className={inner}>{shape}</span>
     </span>
   )

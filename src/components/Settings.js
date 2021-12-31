@@ -1,8 +1,8 @@
-import { domBlocker, settingsMenu, settingsButton, close } from '../styles/Settings.module.scss'
-import { useState, Fragment } from 'react'
+import Link from '../components/TranslatedLink'
 import isDev from '../functions/isDev'
+import { domBlocker, settingsMenu, settingsButton, close } from '../styles/Settings.module.scss'
 import SwitchComponent from './SwitchComponent'
-import { Link } from 'gatsby'
+import { useState, Fragment } from 'react'
 
 const Settings = props => {
   const [isOpen, setOpen] = useState(false)
@@ -21,7 +21,8 @@ const Settings = props => {
               setOpen(false)
               document.body.classList.remove('disabled')
             }}
-            className={close + ' emojiButton grayscale'}>
+            className={close + ' emojiButton grayscale'}
+          >
             ❌
           </button>
           <span>
@@ -40,11 +41,12 @@ const Settings = props => {
           <a target="_blank" href="https://support.google.com/chrome/answer/9658361">
             <button>Download the App!</button>
           </a>
-          <Link href="/resources">
+          <Link to="/resources">
             <a
               onClick={() => {
                 setOpen(false)
-              }}>
+              }}
+            >
               Stuck?
             </a>
           </Link>
@@ -60,7 +62,8 @@ const Settings = props => {
           setOpen(true)
           document.body.classList.add('disabled')
         }}
-        className={className}>
+        className={className}
+      >
         ⚙️
       </button>
       {settingsMenuElement}

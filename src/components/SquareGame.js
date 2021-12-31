@@ -1,6 +1,6 @@
+import initializeMatrix from '../functions/initializeMatrix'
 import { Component } from 'react'
 import { sanitize } from 'sandhands'
-import initializeMatrix from '../functions/initializeMatrix'
 
 const propsFormat = {
   dimensions: {

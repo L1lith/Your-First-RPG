@@ -1,8 +1,8 @@
 import LevelTwoGame from '../../components/BooleanGame/levels/LevelTwo'
-import { Link } from 'gatsby'
-import { Helmet } from 'react-helmet'
-import YTVideo from '../../components/YTVideo'
 import Operator from '../../components/Dictionary/Operator'
+import Link from '../../components/TranslatedLink'
+import YTVideo from '../../components/YTVideo'
+import { Helmet } from 'react-helmet'
 
 export default function LevelTwo() {
   return (
@@ -28,7 +28,7 @@ export default function LevelTwo() {
         prefixed with "not".
       </p>
       <LevelTwoGame />
-      <Link href="/toying/level-three">
+      <Link to="/toying/level-three">
         <a className="next">Next: #2.3 💻 Booleans for coding Apps</a>
       </Link>
     </div>

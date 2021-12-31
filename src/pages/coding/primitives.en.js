@@ -1,17 +1,17 @@
-import { Link } from 'gatsby'
 import CodeSandbox from '../../components/CodeSandbox'
-import { primitives, primitivesList } from '../../styles/coding/primitives.module.scss'
-import { Helmet } from 'react-helmet'
-import YTVideo from '../../components/YTVideo'
-import Operator from '../../components/Dictionary/Operator'
 import BooleanDef from '../../components/Dictionary/BooleanDef'
+import Expression from '../../components/Dictionary/Expression'
+import Input from '../../components/Dictionary/Input'
+import Interpreter from '../../components/Dictionary/Interpreter'
+import JS from '../../components/Dictionary/JS'
+import Operator from '../../components/Dictionary/Operator'
+import Output from '../../components/Dictionary/Output'
 import StringDef from '../../components/Dictionary/StringDef'
 import Variable from '../../components/Dictionary/Variable'
-import JS from '../../components/Dictionary/JS'
-import Input from '../../components/Dictionary/Input'
-import Output from '../../components/Dictionary/Output'
-import Interpreter from '../../components/Dictionary/Interpreter'
-import Expression from '../../components/Dictionary/Expression'
+import Link from '../../components/TranslatedLink'
+import YTVideo from '../../components/YTVideo'
+import { primitives, primitivesList } from '../../styles/coding/primitives.module.scss'
+import { Helmet } from 'react-helmet'
 
 const Primitives = () => (
   <div className={primitives}>
@@ -167,7 +167,7 @@ const Primitives = () => (
         here
       </a>
     </p>
-    <Link href="/coding/essential-tools">
+    <Link to="/coding/essential-tools">
       <a className="next">Next: #3.2 Essential Tools</a>
     </Link>
   </div>

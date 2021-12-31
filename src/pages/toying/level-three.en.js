@@ -1,11 +1,11 @@
 import LevelThreeGame from '../../components/BooleanGame/levels/LevelThree'
-import { Link } from 'gatsby'
-import { Helmet } from 'react-helmet'
-import YTVideo from '../../components/YTVideo'
-import Syntax from '../../components/Dictionary/Syntax'
-import Operator from '../../components/Dictionary/Operator'
 import BooleanDef from '../../components/Dictionary/BooleanDef'
 import Expression from '../../components/Dictionary/Expression'
+import Operator from '../../components/Dictionary/Operator'
+import Syntax from '../../components/Dictionary/Syntax'
+import Link from '../../components/TranslatedLink'
+import YTVideo from '../../components/YTVideo'
+import { Helmet } from 'react-helmet'
 
 export default function LevelThree() {
   return (
@@ -55,7 +55,7 @@ export default function LevelThree() {
         <BooleanDef /> logic and coding mental models.
       </p>
       <YTVideo url="_j9nvYKaOVE" thumbnail="/images/cs-discoveries.jpg" />
-      <Link href="/coding">
+      <Link to="/coding">
         <a className="next">Next: #3.0 🛣️ Stepping into Coding</a>
       </Link>
     </div>

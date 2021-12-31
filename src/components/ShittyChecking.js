@@ -1,5 +1,5 @@
-import { useState } from 'react'
 import { checkingExample, appTitle, balance, info } from '../styles/ShittyChecking.module.scss'
+import { useState } from 'react'
 
 function ShittyChecking() {
   const [opened, setOpened] = useState(false)
@@ -13,7 +13,8 @@ function ShittyChecking() {
           <button
             onClick={() => {
               setOpened(true)
-            }}>
+            }}
+          >
             View your Balance
           </button>
         )}

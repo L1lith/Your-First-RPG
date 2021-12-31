@@ -11,7 +11,8 @@ function EasterEgg(props) {
         className={easterEgg}
         onClick={() => {
           setActive(!isActive) // Toggleable
-        }}>
+        }}
+      >
         {isActive === true ? '🐣' : '🥚'}
       </span>
       {isActive === true ? props.children : null}

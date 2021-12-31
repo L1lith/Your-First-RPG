@@ -1,15 +1,15 @@
-import { Link } from 'gatsby'
-import hoverVideo from '../../functions/hoverVideo'
-import { Helmet } from 'react-helmet'
-import YTVideo from '../../components/YTVideo'
+import BooleanDef from '../../components/Dictionary/BooleanDef'
+import Output from '../../components/Dictionary/Output'
+import Stack from '../../components/Dictionary/Stack'
 import EasterEgg from '../../components/EasterEgg'
+import Link from '../../components/TranslatedLink'
+import YTVideo from '../../components/YTVideo'
+import hoverVideo from '../../functions/hoverVideo'
 import {
   logicModelChart,
   trafficStop
 } from '../../styles/vision/logic-models-explained.module.scss'
-import Stack from '../../components/Dictionary/Stack'
-import Output from '../../components/Dictionary/Output'
-import BooleanDef from '../../components/Dictionary/BooleanDef'
+import { Helmet } from 'react-helmet'
 
 export default function LogicModelsExplained() {
   return (
@@ -144,7 +144,7 @@ export default function LogicModelsExplained() {
         software. Take responsibility as an engineer for avoidable crashes and other design issues
         that arise with your software.
       </p>
-      <Link href="/toying">
+      <Link to="/toying">
         <a className="next">Next: #2.0 🧩 Playing around with Logic Puzzles</a>
       </Link>
       <br />

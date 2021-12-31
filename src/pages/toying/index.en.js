@@ -1,4 +1,4 @@
-import { Link } from 'gatsby'
+import Link from '../../components/TranslatedLink'
 //import BooleanGame from "../../components/BooleanGame";
 import { Helmet } from 'react-helmet'
 
@@ -11,22 +11,22 @@ export default function ToyingIntro() {
       <h1 className="title">Chapter 2</h1>
       <ol className="toc pages">
         <li>
-          <Link href="/toying#lesson">
+          <Link to="/toying#lesson">
             <a>#2.0 🧩 Playing around with Logic Puzzles</a>
           </Link>
         </li>
         <li>
-          <Link href="/toying/level-one">
+          <Link to="/toying/level-one">
             <a>#2.1 💬 Basic "Or" Expressions</a>
           </Link>
         </li>
         <li>
-          <Link href="/toying/level-two">
+          <Link to="/toying/level-two">
             <a>#2.2 🚫 Whats "Not" Allowed</a>
           </Link>
         </li>
         <li>
-          <Link href="/toying/level-three">
+          <Link to="/toying/level-three">
             <a>#2.3 💻 Booleans for Coding Apps</a>
           </Link>
         </li>
@@ -47,7 +47,7 @@ export default function ToyingIntro() {
         visualizing your own logic model while playing a puzzle game. This hands-on problem solving
         lesson will put you in a coding mindset before reading or writing a single line of code.
       </p>
-      <Link href="/toying/level-one">
+      <Link to="/toying/level-one">
         <a className="next">Next: #2.1 💬 Basic "Or" Boolean Logic</a>
       </Link>
     </div>

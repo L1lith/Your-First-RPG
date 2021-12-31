@@ -1,6 +1,6 @@
+import mergeRefs from './mergeRefs'
 import useClickToggle from './useClickToggle'
 import useHover from './useHover'
-import mergeRefs from './mergeRefs'
 import { useRef, useEffect, useState } from 'react'
 
 function useSmartToggle() {

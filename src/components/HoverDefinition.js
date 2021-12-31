@@ -1,5 +1,5 @@
-import { definition, hoverDefinition } from '../styles/HoverDefinition.module.scss'
 import useSmartToggle from '../functions/useSmartToggle'
+import { definition, hoverDefinition, up } from '../styles/HoverDefinition.module.scss'
 
 // const validDirections = ['up', 'left', 'down', 'right']
 
@@ -18,7 +18,7 @@ function HoverDefinition(props) {
   // if (!validDirections.includes(direction)) throw new Error('Invalid Direction Specified')
   return (
     <span className={hoverDefinition} ref={ref}>
-      {isActive ? <span className={definition}>{props.definition}</span> : null}
+      {isActive ? <span className={definition + ' ' + up}>{props.definition}</span> : null}
       {props.children}
     </span>
   )

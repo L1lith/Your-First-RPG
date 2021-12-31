@@ -1,5 +1,4 @@
-import { Component, Fragment, useState, useEffect, useRef } from 'react'
-import AceEditor from './AceEditor'
+import inspect from '../functions/inspect'
 import {
   vertical,
   sandbox,
@@ -16,8 +15,9 @@ import {
   aceEditor,
   valid
 } from '../styles/CodeSandbox.module.scss'
-import inspect from '../functions/inspect'
+import AceEditor from './AceEditor'
 import Output from './Dictionary/Output'
+import { Component, Fragment, useState, useEffect, useRef } from 'react'
 import { useQueryParam, BooleanParam, StringParam } from 'use-query-params'
 
 function CodeSandbox(props) {
@@ -58,7 +58,8 @@ function CodeSandbox(props) {
         (vert === true ? vertical + ' ' : '') +
         (typeof props.className == 'string' ? props.className + ' ' : '') +
         sandbox
-      }>
+      }
+    >
       {typeof shareURL == 'string' ? (
         <span className={sharePopup}>
           Your Sharing URL:
@@ -67,7 +68,8 @@ function CodeSandbox(props) {
             className={icon + ' ' + close}
             onClick={() => {
               setShareURL(null)
-            }}>
+            }}
+          >
             ❌
           </span>
           <div className={settings}>
@@ -93,7 +95,8 @@ function CodeSandbox(props) {
             className={icon}
             onClick={() => {
               setOutput(getOutput(code, props.consoleMode))
-            }}>
+            }}
+          >
             ▶
           </span>
         ) : null}
@@ -108,7 +111,8 @@ function CodeSandbox(props) {
             onClick={() => {
               setCode('')
               setCodeQuery('')
-            }}>
+            }}
+          >
             ❌
           </span>
         ) : null}

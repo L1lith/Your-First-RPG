@@ -1,10 +1,10 @@
 import LevelOneGame from '../../components/BooleanGame/levels/LevelOne'
-import { Link } from 'gatsby'
-import { Helmet } from 'react-helmet'
-import BooleanOps from '../../components/booleanOps'
-import Operator from '../../components/Dictionary/Operator'
 import BooleanDef from '../../components/Dictionary/BooleanDef'
 import Expression from '../../components/Dictionary/Expression'
+import Operator from '../../components/Dictionary/Operator'
+import Link from '../../components/TranslatedLink'
+import BooleanOps from '../../components/booleanOps'
+import { Helmet } from 'react-helmet'
 
 export default function LevelOne() {
   return (
@@ -46,7 +46,7 @@ export default function LevelOne() {
         understand OR continue on to the next section to learn about NOT{' '}
         <Expression>expressions</Expression> 😊
       </p>
-      <Link href="/toying/level-two">
+      <Link to="/toying/level-two">
         <a className="next">Next: #2.2 🚫 Whats "Not" Allowed</a>
       </Link>
     </div>

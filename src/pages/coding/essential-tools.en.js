@@ -1,13 +1,13 @@
-import { Link } from 'gatsby'
 import CodeSandbox from '../../components/CodeSandbox'
-import YTVideo from '../../components/YTVideo'
-import ShittyChecking from '../../components/ShittyChecking'
-import FunctionDef from '../../components/Dictionary/FunctionDef'
-import Variable from '../../components/Dictionary/Variable'
-import Input from '../../components/Dictionary/Input'
-import Output from '../../components/Dictionary/Output'
-import Interpreter from '../../components/Dictionary/Interpreter'
 import Expression from '../../components/Dictionary/Expression'
+import FunctionDef from '../../components/Dictionary/FunctionDef'
+import Input from '../../components/Dictionary/Input'
+import Interpreter from '../../components/Dictionary/Interpreter'
+import Output from '../../components/Dictionary/Output'
+import Variable from '../../components/Dictionary/Variable'
+import ShittyChecking from '../../components/ShittyChecking'
+import Link from '../../components/TranslatedLink'
+import YTVideo from '../../components/YTVideo'
 import { Helmet } from 'react-helmet'
 
 export default function EssentialTools() {
@@ -135,7 +135,7 @@ export default function EssentialTools() {
         <CodeSandbox consoleMode value="console.log(false && (true || true))" className="mini" />
       </div>
       <br />
-      <Link href="/rpg">
+      <Link to="/rpg">
         <a className="next">Next: #4.0 Building your Text RPG</a>
       </Link>
     </div>

@@ -12,7 +12,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "pretty": "prettier --write \"src/**/*.js\""
   },
   "dependencies": {
     "anser": "^2.1.0",
@@ -42,5 +43,8 @@
     "sandhands": "^1.8.9",
     "sass": "^1.45.1",
     "use-query-params": "^1.2.3"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^3.1.1"
   }
 }
