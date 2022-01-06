@@ -12,29 +12,19 @@ export default function LetsMakeAGame() {
       </Helmet>
       <ol className="toc pages">
         <li>
-          <Link to="#lesson">
-            <a>#4.0 🎮 Let's make a Game!</a>
-          </Link>
+          <Link to="#lesson">#4.0 🎮 Let's make a Game!</Link>
         </li>
         <li>
-          <Link to="/rpg/communication">
-            <a>#4.1 🗣️ Communicating with the Player</a>
-          </Link>
+          <Link to="/rpg/communication">#4.1 🗣️ Communicating with the Player</Link>
         </li>
         <li>
-          <Link to="/rpg/publishing">
-            <a>#4.2 🏆 Sharing your RPG</a>
-          </Link>
+          <Link to="/rpg/publishing">#4.2 🏆 Sharing your RPG</Link>
         </li>
         <li>
-          <Link to="/rpg/editor">
-            <a>#4.3 🛠️ The Game Editor</a>
-          </Link>
+          <Link to="/rpg/editor">#4.3 🛠️ The Game Editor</Link>
         </li>
         <li>
-          <Link to="/rpg/summary">
-            <a>#4.4 🔭 You Won! Further Reading</a>
-          </Link>
+          <Link to="/rpg/summary">#4.4 🔭 You Won! Further Reading</Link>
         </li>
       </ol>
       <h2 id="lesson">#4.0 Let's make a Game! 🎮</h2>
@@ -49,8 +39,8 @@ export default function LetsMakeAGame() {
         teaching you a lot about how to code, and now I'd like you to take the reigns and be
         creative 😊 You can create anything you can think of!
       </p>
-      <Link to="/rpg/communication">
-        <a className="next">Next: #4.1 🗣️ Talking to the Player</a>
+      <Link className="next" to="/rpg/communication">
+        Next: #4.1 🗣️ Talking to the Player
       </Link>
     </div>
   )

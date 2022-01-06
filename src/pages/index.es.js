@@ -5,41 +5,31 @@ import { home, extra } from '../styles/index.module.scss'
 
 const Home = () => (
   <div className={home}>
-    <h1 className="title">Your First RPG</h1>
+    <h1 className="title">Tu Primer Juego RPG</h1>
     <p>
-      In this course I will explain the basics of coding in JavaScript. You will make your own text
-      based <RPG /> game that you can share with your friends 😃 I hope that I can make learning to
-      code simple for you.
+      En este curso explicaré los conceptos básicos de la codificación en JavaScript. Harás tu
+      propio juego <RPG /> basado en texto que podrás compartir con tus amigos 😃 Espero poder hacer
+      que aprender a codificar sea simple para ti.
     </p>
     <h2>Sections</h2>
     <ol className="toc sections">
       <li>
-        <Link to="/vision">
-          <a>👀 Visualizing Logic Models</a>
-        </Link>
+        <Link to="/vision">👀 Visualización de modelos lógicos</Link>
       </li>
       <li>
-        <Link to="/toying">
-          <a>👐 Toying with Logic Models</a>
-        </Link>
+        <Link to="/toying">👐 Jugando con modelos lógicos</Link>
       </li>
       <li>
-        <Link to="/coding">
-          <a>💻 Learning to Code</a>
-        </Link>
+        <Link to="/coding">💻 Aprendiendo a codificar</Link>
       </li>
       <li>
-        <Link to="/rpg">
-          <a>🎮 Building an RPG</a>
-        </Link>
+        <Link to="/rpg">🎮 Construyendo un juego RPG</Link>
       </li>
     </ol>
-    <Link to="/resources">
-      <a>Remember to check out the resource section if you get stuck</a>
-    </Link>
+    <Link to="/resources">Recuerde consultar la sección de recursos si se queda atascado</Link>
     <div className={extra}>
-      <h2>Scared of Coding? Don't be!</h2>
-      Check out this inspiring talk by Linda Liukas
+      <h2>¿Miedo a la codificación? ¡No lo seas!</h2>
+      Echa un vistazo a esta inspiradora charla de Linda Liukas
       <YTVideo url="-jRREn6ifEQ" thumbnail="/images/poetry-of-programming.jpg" />
     </div>
   </div>

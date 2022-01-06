@@ -1,14 +1,13 @@
 import Header from '../components/header'
 //import '../styles/_global.scss'
-import { page } from '../styles/_app.module.scss'
+//import { page } from '../styles/_app.module.scss'
 import React from 'react'
 import { Helmet } from 'react-helmet'
 
 class Application extends React.Component {
   render() {
     return (
-      <div className={'app ' + page}>
-        <Header />
+      <>
         <Helmet>
           <link rel="shortcut icon" href="/images/icons/site-icon.svg" />
           <meta
@@ -35,7 +34,7 @@ class Application extends React.Component {
           <meta property="og:url" content="https://yourfirstrpg.com" />
           <meta property="og:image" content="https://yourfirstrpg.com/images/icons/site-icon.svg" />
         </Helmet>
-      </div>
+      </>
     )
   }
 }

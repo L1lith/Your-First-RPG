@@ -24,7 +24,7 @@ export default function LogicModelsExplained() {
         <video autoPlay {...hoverVideo()} muted>
           <source src="/video/redstoneContraption.webm" type="video/webm" />
         </video>
-        Minecraft is a great place to start your adventure :)
+        Minecraft is a great place to start your adventure &#58;&#41;
       </span>
       <p>
         Next you will learn about <BooleanDef /> logic and how to visualize them. Visualizing
@@ -144,8 +144,8 @@ export default function LogicModelsExplained() {
         software. Take responsibility as an engineer for avoidable crashes and other design issues
         that arise with your software.
       </p>
-      <Link to="/toying">
-        <a className="next">Next: #2.0 🧩 Playing around with Logic Puzzles</a>
+      <Link className="next" to="/toying">
+        Next: #2.0 🧩 Playing around with Logic Puzzles
       </Link>
       <br />
       <br />

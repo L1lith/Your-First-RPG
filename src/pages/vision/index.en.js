@@ -14,14 +14,10 @@ export default function CodingMindset() {
       <h1 className="title">Chapter 1</h1>
       <ol className="toc pages">
         <li>
-          <Link to="/vision#lesson">
-            <a>#1.0 🗺️ Planning it out</a>
-          </Link>
+          <Link to="/vision#lesson">#1.0 🗺️ Planning it out</Link>
         </li>
         <li>
-          <Link to="/vision/logic-models-explained">
-            <a>#1.1 🧠 Logic Models Explained</a>
-          </Link>
+          <Link to="/vision/logic-models-explained">#1.1 🧠 Logic Models Explained</Link>
         </li>
       </ol>
       <h2 id="lesson">#1.0 🗺️ Planning it out</h2>
@@ -48,8 +44,8 @@ export default function CodingMindset() {
         coding concepts like problem solving, logic rules, and working with data. In the next
         chapter we will cement these concepts with hands-on activities.
       </p>
-      <Link to="/vision/logic-models-explained">
-        <a className="next">Next: #1.1 Logic Models Explained</a>
+      <Link className="next" to="/vision/logic-models-explained">
+        Next: #1.1 Logic Models Explained
       </Link>
     </div>
   )

@@ -26,11 +26,7 @@ export default function Summary() {
       </p>
       <div className="stuck">
         <h2>Feeling Stuck?</h2>
-        Check out the{' '}
-        <Link to="/resources">
-          <a>resources page here</a>
-        </Link>{' '}
-        to find some help
+        Check out the <Link to="/resources">resources page here</Link> to find some help
       </div>
       <br />
       <div className="further-reading">
@@ -47,8 +43,7 @@ export default function Summary() {
         . JavaScript is a great entry point to a lot of different areas, like{' '}
         <a
           target="_blank"
-          href="https://www.youtube.com/watch?v=7A-bnPlxj4k&list=PLRqwX-V7Uu6avBYxeBSwF48YhAnSn_sA4"
-        >
+          href="https://www.youtube.com/watch?v=7A-bnPlxj4k&list=PLRqwX-V7Uu6avBYxeBSwF48YhAnSn_sA4">
           discord bots
         </a>
         ,{' '}
@@ -63,8 +58,7 @@ export default function Summary() {
         If you'd like to suggest an improvement you can open a ticket{' '}
         <a
           target="_blank"
-          href="https://github.com/L1lith/Your-First-RPG/issues/new?assignees=&labels=enhancement&template=improvement-idea.md"
-        >
+          href="https://github.com/L1lith/Your-First-RPG/issues/new?assignees=&labels=enhancement&template=improvement-idea.md">
           here
         </a>
         , or you can submit a pull request{' '}
@@ -73,8 +67,8 @@ export default function Summary() {
         </a>
         .
       </div>
-      <Link to="/support">
-        <a className="next">Consider supporting me 💜</a>
+      <Link className="next" to="/support">
+        Consider supporting me 💜
       </Link>
     </div>
   )

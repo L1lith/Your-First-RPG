@@ -13,19 +13,13 @@ export default function CodingIntro() {
       </Helmet>
       <ol className="toc pages">
         <li>
-          <Link to="/coding#lesson">
-            <a>#3.0 🛣️ Stepping into Coding</a>
-          </Link>
+          <Link to="/coding#lesson">#3.0 🛣️ Stepping into Coding</Link>
         </li>
         <li>
-          <Link to="/coding/primitives">
-            <a>#3.1 📊 Basic Data Types</a>
-          </Link>
+          <Link to="/coding/primitives">#3.1 📊 Basic Data Types</Link>
         </li>
         <li>
-          <Link to="/coding/essential-tools">
-            <a>#3.2 🔨 Essential Tools</a>
-          </Link>
+          <Link to="/coding/essential-tools">#3.2 🔨 Essential Tools</Link>
         </li>
       </ol>
       <h2 id="lesson">#3.0 🛣️ Stepping into Coding</h2>
@@ -53,8 +47,8 @@ export default function CodingIntro() {
         code. I'm going to be providing many examples, and if you get stuck it's okay to continue on
         and come back later. Try to get a feel for what is going on overall by toying with the code.
       </p>
-      <Link to="/coding/primitives">
-        <a className="next">Next: #3.1 📊 Basic Data Types</a>
+      <Link className="next" to="/coding/primitives">
+        Next: #3.1 📊 Basic Data Types
       </Link>
     </div>
   )

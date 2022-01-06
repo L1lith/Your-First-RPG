@@ -1,19 +1,17 @@
-import Header from '../components/header'
-import { page } from '../styles/_app.module.scss'
+import { page } from '../styles/AppLayout.module.scss'
 import '../styles/_global.scss'
 import '../styles/_normalize.scss'
-import { Fragment } from 'react'
+import Header from './header'
 
 //import { DefaultSeo } from 'next-seo'
 
 /* <DefaultSeo titleTemplate="%s - YFRPG" defaultTitle="Your First RPG"></DefaultSeo>
 <DefaultSeo description="Learn to make games in JavaScript for beginners" /> */
-
-export default function MyApp({ children }) {
+export default function AppLayout({ children }) {
   return (
-    <Fragment>
+    <>
       <Header />
       <main className={'page ' + page}>{children}</main>
-    </Fragment>
+    </>
   )
 }

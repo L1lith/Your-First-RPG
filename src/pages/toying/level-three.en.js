@@ -55,8 +55,8 @@ export default function LevelThree() {
         <BooleanDef /> logic and coding mental models.
       </p>
       <YTVideo url="_j9nvYKaOVE" thumbnail="/images/cs-discoveries.jpg" />
-      <Link to="/coding">
-        <a className="next">Next: #3.0 🛣️ Stepping into Coding</a>
+      <Link className="next" to="/coding">
+        Next: #3.0 🛣️ Stepping into Coding
       </Link>
     </div>
   )

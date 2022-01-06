@@ -11,24 +11,16 @@ export default function ToyingIntro() {
       <h1 className="title">Chapter 2</h1>
       <ol className="toc pages">
         <li>
-          <Link to="/toying#lesson">
-            <a>#2.0 🧩 Playing around with Logic Puzzles</a>
-          </Link>
+          <Link to="/toying#lesson">#2.0 🧩 Playing around with Logic Puzzles</Link>
         </li>
         <li>
-          <Link to="/toying/level-one">
-            <a>#2.1 💬 Basic "Or" Expressions</a>
-          </Link>
+          <Link to="/toying/level-one">#2.1 💬 Basic "Or" Expressions</Link>
         </li>
         <li>
-          <Link to="/toying/level-two">
-            <a>#2.2 🚫 Whats "Not" Allowed</a>
-          </Link>
+          <Link to="/toying/level-two">#2.2 🚫 Whats "Not" Allowed</Link>
         </li>
         <li>
-          <Link to="/toying/level-three">
-            <a>#2.3 💻 Booleans for Coding Apps</a>
-          </Link>
+          <Link to="/toying/level-three">#2.3 💻 Booleans for Coding Apps</Link>
         </li>
       </ol>
       <br />
@@ -47,8 +39,8 @@ export default function ToyingIntro() {
         visualizing your own logic model while playing a puzzle game. This hands-on problem solving
         lesson will put you in a coding mindset before reading or writing a single line of code.
       </p>
-      <Link to="/toying/level-one">
-        <a className="next">Next: #2.1 💬 Basic "Or" Boolean Logic</a>
+      <Link className="next" to="/toying/level-one">
+        Next: #2.1 💬 Basic "Or" Boolean Logic
       </Link>
     </div>
   )

@@ -28,8 +28,8 @@ export default function LevelTwo() {
         prefixed with "not".
       </p>
       <LevelTwoGame />
-      <Link to="/toying/level-three">
-        <a className="next">Next: #2.3 💻 Booleans for coding Apps</a>
+      <Link className="next" to="/toying/level-three">
+        Next: #2.3 💻 Booleans for coding Apps
       </Link>
     </div>
   )

@@ -9,47 +9,44 @@ export default function CodingMindset() {
     <div className={visionIntro}>
       <Helmet>
         <meta name="description" content="Getting in the coding mindset" />
-        <title>🗺️ Planning it out</title>
+        <title>🗺️ Planificándolo</title>
       </Helmet>
-      <h1 className="title">Chapter 1</h1>
+      <h1 className="title">Capítulo 1</h1>
       <ol className="toc pages">
         <li>
-          <Link to="/vision#lesson">
-            <a>#1.0 🗺️ Planning it out</a>
-          </Link>
+          <Link to="/vision#lesson">#1.0 🗺️ Planificándolo</Link>
         </li>
         <li>
-          <Link to="/vision/logic-models-explained">
-            <a>#1.1 🧠 Logic Models Explained</a>
-          </Link>
+          <Link to="/vision/logic-models-explained">#1.1 🧠 Explicación de modelos lógicos</Link>
         </li>
       </ol>
-      <h2 id="lesson">#1.0 🗺️ Planning it out</h2>
+      <h2 id="lesson">#1.0 🗺️ Planificándolo</h2>
       <span className="introCard">
         <YTVideo url="wiaamJZ-hHI" thumbnail="/images/how-to-avoid-burnout.jpg" />
-        Take coding at your own pace and take time for yourself
+        Realice la codificación a su propio ritmo y tómese un tiempo para usted
       </span>
       <p>
-        Programmers are great at writing code only they can understand. Many beginners can feel
-        alienated after hearing "just read the <Docs />
-        ", and aren't given a proper chance to understand why coders do what they do.
+        Los programadores son excelentes para escribir código que solo ellos pueden entender. Muchos
+        principiantes pueden sentirse alienados después de escuchar "solo lea el <Docs />
+        ", y no tienen la oportunidad adecuada de comprender por qué los programadores hacen lo que
+        hacen.
         <br />
         <br />
-        Documentation sites like{' '}
+        Sitios de documentación como{' '}
         <a target="_blank" href="https://nodejs.org/docs/latest-v15.x/api/">
-          this one
+          este
         </a>{' '}
-        can be a valuable tool for experienced programmers, but for a beginner it's a total
-        headache. It's important to understand the concepts in simple terms so you can begin to
-        visualize what you are trying to do.
+        puede ser una herramienta valiosa para programadores experimentados, pero para un
+        principiante es un dolor de cabeza total. Es importante comprender los conceptos en términos
+        simples para que pueda comenzar a visualizar lo que está tratando de hacer.
         <br />
         <br />
-        Another key to learning is to practice. In this section I will guide you through basic
-        coding concepts like problem solving, logic rules, and working with data. In the next
-        chapter we will cement these concepts with hands-on activities.
+        Otra clave para a prender es practicar. En esta sección, lo guiaré a través de conceptos
+        básicos de codificación como resolución de problemas, reglas lógicas y trabajo con datos. En
+        el próximo capítulo consolidaremos estos conceptos con actividades prácticas.
       </p>
-      <Link to="/vision/logic-models-explained">
-        <a className="next">Next: #1.1 Logic Models Explained</a>
+      <Link className="next" to="/vision/logic-models-explained">
+        #1.1 🧠 Explicación de modelos lógicos
       </Link>
     </div>
   )

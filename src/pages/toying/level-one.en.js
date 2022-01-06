@@ -46,8 +46,8 @@ export default function LevelOne() {
         understand OR continue on to the next section to learn about NOT{' '}
         <Expression>expressions</Expression> 😊
       </p>
-      <Link to="/toying/level-two">
-        <a className="next">Next: #2.2 🚫 Whats "Not" Allowed</a>
+      <Link className="next" to="/toying/level-two">
+        Next: #2.2 🚫 Whats "Not" Allowed
       </Link>
     </div>
   )

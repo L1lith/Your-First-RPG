@@ -12,5 +12,5 @@ const exportDirectory = join(__dirname, 'docs')
 
 exports.onPostBuild = () => {
   rmdirSync(exportDirectory, { recursive: true })
-  renameSync(path.join(__dirname, 'public'), exportDirectory)
+  renameSync(join(__dirname, 'public'), exportDirectory)
 }

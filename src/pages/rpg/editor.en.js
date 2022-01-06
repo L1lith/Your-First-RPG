@@ -78,8 +78,8 @@ function Editor() {
         Feel free to press the ❌ to delete the starter code. Try flipping your phone sideways if
         you're on mobile!
       </p>
-      <Link to="/rpg/summary">
-        <a className="next">Next: #4.4 🔭 You Won! Further Reading</a>
+      <Link className="next" to="/rpg/summary">
+        Next: #4.4 🔭 You Won! Further Reading
       </Link>
     </div>
   )

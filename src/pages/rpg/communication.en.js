@@ -178,8 +178,8 @@ if(smartPrompt("Do you like oatmeal raisin cookies?").toLowerCase() === "yes") {
           disableAutoRun
         />
       </div>
-      <Link to="/rpg/publishing">
-        <a className="next">Next: #4.2 🏆 Sharing your RPG</a>
+      <Link className="next" to="/rpg/publishing">
+        Next: #4.2 🏆 Sharing your RPG
       </Link>
     </div>
   )

@@ -167,8 +167,8 @@ const Primitives = () => (
         here
       </a>
     </p>
-    <Link to="/coding/essential-tools">
-      <a className="next">Next: #3.2 Essential Tools</a>
+    <Link className="next" to="/coding/essential-tools">
+      Next: #3.2 Essential Tools
     </Link>
   </div>
 )

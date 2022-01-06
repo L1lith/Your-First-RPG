@@ -135,8 +135,8 @@ export default function EssentialTools() {
         <CodeSandbox consoleMode value="console.log(false && (true || true))" className="mini" />
       </div>
       <br />
-      <Link to="/rpg">
-        <a className="next">Next: #4.0 Building your Text RPG</a>
+      <Link className="next" to="/rpg">
+        Next: #4.0 Building your Text RPG
       </Link>
     </div>
   )

@@ -26,7 +26,7 @@ import { useQueryParam, BooleanParam, StringParam } from 'use-query-params'
 function CodeSandbox(props) {
   const [autoPlayQuery] = useQueryParam('autoPlay', BooleanParam)
   const [autoPlay, setAutoPlay] = useState(false) //useQueryParam('autoPlay', BooleanParam)
-  const [codeInput, setCodeQuery] = useState(codeInput || '') //useQueryParam('code', StringParam)
+  const [codeInput, setCodeQuery] = useState(props.value || '') //useQueryParam('code', StringParam)
   const autoPlayInput = useRef(null)
   const [code, setCode] = useState(codeInput || props.value || '')
   const [shareOpen, setSharingOpen] = useState(false)

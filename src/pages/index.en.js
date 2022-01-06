@@ -1,6 +1,5 @@
 import RPG from '../components/Dictionary/RPG'
 import Link from '../components/TranslatedLink'
-import TranslatedLink from '../components/TranslatedLink'
 import YTVideo from '../components/YTVideo'
 import useLanguage from '../functions/useLanguage'
 import { home, extra } from '../styles/index.module.scss'
@@ -18,29 +17,19 @@ export default function Home() {
       <h2>Sections</h2>
       <ol className="toc sections">
         <li>
-          <TranslatedLink to="/vision">
-            <a>👀 Visualizing Logic Models</a>
-          </TranslatedLink>
+          <Link to="/vision">👀 Visualizing Logic Models</Link>
         </li>
         <li>
-          <Link to="/toying">
-            <a>👐 Toying with Logic Models</a>
-          </Link>
+          <Link to="/toying">👐 Toying with Logic Models</Link>
         </li>
         <li>
-          <Link to="/coding">
-            <a>💻 Learning to Code</a>
-          </Link>
+          <Link to="/coding">💻 Learning to Code</Link>
         </li>
         <li>
-          <Link to="/rpg">
-            <a>🎮 Building an RPG</a>
-          </Link>
+          <Link to="/rpg">🎮 Building an RPG</Link>
         </li>
       </ol>
-      <Link to="/resources">
-        <a>Remember to check out the resource section if you get stuck</a>
-      </Link>
+      <Link to="/resources">Remember to check out the resource section if you get stuck</Link>
       <div className={extra}>
         <h2>Scared of Coding? Don't be!</h2>
         Check out this inspiring talk by Linda Liukas

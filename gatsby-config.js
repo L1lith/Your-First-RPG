@@ -8,13 +8,8 @@ module.exports = {
       resolve: 'gatsby-plugin-i18n',
       options: {
         langKeyDefault: 'en',
-        useLangKeyLayout: false
-      }
-    },
-    {
-      resolve: `gatsby-plugin-layout`,
-      options: {
-        component: require.resolve(`./src/pages/_app.js`)
+        useLangKeyLayout: false,
+        prefixDefault: false
       }
     },
     'gatsby-plugin-sass',
@@ -23,6 +18,12 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-plugin-use-query-params',
     'gatsby-transformer-sharp',
-    `gatsby-plugin-provide-react`
+    `gatsby-plugin-provide-react`,
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`./src/components/AppLayout.js`)
+      }
+    }
   ]
 }
