@@ -2,7 +2,7 @@ import HoverDefinition from '../../HoverDefinition'
 
 const Stack = props => (
   <HoverDefinition
-    definition="Your stack is the list of software/apps that you use to code"
+    definition={`Su "stack" (como un pila) es la lista de software / aplicaciones que usa para codificar`}
     {...props}>
     {props.children || 'stack'}
   </HoverDefinition>

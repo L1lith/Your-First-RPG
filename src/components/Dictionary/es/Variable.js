@@ -2,7 +2,7 @@ import HoverDefinition from '../../HoverDefinition'
 
 const VariableDef = props => (
   <HoverDefinition
-    definition="A variable holds any kind of data you want. They have a label and value."
+    definition={`Una "variable" contiene cualquier tipo de datos que desee. Tienen etiqueta y valor.`}
     {...props}>
     {props.children || 'variable'}
   </HoverDefinition>

@@ -2,7 +2,7 @@ import HoverDefinition from '../../HoverDefinition'
 
 const Expression = props => (
   <HoverDefinition
-    definition="An expression is a piece of code that can be reduced to a single value, like a math equation"
+    definition={`Una "expression" es un fragmento de código que se puede reducir a un solo valor, como una ecuación matemática`}
     {...props}>
     {props.children || 'expression'}
   </HoverDefinition>

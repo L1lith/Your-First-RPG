@@ -2,7 +2,7 @@ import HoverDefinition from '../../HoverDefinition'
 
 const StringDef = props => (
   <HoverDefinition
-    definition="A string is a piece of human text your computer knows isn't code, but it can still be used in your code"
+    definition={`Una "cadena" es un fragmento de texto humano que su computadora sabe que no es código, pero aún puede usarse en su código`}
     {...props}>
     {props.children || 'string'}
   </HoverDefinition>

@@ -2,7 +2,7 @@ import HoverDefinition from '../../HoverDefinition'
 
 const Interpreter = props => (
   <HoverDefinition
-    definition="The JavaScript interpreter is the software that runs your code, like the engine"
+    definition={`El "JavaScript Interpreter" es el software que ejecuta su código, como el motor`}
     {...props}>
     {props.children || 'interpreter'}
   </HoverDefinition>
