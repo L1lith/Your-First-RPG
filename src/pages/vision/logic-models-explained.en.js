@@ -1,6 +1,6 @@
-import BooleanDef from '../../components/Dictionary/BooleanDef'
-import Output from '../../components/Dictionary/Output'
-import Stack from '../../components/Dictionary/Stack'
+import BooleanDef from '../../components/Dictionary/en/BooleanDef'
+import Output from '../../components/Dictionary/en/Output'
+import Stack from '../../components/Dictionary/en/Stack'
 import EasterEgg from '../../components/EasterEgg'
 import Link from '../../components/TranslatedLink'
 import YTVideo from '../../components/YTVideo'
@@ -85,20 +85,20 @@ export default function LogicModelsExplained() {
       provides the decision-making rules of the logic model.
       <table className={trafficStop}>
         <thead>
-          <th>Input</th>
-          <th>Output</th>
+          <th>Input (Geographical Area)</th>
+          <th>Output (Road Type)</th>
         </thead>
         <tr>
-          <td>Light is red</td>
-          <td>Come to a smooth stop before the intersection.</td>
+          <td>A relatively flat countryside</td>
+          <td>A long, straight, and fast-moving highway</td>
         </tr>
         <tr>
-          <td>Light is yellow</td>
-          <td>Pay attention to the intersection. If you can stop, stop quickly.</td>
+          <td>A steep mountainside</td>
+          <td>A winding, slow-moving road with a lot of signs</td>
         </tr>
         <tr>
-          <td>Light is green</td>
-          <td>Look ahead to ensure the traffic is clear, and continue on.</td>
+          <td>A crowded city</td>
+          <td>A very wide freeway with lots of entrances and exits</td>
         </tr>
       </table>
       <p>
@@ -113,7 +113,7 @@ export default function LogicModelsExplained() {
         <br />
         <br />
       </p>
-      <YTVideo url="hZdLjyK89Cw" thumbnail="/images/self-operating-napkin.jpg" />
+      <YTVideo url="qybUFnY7Y8w" thumbnail="/images/this-too-shall-pass.jpg" />
       <span className="italic">it works perfectly 60% of the time!</span>
       <p>
         When designing software systems it's important to think it through from beginning to end.

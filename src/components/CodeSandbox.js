@@ -17,7 +17,7 @@ import {
   valid
 } from '../styles/CodeSandbox.module.scss'
 import AceEditor from './AceEditor'
-import Output from './Dictionary/Output'
+import Output from './Dictionary/en/Output'
 import Link from './TranslatedLink'
 import { useLocation } from '@reach/router'
 import { Component, Fragment, useState, useEffect, useRef } from 'react'

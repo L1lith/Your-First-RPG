@@ -1,4 +1,4 @@
-import RPG from '../components/Dictionary/RPG'
+import RPG from '../components/Dictionary/es/RPG'
 import Link from '../components/TranslatedLink'
 import YTVideo from '../components/YTVideo'
 import { home, extra } from '../styles/index.module.scss'

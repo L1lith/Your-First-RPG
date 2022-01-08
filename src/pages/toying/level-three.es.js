@@ -1,8 +1,8 @@
 import LevelThreeGame from '../../components/BooleanGame/levels/LevelThree'
-import BooleanDef from '../../components/Dictionary/en/BooleanDef'
-import Expression from '../../components/Dictionary/en/Expression'
-import Operator from '../../components/Dictionary/en/Operator'
-import Syntax from '../../components/Dictionary/en/Syntax'
+import BooleanDef from '../../components/Dictionary/es/BooleanDef'
+import Expression from '../../components/Dictionary/es/Expression'
+import Operator from '../../components/Dictionary/es/Operator'
+import Syntax from '../../components/Dictionary/es/Syntax'
 import Link from '../../components/TranslatedLink'
 import YTVideo from '../../components/YTVideo'
 import { Helmet } from 'react-helmet'
@@ -56,7 +56,7 @@ export default function LevelThree() {
       </p>
       <YTVideo url="_j9nvYKaOVE" thumbnail="/images/cs-discoveries.jpg" />
       <Link className="next" to="/coding">
-        Next: #3.0 🛣️ Stepping into Coding
+        Siguiente: #3.0 🛣️ Stepping into Coding
       </Link>
     </div>
   )

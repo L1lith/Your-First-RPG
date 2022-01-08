@@ -1,4 +1,4 @@
-import Docs from '../../components/Dictionary/Docs'
+import Docs from '../../components/Dictionary/en/Docs'
 import Link from '../../components/TranslatedLink'
 import YTVideo from '../../components/YTVideo'
 import { visionIntro } from '../../styles/vision/index.module.scss'

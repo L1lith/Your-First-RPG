@@ -1,7 +1,7 @@
 import LevelOneGame from '../../components/BooleanGame/levels/LevelOne'
-import BooleanDef from '../../components/Dictionary/en/BooleanDef'
-import Expression from '../../components/Dictionary/en/Expression'
-import Operator from '../../components/Dictionary/en/Operator'
+import BooleanDef from '../../components/Dictionary/es/BooleanDef'
+import Expression from '../../components/Dictionary/es/Expression'
+import Operator from '../../components/Dictionary/es/Operator'
 import Link from '../../components/TranslatedLink'
 import BooleanOps from '../../components/booleanOps'
 import { Helmet } from 'react-helmet'
@@ -10,9 +10,9 @@ export default function LevelOne() {
   return (
     <div className="level-1">
       <Helmet>
-        <title>💬 Expresiones básicas "Or"</title>
+        <title>💬 "Or" Expressions</title>
       </Helmet>
-      <h2>#2.1 💬 Expresiones básicas "Or"</h2>
+      <h2>#2.1 💬 Basic "Or" Expressions</h2>
       <br />
       <span className="introCard">
         <BooleanOps />
@@ -47,7 +47,7 @@ export default function LevelOne() {
         <Expression>expressions</Expression> 😊
       </p>
       <Link className="next" to="/toying/level-two">
-        Next: #2.2 🚫 Whats "Not" Allowed
+        Siguiente: #2.2 🚫 Whats "Not" Allowed
       </Link>
     </div>
   )

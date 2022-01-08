@@ -1,4 +1,4 @@
-import Docs from '../../components/Dictionary/Docs'
+import Docs from '../../components/Dictionary/es/Docs'
 import Link from '../../components/TranslatedLink'
 import YTVideo from '../../components/YTVideo'
 import { visionIntro } from '../../styles/vision/index.module.scss'
@@ -17,7 +17,9 @@ export default function CodingMindset() {
           <Link to="/vision#lesson">#1.0 🗺️ Planificándolo</Link>
         </li>
         <li>
-          <Link to="/vision/logic-models-explained">#1.1 🧠 Explicación de modelos lógicos</Link>
+          <Link to="/vision/explicacion-de-modelos-logicos">
+            #1.1 🧠 Explicación de modelos lógicos
+          </Link>
         </li>
       </ol>
       <h2 id="lesson">#1.0 🗺️ Planificándolo</h2>
@@ -45,8 +47,8 @@ export default function CodingMindset() {
         básicos de codificación como resolución de problemas, reglas lógicas y trabajo con datos. En
         el próximo capítulo consolidaremos estos conceptos con actividades prácticas.
       </p>
-      <Link className="next" to="/vision/logic-models-explained">
-        #1.1 🧠 Explicación de modelos lógicos
+      <Link className="next" to="/vision/explicacion-de-modelos-logicos">
+        Siguiente: #1.1 🧠 Explicación de modelos lógicos
       </Link>
     </div>
   )

@@ -1,5 +1,5 @@
 import LevelTwoGame from '../../components/BooleanGame/levels/LevelTwo'
-import Operator from '../../components/Dictionary/en/Operator'
+import Operator from '../../components/Dictionary/es/Operator'
 import Link from '../../components/TranslatedLink'
 import YTVideo from '../../components/YTVideo'
 import { Helmet } from 'react-helmet'
@@ -8,9 +8,9 @@ export default function LevelTwo() {
   return (
     <div className="level-2">
       <Helmet>
-        <title>🚫 Whats "Not" Allowed</title>
+        <title>🚫 Lo que "no" está permitido</title>
       </Helmet>
-      <h2>#2.2 🚫 Whats "Not" Allowed</h2>
+      <h2>#2.2 🚫 Lo que "no" está permitido</h2>
       <br />
       <span className="introCard">
         <YTVideo url="fhIdbRp6xeg" thumbnail="/images/borat-not-joke.jpg" />
@@ -29,7 +29,7 @@ export default function LevelTwo() {
       </p>
       <LevelTwoGame />
       <Link className="next" to="/toying/level-three">
-        Next: #2.3 💻 Booleans for coding Apps
+        Siguiente: #2.3 💻 Booleans for coding Apps
       </Link>
     </div>
   )

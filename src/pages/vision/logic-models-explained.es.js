@@ -1,6 +1,7 @@
-import BooleanDef from '../../components/Dictionary/BooleanDef'
-import Output from '../../components/Dictionary/Output'
-import Stack from '../../components/Dictionary/Stack'
+import BooleanDef from '../../components/Dictionary/es/BooleanDef'
+import Output from '../../components/Dictionary/es/Output'
+import Rules from '../../components/Dictionary/es/Rules'
+import Stack from '../../components/Dictionary/es/Stack'
 import EasterEgg from '../../components/EasterEgg'
 import Link from '../../components/TranslatedLink'
 import YTVideo from '../../components/YTVideo'
@@ -73,19 +74,21 @@ export default function LogicModelsExplained() {
         Mientras mira este video, intente darse cuenta de todos los factores a los que los
         ingenieros civiles deben prestar atención al diseñar carreteras.
       </p>
-      <YTVideo url="9XIjqdk69O4" thumbnail="/images/highway-geometry.jpg" />
+      <YTVideo url="DOc0glzYYhw" thumbnail="/images/como-se-hacen-las-carreteras.jpg" />
       <p>
-        "That's great... but how does this apply to coding?" I'm glad you asked! When we are coding
-        we too are writing a logic system to handle the input flow of information (like mouse and
-        keyboard input when navigating a webpage) and the <Output /> flow of information (like
-        displaying a webpage or rendering a video-game). As a coder you write (or "code") the
-        logical rules of the system (like when the user clicks this link, take them to that page).
-        While say inventing a computer or a roadway from scratch might be incredibly complex,
-        computer, civil, and all kinds of engineers all take advantage of the technology and
-        methodology that has been been in development for much longer than we have been alive.
+        "Eso es genial... pero ¿cómo se aplica esto a la codificación?" ¡Me alegra que hayas
+        preguntado! Cuando estamos codificando nosotros también estamos escribiendo un sistema
+        lógico para manejar el flujo de entrada de información (como el mouse y entrada de teclado
+        al navegar por una página web) y el flujo de información de salida
+        <Output>salida</Output> (como mostrar una página web o renderizar un videojuego). Como
+        codificador, escribe (o "codifica") el <Rules>reglas</Rules> lógicas del sistema (como
+        cuando el usuario hace clic en este enlace, lo lleva a esa página). Si bien decir que
+        inventar una computadora o una carretera desde cero puede ser increíblemente complejo,
+        ingenieros informáticos, civiles y de todo tipo aprovechan la tecnología y metodología que
+        ha estado en desarrollo durante mucho más tiempo del que llevamos vivos.
       </p>
       Aquí hay una tabla que describe el modelo lógico que usamos cuando estamos en un semáforo. Tu
-      cerebro proporciona las reglas de toma de decisiones del modelo lógico.
+      cerebro proporciona las <Rules>reglas</Rules> de toma de decisiones del modelo lógico.
       <table className={trafficStop}>
         <thead>
           <th>Entrada</th>
@@ -111,32 +114,32 @@ export default function LogicModelsExplained() {
         sistema de carreteras, al construir un sitio web, debe considerar muchos aspectos del
         sistema, como la seguridad cibernética (permitir datos de entrada inseguros ha dio lugar a
         muchas identidades y tarjetas de crédito robadas), la experiencia del usuario y el atractivo
-        visual. Por Entendiendo mejor las reglas lógicas detrás de nuestro software, entendemos
-        mejor dónde está surgen problemas, evitando fugas catastróficas de la base de datos y la
-        rabia del usuario abandona antes de que ocurrir.
+        visual. Por Entendiendo mejor las <Rules>reglas</Rules> lógicas detrás de nuestro software,
+        entendemos mejor dónde está surgen problemas, evitando fugas catastróficas de la base de
+        datos y la rabia del usuario abandona antes de que ocurrir.
         <br />
         <br />
       </p>
-      <YTVideo url="hZdLjyK89Cw" thumbnail="/images/self-operating-napkin.jpg" />
-      <span className="italic">it works perfectly 60% of the time!</span>
+      <YTVideo url="qybUFnY7Y8w" thumbnail="/images/this-too-shall-pass.jpg" />
+      <span className="italic">¡Funciona perfectamente el 60% del tiempo!</span>
       <p>
-        When designing software systems it's important to think it through from beginning to end.
-        Most software bugs stem from coders thinking "it's not my job" or not putting that extra
-        effort to consider edge cases because "it worked when I ran it". You must remember the 3
-        components of your logic model, so first consider your user{' '}
-        <span className="bold">input</span>. When navigating a site the user gives many inputs, like
-        clicking a link, scrolling the page, logging in, or submitting a form.
+        Al diseñar sistemas de software, es importante pensarlo de principio a fin. La mayoría de
+        los errores de software provienen de programadores que piensan "no es mi trabajo" o que no
+        hacen un esfuerzo adicional para considerar los casos extremos porque "funcionó cuando lo
+        ejecuté". Debe recordar los 3 componentes de su modelo lógico, así que primero considere la{' '}
+        <span className="bold">entrada</span> de su usuario. Al navegar por un sitio, el usuario da
+        muchas entradas, como hacer clic en un enlace, desplazarse por la página, iniciar sesión o
+        enviar un formulario.
         <br />
-        <br />
-        Next you must think about every step in your code, and how these{' '}
-        <span className="bold">rules</span> ultimately handles your users input and translates it
-        into the program's <Output />. Don't cut corners or leave problems for someone else to deal
-        with. Building the best software you can the first time (you'll definitely write some messy
-        code starting out, but after you make your first draft of something try to come back and
-        look for ways to improve it) will save you a lot of time later on. Understand the deep inner
-        workings of your <Stack /> by{' '}
-        <span className="underline">toying around with it and asking questions</span>
-        !
+        <br />A continuación, debe pensar en cada paso de su código y en cómo estas{' '}
+        <Rules>reglas</Rules> manejan en última instancia las entradas de sus usuarios y las
+        traducen en la <Output>salida</Output> del programa. No tome atajos ni deje problemas para
+        que alguien más se ocupe de ellos. Construir el mejor software que puedas la primera vez
+        (definitivamente escribirás un código desordenado al comenzar, pero después de hacer tu
+        primer borrador de algo, intenta regresar y buscar formas de mejorarlo) te ahorrará mucho
+        tiempo más adelante. sobre. ¡Comprenda el funcionamiento interno profundo de su{' '}
+        <Stack>pila</Stack>{' '}
+        <span className="underline">jugando con ella y haciendo preguntas!</span>
         <br />
         <br />
         The <Output /> is what the users of your software experience (this is a{' '}
@@ -149,12 +152,12 @@ export default function LogicModelsExplained() {
         that arise with your software.
       </p>
       <Link className="next" to="/toying">
-        Next: #2.0 🧩 Playing around with Logic Puzzles
+        Siguiente: #2.0 🧩 Jugando con rompecabezas lógicos
       </Link>
       <br />
       <br />
       <EasterEgg>
-        <p>Bonus: Liked the Rube Goldberg Machine?</p>
+        <p>Bono: ¿Te gustó la máquina de Rube Goldberg?</p>
         <YTVideo url="Av07QiqmsoA" thumbnail="/images/lifes-lemons.jpg" />
       </EasterEgg>
     </div>

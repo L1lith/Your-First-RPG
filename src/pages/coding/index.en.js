@@ -1,5 +1,5 @@
-import Expression from '../../components/Dictionary/Expression'
-import Interpreter from '../../components/Dictionary/Interpreter'
+import Expression from '../../components/Dictionary/en/Expression'
+import Interpreter from '../../components/Dictionary/en/Interpreter'
 import Link from '../../components/TranslatedLink'
 import YTVideo from '../../components/YTVideo'
 import { Helmet } from 'react-helmet'
