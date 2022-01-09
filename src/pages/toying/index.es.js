@@ -14,10 +14,10 @@ export default function ToyingIntro() {
           <Link to="/toying#lesson">#2.0 🧩 Jugando con rompecabezas lógicos</Link>
         </li>
         <li>
-          <Link to="/toying/level-one">#2.1 💬 Expresiones básicas "Or"</Link>
+          <Link to="/toying/level-one">#2.1 💬 Expressions "Or" básicas</Link>
         </li>
         <li>
-          <Link to="/toying/level-two">#2.2 🚫 Lo que "no" está permitido</Link>
+          <Link to="/toying/level-two">#2.2 🚫 Lo que es "NOT" permitido</Link>
         </li>
         <li>
           <Link to="/toying/level-three">#2.3 💻 Booleanos para aplicaciones de codificación</Link>
@@ -42,7 +42,7 @@ export default function ToyingIntro() {
         de código.
       </p>
       <Link className="next" to="/toying/level-one">
-        Siguiente: #2.1 💬 Expresiones básicas "Or"
+        Siguiente: #2.1 💬 Expressions "Or" básicas
       </Link>
     </div>
   )

@@ -37,28 +37,29 @@ export default function LevelThree() {
       <LevelThreeGame />
       <br />
       <p>
-        You might have noticed that when given a NOT <Operator /> with multiple values, it is
-        sometimes easier to think of it as simply a request for whatever is missing. This is an
-        example of how we can build more complex rules from simplistic systems. Writing good
-        software is about learning to create apps with complex capabilities without making the code
-        itself overly complex or messy.
+        Es posible que haya notado que cuando se le da un <Operator /> NOT con múltiples valores, a
+        veces es más fácil pensar en él como una simple solicitud de lo que falta. Este es un
+        ejemplo de cómo podemos construir reglas más complejas a partir de sistemas simplistas.
+        Escribir un buen software consiste en aprender a crear aplicaciones con capacidades
+        complejas sin hacer que el código en sí sea demasiado complejo o desordenado.
         <br />
         <br />
-        Like speaking any language (human or machine), learning how to better express yourself (by
-        using clean code and good design practices) allows you to say more while writing less.
-        Spending more time to think about your code from a design perspective will allow you to save
-        countless hours dealing with mind-numbing bugs and other issues.
+        Al igual que hablar cualquier idioma (humano o máquina), aprender a expresarse mejor
+        (mediante el uso de código limpio y buenas prácticas de diseño) le permite decir más
+        mientras escribe menos. Dedicar más tiempo a pensar en su código desde una perspectiva de
+        diseño le permitirá ahorrar innumerables horas lidiando con errores que entumecen la mente y
+        otros problemas.
       </p>
       <p>
-        Many coding languages have the capabilities to compare and transform other kinds of data
-        more advanced than <BooleanDef>booleans</BooleanDef>, which is very powerful. We can do
-        things like evaluate math <Expression>expressions</Expression>, compare text, and more.
-        Watch this video to see this in practice, and to see the relationship between the{' '}
-        <BooleanDef /> logic and coding mental models.
+        Muchos lenguajes de codificación tienen la capacidad de comparar y transformar otros tipos
+        de datos más avanzados que los <BooleanDef>booleans</BooleanDef>, lo cual es muy poderoso.
+        Podemos hacer cosas como evaluar <Expression>expressions</Expression> matemáticas, comparar
+        texto y más. Mire este video para ver esto en la práctica y para ver la relación entre la
+        lógica <BooleanDef /> y los modelos mentales de codificación.
       </p>
       <YTVideo url="_j9nvYKaOVE" thumbnail="/images/cs-discoveries.jpg" />
       <Link className="next" to="/coding">
-        Siguiente: #3.0 🛣️ Stepping into Coding
+        Siguiente: #3.0 🛣️ Aprendiendo a codificar
       </Link>
     </div>
   )

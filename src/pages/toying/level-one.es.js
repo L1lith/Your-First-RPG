@@ -10,44 +10,45 @@ export default function LevelOne() {
   return (
     <div className="level-1">
       <Helmet>
-        <title>💬 "Or" Expressions</title>
+        <title>💬 Expressions "Or" básicas</title>
       </Helmet>
-      <h2>#2.1 💬 Basic "Or" Expressions</h2>
+      <h2>#2.1 💬 Expressions "Or" básicas</h2>
       <br />
       <span className="introCard">
         <BooleanOps />
-        Here you can see a chart of the basic boolean <Operator>operations</Operator> (&amp; means
-        AND, || means OR)
+        Aquí puede ver un gráfico de las <BooleanDef /> <Operator>operations</Operator> básicas (&
+        significa "And", || significa "Or")
       </span>
       <p>
-        In this section we will be playing the Matching Rules game in order to learn about{' '}
-        <BooleanDef /> logic. <BooleanDef>Boolean</BooleanDef> logic is the fundamental language
-        that both electronic circuitry, and computers themselves are made out of, and it happens to
-        be a great tool for learning how we talk to computers.
+        En esta sección jugaremos el juego Matching Rules para aprender sobre la lógica{' '}
+        <BooleanDef />. La lógica <BooleanDef /> es el lenguaje fundamental del que están hechos
+        tanto los circuitos electrónicos como las computadoras, y resulta ser una gran herramienta
+        para aprender cómo hablamos con las computadoras.
         <br />
         <br />
-        <BooleanDef>Boolean</BooleanDef> logic contains a set of{' '}
-        <Expression>expressions</Expression> (kind of like coding language) that allow us to perform
-        basic <Operator>operations</Operator> on data. True or false statements (boolean values like
-        yes or no) are the main type of <Expression>expressions</Expression> handled with{' '}
-        <BooleanDef /> logic. This means we can ask the computer yes or no questions using code to
-        tell it what to do.
+        La lógica <BooleanDef>boolean</BooleanDef> contiene un conjunto de{' '}
+        <Expression>expressions</Expression> (una especie de lenguaje de codificación) que nos
+        permite realizar <Operator>operations</Operator> básicas sobre datos. Las declaraciones
+        verdaderas o falsas (valores booleanos como sí o no) son el tipo principal de{' '}
+        <Expression>expressions</Expression> que se manejan con lógica <BooleanDef />. Esto
+        significa que podemos preguntarle a la computadora preguntas de sí o no usando un código
+        para decirle qué hacer.
       </p>
       <br />
-      <h2>The "Or" Operator</h2>
+      <h2>El Operator "Or"</h2>
       <p>
-        Or is a logical <Operator /> that will only output true if at least one of it's inputs are
-        true. In the first level of the Matching Game we will experiment with the Or <Operator />.
-        Choose only the tiles whose colors and shapes are allowed to win.
+        O es un <Operator /> lógico que solo dará como resultado verdadero si al menos una de sus
+        entradas es verdadera. En el primer nivel del Matching Game experimentaremos con el{' '}
+        <Operator /> Or. Elija solo las fichas cuyos colores y formas pueden ganar.
       </p>
       <LevelOneGame />
       <p>
-        Once you've played the first level of the Matching Game a few times and are confident you
-        understand OR continue on to the next section to learn about NOT{' '}
-        <Expression>expressions</Expression> 😊
+        Una vez que haya jugado el primer nivel del Juego de emparejar varias veces y esté seguro de
+        que lo entiende, O continúe con la siguiente sección para aprender acerca de las{' '}
+        <Expression>expressions</Expression> "Not" 😊
       </p>
       <Link className="next" to="/toying/level-two">
-        Siguiente: #2.2 🚫 Whats "Not" Allowed
+        Siguiente: #2.2 🚫 Lo que es "NOT" permitido
       </Link>
     </div>
   )
