@@ -11,7 +11,7 @@ export default function LevelThree() {
   return (
     <div className="level-3">
       <Helmet>
-        <title>💻 Booleans for Apps</title>
+        <title>💻 Booleans for coding Apps</title>
       </Helmet>
       <h2>#2.3 💻 Booleans for coding Apps</h2>
       <br />

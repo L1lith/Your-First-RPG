@@ -20,7 +20,7 @@ export default function ToyingIntro() {
           <Link to="/toying/level-two">#2.2 🚫 Lo que es "NOT" permitido</Link>
         </li>
         <li>
-          <Link to="/toying/level-three">#2.3 💻 Booleanos para aplicaciones de codificación</Link>
+          <Link to="/toying/level-three">#2.3 💻 Booleans para aplicaciones de codificación</Link>
         </li>
       </ol>
       <br />

@@ -11,9 +11,9 @@ export default function LevelThree() {
   return (
     <div className="level-3">
       <Helmet>
-        <title>💻 Booleans for Apps</title>
+        <title>💻 Booleans para aplicaciones de codificación</title>
       </Helmet>
-      <h2>#2.3 💻 Booleans for coding Apps</h2>
+      <h2>#2.3 💻 Booleans para aplicaciones de codificación</h2>
       <br />
       <p>
         ¿Cómo se relaciona la lógica <BooleanDef /> con la codificación? Cuando un programador está
