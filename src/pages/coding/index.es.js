@@ -30,22 +30,20 @@ export default function CodingIntro() {
       </span>
 
       <p>
-        How is JS (JavaScript) code written? JavaScript code is just a series of logical{' '}
-        <Expression>expressions</Expression> (like little logic models) that are run by the{' '}
-        <Interpreter>JavaScript Interpreter</Interpreter> in a particular order. Each line is
-        evaluated one at a time from top to bottom and left-to-right like English. The{' '}
-        <Interpreter /> also understands and applies the rules of{' '}
-        <a target="_blank" href="https://www.mathsisfun.com/operation-order-pemdas.html">
-          PEMDAS
-        </a>
-        . Every line of code you write should combine cohesively in order to form a well functioning
-        program.
+        ¿Cómo se escribe el código JS (JavaScript)? El código JavaScript es solo una serie de{' '}
+        <Expression>expressions</Expression> lógicas (como pequeños modelos lógicos) que ejecuta el{' '}
+        <Interpreter>JavaScript Interpreter</Interpreter> en un orden particular. Cada línea se
+        evalúa una a la vez de arriba a abajo y de izquierda a derecha como en espanol. El{' '}
+        <Interpreter /> también comprende y aplica las reglas de PEMDAS. Cada línea de código que
+        escriba debe combinarse de forma coherente para formar un programa que funcione
+        correctamente.
         <br />
         <br />
-        Coding doesn't have to be frustrating, let's try to have some fun with it. In this section I
-        hope it will become clear how you can take an approach based on logic models to write basic
-        code. I'm going to be providing many examples, and if you get stuck it's okay to continue on
-        and come back later. Try to get a feel for what is going on overall by toying with the code.
+        La codificación no tiene por qué ser frustrante, intentemos divertirnos un poco con ella. En
+        esta sección espero que quede claro cómo se puede adoptar un enfoque basado en modelos
+        lógicos para escribir código básico. Voy a proporcionar muchos ejemplos, y si te quedas
+        atascado, está bien continuar y volver más tarde. Intente tener una idea de lo que está
+        sucediendo en general jugando con el código.
       </p>
       <Link className="next" to="/coding/primitives">
         Next: #3.1 📊 Basic Data Types
