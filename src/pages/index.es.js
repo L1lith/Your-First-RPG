@@ -30,7 +30,11 @@ const Home = () => (
     <div className={extra}>
       <h2>¿Miedo a la codificación? ¡No lo seas!</h2>
       Echa un vistazo a esta inspiradora charla de Linda Liukas
-      <YTVideo url="-jRREn6ifEQ" thumbnail="/images/poetry-of-programming.jpg" />
+      <YTVideo
+        url="-jRREn6ifEQ"
+        query={{ cc_lang_pref: 'es', cc_load_policy: '1' }}
+        thumbnail="/images/poetry-of-programming.jpg"
+      />
     </div>
   </div>
 )

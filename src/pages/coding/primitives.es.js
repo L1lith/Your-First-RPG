@@ -103,32 +103,30 @@ const Primitives = () => (
         de cambiar los números, también puede compararlos (usando símbolos como &gt;, &lt;, or ≥)
         para <Output /> valores <BooleanDef />.
       </p>
-      <h3>Addition/Subtraction</h3>
+      <h3>Adición/Sustracción</h3>
       <CodeSandbox value="12 + 12" className="mini" />
       <CodeSandbox value="30 - 12" className="mini" />
-      <h3>Greater than/Less than</h3>
+      <h3>Mayor Que y Menor Que</h3>
       <p>
-        The greater than and less than <Operator>operators</Operator> return <BooleanDef /> values.
+        Los <Operator>operators</Operator> mayor que y menor que devuelven valores <BooleanDef />.
       </p>
       <CodeSandbox value="12 > 10" className="mini" />
       <CodeSandbox value="12 < 10" className="mini" />
       <CodeSandbox value="5 >= 5" className="mini" />
       <CodeSandbox value="6 <= 5" className="mini" />
-      <h3>Multiply/Divide</h3>
+      <h3>Multiplicar/Dividir</h3>
       <CodeSandbox value="32 * 11" className="mini" />
       <CodeSandbox value="4 / 12" className="mini" />
     </div>
     <div className="type strings">
       <h2>Strings</h2>
       <p>
-        <StringDef>Strings</StringDef> are collections of text (like someones name, an address,
-        etc). They are written by surrounding the text in single or double quotes.
+        Las <StringDef>strings</StringDef> son colecciones de texto (como el nombre de alguien, una
+        dirección, etc.). Se escriben rodeando el texto entre comillas simples o dobles.
       </p>
       <CodeSandbox value={'"I like chocolate milk"'} className="mini" />
       <CodeSandbox value={"'my namea borat'"} className="mini" />
-      <p>
-        They can also be added together (they are simply squished together, not added like numbers)
-      </p>
+      <p>También se pueden sumar (simplemente se juntan, no se suman como números)</p>
       <CodeSandbox value={"'beep' + 'bop'"} className="mini" />
       <CodeSandbox value={"'9' + '10'"} className="mini" />
     </div>
