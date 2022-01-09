@@ -11,7 +11,10 @@ export default function AppLayout({ children }) {
   return (
     <>
       <Header />
-      <main className={'page ' + page}>{children}</main>
+      <main className={'page ' + page}>
+        <noscript>This site requires JavaScript to function perfectly</noscript>
+        {children}
+      </main>
     </>
   )
 }

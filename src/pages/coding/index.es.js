@@ -1,5 +1,5 @@
-import Expression from '../../components/Dictionary/en/Expression'
-import Interpreter from '../../components/Dictionary/en/Interpreter'
+import Expression from '../../components/Dictionary/es/Expression'
+import Interpreter from '../../components/Dictionary/es/Interpreter'
 import Link from '../../components/TranslatedLink'
 import YTVideo from '../../components/YTVideo'
 import { Helmet } from 'react-helmet'
@@ -16,10 +16,10 @@ export default function CodingIntro() {
           <Link to="/coding#lesson">#3.0 🛣️ Pasando a la codificación</Link>
         </li>
         <li>
-          <Link to="/coding/primitives">#3.1 📊 Basic Data Types</Link>
+          <Link to="/coding/primitives">#3.1 📊 Tipos de datos básicos</Link>
         </li>
         <li>
-          <Link to="/coding/essential-tools">#3.2 🔨 Essential Tools</Link>
+          <Link to="/coding/essential-tools">#3.2 🔨 Herramientas esenciales</Link>
         </li>
       </ol>
       <h2 id="lesson">#3.0 🛣️ Pasando a la codificación</h2>
@@ -46,7 +46,7 @@ export default function CodingIntro() {
         sucediendo en general jugando con el código.
       </p>
       <Link className="next" to="/coding/primitives">
-        Next: #3.1 📊 Basic Data Types
+        Siguiente: #3.1 📊 Tipos de datos básicos
       </Link>
     </div>
   )
