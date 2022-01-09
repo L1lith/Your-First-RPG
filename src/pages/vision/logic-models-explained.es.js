@@ -91,20 +91,20 @@ export default function LogicModelsExplained() {
       cerebro proporciona las <Rules>reglas</Rules> de toma de decisiones del modelo lógico.
       <table className={trafficStop}>
         <thead>
-          <th>Entrada</th>
-          <th>Resultantes</th>
+          <th>Entrada (área geográfica)</th>
+          <th>Salida (tipo de camino)</th>
         </thead>
         <tr>
-          <td>La luz es roja</td>
-          <td>Come to a smooth stop before the intersection.</td>
+          <td>Un campo relativamente plano</td>
+          <td>Un campo plano de carretera largo, recto y de rápido movimiento</td>
         </tr>
         <tr>
-          <td>La luz es amarilla</td>
-          <td>Preste atención a la intersección. Si puede detenerse, deténgase rápidamente.</td>
+          <td>Una ladera empinada</td>
+          <td>Una carretera sinuosa y lenta con muchas señales</td>
         </tr>
         <tr>
-          <td>La luz es verde</td>
-          <td>Mire hacia adelante para asegurarse de que el tráfico esté despejado y continúe.</td>
+          <td>Una ciudad llena de gente</td>
+          <td>Una autopista muy ancha con muchas entradas y salidas</td>
         </tr>
       </table>
       <p>
