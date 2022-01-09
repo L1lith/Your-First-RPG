@@ -16,21 +16,23 @@ export default function LevelThree() {
       <h2>#2.3 💻 Booleans for coding Apps</h2>
       <br />
       <p>
-        How does <BooleanDef /> logic tie into coding? When a programmer is coding they write in a
-        special language called a <Syntax />. Every coding language can have different{' '}
-        <Syntax>syntaxes</Syntax>, but ultimately they are just different ways of representing our
-        logic models using code.
+        ¿Cómo se relaciona la lógica <BooleanDef /> con la codificación? Cuando un programador está
+        codificando, escribe en un lenguaje especial llamado <Syntax />. Cada lenguaje de
+        codificación puede tener diferentes <Syntax>syntaxes</Syntax>, pero en última instancia, son
+        solo diferentes formas de representar nuestros modelos lógicos utilizando código.
         <br />
         <br />
-        Rather than writing enormous combinations of ORs, NOTs, and other logical{' '}
-        <Operator>operators</Operator>, software engineers conveniently created coding languages
-        packed in with features that allow us to say what we are trying to do more easily. In fact,
-        nearly every coding language has support for <BooleanDef /> logic built-in, which is an
-        essential part of your toolkit as a coder.
+        En lugar de escribir enormes combinaciones de OR, NOT y otros <Operator>
+          operators
+        </Operator>{' '}
+        lógicos, los ingenieros de software crearon convenientemente lenguajes de codificación con
+        características que nos permiten decir lo que estamos tratando de hacer más fácilmente. De
+        hecho, casi todos los lenguajes de codificación tienen soporte para lógica <BooleanDef />{' '}
+        incorporada, que es una parte esencial de su kit de herramientas como codificador.
         <br />
         <br />
-        I've prepared one final challenge in case you'd like to test your skills at the matching
-        game one more time before we proceed to talk about coding.
+        He preparado un desafío final en caso de que desee probar sus habilidades en el juego de
+        combinación una vez más antes de proceder a hablar sobre codificación.
       </p>
       <LevelThreeGame />
       <br />
