@@ -142,14 +142,15 @@ export default function LogicModelsExplained() {
         <span className="underline">jugando con ella y haciendo preguntas!</span>
         <br />
         <br />
-        The <Output /> is what the users of your software experience (this is a{' '}
-        <span className="underline">critical</span> aspect of your logic model), so when coding you
-        must always think about what your users are trying to achieve, and not only all the possible
-        issues and bugs they could run into, but also how to make your software straightforward and
-        convenient. Like good road design, your software should effectively serve your users,
-        instead of forcing your users to be focused on tediously tinkering with poorly designed
-        software. Take responsibility as an engineer for avoidable crashes and other design issues
-        that arise with your software.
+        El <Output /> es lo que experimentan los usuarios de su software (este es un aspecto{' '}
+        <span className="underline">crítico</span> de su modelo lógico), por lo que al codificar
+        siempre debe pensar en lo que sus usuarios están tratando de lograr, y no solo en todos los
+        posibles problemas y errores que podrían ejecutar. en, pero también cómo hacer que su
+        software sea sencillo y conveniente. Al igual que un buen diseño de carreteras, su software
+        debe servir de manera efectiva a sus usuarios, en lugar de obligar a sus usuarios a
+        concentrarse en juguetear tediosamente con un software mal diseñado. Asuma la
+        responsabilidad como ingeniero de fallas evitables y otros problemas de diseño que surjan
+        con su software.
       </p>
       <Link className="next" to="/toying">
         Siguiente: #2.0 🧩 Jugando con rompecabezas lógicos

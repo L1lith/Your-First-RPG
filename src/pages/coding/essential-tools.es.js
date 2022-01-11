@@ -3,6 +3,7 @@ import Expression from '../../components/Dictionary/es/Expression'
 import FunctionDef from '../../components/Dictionary/es/FunctionDef'
 import Input from '../../components/Dictionary/es/Input'
 import Interpreter from '../../components/Dictionary/es/Interpreter'
+import JS from '../../components/Dictionary/es/JS'
 import Output from '../../components/Dictionary/es/Output'
 import Variable from '../../components/Dictionary/es/Variable'
 import ShittyChecking from '../../components/ShittyChecking'
@@ -31,7 +32,7 @@ export default function EssentialTools() {
         <br />
         <br />
         También usaremos el modo "terminal" en lugar del modo "<Expression /> evaluator" en nuestros
-        editores, por lo que verá algunas cosas que dicen "console.log (...)", y la salida de
+        editores, por lo que verá algunas cosas que dicen "console.log (...)", y la <Output /> de
         nuestro programa será lo que esté dentro del paréntesis ( esto se llama una <FunctionDef />,
         hay más sobre esto a continuación).
       </p>
@@ -96,8 +97,8 @@ export default function EssentialTools() {
         </p>
         <h2>Addition Function</h2>
         <p>
-          While this <FunctionDef /> is mostly redundant, you could easily make a <FunctionDef /> to
-          add two numbers together.
+          Si bien esta <FunctionDef /> es en su mayoría redundante, podría crear fácilmente una{' '}
+          <FunctionDef /> para sumar dos números.
         </p>
         <CodeSandbox
           consoleMode
@@ -105,18 +106,21 @@ export default function EssentialTools() {
           className="short"
         />
         <p>
-          The <Output /> is empty because we didn't log anything to the console.
+          El <Output /> está vacío porque no registramos nada en la consola.
         </p>
       </div>
       <div className="console">
         <h2>More about the Console</h2>
-        On the previous page I was using the "JavaScript Expression Evaluator". On the right you
-        would see what <Output /> of the <Interpreter>JS interpreter</Interpreter> evaluating the
-        code on the left side. Normally when we're coding we are running our code from a terminal,
-        and we see the <Output /> of the console.log <FunctionDef /> in real-time instead of seeing
-        the <Output /> of the JS evaluation. We only need to <Output /> values using console.log
-        when we as the developer (or coder) want to know what those values are, that way our
-        program's <Output /> doesn't get super cluttered.
+        Más sobre la Consola En la página anterior, estaba usando el "Evaluador de expresiones de
+        JavaScript". A la derecha, verá qué <Output /> del <Interpreter>
+          JS interpreter
+        </Interpreter>{' '}
+        evalúa el código en el lado izquierdo. Normalmente, cuando codificamos, ejecutamos nuestro
+        código desde una terminal y vemos el resultado de la <FunctionDef /> console.log en tiempo
+        real en lugar de ver el resultado de la evaluación del código <JS />. Solo necesitamos
+        generar valores usando console.log cuando nosotros, como desarrolladores (o codificadores),
+        queremos saber cuáles son esos valores, de esa manera la <Output /> de nuestro programa no
+        se abarrota demasiado.
       </div>
       <CodeSandbox
         consoleMode
@@ -125,10 +129,11 @@ export default function EssentialTools() {
       />
       <div className="parenthesis">
         <h2>Parenthesis</h2>
-        Not only can you use parenthesis to change the ordering of math{' '}
-        <Expression>expressions</Expression>, but you can also use parenthesis to change the
-        ordering of any other kind of <Expression />. Here are some example of changing the order of
-        code evaluation using parenthesis for math and non-math purposes.
+        Paréntesis No solo puede usar paréntesis para cambiar el orden de las{' '}
+        <Expression>expressions</Expression> matemáticas, sino que también puede usar paréntesis
+        para cambiar el orden de cualquier otro tipo de <Expression />. Estos son algunos ejemplos
+        de cómo cambiar el orden de evaluación del código usando paréntesis para fines matemáticos y
+        no matemáticos.
         <br />
         <br />
         <h3>Math Without Parenthesis</h3>

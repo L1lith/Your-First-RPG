@@ -3,6 +3,7 @@ import Expression from '../../components/Dictionary/en/Expression'
 import FunctionDef from '../../components/Dictionary/en/FunctionDef'
 import Input from '../../components/Dictionary/en/Input'
 import Interpreter from '../../components/Dictionary/en/Interpreter'
+import JS from '../../components/Dictionary/en/JS'
 import Output from '../../components/Dictionary/en/Output'
 import Variable from '../../components/Dictionary/en/Variable'
 import ShittyChecking from '../../components/ShittyChecking'
@@ -109,9 +110,9 @@ export default function EssentialTools() {
         would see what <Output /> of the <Interpreter>JS interpreter</Interpreter> evaluating the
         code on the left side. Normally when we're coding we are running our code from a terminal,
         and we see the <Output /> of the console.log <FunctionDef /> in real-time instead of seeing
-        the <Output /> of the JS evaluation. We only need to <Output /> values using console.log
-        when we as the developer (or coder) want to know what those values are, that way our
-        program's <Output /> doesn't get super cluttered.
+        the <Output /> of the <JS /> code evaluation. We only need to <Output /> values using
+        console.log when we as the developer (or coder) want to know what those values are, that way
+        our program's <Output /> doesn't get super cluttered.
       </div>
       <CodeSandbox
         consoleMode
