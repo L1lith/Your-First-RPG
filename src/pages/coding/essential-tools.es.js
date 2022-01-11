@@ -52,18 +52,20 @@ export default function EssentialTools() {
         <ShittyChecking />
 
         <p>
-          This would be so annoying! Instead of doing this we store <Variable>variables</Variable>{' '}
-          in our memory (or in this case the computer's memory) by giving them names, and then we
-          can retrieve or modify them later when we need them.
+          ¡Esto sería tan molesto! En lugar de hacer esto, almacenamos{' '}
+          <Variable>variables</Variable> en nuestra memoria (o en este caso, en la memoria de la
+          computadora) dándoles nombres, y luego podemos recuperarlas o modificarlas más adelante
+          cuando las necesitemos.
           <br />
           <br />
-          Here we name a <Variable /> called balance (note we do not give it any value yet so it
-          defaults to undefined)
+          Aquí nombramos una <Variable /> llamada saldo (tenga en cuenta que todavía no le damos
+          ningún valor, por lo que por defecto es undefined)
         </p>
         <CodeSandbox className="mini" value={'var balance\nconsole.log(balance)'} consoleMode />
         <p>
-          We can set a value by using the assignment operator "=" and putting the value we want
-          after it, and once we have done this we can see our <Variable /> has a value now :)
+          Podemos establecer un valor usando el operador de asignación "=" y poniendo el valor que
+          queremos después, y una vez que hayamos hecho esto, podemos ver que nuestra <Variable />{' '}
+          tiene un valor ahora :)
         </p>
         <CodeSandbox
           className="mini"
@@ -74,21 +76,23 @@ export default function EssentialTools() {
       <div className="functions">
         <h2>Functions</h2>
         <p>
-          <FunctionDef>Functions</FunctionDef> let you make re-usable pieces of code that serve as a
-          tool (like a blueprint of how to do something). <FunctionDef>Functions</FunctionDef> have
-          a name, a set of <Input>inputs</Input>, a code section, and an <Output>output</Output> (we
-          use "return" to specify the output). <FunctionDef>Functions</FunctionDef> can save you a
-          lot of time because you can re-use your function multiple times with different inputs,
-          rather than having to write that piece of code over and over.{' '}
-          <FunctionDef>Functions</FunctionDef> use parenthesis to create their inputs, and brackets
-          (they look like this {'{}'}). After we've created our <FunctionDef /> we use parenthesis
-          again to call it (calling a <FunctionDef /> means to run it) The "console.log" part of our
-          code is an example of a function (in this case to <Output /> some data). This{' '}
-          <FunctionDef /> doesn't have to be created by us because it's given to us automatically by
-          the <Interpreter>JS interpreter</Interpreter>. It's called (to call a <FunctionDef />{' '}
-          means to run it) with parenthesis and it can do different things depending on what the{' '}
-          <Input /> we put inside it is (which in the previous example was the balance{' '}
-          <Variable>variable's</Variable> current value).
+          Las <FunctionDef>functions</FunctionDef> le permiten crear piezas de código reutilizables
+          que sirven como herramienta (como un modelo de cómo hacer algo). Las funciones tienen un
+          nombre, un conjunto de <Input>inputs</Input>, una sección de código y una{' '}
+          <Output>output</Output> (usamos "retorno" para especificar la <Output>output</Output>).
+          Las <FunctionDef>functions</FunctionDef> pueden ahorrarle mucho tiempo porque puede
+          reutilizar su <FunctionDef>function</FunctionDef> varias veces con diferentes{' '}
+          <Input>Inputs</Input>, en lugar de tener que escribir ese código una y otra vez. Las{' '}
+          <FunctionDef>functions</FunctionDef> usan paréntesis para crear sus <Input>inputs</Input>{' '}
+          y corchetes (se ven así {}). Después de haber creado nuestra <FunctionDef />, usamos
+          paréntesis nuevamente para llamarla (llamar a una <FunctionDef /> significa ejecutarla).
+          La parte "console.log" de nuestro código es un ejemplo de una <FunctionDef /> (en este
+          caso, para <Output /> algunos datos). Esta <FunctionDef>function</FunctionDef> no tiene
+          que ser creada por nosotros porque el <Interpreter>JS Interpreter</Interpreter> nos la
+          proporciona automáticamente. Se llama (llamar a una <FunctionDef>function</FunctionDef>{' '}
+          significa ejecutarla) con paréntesis y puede hacer diferentes cosas dependiendo de cuál
+          sea la <Input /> que le pongamos (que en el ejemplo anterior era el valor actual de la{' '}
+          <Variable /> balance).
         </p>
         <h2>Addition Function</h2>
         <p>
