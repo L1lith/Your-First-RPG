@@ -14,9 +14,9 @@ export default function EssentialTools() {
   return (
     <div>
       <Helmet>
-        <title>🔨 Essential Tools</title>
+        <title>🔨 Herramientas esenciales</title>
       </Helmet>
-      <h1>#3.2 🔨 Essential Tools</h1>
+      <h1>#3.2 🔨 Herramientas esenciales</h1>
       <span className="introCard">
         <YTVideo url="himmatLe7aQ" query={{ start: 32 }} thumbnail="/images/melinda-mae.jpg" />
         <span>How do you swallow a coding lesson? One byte at a time</span>

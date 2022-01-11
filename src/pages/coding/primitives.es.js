@@ -133,28 +133,26 @@ const Primitives = () => (
     <div className="type undefined">
       <h2>undefined</h2>
       <p>
-        The value undefined is used to represent a value that has not been assigned anything else.
-        It's basically the universal placeholder value. Undefined is the value given to{' '}
-        <Variable>variables</Variable> if we don't given them a value ourselves.
+        El valor undefined se utiliza para representar un valor al que no se le ha asignado nada
+        más. Es básicamente el valor de marcador de posición universal. Indefinido es el valor dado
+        a las <Variable>variables</Variable> si no les damos un valor nosotros mismos.
       </p>
       <CodeSandbox value="undefined" className="mini" />
     </div>
     <div className="type null">
       <h2>null</h2>
       <p>
-        The value null is used to represent the value "nothing". It's different from undefined
-        because it means the coder intentionally made it nothing rather than it just being a missing
-        value.
+        El valor nulo se utiliza para representar el valor "null". Es diferente de undefined porque
+        significa que el codificador intencionalmente lo convirtió en nada en lugar de que solo sea
+        un valor faltante.
       </p>
       <CodeSandbox value="null" className="mini" />
     </div>
     <div className="equality">
       <h2>Equality</h2>
       <p>
-        To check whether two values are exactly the same we can use the strict equality{' ' + ''}
-        <Operator />
-        {' ' + ''}
-        "==="
+        Para comprobar si dos valores son exactamente iguales podemos utilizar el <Operator /> de
+        igualdad estricta "==="
       </p>
       <CodeSandbox value="1 === 1" className="mini" />
       <CodeSandbox value={'1 === "1"'} className="mini" />
@@ -162,14 +160,14 @@ const Primitives = () => (
     </div>
     <br />
     <p>
-      In the next section we'll be using these primitive values so you can see a little bit more why
-      they are useful. You can read in greater detail about <JS>JS's</JS> data types{' '}
-      <a target="_blank" href="https://javascript.info/types">
-        here
+      En la siguiente sección usaremos estos valores primitivos para que pueda ver un poco más por
+      qué son útiles. Puede leer con más detalle sobre los tipos de datos de <JS>JS</JS>{' '}
+      <a target="_blank" href="https://es.javascript.info/types">
+        aquí
       </a>
     </p>
     <Link className="next" to="/coding/essential-tools">
-      Siguiente: #3.2 Essential Tools
+      Siguiente: #3.2 Herramientas esenciales
     </Link>
   </div>
 )
