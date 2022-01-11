@@ -23,28 +23,30 @@ export default function EssentialTools() {
       </span>
 
       <p>
-        You probably have a lot of information in your head from the last section, try to do your
-        best to connect that information with the upcoming tasks. In this section we will be
-        learning some tools 🔨 to help us build logic models in JavaScript more effectively. Once
-        you finish this section you will know basic coding! If you feel overwhelmed consider taking
-        a break.
+        Probablemente tenga mucha información en su cabeza de la última sección, intente hacer todo
+        lo posible para conectar esa información con las próximas tareas. En esta sección
+        aprenderemos algunas herramientas 🔨 que nos ayudarán a construir modelos lógicos en
+        JavaScript de manera más efectiva. ¡Una vez que termines esta sección, conocerás la
+        codificación básica! Si te sientes abrumado, considera tomarte un descanso.
         <br />
         <br />
-        We will also be using terminal mode instead of the <Expression /> evaluator mode in our
-        editors, so you'll be seeing some things that say "console.log(...)", and our program output
-        will be whatever is inside the parenthesis (this is called a <FunctionDef />, there is more
-        on this below).
+        También usaremos el modo "terminal" en lugar del modo "<Expression /> evaluator" en nuestros
+        editores, por lo que verá algunas cosas que dicen "console.log (...)", y la salida de
+        nuestro programa será lo que esté dentro del paréntesis ( esto se llama una <FunctionDef />,
+        hay más sobre esto a continuación).
       </p>
       <div>
         <h2>Variables</h2>
         <p>
-          We can create <Variable>variables</Variable> in order to store (save) data values for
-          later use. In a basic logic model where we only have <Input>inputs</Input> and{' '}
-          <Output>outputs</Output>, so it becomes incredibly difficult to deal with data that
-          persists (needs to be saved). Let's say you're writing a checking account app, but you're
-          not allowed to save any data. The user might see a notification saying "You just spent
-          $10.52", and yet every time they open the app they're greeted with this{' '}
-          <span className="bold">(try using the app below)</span>
+          Podemos crear <Variable>variables</Variable> para almacenar (guardar) valores de datos
+          para su uso posterior. En un modelo lógico básico en el que solo tenemos{' '}
+          <Input>inputs</Input> y <Output>outputs</Output>, se vuelve increíblemente difícil tratar
+          con datos que persisten (deben guardarse). Digamos que está escribiendo una aplicación de
+          cuenta corriente, pero no puede guardar ningún dato. El usuario puede ver una notificación
+          que dice "Acabas de gastar $ 10.52" y, sin embargo, cada vez que abre la aplicación es
+          recibido con esto:
+          <br />
+          <span className="bold">(intenta usar la aplicación a continuación)</span>
         </p>
 
         <ShittyChecking />

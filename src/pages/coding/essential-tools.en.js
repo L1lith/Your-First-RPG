@@ -43,7 +43,8 @@ export default function EssentialTools() {
           <Output>outputs</Output>, so it becomes incredibly difficult to deal with data that
           persists (needs to be saved). Let's say you're writing a checking account app, but you're
           not allowed to save any data. The user might see a notification saying "You just spent
-          $10.52", and yet every time they open the app they're greeted with this{' '}
+          $10.52", and yet every time they open the app they're greeted with this:
+          <br />
           <span className="bold">(try using the app below)</span>
         </p>
 
