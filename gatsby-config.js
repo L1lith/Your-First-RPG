@@ -24,6 +24,12 @@ module.exports = {
       options: {
         component: require.resolve(`./src/components/AppLayout.js`)
       }
+    },
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/*`]
+      }
     }
   ]
 }

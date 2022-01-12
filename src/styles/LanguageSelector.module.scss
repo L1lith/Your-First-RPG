@@ -1,0 +1,39 @@
+.languageIcon {
+    color: #55a1ff;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    width: 1em;
+    max-width: 1em;
+    &:hover {
+        border-color: #0055bd;
+        border-radius: 100vw;
+        transition: border-color 0.15s linear;
+        cursor: pointer;
+    }
+}
+
+
+.languageMenu {
+    .title {
+        font-size: 1.2em;
+    }
+    .languageOption {
+        width: fit-content;
+        &:not(:last-child) {
+            border-bottom: 2px solid black;
+        }
+        padding: 20px 0;
+        margin: 0 auto;
+    }
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: white;
+    justify-content:center;
+    display: flex;
+    flex-direction: column;
+}

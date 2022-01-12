@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkyour_first_rpg=self.webpackChunkyour_first_rpg||[]).push([[883],{9616:function(e,r,t){t.r(r);var n=t(7294);r.default=function(){return n.createElement(n.Fragment,null,"poop dangit jee golly")}}}]);
-//# sourceMappingURL=component---src-pages-404-js-aa3c4a029f32b8002d20.js.map

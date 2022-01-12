@@ -1,1 +1,0 @@
-{"version":3,"file":"component---src-pages-404-js-aa3c4a029f32b8002d20.js","mappings":"0IAKA,UAJqB,WACnB,OAAO","sources":["webpack://your-first-rpg/./src/pages/404.js"],"sourcesContent":["// markup\nconst NotFoundPage = () => {\n  return <>poop dangit jee golly</>\n}\n\nexport default NotFoundPage\n"],"names":[],"sourceRoot":""}

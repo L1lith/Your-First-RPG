@@ -8,8 +8,9 @@ import {
   settings,
   siteTitle
 } from '../styles/header.module.scss'
-import Settings from './Settings'
-import React, { Component } from 'react'
+import LanguageSelector from './LanguageSelector'
+
+//import Settings from './Settings'
 
 const Header = () => (
   <header className={mainHeader}>
@@ -22,13 +23,9 @@ const Header = () => (
     <Link to="/resources">
       <a className={resources}>{useTranslation('Stuck?', { es: 'Atascada?' })}</a>
     </Link>
-    {
-      null /*<Link to="/support">
-      <a className={styles.support}>Support Me</a>
-</Link>*/
-    }
-    <Settings className={settings} />
+    <LanguageSelector />
   </header>
 )
 
+// <Settings className={settings} />
 export default Header

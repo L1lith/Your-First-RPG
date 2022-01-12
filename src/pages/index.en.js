@@ -1,11 +1,9 @@
 import RPG from '../components/Dictionary/en/RPG'
 import Link from '../components/TranslatedLink'
 import YTVideo from '../components/YTVideo'
-import useLanguage from '../functions/useLanguage'
 import { home, extra } from '../styles/index.module.scss'
 
 export default function Home() {
-  console.log(useLanguage())
   return (
     <div className={home}>
       <h1 className="title">Your First RPG</h1>
