@@ -175,9 +175,8 @@ alert("You wake up on a strange beach. '" + name + "' is written on the inside o
         <p>
           Consola Ejecute el programa para ver su salida Aquí combinamos la <FunctionDef />{' '}
           .toLowerCase (puede usarla para convertir cualquier <StringDef /> en minúsculas) y nuestra{' '}
-          <FunctionDef />
-          smartPrompt. Observe cómo, cuando lo ejecutamos, aún reconoce una entrada de sí, incluso
-          si tiene espacios en blanco alrededor o no está en minúsculas.
+          <FunctionDef /> smartPrompt. Observe cómo, cuando lo ejecutamos, aún reconoce una entrada
+          de sí, incluso si tiene espacios en blanco alrededor o no está en minúsculas.
         </p>
         <CodeSandbox
           value={`function smartPrompt(question) {
