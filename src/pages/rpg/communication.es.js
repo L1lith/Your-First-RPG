@@ -52,7 +52,7 @@ export default function Communication() {
         />
       </div>
       <div className="js-io">
-        <h2>Input/Output for Communicating with the Player</h2>
+        <h2>Input/Output para comunicarse con el reproductor</h2>
         <p>
           Si bien la modificación del contenido de una página web (realizada a través de HTML) está
           fuera del <Scope /> de este proyecto, ¡aún podemos comunicarnos con el reproductor desde
