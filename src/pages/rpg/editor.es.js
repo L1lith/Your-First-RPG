@@ -62,9 +62,10 @@ function Editor() {
       </Helmet>
       <h1>#4.3 🛠️ La editora de juegos</h1>
       <p>
-        Build your own game! Be sure to press the ☁️ button and share your url. JavaScript must be
-        enabled in your browser to use the game editor.
-        <br /> Warning: You must save your URL or your game data could be lost.
+        ¡Construye tu propio juego! Asegúrate de presionar el botón ☁️ y compartir tu URL.
+        JavaScript debe estar habilitado en su navegador para usar el editor de juegos.
+        <br />
+        Advertencia: debes guardar tu URL o los datos de tu juego podrían perderse.
       </p>
       <CodeSandbox
         className={editorModule}
@@ -75,8 +76,8 @@ function Editor() {
         disableAutoRun
       />
       <p>
-        Feel free to press the ❌ to delete the starter code. Try flipping your phone sideways if
-        you're on mobile!
+        Siéntase libre de presionar el ❌ para eliminar el código de inicio. ¡Intenta voltear tu
+        teléfono hacia un lado si estás en un dispositivo móvil!
       </p>
       <Link className="next" to="/rpg/summary">
         Next: #4.4 🔭 ¡Ganaste! Otras lecturas
