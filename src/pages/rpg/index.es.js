@@ -18,7 +18,7 @@ export default function LetsMakeAGame() {
           <Link to="/rpg/communication">#4.1 🗣️ Comunicarse con el jugador</Link>
         </li>
         <li>
-          <Link to="/rpg/publishing">#4.2 🏆 Sharing your RPG</Link>
+          <Link to="/rpg/publishing">#4.2 🏆 Compartiendo tu juego RPG</Link>
         </li>
         <li>
           <Link to="/rpg/editor">#4.3 🛠️ The Game Editor</Link>

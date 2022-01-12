@@ -6,9 +6,9 @@ export default function Publishing() {
   return (
     <div className="publishing">
       <Helmet>
-        <title>🏆 Sharing your RPG</title>
+        <title>🏆 Compartiendo tu juego RPG</title>
       </Helmet>
-      <h2>#4.2 🏆 Sharing your RPG</h2>
+      <h2>#4.2 🏆 Compartiendo tu juego RPG</h2>
       <br />
       <div className="introCard">
         <YTVideo url="_nuS86ITjIM" thumbnail="/images/sanctuary-rpg.jpg" />
@@ -37,7 +37,7 @@ export default function Publishing() {
         the next page.
       </p>
       <Link className="next" to="/rpg/editor">
-        #4.3 🛠️ The Game Editor
+        #4.3 🛠️ La editora de juegos
       </Link>
     </div>
   )

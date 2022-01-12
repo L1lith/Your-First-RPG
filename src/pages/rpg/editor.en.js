@@ -57,7 +57,7 @@ function Editor() {
   return (
     <div>
       <Helmet>
-        <title>🛠️ Game Editor</title>
+        <title>🛠️ The Game Editor</title>
         <meta name="description" content="Build a game of your own" />
       </Helmet>
       <h1>#4.3 🛠️ The Game Editor</h1>

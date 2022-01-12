@@ -57,10 +57,10 @@ function Editor() {
   return (
     <div>
       <Helmet>
-        <title>🛠️ Game Editor</title>
+        <title>🛠️ La editora de juegos</title>
         <meta name="description" content="Build a game of your own" />
       </Helmet>
-      <h1>#4.3 🛠️ The Game Editor</h1>
+      <h1>#4.3 🛠️ La editora de juegos</h1>
       <p>
         Build your own game! Be sure to press the ☁️ button and share your url. JavaScript must be
         enabled in your browser to use the game editor.
