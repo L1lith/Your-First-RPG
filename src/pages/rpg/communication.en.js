@@ -136,12 +136,12 @@ export default function Communication() {
       <div>
         <h2>Better text Handling</h2>
         <p>
-          I've created this function to help you ensure you receive valid input. Strings provide
-          .trim(...) function to remove all spaces from the beginning and end. Here we check that
-          the trimmed string is at least 1 character long (meaning that there's at least 1 non-space
-          character). Then we return the trimmed string as we probably don't care about the spaces
-          and it can make it harder to match strings later (for example "yes " === "yes" will return
-          false, but if we trim the text we don't have this problem)
+          I've created this <FunctionDef /> to help you ensure you receive valid input. Strings
+          provide .trim(...) <FunctionDef /> to remove all spaces from the beginning and end. Here
+          we check that the trimmed string is at least 1 character long (meaning that there's at
+          least 1 non-space character). Then we return the trimmed string as we probably don't care
+          about the spaces and it can make it harder to match strings later (for example "yes " ===
+          "yes" will return false, but if we trim the text we don't have this problem)
         </p>
         <CodeSandbox
           disableAutoRun

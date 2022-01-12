@@ -84,29 +84,31 @@ export default function Communication() {
           className="mini"
         />
         <p>
-          Note: In normal web development the use of the alert and prompt functions is discouraged.
-          This is because creating dialogue inside of the page (using HTML) rather than inside of
-          the browsers pop-up boxes is less jarring.
+          Nota: En el desarrollo web normal, se desaconseja el uso de las funciones de alerta y
+          aviso. Esto se debe a que crear un diálogo dentro de la página (usando HTML) en lugar de
+          dentro de los cuadros emergentes de los navegadores son menos discordantes.
         </p>
       </div>
       <div className="flow-control">
         <h2>Flow Control</h2>
         <p>
-          Flow control allows us to establish branching choices in our logic model using{' '}
-          <BooleanDef /> logic. You might say something along the lines of "if x is true then do y,
-          or else do z". It allows us to create flexible code that chooses the appropriate path to
-          take in order to properly complete the task. You can read more about flow control{' '}
+          El control de flujo nos permite establecer opciones de ramificación en nuestro modelo
+          lógico usando lógica <BooleanDef />. Puede decir algo como "si x es cierto, entonces haga
+          y, o de lo contrario haga z". Nos permite crear un código flexible que elige la ruta
+          adecuada para completar correctamente la tarea. Puede leer más sobre el control de flujo{' '}
           <a
             target="_blank"
             href="https://vanessamarely.medium.com/estructuras-de-control-de-flujo-en-javascript-c848337a5c02">
-            here.
+            aquí.
           </a>
+          <br />
         </p>
         <h3>if/else</h3>
         <p>
-          You can use combinations of if and else to make powerful decision making models using{' '}
-          <Expression>expressions</Expression> that return <BooleanDef>booleans</BooleanDef> to ask
-          yes or no questions. Here we have an example of doing something based on the user's input
+          Puede usar combinaciones de if y else para crear poderosos modelos de toma de decisiones
+          usando <Expression>expressions</Expression> que devuelven{' '}
+          <BooleanDef>booleans</BooleanDef> para hacer preguntas de sí o no. Aquí tenemos un ejemplo
+          de hacer algo basado en la entrada del usuario
         </p>
         <CodeSandbox
           value={
@@ -116,7 +118,7 @@ export default function Communication() {
           disableAutoRun
           className="short"
         />
-        <p>We can also chain multiple ifs together to have multiple outcomes</p>
+        <p>También podemos encadenar múltiples si para tener múltiples resultados.</p>
 
         <CodeSandbox
           value={
@@ -128,10 +130,11 @@ export default function Communication() {
         />
         <h3>while</h3>
         <p>
-          You can use the while loop to keep doing something until the <BooleanDef /> <Expression />{' '}
-          returns false. Look here how we can repeatedly ask the user for their name until they
-          return a valid name (if a name is missing it is invalid, if the user exits the prompt the
-          prompt it returns null so we must retry).
+          Puede usar el bucle while para seguir haciendo algo hasta que la <BooleanDef />{' '}
+          <Expression /> devuelva falso. Mire aquí cómo podemos pedir repetidamente al usuario su
+          nombre hasta que devuelva un nombre válido (si falta un nombre, no es válido, si el
+          usuario sale del mensaje, el mensaje devuelve nulo, por lo que debemos volver a
+          intentarlo).
         </p>
         <CodeSandbox
           disableAutoRun
@@ -145,12 +148,13 @@ export default function Communication() {
       <div>
         <h2>Better text Handling</h2>
         <p>
-          I've created this function to help you ensure you receive valid input. Strings provide
-          .trim(...) function to remove all spaces from the beginning and end. Here we check that
-          the trimmed string is at least 1 character long (meaning that there's at least 1 non-space
-          character). Then we return the trimmed string as we probably don't care about the spaces
-          and it can make it harder to match strings later (for example "yes " === "yes" will return
-          false, but if we trim the text we don't have this problem)
+          Creé esta <FunctionDef /> para ayudarlo a asegurarse de recibir una entrada válida. Las
+          cadenas proporcionan <FunctionDef /> .trim(...) para eliminar todos los espacios al
+          principio y al final. Aquí comprobamos que la cadena recortada tiene al menos 1 carácter
+          de largo (lo que significa que hay al menos 1 sin espacio personaje). Luego devolvemos la
+          cadena recortada ya que probablemente no nos importen los espacios y puede dificultar la
+          coincidencia de cadenas más adelante (por ejemplo, "yes" === "yes" devolverá false, pero
+          si recortamos el texto no tenemos este problema)
         </p>
         <CodeSandbox
           disableAutoRun
@@ -169,9 +173,11 @@ var name = smartPrompt("What is your name adventurer?")
 alert("You wake up on a strange beach. '" + name + "' is written on the inside of your shirt.")`}
         />
         <p>
-          Here we combine the .toLowerCase <FunctionDef /> (you can use it to make any <StringDef />{' '}
-          lowercase) and our smartPrompt <FunctionDef />. Notice how when we run it it still
-          recognizes a yes input even if it has whitespace around it or isn't lowercase.
+          Consola Ejecute el programa para ver su salida Aquí combinamos la <FunctionDef />{' '}
+          .toLowerCase (puede usarla para convertir cualquier <StringDef /> en minúsculas) y nuestra{' '}
+          <FunctionDef />
+          smartPrompt. Observe cómo, cuando lo ejecutamos, aún reconoce una entrada de sí, incluso
+          si tiene espacios en blanco alrededor o no está en minúsculas.
         </p>
         <CodeSandbox
           value={`function smartPrompt(question) {
