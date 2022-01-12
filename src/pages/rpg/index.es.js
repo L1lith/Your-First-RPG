@@ -1,4 +1,4 @@
-import RPG from '../../components/Dictionary/en/RPG'
+import RPG from '../../components/Dictionary/es/RPG'
 import Link from '../../components/TranslatedLink'
 import YTVideo from '../../components/YTVideo'
 import { Helmet } from 'react-helmet'
@@ -8,14 +8,14 @@ export default function LetsMakeAGame() {
     <div className="coding-intro">
       <h1 className="title">Chapter 4</h1>
       <Helmet>
-        <title>🎮 Let's make a Game!</title>
+        <title>🎮 Construyendo un juego!</title>
       </Helmet>
       <ol className="toc pages">
         <li>
-          <Link to="/rpg#lesson">#4.0 🎮 Let's make a Game!</Link>
+          <Link to="/rpg#lesson">#4.0 🎮 Construyendo un juego!</Link>
         </li>
         <li>
-          <Link to="/rpg/communication">#4.1 🗣️ Communicating with the Player</Link>
+          <Link to="/rpg/communication">#4.1 🗣️ Comunicarse con el jugador</Link>
         </li>
         <li>
           <Link to="/rpg/publishing">#4.2 🏆 Sharing your RPG</Link>
@@ -27,7 +27,7 @@ export default function LetsMakeAGame() {
           <Link to="/rpg/summary">#4.4 🔭 You Won! Further Reading</Link>
         </li>
       </ol>
-      <h2 id="lesson">#4.0 Let's make a Game! 🎮</h2>
+      <h2 id="lesson">#4.0 🎮 Construyendo un juego!</h2>
       <br />
       <span className="introCard">
         <YTVideo url="eMR6c8xbgpc" thumbnail="/images/heart-of-the-forest.jpg" />
@@ -40,7 +40,7 @@ export default function LetsMakeAGame() {
         creative 😊 You can create anything you can think of!
       </p>
       <Link className="next" to="/rpg/communication">
-        Next: #4.1 🗣️ Talking to the Player
+        Next: #4.1 🗣️ Comunicarse con el jugador
       </Link>
     </div>
   )

@@ -23,7 +23,7 @@ const Home = () => (
         <Link to="/coding">💻 Aprendiendo a codificar</Link>
       </li>
       <li>
-        <Link to="/rpg">🎮 Construyendo un juego RPG</Link>
+        <Link to="/rpg">🎮 Construyendo un juego!</Link>
       </li>
     </ol>
     <Link to="/resources">Recuerde consultar la sección de recursos si se queda atascado</Link>
