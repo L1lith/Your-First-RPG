@@ -11,7 +11,7 @@ export default function Publishing() {
       <h2>#4.2 🏆 Compartiendo tu juego RPG</h2>
       <br />
       <div className="introCard">
-        <YTVideo url="_nuS86ITjIM" thumbnail="/images/sanctuary-rpg.jpg" />
+        <YTVideo url="XIdoc0G3dqE" thumbnail="/images/sanctuary-rpg.jpg" />
         Tu imaginación es tu límite
       </div>
       <p>
