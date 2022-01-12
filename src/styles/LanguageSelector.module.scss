@@ -18,6 +18,8 @@
         font-size: 1.2em;
     }
     .languageOption {
+        cursor: pointer;
+        color: #0055bd;
         width: fit-content;
         &:not(:last-child) {
             border-bottom: 2px solid black;
@@ -33,7 +35,7 @@
     height: 100vh;
     z-index: 100;
     background-color: white;
-    justify-content:center;
+    justify-content:top;
     display: flex;
     flex-direction: column;
 }

@@ -22,7 +22,7 @@ export default function CodingMindset() {
       </ol>
       <h2 id="lesson">#1.0 🗺️ Planificándolo</h2>
       <span className="introCard">
-        <YTVideo url="wiaamJZ-hHI" thumbnail="/images/how-to-avoid-burnout.jpg" />
+        <YTVideo url="5S3RyGUEHoA" thumbnail="/images/no-danes-tu-vida.jpg" />
         Realice la codificación a su propio ritmo y tómese un tiempo para usted
       </span>
       <p>

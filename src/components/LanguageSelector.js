@@ -38,7 +38,7 @@ function LanguageSelector() {
             .filter(language => languageMap.hasOwnProperty(language))
             .sort()
             .map((language, i) => (
-              <span
+              <a
                 onClick={() => {
                   setLanguageMenuOpen(false)
                   navigate(translatePath(location.pathname, language))
@@ -47,7 +47,7 @@ function LanguageSelector() {
                 className={languageOption}
                 key={i}>
                 {languageMap[language]}
-              </span>
+              </a>
             ))}
         </div>
       ) : null}
