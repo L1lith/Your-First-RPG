@@ -78,6 +78,10 @@ function Editor() {
         Feel free to press the ❌ to delete the starter code. Try flipping your phone sideways if
         you're on mobile!
       </p>
+      <p>
+        If you'd like to learn more about JavaScript, or you'd like to support me, continue on to
+        the next page.
+      </p>
       <Link className="next" to="/rpg/summary">
         Next: #4.4 🔭 You Won! Further Reading
       </Link>

@@ -79,6 +79,10 @@ function Editor() {
         Siéntase libre de presionar el ❌ para eliminar el código de inicio. ¡Intenta voltear tu
         teléfono hacia un lado si estás en un dispositivo móvil!
       </p>
+      <p>
+        Si desea obtener más información sobre JavaScript o si desea ayudarme, continúe con la
+        página siguiente.
+      </p>
       <Link className="next" to="/rpg/summary">
         Next: #4.4 🔭 ¡Ganaste! Otras lecturas
       </Link>

@@ -31,10 +31,6 @@ export default function Publishing() {
           here
         </a>{' '}
         😊
-        <br />
-        <br />
-        If you'd like to learn more about JavaScript, or you'd like to support me, continue on to
-        the next page.
       </p>
       <Link className="next" to="/rpg/editor">
         #4.3 🛠️ The Game Editor

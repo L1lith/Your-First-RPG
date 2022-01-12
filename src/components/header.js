@@ -1,4 +1,5 @@
 import Link from '../components/TranslatedLink'
+import useTranslation from '../functions/useTranslation'
 import {
   siteIcon,
   mainHeader,
@@ -19,7 +20,7 @@ const Header = () => (
       </Link>
     </h1>
     <Link to="/resources">
-      <a className={resources}>Stuck?</a>
+      <a className={resources}>{useTranslation('Stuck?', { es: 'Atascada?' })}</a>
     </Link>
     {
       null /*<Link to="/support">

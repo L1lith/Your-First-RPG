@@ -12,29 +12,26 @@ export default function Publishing() {
       <br />
       <div className="introCard">
         <YTVideo url="_nuS86ITjIM" thumbnail="/images/sanctuary-rpg.jpg" />
-        Your imagination is your limit
+        Tu imaginación es tu límite
       </div>
       <p>
-        Congratulations, that you've learned basic JavaScript you're ready to make your own game! To
-        begin work open the{' '}
+        ¡Felicitaciones, has aprendido JavaScript básico y estás listo para crear tu propio juego!
+        Para comenzar a trabajar, abra el{' '}
         <Link className="to-editor" to="/rpg/editor">
-          Game Editor
+          Editor de juegos
         </Link>
-        . Make sure to save your URL so you don't lose your game forever! You can share the URL with
-        your friends and they can play your game!
+        . ¡Asegúrate de guardar tu URL para no perder tu juego para siempre! ¡Puedes compartir la
+        URL con tus amigos y ellos pueden jugar tu juego!
         <br />
         <br />
-        Made a cool RPG? Submit a request to have your game featured on this website{' '}
+        ¿Hiciste un juego de rol genial? Envía una solicitud para que tu juego aparezca en este
+        sitio web{' '}
         <a
           className="bold"
           href="https://github.com/L1lith/Your-First-RPG/issues/new?assignees=&labels=rpg+display&template=display-your-project-on-the-site.md">
-          here
+          aquí
         </a>{' '}
         😊
-        <br />
-        <br />
-        If you'd like to learn more about JavaScript, or you'd like to support me, continue on to
-        the next page.
       </p>
       <Link className="next" to="/rpg/editor">
         #4.3 🛠️ La editora de juegos
