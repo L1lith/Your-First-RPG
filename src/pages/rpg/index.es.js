@@ -21,10 +21,10 @@ export default function LetsMakeAGame() {
           <Link to="/rpg/publishing">#4.2 🏆 Compartiendo tu juego RPG</Link>
         </li>
         <li>
-          <Link to="/rpg/editor">#4.3 🛠️ The Game Editor</Link>
+          <Link to="/rpg/editor">#4.3 🛠️ La editora de juegos</Link>
         </li>
         <li>
-          <Link to="/rpg/summary">#4.4 🔭 You Won! Further Reading</Link>
+          <Link to="/rpg/summary">#4.4 🔭 ¡Ganaste! Otras lecturas</Link>
         </li>
       </ol>
       <h2 id="lesson">#4.0 🎮 Construyendo un juego!</h2>

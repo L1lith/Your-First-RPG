@@ -8,9 +8,9 @@ export default function Summary() {
   return (
     <div className="summary">
       <Helmet>
-        <title>🔭 You Won! Further Reading</title>
+        <title>🔭 ¡Ganaste! Otras lecturas</title>
       </Helmet>
-      <h2>#4.4 🔭 You Won! Further Reading</h2>
+      <h2>#4.4 🔭 ¡Ganaste! Otras lecturas</h2>
       <br />
       <div className="introCard">
         <YTVideo
