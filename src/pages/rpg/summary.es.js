@@ -15,60 +15,64 @@ export default function Summary() {
       <div className="introCard">
         <YTVideo
           url="videoseries"
-          query={{ list: 'PLRqwX-V7Uu6ZYJC7L-r6rX6utt6wwJCyi' }}
+          query={{
+            list: 'PLRqwX-V7Uu6ZYJC7L-r6rX6utt6wwJCyi',
+            cc_lang_pref: 'es',
+            cc_load_policy: '1'
+          }}
           thumbnail="/images/dan-schiff.jpg"
         />
-        Daniel Shiffman has so many good videos
+        Daniel Shiffman tiene tantos buenos videos
       </div>
       <p className={congratulations}>
         <span className={dessert}>🎂 🍰 🥧</span>
-        Congratulations you finished the course
+        Felicitaciones has terminado el curso.
       </p>
       <div className="stuck">
-        <h2>Feeling Stuck?</h2>
-        Check out the <Link to="/resources">resources page here</Link> to find some help
+        <h2>Sintiéndose atascada?</h2>
+        Consulte la <Link to="/resources">página de recursos aquí</Link> para encontrar ayuda.
       </div>
       <br />
       <div className="further-reading">
-        <h2>Further Reading</h2>
-        Thank you so much for taking my course, I hope you learned something. If you'd like me to
-        make more courses (like going into more advanced JavaScript areas like interactive websites
-        and scripting) consider supporting me below for free :)
+        <h2>Otras lecturas</h2>
+        Muchas gracias por tomar mi curso, espero que hayas aprendido algo. Si desea que haga más
+        cursos (como entrar en áreas de JavaScript más avanzadas, como sitios web interactivos y
+        secuencias de comandos), considere apoyarme a continuación de forma gratuita :)
         <br />
         <br />
-        So where do I go from here? If you'd like to code websites you can read more about that{' '}
+        Entonces, ¿a dónde voy desde aquí? Si desea codificar sitios web, puede leer más sobre eso{' '}
         <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn">
-          here
+          aquí
         </a>
-        . JavaScript is a great entry point to a lot of different areas, like{' '}
+        . JavaScript es un gran punto de entrada a muchas áreas diferentes, como bots de{' '}
         <a
           target="_blank"
           href="https://www.youtube.com/watch?v=7A-bnPlxj4k&list=PLRqwX-V7Uu6avBYxeBSwF48YhAnSn_sA4">
           discord bots
         </a>
-        ,{' '}
+        , secuencias de comandos de{' '}
         <a target="_blank" href="https://medium.com/edureka/learn-node-js-b3a9c6fb632c">
           Node.js
         </a>{' '}
-        scripts (Node.js is how you run JavaScript without a browser, kind of like python, and it
-        has a lot of cool functionality), and more. I've also included a list of resources on the{' '}
-        <Link to="/#resources">home page</Link>.
+        (Node.js es la forma en que ejecuta JavaScript sin un navegador, algo así como Python, y
+        tiene muchas funciones geniales) y más. También he incluido una lista de recursos en la{' '}
+        <Link to="/#resources">página de recursos</Link>.
         <br />
         <br />
-        If you'd like to suggest an improvement you can open a ticket{' '}
+        Si desea sugerir una mejora, puede abrir un ticket{' '}
         <a
           target="_blank"
           href="https://github.com/L1lith/Your-First-RPG/issues/new?assignees=&labels=enhancement&template=improvement-idea.md">
-          here
-        </a>
-        , or you can submit a pull request{' '}
+          aquí
+        </a>{' '}
+        o puede enviar una solicitud de extracción{' '}
         <a target="_blank" href="https://github.com/L1lith/Your-First-RPG/pulls">
-          here
+          aquí
         </a>
         .
       </div>
       <Link className="next" to="/support">
-        Consider supporting me 💜
+        Considera apoyarme 💜
       </Link>
     </div>
   )

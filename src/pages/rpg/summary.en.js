@@ -52,7 +52,7 @@ export default function Summary() {
         </a>{' '}
         scripts (Node.js is how you run JavaScript without a browser, kind of like python, and it
         has a lot of cool functionality), and more. I've also included a list of resources on the{' '}
-        <Link to="/#resources">home page</Link>.
+        <Link to="/#resources">resources page</Link>.
         <br />
         <br />
         If you'd like to suggest an improvement you can open a ticket{' '}
