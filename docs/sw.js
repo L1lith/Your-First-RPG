@@ -27,7 +27,7 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-2586714e9260ce56a7ef.js"
+    "url": "webpack-runtime-e6ee4521cd415f12e153.js"
   },
   {
     "url": "styles.9defa94641dacd46645c.css"
@@ -39,11 +39,11 @@ self.__precacheManifest = [
     "url": "cb1608f2-6c24f9b6439ed070569a.js"
   },
   {
-    "url": "app-a234f82dff6621c28ee7.js"
+    "url": "app-8de3c2bf44e89939ebc0.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "50e319fa576379476cab63da867a8d37"
+    "revision": "4d0e1d679193e17e222f4df47c9fe89a"
   },
   {
     "url": "fonts/droidSerifRegular.ttf",
@@ -56,15 +56,22 @@ self.__precacheManifest = [
     "url": "polyfill-2e3efb7bca20ec2f4845.js"
   },
   {
+    "url": "component---src-pages-index-en-js-e91c3381ed3856d12af2.js"
+  },
+  {
+    "url": "page-data/index/page-data.json",
+    "revision": "8c38a7930f09ba300dac79a73442fd25"
+  },
+  {
+    "url": "page-data/app-data.json",
+    "revision": "b69104f2f25a31eac8784c47d1bdb9a8"
+  },
+  {
     "url": "component---src-pages-404-js-38f32c00def3a4c28061.js"
   },
   {
     "url": "page-data/404/page-data.json",
     "revision": "c6fc89264bde59cc8b44a5a2d02d049c"
-  },
-  {
-    "url": "page-data/app-data.json",
-    "revision": "47e1adbad634b12bba42218ac7bb4aa7"
   },
   {
     "url": "page-data/404.html/page-data.json",
@@ -92,13 +99,6 @@ self.__precacheManifest = [
     "revision": "beb50662d7bc25b608e046ece670df81"
   },
   {
-    "url": "component---src-pages-index-en-js-e91c3381ed3856d12af2.js"
-  },
-  {
-    "url": "page-data/index/page-data.json",
-    "revision": "8c38a7930f09ba300dac79a73442fd25"
-  },
-  {
     "url": "component---src-pages-resources-en-js-bd58aabacb2f4f996ba4.js"
   },
   {
@@ -120,7 +120,7 @@ self.__precacheManifest = [
     "revision": "80d4e143042c3faf0a118aca709e5f79"
   },
   {
-    "url": "component---src-pages-toying-index-en-js-4d1718a45d786a796648.js"
+    "url": "component---src-pages-toying-index-en-js-560452adddfe81351a76.js"
   },
   {
     "url": "page-data/toying/page-data.json",
@@ -245,7 +245,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-a234f82dff6621c28ee7.js`))) {
+  if (!resources || !(await caches.match(`/app-8de3c2bf44e89939ebc0.js`))) {
     return await fetch(event.request)
   }
 

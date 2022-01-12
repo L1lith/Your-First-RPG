@@ -1,6 +1,6 @@
 import Link from '../components/TranslatedLink'
 import useTranslation from '../functions/useTranslation'
-import notFound from '../styles/NotFoundPage.module.scss'
+import { notFound } from '../styles/NotFoundPage.module.scss'
 
 // markup
 const NotFoundPage = () => {
