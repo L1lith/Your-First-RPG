@@ -24,23 +24,25 @@ export default function Communication() {
           query={{ start: 29, cc_lang_pref: 'es', cc_load_policy: '1' }}
           thumbnail="/images/heman-title.jpg"
         />
-        Half-dragon half-tiger sold separately
+        Mitad dragón mitad tigre se vende por separado
       </span>
       <p>
-        Now that we've laid out the basics, let's apply ourselves and have some fun 😊 Before you
-        build your <RPG /> we first must learn how to get input and send messages to the player.
-        There's no use in coding an adventure if there's no way to interact with it.
+        Ahora que hemos establecido los conceptos básicos, apliquémonos y divirtámonos un poco 😊
+        Antes de ti construye tu <RPG /> primero debemos aprender cómo obtener información y enviar
+        mensajes al jugador. No sirve de nada codificar una aventura si no hay forma de interactuar
+        con ella.
       </p>
       <div className="comments">
         <h2>Comments</h2>
         <p>
-          Comments allow us to write things in our code that is purely for notation (like writing
-          notes in your math). Anything in the same line that comes after "//" will not be used
-          while your code is running.
+          Los comentarios nos permiten escribir cosas en nuestro código que son puramente para
+          notación (como escribir notas en matemáticas). Cualquier cosa en la misma línea que venga
+          después de "//" no se usará mientras se ejecuta el código.
           <br />
           <br />
-          We can use comments for things like add a TODO message so you can come back to add
-          something later, or we can use it to help explain how our code works.
+          Podemos usar comentarios para cosas como agregar un mensaje TODO para que pueda volver a
+          agregar algo más tarde, o podemos usarlo para ayudar a explicar cómo funciona nuestro
+          código.
         </p>
         <CodeSandbox
           value={"console.log(4 + 6)\n// This part doesn't have to be valid JavaScript code"}
@@ -52,14 +54,14 @@ export default function Communication() {
       <div className="js-io">
         <h2>Input/Output for Communicating with the Player</h2>
         <p>
-          While modifying the content of a webpage (done via HTML) is outside of the <Scope /> of
-          this project, we can still communicate with the player from inside JavaScript! We can do
-          this using the prompt and alert functions. From now on if you wish to run the code in the
-          editors{' '}
+          Si bien la modificación del contenido de una página web (realizada a través de HTML) está
+          fuera del <Scope /> de este proyecto, ¡aún podemos comunicarnos con el reproductor desde
+          JavaScript! Podemos hacer esto usando las funciones de aviso y alerta. A partir de ahora,
+          si desea ejecutar el código en los editores,{' '}
           <span className="bold">
-            you must press the <span className={play}>▶</span> button
-          </span>{' '}
-          first. Try running the examples below:
+            primero debe presionar el botón <span className={play}>▶</span>
+          </span>
+          . Intente ejecutar los siguientes ejemplos:
         </p>
         <h3>Output: Alert</h3>
         <CodeSandbox
@@ -70,7 +72,8 @@ export default function Communication() {
         />
         <h3>Input: Prompt</h3>
         <p>
-          We can ask a user for input and save it to a <Variable /> to use it later
+          Podemos pedirle a un usuario una entrada y guardarla en una <Variable /> para usarla más
+          tarde
         </p>
         <CodeSandbox
           value={

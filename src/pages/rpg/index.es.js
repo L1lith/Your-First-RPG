@@ -31,13 +31,13 @@ export default function LetsMakeAGame() {
       <br />
       <span className="introCard">
         <YTVideo url="eMR6c8xbgpc" thumbnail="/images/heart-of-the-forest.jpg" />
-        Have fun with it!
+        ¡Diviértete con eso!
       </span>
 
       <p>
-        In this section I'll go over how to create your own text based <RPG /> game. I've been
-        teaching you a lot about how to code, and now I'd like you to take the reigns and be
-        creative 😊 You can create anything you can think of!
+        En esta sección, repasaré cómo crear su propio juego <RPG /> basado en texto. He estado
+        enseñándote mucho sobre cómo codificar, y ahora me gustaría que tomes las riendas y seas
+        creativo 😊 ¡Puedes crear cualquier cosa que se te ocurra!
       </p>
       <Link className="next" to="/rpg/communication">
         Next: #4.1 🗣️ Comunicarse con el jugador
