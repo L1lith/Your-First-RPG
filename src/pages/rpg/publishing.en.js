@@ -26,6 +26,7 @@ export default function Publishing() {
         <br />
         Made a cool RPG? Submit a request to have your game featured on this website{' '}
         <a
+          target="_blank"
           className="bold"
           href="https://github.com/L1lith/Your-First-RPG/issues/new?assignees=&labels=rpg+display&template=display-your-project-on-the-site.md">
           here

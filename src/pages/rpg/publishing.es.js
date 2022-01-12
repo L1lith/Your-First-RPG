@@ -27,6 +27,7 @@ export default function Publishing() {
         ¿Hiciste un juego de rol genial? Envía una solicitud para que tu juego aparezca en este
         sitio web{' '}
         <a
+          target="_blank"
           className="bold"
           href="https://github.com/L1lith/Your-First-RPG/issues/new?assignees=&labels=rpg+display&template=display-your-project-on-the-site.md">
           aquí

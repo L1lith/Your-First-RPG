@@ -21,8 +21,7 @@ const Settings = props => {
               setOpen(false)
               document.body.classList.remove('disabled')
             }}
-            className={close + ' emojiButton grayscale'}
-          >
+            className={close + ' emojiButton grayscale'}>
             ❌
           </button>
           <span>
@@ -41,14 +40,12 @@ const Settings = props => {
           <a target="_blank" href="https://support.google.com/chrome/answer/9658361">
             <button>Download the App!</button>
           </a>
-          <Link to="/resources">
-            <a
-              onClick={() => {
-                setOpen(false)
-              }}
-            >
-              Stuck?
-            </a>
+          <Link
+            onClick={() => {
+              setOpen(false)
+            }}
+            to="/resources">
+            Stuck?
           </Link>
         </div>
       </Fragment>
@@ -62,8 +59,7 @@ const Settings = props => {
           setOpen(true)
           document.body.classList.add('disabled')
         }}
-        className={className}
-      >
+        className={className}>
         ⚙️
       </button>
       {settingsMenuElement}

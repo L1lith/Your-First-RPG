@@ -39,11 +39,11 @@ self.__precacheManifest = [
     "url": "cb1608f2-6c24f9b6439ed070569a.js"
   },
   {
-    "url": "app-7674a25f79274283ca2c.js"
+    "url": "app-a234f82dff6621c28ee7.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "7980c13dbf4719d108e2fcaeb3aee337"
+    "revision": "50e319fa576379476cab63da867a8d37"
   },
   {
     "url": "fonts/droidSerifRegular.ttf",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "559e81612b3c8bc4220549be941bf7a6"
+    "revision": "47e1adbad634b12bba42218ac7bb4aa7"
   },
   {
     "url": "page-data/404.html/page-data.json",
@@ -245,7 +245,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-7674a25f79274283ca2c.js`))) {
+  if (!resources || !(await caches.match(`/app-a234f82dff6621c28ee7.js`))) {
     return await fetch(event.request)
   }
 
