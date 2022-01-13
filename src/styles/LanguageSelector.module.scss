@@ -1,4 +1,5 @@
 .languageIcon {
+    position: relative;
     color: #55a1ff;
     box-sizing: border-box;
     border: 2px solid transparent;
@@ -14,6 +15,19 @@
 
 
 .languageMenu {
+    // position: relative; // An attempt at making a pure css implementation
+    // z-index: 1;
+    // display: inline-block;
+    // &:focus, &:focus-within {
+    //     .languageList {
+    //         display: flex;
+    //     }
+    // }
+}
+
+.languageList {
+    //display: none; // An attempt at making a pure css implementation
+    display: flex;
     .title {
         font-size: 1.2em;
     }
@@ -36,6 +50,5 @@
     z-index: 100;
     background-color: white;
     justify-content:top;
-    display: flex;
     flex-direction: column;
 }

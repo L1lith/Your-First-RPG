@@ -13,7 +13,7 @@ export default function LevelTwo() {
       <h2>#2.2 🚫 Lo que es "NOT" permitido</h2>
       <br />
       <span className="introCard">
-        <YTVideo url="fhIdbRp6xeg" thumbnail="/images/borat-not-joke.jpg" />
+        <YTVideo url="Q2hX-uIs92Y" thumbnail="/images/borat-not-joke.jpg" />
       </span>
       <br />
       <h2>La operadora "not"</h2>

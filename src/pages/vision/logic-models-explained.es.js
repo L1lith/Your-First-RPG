@@ -120,7 +120,11 @@ export default function LogicModelsExplained() {
         <br />
         <br />
       </p>
-      <YTVideo url="qybUFnY7Y8w" thumbnail="/images/this-too-shall-pass.jpg" />
+      <YTVideo
+        url="qybUFnY7Y8w"
+        query={{ cc_load_policy: '0' }}
+        thumbnail="/images/this-too-shall-pass.jpg"
+      />
       <span className="italic">¡Funciona perfectamente el 60% del tiempo!</span>
       <p>
         Al diseñar sistemas de software, es importante pensarlo de principio a fin. La mayoría de

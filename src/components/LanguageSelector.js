@@ -2,6 +2,7 @@ import { languages } from '../../i18n'
 import translatePath from '../functions/translatePath'
 import {
   languageMenu,
+  languageList,
   languageIcon,
   title,
   languageOption
@@ -22,7 +23,7 @@ function LanguageSelector() {
   const location = useLocation()
   console.log(Router)
   return (
-    <>
+    <div className={languageMenu}>
       <FontAwesomeIcon
         className={languageIcon}
         onClick={() => {
@@ -32,7 +33,7 @@ function LanguageSelector() {
         icon={faGlobe}
       />
       {languageMenuOpen ? (
-        <div className={languageMenu}>
+        <div className={languageList}>
           <h2 className={title}>Languages</h2>
           {languages
             .filter(language => languageMap.hasOwnProperty(language))
@@ -51,7 +52,7 @@ function LanguageSelector() {
             ))}
         </div>
       ) : null}
-    </>
+    </div>
   )
 }
 
