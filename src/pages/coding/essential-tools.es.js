@@ -33,8 +33,8 @@ export default function EssentialTools() {
         <br />
         También usaremos el modo "terminal" en lugar del modo "<Expression /> evaluator" en nuestros
         editores, por lo que verá algunas cosas que dicen "console.log (...)", y la <Output /> de
-        nuestro programa será lo que esté dentro del paréntesis ( esto se llama una <FunctionDef />,
-        hay más sobre esto a continuación).
+        nuestro programa será lo que esté dentro del parenthesis ( esto se llama una <FunctionDef />
+        , hay más sobre esto a continuación).
       </p>
       <div>
         <h2>Variables</h2>
@@ -84,14 +84,14 @@ export default function EssentialTools() {
           Las <FunctionDef>functions</FunctionDef> pueden ahorrarle mucho tiempo porque puede
           reutilizar su <FunctionDef>function</FunctionDef> varias veces con diferentes{' '}
           <Input>Inputs</Input>, en lugar de tener que escribir ese código una y otra vez. Las{' '}
-          <FunctionDef>functions</FunctionDef> usan paréntesis para crear sus <Input>inputs</Input>{' '}
+          <FunctionDef>functions</FunctionDef> usan parenthesis para crear sus <Input>inputs</Input>{' '}
           y corchetes (se ven así {}). Después de haber creado nuestra <FunctionDef />, usamos
-          paréntesis nuevamente para llamarla (llamar a una <FunctionDef /> significa ejecutarla).
+          parenthesis nuevamente para llamarla (llamar a una <FunctionDef /> significa ejecutarla).
           La parte "console.log" de nuestro código es un ejemplo de una <FunctionDef /> (en este
           caso, para <Output /> algunos datos). Esta <FunctionDef>function</FunctionDef> no tiene
           que ser creada por nosotros porque el <Interpreter>JS Interpreter</Interpreter> nos la
           proporciona automáticamente. Se llama (llamar a una <FunctionDef>function</FunctionDef>{' '}
-          significa ejecutarla) con paréntesis y puede hacer diferentes cosas dependiendo de cuál
+          significa ejecutarla) con parenthesis y puede hacer diferentes cosas dependiendo de cuál
           sea la <Input /> que le pongamos (que en el ejemplo anterior era el valor actual de la{' '}
           <Variable /> balance).
         </p>
@@ -102,7 +102,7 @@ export default function EssentialTools() {
         </p>
         <CodeSandbox
           consoleMode
-          value={'function add(a, b){\n    return a + b\n}'}
+          value={'function agregar(a, b){\n    return a + b\n}'}
           className="short"
         />
         <p>
@@ -124,25 +124,25 @@ export default function EssentialTools() {
       </div>
       <CodeSandbox
         consoleMode
-        value={'function add(a, b){\n    return a + b\n}\nconsole.log(add(14, 16))'}
+        value={'function agregar(a, b){\n    return a + b\n}\nconsole.log(agregar(14, 16))'}
         className="short"
       />
       <div className="parenthesis">
         <h2>Parenthesis</h2>
-        Paréntesis No solo puede usar paréntesis para cambiar el orden de las{' '}
-        <Expression>expressions</Expression> matemáticas, sino que también puede usar paréntesis
+        Paréntesis No solo puede usar parenthesis para cambiar el orden de las{' '}
+        <Expression>expressions</Expression> matemáticas, sino que también puede usar parenthesis
         para cambiar el orden de cualquier otro tipo de <Expression />. Estos son algunos ejemplos
-        de cómo cambiar el orden de evaluación del código usando paréntesis para fines matemáticos y
-        no matemáticos.
+        de cómo cambiar el orden de evaluación del código usando parenthesis para fines matemáticos
+        y no matemáticos.
         <br />
         <br />
-        <h3>Math Without Parenthesis</h3>
+        <h3>Matemáticas sin parenthesis</h3>
         <CodeSandbox consoleMode value="console.log(10 * 3 + 4)" className="mini" />
-        <h3>Math With Parenthesis</h3>
+        <h3>Matemáticas con parenthesis</h3>
         <CodeSandbox consoleMode value="console.log(10 * (3 + 4))" className="mini" />
-        <h3>Boolean logic without Parenthesis</h3>
+        <h3>Lógica Boolean sin parenthesis</h3>
         <CodeSandbox consoleMode value="console.log(false && true || true)" className="mini" />
-        <h3>Boolean logic with Parenthesis</h3>
+        <h3>Lógica Boolean sin parenthesis</h3>
         <CodeSandbox consoleMode value="console.log(false && (true || true))" className="mini" />
       </div>
       <br />

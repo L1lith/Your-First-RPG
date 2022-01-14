@@ -28,7 +28,7 @@ export default function LogicModelsExplained() {
         Minecraft es un gran lugar para comenzar tu aventura &#58;&#41;
       </span>
       <p>
-        A continuación, aprenderá sobre la lógica <BooleanDef>booleana</BooleanDef> y cómo
+        A continuación, aprenderá sobre la lógica <BooleanDef>boolean</BooleanDef> y cómo
         visualizarlos. Visualizante Los sistemas lógicos son muy útiles. El mundo entero opera
         usando la lógica; como como haces tu trabajo, cómo cruzas la calle o cómo navegas por un
         sitio web. Tomamos muchas decisiones sin darnos cuenta de que los hicimos.
