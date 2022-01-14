@@ -10,10 +10,11 @@ function translatePath(path = null, lang = null) {
   const pathSegments = path.split('/').filter(Boolean)
   const hasLang = pathSegments.length > 0 && languages.includes(pathSegments[0])
 
-  let newPath = hasLang
-    ? lang + pathSegments.slice(1).join('/')
-    : lang + '/' + pathSegments.join('/')
-  if (path.startsWith('/') && !newPath.startsWith('/')) newPath = '/' + newPath
+  const newPathSegments = hasLang
+    ? [lang].concat(pathSegments.slice(1))
+    : [lang].concat(pathSegments)
+  let newPath = newPathSegments.filter(Boolean).join('/')
+  if (!newPath.startsWith('/')) newPath = '/' + newPath
   if (path.endsWith('/') && !newPath.endsWith('/')) newPath = newPath + '/'
   return newPath
 }

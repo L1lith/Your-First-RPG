@@ -46,7 +46,7 @@ export default function Communication() {
         />
       </div>
       <div className="js-io">
-        <h2>Input/Output para comunicarse con el reproductor</h2>
+        <h2>Input/Output for Communicating with the Player</h2>
         <p>
           While modifying the content of a webpage (done via HTML) is outside of the <Scope /> of
           this project, we can still communicate with the player from inside JavaScript! We can do
