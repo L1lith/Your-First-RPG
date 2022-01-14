@@ -77,7 +77,7 @@ export default function Communication() {
         </p>
         <CodeSandbox
           value={
-            "var user = prompt('What is your name?')\nalert('Wishing ' + user + ' good fortune 💰')"
+            "var nombre = prompt('¿Cuál es su nombre?')\nalert('Deseándole buena suerte a ' + nombre + ' 💰')"
           }
           consoleMode
           disableAutoRun
@@ -112,7 +112,7 @@ export default function Communication() {
         </p>
         <CodeSandbox
           value={
-            '// Notice that any spaces or uppercases will cause the equality to fail, so "YES" will give the wrong result\nif(prompt("Do you like oatmeal raisin cookies?") === "yes") { \n    alert("You have good taste in 🍪")\n} else { // They entered anything besides exactly "yes"\n    alert("Maybe 🍪 just aren\'t your thing?")\n}'
+            '// Tenga en cuenta que cualquier espacio o mayúsculas hará que la igualdad falle, por lo que "SÍ" dará un resultado incorrecto\nif(prompt("¿Te gustan las galletas de avena con pasas?") === "yes") { \n    alert("Tienes buen gusto para las 🍪")\n} else { // Ellas entraron en cualquier cosa además de exactamente "sí".\n    alert("¿Quizás las 🍪 no son lo tuyo?")\n}'
           }
           consoleMode
           disableAutoRun
@@ -122,7 +122,7 @@ export default function Communication() {
 
         <CodeSandbox
           value={
-            'var favoriteCookie = prompt("What\'s your favorite kind of cookie?")\nif(favoriteCookie === "oatmeal" || favoriteCookie === "oatmeal raisin") { \n    alert("You have good taste in 🍪")\n} else if (favoriteCookie === "chocolate chip") {\n    alert("Chocolate chip is the second best cookie so that\'s understandable")\n} else {\n    alert("Maybe 🍪 just aren\'t your thing?")\n}'
+            'var galletaFavorita = prompt("¿Cuál es tu tipo de galleta favorita?")\nif(galletaFavorita === "avena" || galletaFavorita === "avena con pasas") { \n    alert("Tienes buen gusto para las 🍪")\n} else if (galletaFavorita === "chispas de chocolate") {\n    alert("La chispa de chocolate es la segunda mejor 🍪, así que es comprensible")\n} else {\n    alert("¿Quizás las 🍪 no son lo tuyo?")\n}'
           }
           consoleMode
           disableAutoRun
@@ -139,9 +139,7 @@ export default function Communication() {
         <CodeSandbox
           disableAutoRun
           consoleMode
-          value={
-            'var name\nwhile(!name) {\n    name = prompt("What is your name adventurer?")\n}\nalert("You wake up on a strange beach. \'" + name + "\' is written on the inside of your shirt.")'
-          }
+          value={`var nombre\nwhile(!nombre) {\n    nombre = prompt("¿Cuál es su nombre?")\n}\nalert(alert("Te despiertas en una playa extraña. '" + nombre + " está escrito en el interior de tu camisa."))\n}`}
           className="short"
         />
       </div>
@@ -159,41 +157,41 @@ export default function Communication() {
         <CodeSandbox
           disableAutoRun
           consoleMode
-          value={`function smartPrompt(question) {
+          value={`function avisoInteligente(pregunta) {
     var output = null
-    // While will keep running the code inside it over and over until the expression evaluates to false
+    // While seguirá ejecutando el código dentro de él una y otra vez hasta que la expression se evalúe como false
     while(output === null || output.trim().length < 1) { 
-        output = prompt(question)
+        output = prompt(pregunta)
     }
     return output.trim()
 }
 
-var name = smartPrompt("What is your name adventurer?")
+var nombre = avisoInteligente("")
 
-alert("You wake up on a strange beach. '" + name + "' is written on the inside of your shirt.")`}
+alert("Te despiertas en una playa extraña. '" + nombre + " está escrito en el interior de tu camisa.")`}
         />
         <p>
           Consola Ejecute el programa para ver su salida Aquí combinamos la <FunctionDef />{' '}
           .toLowerCase (puede usarla para convertir cualquier <StringDef /> en minúsculas) y nuestra{' '}
-          <FunctionDef /> smartPrompt. Observe cómo, cuando lo ejecutamos, aún reconoce una entrada
-          de sí, incluso si tiene espacios en blanco alrededor o no está en minúsculas.
+          <FunctionDef /> avisoInteligente. Observe cómo, cuando lo ejecutamos, aún reconoce una
+          entrada de sí, incluso si tiene espacios en blanco alrededor o no está en minúsculas.
         </p>
         <CodeSandbox
-          value={`function smartPrompt(question) {
+          value={`function avisoInteligente(pregunta) {
     var output = null
     while(output === null || output.trim().length < 1) {
-        output = prompt(question)
+        output = prompt(pregunta)
     }
     return output.trim()
 }
-// Now it accepts "  yes  ", "YES", "  yEs   ", etc
-if(smartPrompt("Do you like oatmeal raisin cookies?").toLowerCase() === "yes") { \n    alert("You have good taste in 🍪")\n} else {\n    alert("Maybe 🍪 just aren\'t your thing?")\n}`}
+// Ahora acepta "  si  ", "SI", "  sI   ", etcétera
+if(avisoInteligente("¿Te gustan las galletas de avena con pasas?").toLowerCase() === "si") { \n    alert("Tienes buen gusto para las 🍪")\n} else {\n    alert("¿Quizás las 🍪 no son lo tuyo?")\n}`}
           consoleMode
           disableAutoRun
         />
       </div>
       <Link className="next" to="/rpg/publishing">
-        Next: #4.2 🏆 Compartiendo tu juego RPG
+        Siguiente: #4.2 🏆 Compartiendo tu juego RPG
       </Link>
     </div>
   )

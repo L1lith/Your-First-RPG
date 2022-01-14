@@ -70,7 +70,7 @@ export default function Communication() {
         </p>
         <CodeSandbox
           value={
-            "var user = prompt('What is your name?')\nalert('Wishing ' + user + ' good fortune 💰')"
+            "var name = prompt('What is your name?')\nalert('Wishing ' + name + ' good fortune 💰')"
           }
           consoleMode
           disableAutoRun
@@ -172,7 +172,7 @@ alert("You wake up on a strange beach. '" + name + "' is written on the inside o
     }
     return output.trim()
 }
-// Now it accepts "  yes  ", "YES", "  yEs   ", etc
+// Now it accepts "  yes  ", "YES", "  yEs   ", etcetera
 if(smartPrompt("Do you like oatmeal raisin cookies?").toLowerCase() === "yes") { \n    alert("You have good taste in 🍪")\n} else {\n    alert("Maybe 🍪 just aren\'t your thing?")\n}`}
           consoleMode
           disableAutoRun

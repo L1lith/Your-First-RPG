@@ -147,7 +147,7 @@ export default function EssentialTools() {
       </div>
       <br />
       <Link className="next" to="/rpg">
-        Next: #4.0 Construyendo un juego!
+        Siguiente: #4.0 Construyendo un juego!
       </Link>
     </div>
   )

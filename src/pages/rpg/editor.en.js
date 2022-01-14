@@ -38,7 +38,7 @@ while (true) { // We trap the user in this loop until they leave the beach
       alert("You wait around. The barking of the gulls and the lapping of the ocean lulls you into a deep sleep")
   } else if (nextAction === "explore the beach") {
       alert("You find a large Oyster shell. Years of bombardment by the waves has left it brittle and chipped, but it's curves are still beautiful and pearlescent")
-  } else { // the only remaining option is to leave the beach so we assume that
+  } else if (nextAction === "leave the beach") { // the only remaining option is to leave the beach so we assume that
       break // The break keyword exits us out of the current loop
   }
 }

@@ -3,50 +3,50 @@ import Link from '../../components/TranslatedLink'
 import { editorModule } from '../../styles/rpg/editor.module.scss'
 import { Helmet } from 'react-helmet'
 
-const defaultGame = `function smartPrompt(question) {
+const defaultGame = `function avisoInteligente(pregunta) {
   var output = null
   while(output === null || output.trim().length < 1) {
-      output = prompt(question)
+      output = prompt(pregunta)
   }
   return output.trim()
 }
 
-function getAction(question, actionList) { 
-  // Here we give a list of possible actions and retry until the user provides a valid response
-  let answer = null
-  while (!actionList.includes(answer)) {
-      answer = smartPrompt(question + " - possible actions: " + actionList.join(", ")) // Here we convert the list to a string by joining all of its contents with a comma and a space
+function obtenerAccion(pregunta, listaDeAccion) { 
+  // Aquí damos una lista de posibles acciones y reintentamos hasta que el usuario proporcione una respuesta válida
+  let respuesta = null
+  while (!listaDeAccion.includes(answer)) {
+    respuesta = avisoInteligente(pregunta + " - possible actions: " + listaDeAccion.join(", ")) // Here we convert the list to a string by joining all of its contents with a comma and a space
   }
-  return answer
+  return respuesta
 }
 
 //////////
 // INFO //
 //////////
-// If you get stuck or want to learn how to do more things consider checking out the resources section https://l1lith.github.io/Intro-Coding-Concepts#resources
-// Also, don't be afraid to google it!
+// Si te quedas atascado o quieres aprender a hacer más cosas, considera consultar la sección de recursos https://l1lith.github.io/Intro-Coding-Concepts#resources
+// ¡Además, no tengas miedo de googlearlo!
 ///////////
 
-var name = smartPrompt("What is your name adventurer?")
+var nombre = avisoInteligente("¿Cuál es su nombre?")
 
-alert("You wake up on a strange beach. '" + name + "' is written on the inside of your shirt.")
+alert("Te despiertas en una playa extraña. '" + nombre + " está escrito en el interior de tu camisa.")
 
-while (true) { // We trap the user in this loop until they leave the beach
-  const nextAction = getAction("What would you like to do?", ["wait", "explore the beach", "leave the beach"]) // Lists are surrounded by square brackets and separated by commas
+while (true) { // Atrapamos al usuario en este bucle hasta que sale de la playa
+  const proximaAccion = obtenerAccion("Que te gustaría hacer?", ["espere", "explorar la playa", "salir de la playa"]) // Lists are surrounded by square brackets and separated by commas
 
-  if (nextAction === "wait") {
-      alert("You wait around. The barking of the gulls and the lapping of the ocean lulls you into a deep sleep")
-  } else if (nextAction === "explore the beach") {
-      alert("You find a large Oyster shell. Years of bombardment by the waves has left it brittle and chipped, but it's curves are still beautiful and pearlescent")
-  } else { // the only remaining option is to leave the beach so we assume that
-      break // The break keyword exits us out of the current loop
+  if (proximaAccion === "espere") {
+      alert("Espera alrededor. El ladrido de las gaviotas y el chapoteo del océano te arrullan en un sueño profundo.  ")
+  } else if (proximaAccion === "explorar la playa") {
+      alert("Encuentras una gran concha de ostra. Años de bombardeo por las olas lo han dejado quebradizo y astillado, pero sus curvas siguen siendo hermosas y perladas.")
+  } else if (proximaAccion === "salir de la playa") {
+      break // La palabra clave break nos saca del bucle actual
   }
 }
 
 
-const direction = getAction("As you leave the beach you reach the edge of a divide between a dark forest and a giant cave in the side of the mountain. Which way would you like to go?", ["enter the forest", "enter the cave", "return to the beach"])
+const direccion = obtenerAccion("Al salir de la playa, llega al borde de una división entre un bosque oscuro y una cueva gigante en la ladera de la montaña. ¿En qué dirección te gustaría ir?", ["entrar en el bosque", "entrar en la cueva", "volver a la playa"])
 
-// TODO: Continue the adventure :)`
+// QUE HACER: Continuar la aventura :)`
 
 function Editor() {
   // useEffect(() => {

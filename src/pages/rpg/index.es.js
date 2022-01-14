@@ -40,7 +40,7 @@ export default function LetsMakeAGame() {
         creativo 😊 ¡Puedes crear cualquier cosa que se te ocurra!
       </p>
       <Link className="next" to="/rpg/communication">
-        Next: #4.1 🗣️ Comunicarse con el jugador
+        Siguiente: #4.1 🗣️ Comunicarse con el jugador
       </Link>
     </div>
   )
