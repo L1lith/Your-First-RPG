@@ -15,7 +15,7 @@ import React, { Component, useState } from 'react'
 
 const languageMap = {
   en: 'English',
-  es: 'Spanish'
+  es: 'Español'
 }
 
 function LanguageSelector() {
