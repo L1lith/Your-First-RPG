@@ -45,7 +45,7 @@ export default function Communication() {
           código.
         </p>
         <CodeSandbox
-          value={"console.log(4 + 6)\n// This part doesn't have to be valid JavaScript code"}
+          value={'console.log(4 + 6)\n// Esta parte no tiene que ser un código JavaScript válido'}
           consoleMode
           disableAutoRun
           className="mini"
@@ -65,7 +65,7 @@ export default function Communication() {
         </p>
         <h3>Output: Alert</h3>
         <CodeSandbox
-          value="alert('Your princess is in another castle')"
+          value="alert('Tu princesa esta en otro castillo')"
           consoleMode
           disableAutoRun
           className="mini"
