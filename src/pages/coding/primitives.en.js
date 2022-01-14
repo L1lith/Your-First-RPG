@@ -122,7 +122,7 @@ const Primitives = () => (
         etc). They are written by surrounding the text in single or double quotes.
       </p>
       <CodeSandbox value={'"I like chocolate milk"'} className="mini" />
-      <CodeSandbox value={"'my namea borat'"} className="mini" />
+      <CodeSandbox value={"'What does the fox say?'"} className="mini" />
       <p>
         They can also be added together (they are simply squished together, not added like numbers)
       </p>

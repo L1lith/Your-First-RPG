@@ -124,8 +124,8 @@ const Primitives = () => (
         Las <StringDef>strings</StringDef> son colecciones de texto (como el nombre de alguien, una
         dirección, etc.). Se escriben rodeando el texto entre comillas simples o dobles.
       </p>
-      <CodeSandbox value={'"I like chocolate milk"'} className="mini" />
-      <CodeSandbox value={"'my namea borat'"} className="mini" />
+      <CodeSandbox value={'"me gusta la leche chocolatada"'} className="mini" />
+      <CodeSandbox value={"'me llamo Jeff'"} className="mini" />
       <p>También se pueden sumar (simplemente se juntan, no se suman como números)</p>
       <CodeSandbox value={"'beep' + 'bop'"} className="mini" />
       <CodeSandbox value={"'9' + '10'"} className="mini" />
