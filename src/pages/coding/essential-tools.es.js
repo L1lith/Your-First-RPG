@@ -18,10 +18,12 @@ export default function EssentialTools() {
         <title>🔨 Herramientas esenciales</title>
       </Helmet>
       <h1>#3.2 🔨 Herramientas esenciales</h1>
-      <span className="introCard">
+      {
+        null /*<span className="introCard">
         <YTVideo url="himmatLe7aQ" query={{ start: 32 }} thumbnail="/images/melinda-mae.jpg" />
         <span>How do you swallow a coding lesson? One byte at a time</span>
-      </span>
+      </span> */
+      }
 
       <p>
         Probablemente tenga mucha información en su cabeza de la última sección, intente hacer todo
