@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkyour_first_rpg=self.webpackChunkyour_first_rpg||[]).push([[883],{6930:function(e,r,n){n.r(r),n.d(r,{default:function(){return s}});var t={};n.r(t);var a=n(2472),o=n(1025),u=n(7294),s=function(){return u.createElement("div",{className:t.default},(0,o.Z)("Sorry, this page could not be found.",{es:"Lo sentimos, esta página no se pudo encontrar."}),u.createElement("br",null),u.createElement(a.Z,{to:"/"},(0,o.Z)("Go Home",{es:"Ir a la pagina principal"})))}}}]);
-//# sourceMappingURL=component---src-pages-404-js-38f32c00def3a4c28061.js.map
