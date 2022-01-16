@@ -1,7 +1,9 @@
-import { page } from '../styles/AppLayout.module.scss'
+import { page, disabled } from '../styles/AppLayout.module.scss'
 import '../styles/_global.scss'
 import '../styles/_normalize.scss'
 import Header from './header'
+import { useLocation } from '@reach/router'
+import { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet'
 
 //import { DefaultSeo } from 'next-seo'
@@ -9,10 +11,17 @@ import { Helmet } from 'react-helmet'
 /* <DefaultSeo titleTemplate="%s - YFRPG" defaultTitle="Your First RPG"></DefaultSeo>
 <DefaultSeo description="Learn to make games in JavaScript for beginners" /> */
 export default function AppLayout({ children }) {
+  const location = useLocation()
+  const [pageDisabled, setPageDisabled] = useState(false)
+  useEffect(() => {
+    setPageDisabled(false)
+  }, [location])
   return (
     <>
-      <Header />
-      <main className={'page ' + page}>
+      <Header setPageDisabled={setPageDisabled} />
+      <main
+        disabled={pageDisabled}
+        className={'page ' + page + (pageDisabled ? ' ' + disabled : '')}>
         <noscript>This site requires JavaScript to function perfectly</noscript>
         {children}
       </main>

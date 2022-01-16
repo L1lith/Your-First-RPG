@@ -18,16 +18,17 @@ const languageMap = {
   es: 'Español'
 }
 
-function LanguageSelector() {
+function LanguageSelector(props) {
+  const { setPageDisabled } = props
   const [languageMenuOpen, setLanguageMenuOpen] = useState(false)
   const location = useLocation()
-  console.log(Router)
   return (
     <div className={languageMenu}>
       <FontAwesomeIcon
         className={languageIcon}
         onClick={() => {
           setLanguageMenuOpen(true)
+          setPageDisabled(true)
         }}
         title="Languages"
         icon={faGlobe}
@@ -42,6 +43,7 @@ function LanguageSelector() {
               <a
                 onClick={() => {
                   setLanguageMenuOpen(false)
+                  setPageDisabled(false)
                   navigate(translatePath(location.pathname, language))
                 }}
                 lang={language}

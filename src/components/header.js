@@ -14,7 +14,7 @@ import LanguageSelector from './LanguageSelector'
 
 //import Settings from './Settings'
 
-const Header = () => (
+const Header = props => (
   <header className={mainHeader}>
     <img alt="site logo" type="image/svg" className={siteIcon} src="/images/icons/site-icon.svg" />
     <h1 className={siteTitle}>
@@ -25,7 +25,7 @@ const Header = () => (
     <Link to="/resources" className={resources}>
       {useTranslation('Stuck?', { es: 'Atascada?' })}
     </Link>
-    <LanguageSelector />
+    <LanguageSelector setPageDisabled={props.setPageDisabled} />
   </header>
 )
 

@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet'
 export default function LetsMakeAGame() {
   return (
     <div className="coding-intro">
-      <h1 className="title">Chapter 4</h1>
+      <h1 className="title">🎮 Let's make a Game!</h1>
       <Helmet>
         <title>🎮 Let's make a Game!</title>
       </Helmet>

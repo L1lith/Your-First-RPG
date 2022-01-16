@@ -84,7 +84,7 @@ function Editor() {
         página siguiente.
       </p>
       <Link className="next" to="/rpg/summary">
-        Next: #4.4 🔭 ¡Ganaste! Otras lecturas
+        Siguiente: #4.4 🔭 ¡Ganaste! Otras lecturas
       </Link>
     </div>
   )

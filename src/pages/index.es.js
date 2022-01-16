@@ -2,9 +2,13 @@ import RPG from '../components/Dictionary/es/RPG'
 import Link from '../components/TranslatedLink'
 import YTVideo from '../components/YTVideo'
 import { home, extra } from '../styles/index.module.scss'
+import { Helmet } from 'react-helmet'
 
 const Home = () => (
   <div className={home}>
+    <Helmet>
+      <title>Tu Primer Juego RPG</title>
+    </Helmet>
     <h1 className="title">Tu Primer Juego RPG</h1>
     <p>
       En este curso explicaré los conceptos básicos de la codificación en JavaScript. Harás tu
