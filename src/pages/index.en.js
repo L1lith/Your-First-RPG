@@ -9,6 +9,10 @@ export default function Home() {
     <div className={home}>
       <Helmet>
         <title>Your First RPG</title>
+        <meta
+          name="description"
+          content="Learn how to make your own online adventure game and share it with your friends!"
+        />
       </Helmet>
       <h1 className="title">Your First RPG</h1>
       <p>

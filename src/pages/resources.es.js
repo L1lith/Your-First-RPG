@@ -1,8 +1,13 @@
 import { resources, resourceList } from '../styles/resources.module.scss'
+import { Helmet } from 'react-helmet'
 
 export default function Resources() {
   return (
     <div className={resources}>
+      <Helmet>
+        <title>Recursos</title>
+        <meta name="description" content="Recursos para ayudarte a aprender a programar " />
+      </Helmet>
       <h2>Recursos</h2>
       Este curso se enfoca en ser apetecible para los principiantes, así que si desea aprender sobre
       JavaScript con más profundidad, o si tiene preguntas, le recomiendo los siguientes recursos:

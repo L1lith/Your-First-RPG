@@ -4,10 +4,10 @@ export default function Support() {
   return (
     <div>
       <Helmet>
-        <title>Support</title>
+        <title>Apoyo</title>
       </Helmet>
-      Want to support me? Star my project on GitHub, it's free! Also please consider sharing this
-      course with your friends if you enjoyed it, knowledge is power :)
+      ¿Quieres apoyarme? Destaca mi proyecto en GitHub, ¡es gratis! También considere compartir esto
+      curso con tus amigos si te gustó, el conocimiento es poder :)
       <br />
       <br />
       <a target="_blank" href="https://github.com/L1lith/Your-First-RPG/">
@@ -15,7 +15,8 @@ export default function Support() {
       </a>
       <br />
       <br />
-      Once this project gets attention from the community I'll consider creating a follow-up course!
+      ¡Una vez que este proyecto llame la atención de la comunidad, consideraré crear un curso de
+      seguimiento!
     </div>
   )
 }

@@ -8,6 +8,10 @@ const Home = () => (
   <div className={home}>
     <Helmet>
       <title>Tu Primer Juego RPG</title>
+      <meta
+        name="description"
+        content="¡Aprende a crear tu propio juego de aventuras en línea y compártelo con tus amigos!"
+      />
     </Helmet>
     <h1 className="title">Tu Primer Juego RPG</h1>
     <p>
