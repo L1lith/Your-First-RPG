@@ -9,6 +9,7 @@ export default function Summary() {
     <div className="summary">
       <Helmet>
         <title>🔭 You Won! Further Reading</title>
+        <meta name="description" content="Congratulations on creating your RPG game!" />
       </Helmet>
       <h2>#4.4 🔭 You Won! Further Reading</h2>
       <br />

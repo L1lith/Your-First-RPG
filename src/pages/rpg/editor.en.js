@@ -58,7 +58,7 @@ function Editor() {
     <div>
       <Helmet>
         <title>🛠️ The Game Editor</title>
-        <meta name="description" content="Build a game of your own" />
+        <meta name="description" content="Build an RPG game of your own with this editor" />
       </Helmet>
       <h1>#4.3 🛠️ The Game Editor</h1>
       <p>

@@ -16,6 +16,10 @@ export default function EssentialTools() {
     <div>
       <Helmet>
         <title>🔨 Essential Tools</title>
+        <meta
+          name="description"
+          content="Learn essential coding tools to get started in JavaScript"
+        />
       </Helmet>
       <h1>#3.2 🔨 Essential Tools</h1>
       <span className="introCard">

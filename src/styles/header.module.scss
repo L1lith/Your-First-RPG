@@ -35,6 +35,12 @@
         height: 2em;
         text-shadow: 0 0 20px $background;
         margin-left: 0;
+        // &:hover {
+        //     transform: rotateY(360);
+        //     transition: transform 0.4s linear;
+        // }
+        // transform: none;
+        // transition: none;
         //margin: 0 10px;
         // image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
         // image-rendering: -moz-crisp-edges;          /* Firefox                        */

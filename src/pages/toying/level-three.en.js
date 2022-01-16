@@ -12,6 +12,7 @@ export default function LevelThree() {
     <div className="level-3">
       <Helmet>
         <title>💻 Booleans for coding Apps</title>
+        <meta name="description" content="A puzzle review of Boolean Logic" />
       </Helmet>
       <h2>#2.3 💻 Booleans for coding Apps</h2>
       <br />

@@ -7,6 +7,7 @@ export default function ToyingIntro() {
     <div className="toying-intro">
       <Helmet>
         <title>🧩 Rompecabezas Lógicos</title>
+        <meta name="description" content="Aprende sobre lógica booleana usando rompecabezas" />
       </Helmet>
       <h1 className="title">Capitulo 2</h1>
       <ol className="toc pages">

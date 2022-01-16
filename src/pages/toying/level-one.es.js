@@ -11,6 +11,10 @@ export default function LevelOne() {
     <div className="level-1">
       <Helmet>
         <title>💬 Expressions "Or" básicas</title>
+        <meta
+          name="description"
+          content={'¡Aprende sobre las expresiones "Or" con un juego simple!'}
+        />
       </Helmet>
       <h2>#2.1 💬 Expressions "Or" básicas</h2>
       <br />

@@ -9,6 +9,7 @@ export default function Summary() {
     <div className="summary">
       <Helmet>
         <title>🔭 ¡Ganaste! Otras lecturas</title>
+        <meta name="description" content="¡Felicitaciones por crear tu juego de rol!" />
       </Helmet>
       <h2>#4.4 🔭 ¡Ganaste! Otras lecturas</h2>
       <br />

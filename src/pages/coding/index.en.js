@@ -10,6 +10,7 @@ export default function CodingIntro() {
       <h1 className="title">Chapter 3</h1>
       <Helmet>
         <title>🛣️ Stepping into Coding</title>
+        <meta name="description" content="An introduction to coding in JavaScript" />
       </Helmet>
       <ol className="toc pages">
         <li>

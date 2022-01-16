@@ -7,6 +7,7 @@ export default function Publishing() {
     <div className="publishing">
       <Helmet>
         <title>🏆 Compartiendo tu juego RPG</title>
+        <meta name="description" content="Cómo compartir tu juego RPG" />
       </Helmet>
       <h2>#4.2 🏆 Compartiendo tu juego RPG</h2>
       <br />

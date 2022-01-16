@@ -6,7 +6,14 @@ import { Helmet } from 'react-helmet'
 export default function LetsMakeAGame() {
   return (
     <div className="coding-intro">
-      <h1 className="title">Chapter 4</h1>
+      <Helmet>
+        <title>🎮 Construyendo un juego!</title>
+        <meta
+          name="description"
+          content="En este capítulo comenzaremos a crear nuestro juego RPG."
+        />
+      </Helmet>
+      <h1 className="title">Capítulo 4</h1>
       <ol className="toc pages">
         <li>
           <Link to="/rpg#lesson">#4.0 🎮 Construyendo un juego!</Link>

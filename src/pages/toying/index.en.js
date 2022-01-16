@@ -7,6 +7,7 @@ export default function ToyingIntro() {
     <div className="toying-intro">
       <Helmet>
         <title>🧩 Logic Puzzles</title>
+        <meta name="description" content="Learn about Boolean Logic using puzzles" />
       </Helmet>
       <h1 className="title">Chapter 2</h1>
       <ol className="toc pages">

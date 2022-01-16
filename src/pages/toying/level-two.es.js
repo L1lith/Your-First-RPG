@@ -9,6 +9,10 @@ export default function LevelTwo() {
     <div className="level-2">
       <Helmet>
         <title>🚫 Lo que es "NOT" permitido</title>
+        <meta
+          name="description"
+          content="¡Aprende sobre las expresiones Not con un juego simple!"
+        />
       </Helmet>
       <h2>#2.2 🚫 Lo que es "NOT" permitido</h2>
       <br />

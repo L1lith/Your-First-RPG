@@ -17,6 +17,10 @@ const Primitives = () => (
   <div className={primitives}>
     <Helmet>
       <title>📊 Tipos de datos básicos</title>
+      <meta
+        name="description"
+        content="Más información sobre los diferentes tipos de datos en JavaScript "
+      />
     </Helmet>
     <h2>#3.1 📊 Tipos de datos básicos</h2>
     <br />

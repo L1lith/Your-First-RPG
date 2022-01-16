@@ -16,6 +16,7 @@ export default function Communication() {
     <div className="communication">
       <Helmet>
         <title>🗣️ Talking to the Player</title>
+        <meta name="description" content="Learn how to communicate with the player of your game" />
       </Helmet>
       <h2>#4.1 🗣️ Talking to the Player</h2>
       <span className="introCard">

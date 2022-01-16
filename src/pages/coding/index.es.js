@@ -7,10 +7,11 @@ import { Helmet } from 'react-helmet'
 export default function CodingIntro() {
   return (
     <div className="coding-intro">
-      <h1 className="title">Chapter 3</h1>
       <Helmet>
         <title>🛣️ Pasando a la codificación</title>
+        <meta name="description" content="Una introducción a la codificación en JavaScript " />
       </Helmet>
+      <h1 className="title">Chapter 3</h1>
       <ol className="toc pages">
         <li>
           <Link to="/coding#lesson">#3.0 🛣️ Pasando a la codificación</Link>

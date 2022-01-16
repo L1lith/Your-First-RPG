@@ -16,6 +16,10 @@ export default function EssentialTools() {
     <div>
       <Helmet>
         <title>🔨 Herramientas esenciales</title>
+        <meta
+          name="description"
+          content="Aprenda las herramientas de codificación esenciales para comenzar en JavaScript "
+        />
       </Helmet>
       <h1>#3.2 🔨 Herramientas esenciales</h1>
       {
