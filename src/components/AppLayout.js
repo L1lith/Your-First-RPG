@@ -1,3 +1,4 @@
+import useLanguage from '../functions/useLanguage'
 import { page, disabled } from '../styles/AppLayout.module.scss'
 import '../styles/_global.scss'
 import '../styles/_normalize.scss'
@@ -19,6 +20,11 @@ export default function AppLayout({ children }) {
   return (
     <>
       <Header setPageDisabled={setPageDisabled} />
+      <Helmet
+        htmlAttributes={{
+          lang: useLanguage()
+        }}
+      />
       <main
         disabled={pageDisabled}
         className={'page ' + page + (pageDisabled ? ' ' + disabled : '')}>

@@ -5,6 +5,10 @@ export default function Support() {
     <div>
       <Helmet>
         <title>Support</title>
+        <meta
+          name="description"
+          content="¡Aprende a crear tu propio juego de aventuras en línea y compártelo con tus amigos!"
+        />
       </Helmet>
       Want to support me? Star my project on GitHub, it's free! Also please consider sharing this
       course with your friends if you enjoyed it, knowledge is power :)

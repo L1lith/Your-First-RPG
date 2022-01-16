@@ -30,6 +30,7 @@ module.exports = {
       options: {
         precachePages: ['/', `/*`]
       }
-    }
+    },
+    'gatsby-plugin-sitemap'
   ]
 }
