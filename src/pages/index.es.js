@@ -19,7 +19,7 @@ const Home = () => (
       propio juego <RPG /> basado en texto que podrás compartir con tus amigos 😃 Espero poder hacer
       que aprender a codificar sea simple para ti.
     </p>
-    <h2>Sections</h2>
+    <h2>Secciones</h2>
     <ol className="toc sections">
       <li>
         <Link to="/vision">👀 Visualización de modelos lógicos</Link>
