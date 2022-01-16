@@ -27,7 +27,7 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-faecb71006110826be0d.js"
+    "url": "webpack-runtime-25fb1defdde34cc0adf3.js"
   },
   {
     "url": "styles.95d22b9dec8a05a580e6.css"
@@ -39,11 +39,11 @@ self.__precacheManifest = [
     "url": "cb1608f2-6c24f9b6439ed070569a.js"
   },
   {
-    "url": "app-58c3ee73feb20245176f.js"
+    "url": "app-84714064631db885cb5e.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "21062b117381e998f8521e20968d0e7f"
+    "revision": "7ce314784d96f2847c0abc19f70be7b2"
   },
   {
     "url": "fonts/droidSerifRegular.ttf",
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "polyfill-2e3efb7bca20ec2f4845.js"
   },
   {
-    "url": "component---src-pages-index-en-js-0a1f7932e44b04c7b43e.js"
+    "url": "component---src-pages-index-en-js-9890a8442cc085a4e59a.js"
   },
   {
     "url": "page-data/index/page-data.json",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "456cbfb404ebee8809576f7669e0b8cd"
+    "revision": "4cbd42d2f4a99965d24f89e89a72760c"
   },
   {
     "url": "component---src-pages-404-js-78ab6979282642452622.js"
@@ -78,14 +78,14 @@ self.__precacheManifest = [
     "revision": "8036c40541e7fdf55e2899beb6c0cd41"
   },
   {
-    "url": "component---src-pages-coding-index-en-js-20d3457f914c588eb2bf.js"
+    "url": "component---src-pages-coding-index-en-js-fbe7eaff26f3aa00c81e.js"
   },
   {
     "url": "page-data/coding/page-data.json",
     "revision": "a0fc6bc1669da4e5b27394f67f766173"
   },
   {
-    "url": "component---src-pages-index-es-js-29cc6d8ce6d3ed3c2c90.js"
+    "url": "component---src-pages-index-es-js-bd57b48678ac49ffccb6.js"
   },
   {
     "url": "page-data/es/page-data.json",
@@ -99,28 +99,28 @@ self.__precacheManifest = [
     "revision": "beb50662d7bc25b608e046ece670df81"
   },
   {
-    "url": "component---src-pages-resources-en-js-bd58aabacb2f4f996ba4.js"
+    "url": "component---src-pages-resources-en-js-14132626cae6dee6086a.js"
   },
   {
     "url": "page-data/resources/page-data.json",
     "revision": "9eccd9d2c871cf0f47bf32bb8a4d1963"
   },
   {
-    "url": "component---src-pages-rpg-index-en-js-5c6688eb2d5f536109a3.js"
+    "url": "component---src-pages-rpg-index-en-js-4feb9e564bac4c41fe34.js"
   },
   {
     "url": "page-data/rpg/page-data.json",
     "revision": "fff5c763df69862244044fcead7b1b3c"
   },
   {
-    "url": "component---src-pages-support-en-js-091bf8cd38a6ab05b129.js"
+    "url": "component---src-pages-support-en-js-1f25493a119cfb8d2f9a.js"
   },
   {
     "url": "page-data/support/page-data.json",
     "revision": "80d4e143042c3faf0a118aca709e5f79"
   },
   {
-    "url": "component---src-pages-toying-index-en-js-560452adddfe81351a76.js"
+    "url": "component---src-pages-toying-index-en-js-991c7b9a9d0fb24a8b4e.js"
   },
   {
     "url": "page-data/toying/page-data.json",
@@ -245,7 +245,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-58c3ee73feb20245176f.js`))) {
+  if (!resources || !(await caches.match(`/app-84714064631db885cb5e.js`))) {
     return await fetch(event.request)
   }
 
