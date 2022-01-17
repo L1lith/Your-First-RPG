@@ -14,7 +14,8 @@ function ShittyChecking() {
           <button
             onClick={() => {
               setOpened(true)
-            }}>
+            }}
+          >
             {useTranslation('View your Balance', { es: 'Ver su Saldo' })}
           </button>
         )}

@@ -3,7 +3,8 @@ import HoverDefinition from '../../HoverDefinition'
 const BooleanDef = props => (
   <HoverDefinition
     definition={`Un "boolean" es algo que es verdadero o falso, como una pregunta de sí o no.`}
-    {...props}>
+    {...props}
+  >
     {props.children || 'boolean'}
   </HoverDefinition>
 )

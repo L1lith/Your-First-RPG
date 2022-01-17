@@ -5,7 +5,8 @@ const Rules = props => (
     definition={
       'Esta es la "lógica" o el "código" de su modelo lógico. Las "rules" se utilizan para decidir cuál es la salida de nuestro modelo en función de la entrada'
     }
-    {...props}>
+    {...props}
+  >
     {props.children || 'rules'}
   </HoverDefinition>
 )

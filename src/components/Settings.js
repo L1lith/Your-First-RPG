@@ -21,7 +21,8 @@ const Settings = props => {
               setOpen(false)
               document.body.classList.remove('disabled')
             }}
-            className={close + ' emojiButton grayscale'}>
+            className={close + ' emojiButton grayscale'}
+          >
             ❌
           </button>
           <span>
@@ -44,7 +45,8 @@ const Settings = props => {
             onClick={() => {
               setOpen(false)
             }}
-            to="/resources">
+            to="/resources"
+          >
             Stuck?
           </Link>
         </div>
@@ -59,7 +61,8 @@ const Settings = props => {
           setOpen(true)
           document.body.classList.add('disabled')
         }}
-        className={className}>
+        className={className}
+      >
         ⚙️
       </button>
       {settingsMenuElement}

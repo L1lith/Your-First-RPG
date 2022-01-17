@@ -41,7 +41,8 @@ function LanguageSelector(props) {
               setLanguageMenuOpen(false)
               setAppDisabled(false)
             }}
-            className={'icon ' + close}>
+            className={'icon ' + close}
+          >
             ❌
           </span>
           <h2 className={title}>Languages</h2>
@@ -57,7 +58,8 @@ function LanguageSelector(props) {
                 }}
                 lang={language}
                 className={languageOption}
-                key={i}>
+                key={i}
+              >
                 {languageMap[language]}
               </a>
             ))}

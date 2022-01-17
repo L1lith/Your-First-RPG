@@ -64,7 +64,8 @@ function CodeSandbox(props) {
         (vert === true ? vertical + ' ' : '') +
         (typeof props.className == 'string' ? props.className + ' ' : '') +
         sandbox
-      }>
+      }
+    >
       {shareOpen ? (
         <span className={sharePopup}>
           Your Sharing URL:
@@ -73,7 +74,8 @@ function CodeSandbox(props) {
             className={icon + ' ' + close}
             onClick={() => {
               setSharingOpen(false)
-            }}>
+            }}
+          >
             ❌
           </span>
           <div className={settings}>
@@ -99,7 +101,8 @@ function CodeSandbox(props) {
             className={icon}
             onClick={() => {
               setOutput(getOutput(code, props.consoleMode))
-            }}>
+            }}
+          >
             ▶
           </span>
         ) : null}
@@ -114,7 +117,8 @@ function CodeSandbox(props) {
             onClick={() => {
               setCode('')
               setCodeQuery('')
-            }}>
+            }}
+          >
             ❌
           </span>
         ) : null}
@@ -125,7 +129,8 @@ function CodeSandbox(props) {
               onClick={() => {
                 setSharingOpen(true)
               }}
-              className={icon}>
+              className={icon}
+            >
               ☁️
             </span>
           </Fragment>
