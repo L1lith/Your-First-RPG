@@ -2,15 +2,33 @@
 
 
 .home {
-    & > * {
+    ol {
         display: block;
+        width: fit-content;
     }
+    // & > * {
+    //     display: block;
+    //     width: fit-content;
+    //     margin: 0 auto;
+    // }
     text-align: center;
 
     & > h2 {
         margin-top: 40px;
     }
+    .title {
+        width: fit-content;
+        margin: 0 auto;
+        border-bottom: 8px solid #d1d1ff;
+        border-radius: 10px;
+    }
     .extra {
         margin-top: 50px;
+    }
+    .small {
+        display: inline-block;
+        font-weight: initial;
+        font-size: 0.65em;
+        padding-bottom: 10px;
     }
 }
