@@ -46,15 +46,15 @@ export default function Home() {
           <Link to="/rpg">🎮 Building an RPG</Link>
         </li>
       </ol>
-      <Link className="next" to="/vision">
-        Get Started: 🗺️ Planning it out
-      </Link>
       <Link to="/resources">Remember to check out the resource section if you get stuck</Link>
       <div className={extra}>
         <h2>Scared of Coding? Don't be!</h2>
         Check out this inspiring talk by Linda Liukas
         <YTVideo url="-jRREn6ifEQ" thumbnail="/images/poetry-of-programming.jpg" />
       </div>
+      <Link className="next" to="/vision">
+        Get Started: 🗺️ Planning it out
+      </Link>
     </div>
   )
 }

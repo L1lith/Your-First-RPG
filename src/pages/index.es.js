@@ -54,6 +54,9 @@ const Home = () => (
         thumbnail="/images/poetry-of-programming.jpg"
       />
     </div>
+    <Link className="next" to="/vision">
+      Get Started: 🗺️ Planning it out
+    </Link>
   </div>
 )
 
