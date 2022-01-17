@@ -10,10 +10,10 @@ export default function LevelOne() {
   return (
     <div className="level-1">
       <Helmet>
-        <title>💬 Expresiones básicas "Or"</title>
+        <title>💬 Basic Or Expressions</title>
         <meta name="description" content="Learn about Or expressions with a simple game!" />
       </Helmet>
-      <h2>#2.1 💬 Expresiones básicas "Or"</h2>
+      <h2>#2.1 💬 Basic Or Expressions</h2>
       <br />
       <span className="introCard">
         <BooleanOps />
