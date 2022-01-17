@@ -1,22 +1,26 @@
 @import "variables";
 
-.languageIcon {
-    position: relative;
-    color: #55a1ff;
-    box-sizing: border-box;
-    border: 2px solid transparent;
-    width: 1em;
-    max-width: 1em;
-    &:hover {
+.languageMenu {
+    &:hover .languageIcon {
         border-color: #0055bd;
         border-radius: 100vw;
         transition: border-color 0.15s linear;
-        cursor: pointer;
     }
-}
-
-
-.languageMenu {
+    cursor: pointer;
+    & > * {
+        display: inline-block;
+    }
+    .current {
+        margin-left: 0.4em;
+    }
+    .languageIcon {
+        position: relative;
+        color: #55a1ff;
+        box-sizing: border-box;
+        border: 2px solid transparent;
+        width: 1em;
+        max-width: 1em;
+    }
     // position: relative; // An attempt at making a pure css implementation
     // z-index: 1;
     // display: inline-block;

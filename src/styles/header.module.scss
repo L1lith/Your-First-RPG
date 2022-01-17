@@ -4,6 +4,7 @@
     align-items: center;
     .resources {
         margin-left: auto;
+        padding-left: 0.5em;
         @media screen and (max-width: $mini-width) {
             display: none;
         }
@@ -73,7 +74,7 @@
     justify-content: center;
     text-align: center;
     font-size: 2.5em;
-    overflow-x: auto;
+    overflow: hidden;
     white-space: nowrap;
     // & > * {
     //     padding: 0 20px;
