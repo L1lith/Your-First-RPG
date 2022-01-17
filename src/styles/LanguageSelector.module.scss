@@ -33,6 +33,8 @@
     font-size: 2em;
     text-align: center;
     align-items: center;
+    max-height: 100vh;
+    overflow-y: auto;
     .title {
         margin-top: 0.25em;
         font-size: 1.2em;
