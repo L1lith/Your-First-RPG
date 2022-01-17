@@ -15,7 +15,8 @@ import LanguageSelector from './LanguageSelector'
 //import Settings from './Settings'
 
 const Header = props => (
-  <header className={mainHeader}>
+  <header
+    className={mainHeader + (typeof props.className == 'string' ? ' ' + props.className : '')}>
     <img alt="site logo" type="image/svg" className={siteIcon} src="/images/icons/site-icon.svg" />
     <h1 className={siteTitle}>
       <Link to="/" className={homeLink}>
@@ -25,7 +26,7 @@ const Header = props => (
     <Link to="/resources" className={resources}>
       {useTranslation('Stuck?', { es: 'Atascada?' })}
     </Link>
-    <LanguageSelector setAppDisabled={props.setAppDisabled} />
+    <LanguageSelector setPopup={props.setPopup} />
   </header>
 )
 

@@ -27,10 +27,11 @@
     max-height: 100vh;
   }
 }
+.headerDisabled, .pageDisabled {
+  filter: blur(2px);
+  pointer-events: none;
+}
 .page {
-  &.pageDisabled {
-    filter: blur(2px);
-  }
   position: relative;
   width: auto;
   //margin: auto;

@@ -30,29 +30,35 @@
 .languageList {
     //display: none; // An attempt at making a pure css implementation
     display: flex;
+    font-size: 2em;
+    text-align: center;
+    align-items: center;
     .title {
+        margin-top: 0.25em;
         font-size: 1.2em;
     }
     .languageOption {
         cursor: pointer;
         color: #0055bd;
         width: fit-content;
-        &:not(:last-child) {
+        &:not(:last-child):not(:nth-last-child(2)) {
             border-bottom: 2px solid black;
         }
         padding: 20px 0;
         margin: 0 auto;
     }
     .close {
-        position: absolute;
+        //align-self: flex-end;
+        width: fit-content;
+        //position: absolute;
         cursor: pointer;
         filter: grayscale(100%);
-        top: 40px;
-        right: 1em;
-        font-size: 1em;
-        @media screen and (max-width: $mini-width) {
-            right: 4em;
-        }
+        // top: 40px;
+        // right: 1em;
+        // font-size: 1em;
+        // @media screen and (max-width: $mini-width) {
+        //     right: 4em;
+        // }
     }
     //margin: 0;
     position: fixed;

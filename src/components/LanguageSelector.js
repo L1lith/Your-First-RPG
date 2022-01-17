@@ -20,51 +20,46 @@ const languageMap = {
 }
 
 function LanguageSelector(props) {
-  const { setAppDisabled } = props
-  const [languageMenuOpen, setLanguageMenuOpen] = useState(false)
+  const { setPopup } = props
+  //const [languageMenuOpen, setLanguageMenuOpen] = useState(false)
   const location = useLocation()
+  const languageMenu = (
+    <div className={languageList}>
+      <h2 className={title}>Languages</h2>
+      {languages
+        .filter(language => languageMap.hasOwnProperty(language))
+        .sort()
+        .map((language, i) => (
+          <a
+            onClick={() => {
+              setPopup(null)
+              navigate(translatePath(location.pathname, language))
+            }}
+            lang={language}
+            className={languageOption}
+            key={i}>
+            {languageMap[language]}
+          </a>
+        ))}
+      <span
+        onClick={() => {
+          setPopup(null)
+        }}
+        className={'icon ' + close}>
+        ❌
+      </span>
+    </div>
+  )
   return (
     <div className={languageMenu}>
       <FontAwesomeIcon
         className={languageIcon}
         onClick={() => {
-          setLanguageMenuOpen(true)
-          setAppDisabled(true) // Don't disable the page for now
+          setPopup(languageMenu)
         }}
         title="Languages"
         icon={faGlobe}
       />
-      {languageMenuOpen ? (
-        <div className={languageList}>
-          <span
-            onClick={() => {
-              setLanguageMenuOpen(false)
-              setAppDisabled(false)
-            }}
-            className={'icon ' + close}
-          >
-            ❌
-          </span>
-          <h2 className={title}>Languages</h2>
-          {languages
-            .filter(language => languageMap.hasOwnProperty(language))
-            .sort()
-            .map((language, i) => (
-              <a
-                onClick={() => {
-                  setLanguageMenuOpen(false)
-                  setAppDisabled(false)
-                  navigate(translatePath(location.pathname, language))
-                }}
-                lang={language}
-                className={languageOption}
-                key={i}
-              >
-                {languageMap[language]}
-              </a>
-            ))}
-        </div>
-      ) : null}
     </div>
   )
 }

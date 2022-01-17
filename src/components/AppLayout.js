@@ -1,10 +1,10 @@
 import useLanguage from '../functions/useLanguage'
-import { page, disabled, app, pageDisabled } from '../styles/AppLayout.module.scss'
+import { page, disabled, app, pageDisabled, headerDisabled } from '../styles/AppLayout.module.scss'
 import '../styles/_global.scss'
 import '../styles/_normalize.scss'
 import Header from './header'
 import { useLocation } from '@reach/router'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useContext } from 'react'
 import { Helmet } from 'react-helmet'
 
 //import { DefaultSeo } from 'next-seo'
@@ -13,18 +13,20 @@ import { Helmet } from 'react-helmet'
 <DefaultSeo description="Learn to make games in JavaScript for beginners" /> */
 export default function AppLayout({ children }) {
   const location = useLocation()
-  const [appDisabled, setAppDisabled] = useState(false)
+  const [popup, setPopup] = useState(null)
+  const appDisabled = popup !== null
   useEffect(() => {
-    setAppDisabled(false)
+    setPopup(null)
   }, [location])
   return (
     <div className={app + (appDisabled ? ' ' + disabled : '')} disabled={appDisabled}>
-      <Header setAppDisabled={setAppDisabled} />
       <Helmet
         htmlAttributes={{
           lang: useLanguage()
         }}
       />
+      {popup}
+      <Header className={appDisabled ? headerDisabled : null} setPopup={setPopup} />
       <main className={'page ' + page + (appDisabled ? ' ' + pageDisabled : '')}>
         <noscript>This site requires JavaScript to function perfectly</noscript>
         {children}
