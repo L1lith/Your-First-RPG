@@ -25,7 +25,7 @@ const Header = props => (
     <Link to="/resources" className={resources}>
       {useTranslation('Stuck?', { es: 'Atascada?' })}
     </Link>
-    <LanguageSelector setPageDisabled={props.setPageDisabled} />
+    <LanguageSelector setAppDisabled={props.setAppDisabled} />
   </header>
 )
 

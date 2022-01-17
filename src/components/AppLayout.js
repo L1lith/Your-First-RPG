@@ -1,5 +1,5 @@
 import useLanguage from '../functions/useLanguage'
-import { page, disabled } from '../styles/AppLayout.module.scss'
+import { page, disabled, app, pageDisabled } from '../styles/AppLayout.module.scss'
 import '../styles/_global.scss'
 import '../styles/_normalize.scss'
 import Header from './header'
@@ -13,21 +13,19 @@ import { Helmet } from 'react-helmet'
 <DefaultSeo description="Learn to make games in JavaScript for beginners" /> */
 export default function AppLayout({ children }) {
   const location = useLocation()
-  const [pageDisabled, setPageDisabled] = useState(false)
+  const [appDisabled, setAppDisabled] = useState(false)
   useEffect(() => {
-    setPageDisabled(false)
+    setAppDisabled(false)
   }, [location])
   return (
-    <>
-      <Header setPageDisabled={setPageDisabled} />
+    <div className={app + (appDisabled ? ' ' + disabled : '')} disabled={appDisabled}>
+      <Header setAppDisabled={setAppDisabled} />
       <Helmet
         htmlAttributes={{
           lang: useLanguage()
         }}
       />
-      <main
-        disabled={pageDisabled}
-        className={'page ' + page + (pageDisabled ? ' ' + disabled : '')}>
+      <main className={'page ' + page + (appDisabled ? ' ' + pageDisabled : '')}>
         <noscript>This site requires JavaScript to function perfectly</noscript>
         {children}
       </main>
@@ -58,6 +56,6 @@ export default function AppLayout({ children }) {
         <meta property="og:url" content="https://yourfirstrpg.com" />
         <meta property="og:image" content="https://yourfirstrpg.com/images/icons/site-icon.svg" />
       </Helmet>
-    </>
+    </div>
   )
 }

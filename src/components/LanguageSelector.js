@@ -5,7 +5,8 @@ import {
   languageList,
   languageIcon,
   title,
-  languageOption
+  languageOption,
+  close
 } from '../styles/LanguageSelector.module.scss'
 import { faGlobe } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -19,7 +20,7 @@ const languageMap = {
 }
 
 function LanguageSelector(props) {
-  const { setPageDisabled } = props
+  const { setAppDisabled } = props
   const [languageMenuOpen, setLanguageMenuOpen] = useState(false)
   const location = useLocation()
   return (
@@ -28,13 +29,21 @@ function LanguageSelector(props) {
         className={languageIcon}
         onClick={() => {
           setLanguageMenuOpen(true)
-          setPageDisabled(true)
+          setAppDisabled(true) // Don't disable the page for now
         }}
         title="Languages"
         icon={faGlobe}
       />
       {languageMenuOpen ? (
         <div className={languageList}>
+          <span
+            onClick={() => {
+              setLanguageMenuOpen(false)
+              setAppDisabled(false)
+            }}
+            className={'icon ' + close}>
+            ❌
+          </span>
           <h2 className={title}>Languages</h2>
           {languages
             .filter(language => languageMap.hasOwnProperty(language))
@@ -43,7 +52,7 @@ function LanguageSelector(props) {
               <a
                 onClick={() => {
                   setLanguageMenuOpen(false)
-                  setPageDisabled(false)
+                  setAppDisabled(false)
                   navigate(translatePath(location.pathname, language))
                 }}
                 lang={language}

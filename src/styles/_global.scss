@@ -89,8 +89,12 @@
     width: fit-content;
     margin: 40px auto 20px auto;
 }
-#next {
-    display: block;
+#___gatsby {
+    height: 100vh;
+    width: 100vw;
+    max-height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
 }
 html {
    height: 100vh;

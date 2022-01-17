@@ -1,3 +1,5 @@
+@import "variables";
+
 .languageIcon {
     position: relative;
     color: #55a1ff;
@@ -41,14 +43,37 @@
         padding: 20px 0;
         margin: 0 auto;
     }
-    margin: 0;
+    .close {
+        position: absolute;
+        cursor: pointer;
+        filter: grayscale(100%);
+        top: 40px;
+        right: 1em;
+        font-size: 1em;
+        @media screen and (max-width: $mini-width) {
+            right: 4em;
+        }
+    }
+    //margin: 0;
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
+    left: 50%;
     z-index: 100;
     background-color: white;
     justify-content:top;
     flex-direction: column;
+    display: flex;
+    padding: 0.5em 3em 1em 3em;
+    transform: translateX(-50%);
+    border: 2px solid #68508e;
+    border-top-width: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    @media screen and (max-width: $mini-width) {
+        border-left-width: 0;
+        border-right-width: 0;
+        border-radius: 0;
+        width: 100vw;
+        
+    }
 }

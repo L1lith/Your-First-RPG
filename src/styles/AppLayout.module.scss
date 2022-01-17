@@ -13,10 +13,23 @@
   font-weight: bold;
   font-display: swap;
 }
-.page {
+.app {
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;  
+  & > * {
+    flex-shrink: 0;
+  }
   &.disabled {
-    overflow: hidden;
-    max-height: 0;
+    overflow: hidden !important;
+    max-height: 100vh;
+  }
+}
+.page {
+  &.pageDisabled {
+    filter: blur(2px);
   }
   position: relative;
   width: auto;
@@ -26,6 +39,7 @@
     padding: 2vh 5vw;
     width: 90vw;
   }
+  overflow: auto;
   text-align: center;
   //background-color: $background;
   //margin: 4vh 4vw 0 4vw;
