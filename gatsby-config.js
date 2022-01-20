@@ -12,6 +12,7 @@ module.exports = {
         prefixDefault: false
       }
     },
+    'gatsby-plugin-preact',
     'gatsby-plugin-sass',
     'gatsby-plugin-image',
     'gatsby-plugin-react-helmet',

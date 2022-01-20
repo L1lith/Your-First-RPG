@@ -27,36 +27,36 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-36dfafeb84ff3c313d53.js"
+    "url": "webpack-runtime-b8bef689f094831b78e1.js"
   },
   {
     "url": "styles.9eb2930cb2e7dfe08558.css"
   },
   {
-    "url": "framework-3262588897464eef277b.js"
+    "url": "framework-0083b5d022a22e290bc9.js"
   },
   {
     "url": "cb1608f2-6c24f9b6439ed070569a.js"
   },
   {
-    "url": "app-1f97b2ba4e6e0717eb0b.js"
+    "url": "app-c64420ddfd224166f18c.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "ac8b0003b798ef78e2238b6401439eeb"
+    "revision": "3155a75f034e319fb56812541d747acc"
   },
   {
     "url": "fonts/droidSerifRegular.ttf",
     "revision": "e18165ce2b700b1b4daca82e276fcac5"
   },
   {
-    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-1751be424b60a9684aab.js"
+    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-6b65b28362df9a03100c.js"
   },
   {
     "url": "polyfill-2e3efb7bca20ec2f4845.js"
   },
   {
-    "url": "component---src-pages-index-en-js-9e413a052ffa606da2d8.js"
+    "url": "component---src-pages-index-en-js-1d3999b5a57cc0bc3967.js"
   },
   {
     "url": "page-data/index/page-data.json",
@@ -64,10 +64,10 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "93d793fe906800750dcd3c3f859b9e0a"
+    "revision": "03f8d67c0b2fd5b9e877a3d9e1ac1abf"
   },
   {
-    "url": "component---src-pages-404-js-78ab6979282642452622.js"
+    "url": "component---src-pages-404-js-950b9128e5c5d38cce31.js"
   },
   {
     "url": "page-data/404/page-data.json",
@@ -78,56 +78,56 @@ self.__precacheManifest = [
     "revision": "8036c40541e7fdf55e2899beb6c0cd41"
   },
   {
-    "url": "component---src-pages-coding-index-en-js-fbe7eaff26f3aa00c81e.js"
+    "url": "component---src-pages-coding-index-en-js-ef5495b5e75f8ac97a43.js"
   },
   {
     "url": "page-data/coding/page-data.json",
     "revision": "a0fc6bc1669da4e5b27394f67f766173"
   },
   {
-    "url": "component---src-pages-index-es-js-f6709e00addc2c538b34.js"
+    "url": "component---src-pages-index-es-js-5a4358812ea6a7434d9d.js"
   },
   {
     "url": "page-data/es/page-data.json",
     "revision": "f6d27a5d67da5bae13f6548241149db5"
   },
   {
-    "url": "component---src-pages-html-js-330fbfd338ec31685bee.js"
+    "url": "component---src-pages-html-js-428abd5b62b677844312.js"
   },
   {
     "url": "page-data/html/page-data.json",
     "revision": "beb50662d7bc25b608e046ece670df81"
   },
   {
-    "url": "component---src-pages-resources-en-js-14132626cae6dee6086a.js"
+    "url": "component---src-pages-resources-en-js-4b11c0b90da4adfa4779.js"
   },
   {
     "url": "page-data/resources/page-data.json",
     "revision": "9eccd9d2c871cf0f47bf32bb8a4d1963"
   },
   {
-    "url": "component---src-pages-rpg-index-en-js-4feb9e564bac4c41fe34.js"
+    "url": "component---src-pages-rpg-index-en-js-7fe87aa4ff71c6e88f11.js"
   },
   {
     "url": "page-data/rpg/page-data.json",
     "revision": "fff5c763df69862244044fcead7b1b3c"
   },
   {
-    "url": "component---src-pages-support-en-js-1f25493a119cfb8d2f9a.js"
+    "url": "component---src-pages-support-en-js-5a951a5081c7201965a9.js"
   },
   {
     "url": "page-data/support/page-data.json",
     "revision": "80d4e143042c3faf0a118aca709e5f79"
   },
   {
-    "url": "component---src-pages-toying-index-en-js-991c7b9a9d0fb24a8b4e.js"
+    "url": "component---src-pages-toying-index-en-js-9fceada6aa991719f843.js"
   },
   {
     "url": "page-data/toying/page-data.json",
     "revision": "9fc081bb861f31cbca73f91e2448b889"
   },
   {
-    "url": "component---src-pages-vision-index-en-js-4716a0ddf908b45ee291.js"
+    "url": "component---src-pages-vision-index-en-js-b24448caf04b8ae6dd46.js"
   },
   {
     "url": "page-data/vision/page-data.json",
@@ -245,7 +245,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-1f97b2ba4e6e0717eb0b.js`))) {
+  if (!resources || !(await caches.match(`/app-c64420ddfd224166f18c.js`))) {
     return await fetch(event.request)
   }
 

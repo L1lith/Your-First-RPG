@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkyour_first_rpg=self.webpackChunkyour_first_rpg||[]).push([[306],{1930:function(e,t,u){var r=u(5318);t.__esModule=!0,t.default=void 0;var n=r(u(5354)),f=r(u(7294)),a=function(e){function t(){return e.apply(this,arguments)||this}return(0,n.default)(t,e),t.prototype.render=function(){return f.default.createElement(f.default.Fragment,null)},t}(f.default.Component),l=a;t.default=l}}]);
-//# sourceMappingURL=component---cache-caches-gatsby-plugin-offline-app-shell-js-1751be424b60a9684aab.js.map
