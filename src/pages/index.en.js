@@ -1,7 +1,9 @@
 import RPG from '../components/Dictionary/en/RPG'
 import Link from '../components/TranslatedLink'
 import YTVideo from '../components/YTVideo'
-import { home, extra, small, title } from '../styles/index.module.scss'
+import { home, extra, small, title, play, playground } from '../styles/index.module.scss'
+import { faPlayCircle } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Helmet } from 'react-helmet'
 
 export default function Home() {
@@ -25,8 +27,13 @@ export default function Home() {
         text based <RPG /> game that you can share with your friends 😃 I hope that I can make
         learning to code simple for you.
       </p>
-      <h2>The Playground</h2>
-      <Link to="/playground">Want to play some games other people have made? Click here!</Link>
+      <div className={playground}>
+        <h2>The Playground</h2>
+        <Link to="/playground">
+          <FontAwesomeIcon className={play} title="To the sandbox" icon={faPlayCircle} />
+          Want to play some games other people have made? Click here!
+        </Link>
+      </div>
       <h2>Why this course?</h2>
       <p>
         I designed this course to be easy to understand, and to be easy to get started. You don't

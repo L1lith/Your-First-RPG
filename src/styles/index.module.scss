@@ -6,6 +6,23 @@
         display: block;
         width: fit-content;
     }
+    .playground {
+        border: 5px solid #68508e;
+        border-radius: 5px;
+        display: block;
+        width: fit-content;
+        margin: 75px auto;
+        @media screen and (max-width: $mini-width) {
+            margin: 25px auto;
+        }
+        padding: 0 40px 20px 40px;    
+        .play {
+            color: #0069ed;
+            display: block;
+            margin: 25px auto;
+            font-size: 2.5em;
+        }
+    }
     // & > * {
     //     display: block;
     //     width: fit-content;
