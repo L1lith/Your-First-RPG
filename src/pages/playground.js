@@ -1,5 +1,6 @@
 import adLibs from '!!raw-loader!../boiler/playground/adLibs'
 import darkWalk from '!!raw-loader!../boiler/playground/darkWalk'
+import memorizationGame from '!!raw-loader!../boiler/playground/memorizationGame'
 import Link from '../components/TranslatedLink'
 import { games, game, title, description, play, source } from '../styles/Playground.module.scss'
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons'
@@ -16,6 +17,11 @@ export default function Playground() {
       </Helmet>
       <div className={games}>
         <Game title="Funny Ad Libs" code={adLibs} description="A silly story creator" />
+        <Game
+          title="The Memorization Game"
+          code={memorizationGame}
+          description="See how many words you can remember in a row"
+        />
         <Game title="A Dark Night" code={darkWalk} description="Take a walk in a dark city" />
       </div>
     </>

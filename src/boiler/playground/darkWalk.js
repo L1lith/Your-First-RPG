@@ -4,3 +4,4 @@ alert('They reach out with fingers twisted with age, and point at you. "You used
 alert("This is not news to you. As the years passed, the last of your happy memories have been fading away.")
 const want = prompt('Slowly drops of rain start to tap the ground. "What do you really want?" the man asks.')
 alert('"You say you want ' + want + '" yet you are still sitting here, ' + doing + ' in the freezing rain.')
+alert("Oh well... you close your eyes and fall into a deep sleep.")
