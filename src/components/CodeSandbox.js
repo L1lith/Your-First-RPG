@@ -25,8 +25,9 @@ import { useQueryParam, BooleanParam, StringParam } from 'use-query-params'
 
 function CodeSandbox(props) {
   const [autoPlayQuery] = useQueryParam('autoPlay', BooleanParam)
+  const [codeQuery] = useQueryParam('code', StringParam)
   const [autoPlay, setAutoPlay] = useState(false) //useQueryParam('autoPlay', BooleanParam)
-  const [codeInput, setCodeQuery] = useState(props.value || '') //useQueryParam('code', StringParam)
+  const [codeInput, setCodeQuery] = useState(codeQuery || props.value || '') //useQueryParam('code', StringParam)
   const autoPlayInput = useRef(null)
   const [code, setCode] = useState(codeInput || props.value || '')
   const [shareOpen, setSharingOpen] = useState(false)
@@ -64,8 +65,7 @@ function CodeSandbox(props) {
         (vert === true ? vertical + ' ' : '') +
         (typeof props.className == 'string' ? props.className + ' ' : '') +
         sandbox
-      }
-    >
+      }>
       {shareOpen ? (
         <span className={sharePopup}>
           Your Sharing URL:
@@ -74,8 +74,7 @@ function CodeSandbox(props) {
             className={icon + ' ' + close}
             onClick={() => {
               setSharingOpen(false)
-            }}
-          >
+            }}>
             ❌
           </span>
           <div className={settings}>
@@ -101,8 +100,7 @@ function CodeSandbox(props) {
             className={icon}
             onClick={() => {
               setOutput(getOutput(code, props.consoleMode))
-            }}
-          >
+            }}>
             ▶
           </span>
         ) : null}
@@ -117,8 +115,7 @@ function CodeSandbox(props) {
             onClick={() => {
               setCode('')
               setCodeQuery('')
-            }}
-          >
+            }}>
             ❌
           </span>
         ) : null}
@@ -129,8 +126,7 @@ function CodeSandbox(props) {
               onClick={() => {
                 setSharingOpen(true)
               }}
-              className={icon}
-            >
+              className={icon}>
               ☁️
             </span>
           </Fragment>
