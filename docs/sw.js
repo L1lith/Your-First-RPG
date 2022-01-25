@@ -27,36 +27,36 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-b8bef689f094831b78e1.js"
+    "url": "webpack-runtime-61f9ca0c55674c680f36.js"
   },
   {
-    "url": "styles.9eb2930cb2e7dfe08558.css"
+    "url": "styles.36ec3bf7f008b1b2dfa5.css"
   },
   {
-    "url": "framework-0083b5d022a22e290bc9.js"
+    "url": "framework-80fbcdba419e70b29ef9.js"
   },
   {
-    "url": "cb1608f2-6c24f9b6439ed070569a.js"
+    "url": "cb1608f2-405bec7f14c2c38dcc25.js"
   },
   {
-    "url": "app-c64420ddfd224166f18c.js"
+    "url": "app-dda5da0fcf3f3eb546af.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "3155a75f034e319fb56812541d747acc"
+    "revision": "033ddb278226531f1c9f16e75e6422e6"
   },
   {
     "url": "fonts/droidSerifRegular.ttf",
     "revision": "e18165ce2b700b1b4daca82e276fcac5"
   },
   {
-    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-6b65b28362df9a03100c.js"
+    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-5ee47b87c1a10baef322.js"
   },
   {
-    "url": "polyfill-2e3efb7bca20ec2f4845.js"
+    "url": "polyfill-cb6bfe04aa984d9012d0.js"
   },
   {
-    "url": "component---src-pages-index-en-js-1d3999b5a57cc0bc3967.js"
+    "url": "component---src-pages-index-en-js-7a6e3ce73a94d3e56246.js"
   },
   {
     "url": "page-data/index/page-data.json",
@@ -64,10 +64,10 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "03f8d67c0b2fd5b9e877a3d9e1ac1abf"
+    "revision": "f1c47b9ca39fcc34420e62cd58224b4f"
   },
   {
-    "url": "component---src-pages-404-js-950b9128e5c5d38cce31.js"
+    "url": "component---src-pages-404-js-fdb2c18e1af077ab0db4.js"
   },
   {
     "url": "page-data/404/page-data.json",
@@ -78,25 +78,35 @@ self.__precacheManifest = [
     "revision": "8036c40541e7fdf55e2899beb6c0cd41"
   },
   {
-    "url": "component---src-pages-coding-index-en-js-ef5495b5e75f8ac97a43.js"
+    "url": "component---src-pages-coding-index-en-js-9b64346d28da13768e33.js"
   },
   {
     "url": "page-data/coding/page-data.json",
     "revision": "a0fc6bc1669da4e5b27394f67f766173"
   },
   {
-    "url": "component---src-pages-index-es-js-5a4358812ea6a7434d9d.js"
+    "url": "component---src-pages-index-es-js-eb0dcb4a8f7adb4be5b4.js"
   },
   {
     "url": "page-data/es/page-data.json",
     "revision": "f6d27a5d67da5bae13f6548241149db5"
   },
   {
-    "url": "component---src-pages-html-js-428abd5b62b677844312.js"
+    "url": "component---src-pages-html-js-d1061f2431f220191a72.js"
   },
   {
     "url": "page-data/html/page-data.json",
     "revision": "beb50662d7bc25b608e046ece670df81"
+  },
+  {
+    "url": "f9d80a4f4101a4b6ce9ff1ec368321a4b2285d33-f2b484c17de3f56f35c6.js"
+  },
+  {
+    "url": "component---src-pages-playground-js-432ef9c69e10e634ad76.js"
+  },
+  {
+    "url": "page-data/playground/page-data.json",
+    "revision": "d06e4ecaf0368f9a3805e42c8bbd3c46"
   },
   {
     "url": "component---src-pages-resources-en-js-4b11c0b90da4adfa4779.js"
@@ -106,28 +116,28 @@ self.__precacheManifest = [
     "revision": "9eccd9d2c871cf0f47bf32bb8a4d1963"
   },
   {
-    "url": "component---src-pages-rpg-index-en-js-7fe87aa4ff71c6e88f11.js"
+    "url": "component---src-pages-rpg-index-en-js-e2724ebf8faa811a604d.js"
   },
   {
     "url": "page-data/rpg/page-data.json",
     "revision": "fff5c763df69862244044fcead7b1b3c"
   },
   {
-    "url": "component---src-pages-support-en-js-5a951a5081c7201965a9.js"
+    "url": "component---src-pages-support-en-js-21379bd2158d4eb2c6a1.js"
   },
   {
     "url": "page-data/support/page-data.json",
     "revision": "80d4e143042c3faf0a118aca709e5f79"
   },
   {
-    "url": "component---src-pages-toying-index-en-js-9fceada6aa991719f843.js"
+    "url": "component---src-pages-toying-index-en-js-db375989c948cc9f3a66.js"
   },
   {
     "url": "page-data/toying/page-data.json",
     "revision": "9fc081bb861f31cbca73f91e2448b889"
   },
   {
-    "url": "component---src-pages-vision-index-en-js-b24448caf04b8ae6dd46.js"
+    "url": "component---src-pages-vision-index-en-js-85adb331868a03f0ebac.js"
   },
   {
     "url": "page-data/vision/page-data.json",
@@ -245,7 +255,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-c64420ddfd224166f18c.js`))) {
+  if (!resources || !(await caches.match(`/app-dda5da0fcf3f3eb546af.js`))) {
     return await fetch(event.request)
   }
 
