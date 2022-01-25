@@ -6,14 +6,16 @@
 }
 
 .game {
-    margin-bottom: 20px;
+    margin: 40px 0;
     border: 2px solid #68508e;
     border-top-right-radius: 20px;
     padding: 20px 40px;
     min-width: fit-content;
     //flex-basis: 100%;
     .description {}
-    .title {}
+    .title {
+        margin-bottom: 0;
+    }
     .play {
         font-size: 1.5em;
         color: #0069ed;
@@ -22,5 +24,8 @@
     .source {
         margin-top: 10px;
         display: block;
+    }
+    .author {
+        margin-top: 0;
     }
 }

@@ -25,6 +25,8 @@ export default function Home() {
         text based <RPG /> game that you can share with your friends 😃 I hope that I can make
         learning to code simple for you.
       </p>
+      <h2>The Playground</h2>
+      <Link to="/playground">Want to play some games other people have made? Click here!</Link>
       <h2>Why this course?</h2>
       <p>
         I designed this course to be easy to understand, and to be easy to get started. You don't
