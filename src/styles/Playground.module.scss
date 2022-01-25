@@ -1,3 +1,5 @@
+@import "variables";
+
 .games {
     display: flex;
     justify-content: space-between;
@@ -6,12 +8,16 @@
 }
 
 .game {
-    margin: 40px 0;
+    margin: 40px 20px;
+    @media screen and (max-width: $mini-width) {
+        margin: 20px;
+    }
     border: 2px solid #68508e;
     border-top-right-radius: 20px;
     padding: 20px 40px;
     min-width: fit-content;
     box-shadow: -3px 4px 6px #006bed30;
+    flex-grow: 1;
     //flex-basis: 100%;
     .description {}
     .title {
