@@ -22,6 +22,10 @@ function Editor() {
         enabled in your browser to use the game editor.
         <br /> Warning: You must save your URL or your game data could be lost.
       </p>
+      <p className="italic">
+        Need some inspiration? Want to see how other people made their games? Check out the{' '}
+        <Link to="/playground">Playground!</Link>
+      </p>
       <CodeSandbox
         className={editorModule}
         codeQueryParam={'code'}
