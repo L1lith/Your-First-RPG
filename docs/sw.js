@@ -27,10 +27,10 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-dab0be275d01c704bbf8.js"
+    "url": "webpack-runtime-ca6fbfa06087a2bef624.js"
   },
   {
-    "url": "styles.bcbe24a18904a6c9a2cf.css"
+    "url": "styles.2e7d48d9b5b4cff63859.css"
   },
   {
     "url": "framework-80fbcdba419e70b29ef9.js"
@@ -39,11 +39,11 @@ self.__precacheManifest = [
     "url": "cb1608f2-405bec7f14c2c38dcc25.js"
   },
   {
-    "url": "app-dda5da0fcf3f3eb546af.js"
+    "url": "app-e73c44b48c3cc434e81d.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "065c593c50dd37e16db2805d1e29bc2c"
+    "revision": "1976363f38625b33427dd31b70cdd9ba"
   },
   {
     "url": "fonts/droidSerifRegular.ttf",
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "polyfill-cb6bfe04aa984d9012d0.js"
   },
   {
-    "url": "component---src-pages-index-en-js-d9e94db37f4a782af736.js"
+    "url": "component---src-pages-index-en-js-823cd4c67a13887b7d95.js"
   },
   {
     "url": "page-data/index/page-data.json",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "1e049b5a00ea174c60c492a78875762d"
+    "revision": "665965cc1e9670d01fac5dabacd682f8"
   },
   {
     "url": "component---src-pages-404-js-fdb2c18e1af077ab0db4.js"
@@ -85,7 +85,7 @@ self.__precacheManifest = [
     "revision": "a0fc6bc1669da4e5b27394f67f766173"
   },
   {
-    "url": "component---src-pages-index-es-js-eb0dcb4a8f7adb4be5b4.js"
+    "url": "component---src-pages-index-es-js-527315da7633792b94c4.js"
   },
   {
     "url": "page-data/es/page-data.json",
@@ -102,7 +102,7 @@ self.__precacheManifest = [
     "url": "f9d80a4f4101a4b6ce9ff1ec368321a4b2285d33-f2b484c17de3f56f35c6.js"
   },
   {
-    "url": "component---src-pages-playground-js-1451fafa926fe2017f88.js"
+    "url": "component---src-pages-playground-js-2ae048ecc864162bbc6d.js"
   },
   {
     "url": "page-data/playground/page-data.json",
@@ -255,7 +255,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-dda5da0fcf3f3eb546af.js`))) {
+  if (!resources || !(await caches.match(`/app-e73c44b48c3cc434e81d.js`))) {
     return await fetch(event.request)
   }
 
