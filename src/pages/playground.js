@@ -1,3 +1,5 @@
+import adLibs from '!!raw-loader!../boiler/playground/adLibs'
+import darkWalk from '!!raw-loader!../boiler/playground/darkWalk'
 import Link from '../components/TranslatedLink'
 import { games, game, title, description, play, source } from '../styles/Playground.module.scss'
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons'
@@ -13,21 +15,8 @@ export default function Playground() {
         <meta name="description" content="Play the RPG games other people have made!" />
       </Helmet>
       <div className={games}>
-        <Game
-          title="A walk in the dark"
-          code="console.log('hi')"
-          description="Take a walk in a dark city"
-        />
-        <Game
-          title="A walk in the dark"
-          code="console.log('hi')"
-          description="Take a walk in a dark city"
-        />
-        <Game
-          title="A walk in the dark"
-          code="console.log('hi')"
-          description="Take a walk in a dark city"
-        />
+        <Game title="Funny Ad Libs" code={adLibs} description="A silly story creator" />
+        <Game title="A Dark Night" code={darkWalk} description="Take a walk in a dark city" />
       </div>
     </>
   )
