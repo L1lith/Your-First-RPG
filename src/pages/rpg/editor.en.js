@@ -1,4 +1,4 @@
-import defaultGame from '../../boiler/codeEditorTemplate'
+import defaultGame from '!!raw-loader!../../boiler/codeEditorTemplate'
 import CodeSandbox from '../../components/CodeSandbox'
 import Link from '../../components/TranslatedLink'
 import { editorModule } from '../../styles/rpg/editor.module.scss'

@@ -1,6 +1,6 @@
 .games {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     max-width: 100%;
     flex-wrap: wrap
 }
@@ -11,13 +11,14 @@
     border-top-right-radius: 20px;
     padding: 20px 40px;
     min-width: fit-content;
+    box-shadow: -3px 4px 6px #006bed30;
     //flex-basis: 100%;
     .description {}
     .title {
         margin-bottom: 0;
     }
     .play {
-        font-size: 1.5em;
+        font-size: 2.5em;
         color: #0069ed;
         cursor: pointer;
     }
