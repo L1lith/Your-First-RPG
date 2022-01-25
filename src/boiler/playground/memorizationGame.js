@@ -6,18 +6,17 @@ const words = ['tomato', 'banana', 'potato', 'broccoli', 'pickle', 'shoe', 'red'
 
 alert("Try to remember all the words and enter them back in order one at a time")
 let wordList = []
-let hasLost = false
-while (!hasLost) {
+while (true) { // The true never changes so it loops forever
     const word = pickRandomWord(words) // Add a new word
     wordList.push(word) // This adds the new word to the end of our list
     alert("Word Number " + (wordList.length) + ": " + word)
     // Now we've shown next word, now we gotta ask what all the words are
     // p stands for position, so we loop over the position of each word
     for (var p = 0; p < wordList.length; p++) {
-        const word = wordList[p]
-        const guess = prompt("What is word number " + (p + 1) + "?") // We add 1 to p since our array starts at 0
+        const word = wordList[p].trim().toLowerCase()
+        const guess = prompt("What is word number " + (p + 1) + "?").trim().toLowerCase() // We add 1 to p since our array starts at 0
         if (guess !== word) {
-            alert("You lose! The word was " + word + ".")
+            alert("You lose! The word was " + word + ". Your score was: " + wordList.length - 1)
             throw new Error("The game was lost") // This forces our program to exit
         }
     }
