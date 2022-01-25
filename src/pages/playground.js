@@ -1,6 +1,7 @@
 import adLibs from '!!raw-loader!../boiler/playground/adLibs'
 import darkWalk from '!!raw-loader!../boiler/playground/darkWalk'
 import memorizationGame from '!!raw-loader!../boiler/playground/memorizationGame'
+import rockPaperScissors from '!!raw-loader!../boiler/playground/rockPaperScissors'
 import Link from '../components/TranslatedLink'
 import {
   games,
@@ -53,6 +54,12 @@ export default function Playground() {
           title="A Dark Night"
           code={darkWalk}
           description="Take a walk in a dark city"
+          author="Lilith"
+        />
+        <Game
+          title="Rock Paper Scissors"
+          code={rockPaperScissors}
+          description="A game of chance"
           author="Lilith"
         />
       </div>
