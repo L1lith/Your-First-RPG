@@ -25,11 +25,10 @@ import { useQueryParam, BooleanParam, StringParam } from 'use-query-params'
 
 function CodeSandbox(props) {
   const [autoPlayQuery] = useQueryParam('autoPlay', BooleanParam)
-  const [codeQuery] = useQueryParam('code', StringParam)
   const [autoPlay, setAutoPlay] = useState(false) //useQueryParam('autoPlay', BooleanParam)
-  const [codeInput, setCodeQuery] = useState(codeQuery || props.value || '') //useQueryParam('code', StringParam)
+  const [codeQuery, setCodeQuery] = useQueryParam('code', StringParam) //useQueryParam('code', StringParam)
+  const [code, setCode] = useState(props.value || '')
   const autoPlayInput = useRef(null)
-  const [code, setCode] = useState(codeInput || props.value || '')
   const [shareOpen, setSharingOpen] = useState(false)
   const location = useLocation()
   const shareURL = `${location.origin}/rpg/editor?${props.codeQueryParam}=${encodeURIComponent(
@@ -48,6 +47,11 @@ function CodeSandbox(props) {
   //   if (!autoPlayQuery) return
   //   setShareAutoPlay(autoPlayQuery === '1')
   // }, [autoPlayQuery])
+  useEffect(() => {
+    if (codeQuery) {
+      setCode(codeQuery)
+    }
+  }, [codeQuery])
   useEffect(() => {
     if (autoPlayQuery) {
       setOutput(getOutput(code, props.consoleMode))
