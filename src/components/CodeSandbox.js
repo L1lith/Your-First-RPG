@@ -31,9 +31,9 @@ function CodeSandbox(props) {
   const autoPlayInput = useRef(null)
   const [shareOpen, setSharingOpen] = useState(false)
   const location = useLocation()
-  const shareURL = `${location.origin}/rpg/editor?${props.codeQueryParam}=${encodeURIComponent(
-    code
-  )}${autoPlay === true ? '&autoPlay=1' : ''}`
+  const shareURL = `/rpg/editor?${props.codeQueryParam}=${encodeURIComponent(code)}${
+    autoPlay === true ? '&autoPlay=1' : ''
+  }`
   const vert = !!props.vertical
   const [output, setOutput] = useState(
     props.disableAutoRun === true ? null : getOutput(code, props.consoleMode)
