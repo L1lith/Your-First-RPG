@@ -18,8 +18,8 @@ import {
 } from '../styles/CodeSandbox.module.scss'
 import AceEditor from './AceEditor'
 import Output from './Dictionary/en/Output'
-import Link from './TranslatedLink'
 import { useLocation } from '@reach/router'
+import { Link } from 'gatsby'
 import { Component, Fragment, useState, useEffect, useRef } from 'react'
 import { useQueryParam, BooleanParam, StringParam } from 'use-query-params'
 
@@ -31,9 +31,9 @@ function CodeSandbox(props) {
   const autoPlayInput = useRef(null)
   const [shareOpen, setSharingOpen] = useState(false)
   const location = useLocation()
-  const shareURL = `/rpg/editor?${props.codeQueryParam}=${encodeURIComponent(code)}${
-    autoPlay === true ? '&autoPlay=1' : ''
-  }`
+  const shareURL = `${location.origin}/rpg/editor?${props.codeQueryParam}=${encodeURIComponent(
+    code
+  )}${autoPlay === true ? '&autoPlay=1' : ''}`
   const vert = !!props.vertical
   const [output, setOutput] = useState(
     props.disableAutoRun === true ? null : getOutput(code, props.consoleMode)
