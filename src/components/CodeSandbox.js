@@ -53,10 +53,10 @@ function CodeSandbox(props) {
     }
   }, [codeQuery])
   useEffect(() => {
-    if (autoPlayQuery) {
-      setOutput(getOutput(code, props.consoleMode))
+    if (autoPlayQuery && codeQuery) {
+      setOutput(getOutput(codeQuery, props.consoleMode))
     }
-  }, [autoPlayQuery])
+  }, [autoPlayQuery, codeQuery])
   // let hasAutorun = false
   // useEffect(() => {
   //   if (shareAutoPlay === null || !code) return
