@@ -1,4 +1,6 @@
+import { defaultLanguage } from '../../i18n'
 import inspect from '../functions/inspect'
+import useLanguage from '../functions/useLanguage'
 import {
   vertical,
   sandbox,
@@ -31,9 +33,12 @@ function CodeSandbox(props) {
   const autoPlayInput = useRef(null)
   const [shareOpen, setSharingOpen] = useState(false)
   const location = useLocation()
-  const shareURL = `${location.origin}/rpg/editor?${props.codeQueryParam}=${encodeURIComponent(
-    code
-  )}${autoPlay === true ? '&autoPlay=1' : ''}`
+  const language = useLanguage()
+  const shareURL = `${location.origin}${
+    defaultLanguage === language ? '' : '/' + language
+  }/rpg/editor?${props.codeQueryParam}=${encodeURIComponent(code)}${
+    autoPlay === true ? '&autoPlay=1' : ''
+  }`
   const vert = !!props.vertical
   const [output, setOutput] = useState(
     props.disableAutoRun === true ? null : getOutput(code, props.consoleMode)
