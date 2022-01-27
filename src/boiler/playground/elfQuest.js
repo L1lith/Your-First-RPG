@@ -10,14 +10,10 @@ function getAction(question, actionList) {
     // Here we give a list of possible actions and retry until the user provides a valid response
     let answer = null
     while (!actionList.includes(answer)) {
-        answer = smartPrompt(question + " - possible actions: " + actionList.join(", ")) // Here we convert the list to a string by joining all of its contents with a comma and a space
+        answer = smartPrompt(question + "\n\nPossible Actions: " + actionList.join(", ")) // Here we convert the list to a string by joining all of its contents with a comma and a space
     }
     return answer
 }
-  
-var name = smartPrompt("What is your name adventurer?")
-
-alert("You wake up on a strange beach. '" + name + "' is written on the inside of your shirt.")
 
 function exploreTheBeach() { // We put our code for the beach in a function so we can re use it later
     while (true) { // We trap the user in this loop until they leave the beach
@@ -50,8 +46,32 @@ function exploreTheCave() {
 }
 
 function exploreTheForest() {
-    const choice = getAction("You enter a lush forest. You are surrounded by the sounds of birds and a small stream. You can see a stack of smoke billowing through the trees far away. What would you like to do?\n1. Follow the smoke\n2. Follow the river\n3. Leave the forest", ['follow the smoke', 'follow the river', 'leave the forest'])
-    alert(choice)
+    const choice = getAction("You enter a lush forest. You are surrounded by the sounds of birds and a small stream. You can see a stack of smoke billowing through the trees far away. What would you like to do?", ['investigate the smoke', 'follow the river', 'leave the forest'])
+    if (choice === "leave the forest") {
+        exploreTheFork()
+    } else if (choice === "investigate the smoke") {
+        investigateTheSmoke()
+    } else if (choice === "follow the river") {
+        exploreTheRiver()
+    }
 }
+
+function investigateTheSmoke() {
+    const approach = getAction("You fight your way through the dense thicket, with tree branches and brambles cutting at you. As the smell of smoke fills the air, you come upon a little clearing. Inside there is a figure in a red hood stoking a fire. Will you approach them?", ['approach', 'turn back']) === 'approach' // Here we have a boolean that says yes or no whether or not they said to approach
+    if (approach) {
+        alert("As you step into the clearing, the figure rips off their cloak to reveal a very muscular wolf. They quickly attack you, and you die. You have become a nice lunch.")
+    } else {
+        exploreTheForest() // Loop back to the forest opening
+    }
+}
+
+function exploreTheRiver() {
+
+}
+
+
+var name = smartPrompt("What is your name adventurer?")
+
+alert("You wake up on a strange beach. '" + name + "' is written on the inside of your shirt.")
 
 exploreTheBeach() // We start out by exploring the beach
