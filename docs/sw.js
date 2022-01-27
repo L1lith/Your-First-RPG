@@ -27,10 +27,10 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-7df621fe153542fcc8a6.js"
+    "url": "webpack-runtime-1cb84bebf96639a8c98b.js"
   },
   {
-    "url": "styles.a500b18c603af1e76007.css"
+    "url": "styles.7d732e17f84112e9cdf2.css"
   },
   {
     "url": "framework-80fbcdba419e70b29ef9.js"
@@ -43,7 +43,7 @@ self.__precacheManifest = [
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "a5d6be23490674389bbb51d9c1f03260"
+    "revision": "32bdafc78e3a48f481da2a6a9f905000"
   },
   {
     "url": "fonts/droidSerifRegular.ttf",
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "polyfill-cb6bfe04aa984d9012d0.js"
   },
   {
-    "url": "component---src-pages-index-en-js-823cd4c67a13887b7d95.js"
+    "url": "component---src-pages-index-en-js-691e60f65947008930e6.js"
   },
   {
     "url": "page-data/index/page-data.json",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "f8827d08f6210fab7ebe0fd507b2800e"
+    "revision": "efc8414203c547b9106c2ed306841178"
   },
   {
     "url": "component---src-pages-404-js-fdb2c18e1af077ab0db4.js"
@@ -102,7 +102,7 @@ self.__precacheManifest = [
     "url": "f9d80a4f4101a4b6ce9ff1ec368321a4b2285d33-f2b484c17de3f56f35c6.js"
   },
   {
-    "url": "component---src-pages-playground-js-2ae048ecc864162bbc6d.js"
+    "url": "component---src-pages-playground-js-222b410e662180e8f849.js"
   },
   {
     "url": "page-data/playground/page-data.json",
@@ -130,7 +130,7 @@ self.__precacheManifest = [
     "revision": "80d4e143042c3faf0a118aca709e5f79"
   },
   {
-    "url": "component---src-pages-toying-index-en-js-db375989c948cc9f3a66.js"
+    "url": "component---src-pages-toying-index-en-js-18ace34f934d36dc257d.js"
   },
   {
     "url": "page-data/toying/page-data.json",

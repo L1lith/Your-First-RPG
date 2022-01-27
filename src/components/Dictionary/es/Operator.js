@@ -2,9 +2,8 @@ import HoverDefinition from '../../HoverDefinition'
 
 const Operator = props => (
   <HoverDefinition
-    definition={`Un "operator" de codificación es una herramienta en el lenguaje que ingresa y emite datos.`}
-    {...props}
-  >
+    definition={`Un "operador" es una acción en la codificación que ingresa y genera datos, como comparar dos valores booleanos o sumar dos números.`}
+    {...props}>
     {props.children || 'operator'}
   </HoverDefinition>
 )

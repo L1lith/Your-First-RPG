@@ -21,7 +21,7 @@ export default function LevelOne() {
         AND, || means OR)
       </span>
       <p>
-        In this section we will be playing the Matching Rules game in order to learn about{' '}
+        In this section we will be playing the "Matching Rules" game in order to learn about{' '}
         <BooleanDef /> logic. <BooleanDef>Boolean</BooleanDef> logic is the fundamental language
         that both electronic circuitry, and computers themselves are made out of, and it happens to
         be a great tool for learning how we talk to computers.

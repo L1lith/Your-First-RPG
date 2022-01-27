@@ -36,9 +36,9 @@ export default function ToyingIntro() {
       <br />
       <br />
       <p>
-        Now that you've got a grasp on how to visualize your logic model, you will practice
-        visualizing your own logic model while playing a puzzle game. This hands-on problem solving
-        lesson will put you in a coding mindset before reading or writing a single line of code.
+        Now that you understand how to visualize your logic model, you can practice visualizing your
+        own logic model while playing puzzle games. These games will help you think about coding
+        without writing a single line of code.
       </p>
       <Link className="next" to="/toying/level-one">
         Next: #2.1 💬 Basic "Or" Boolean Logic
