@@ -16,7 +16,7 @@ while (true) { // The true never changes so it loops forever
         const word = wordList[p].trim().toLowerCase()
         const guess = prompt("What is word number " + (p + 1) + "?").trim().toLowerCase() // We add 1 to p since our array starts at 0
         if (guess !== word) {
-            alert("You lose! The word was " + word + ". Your score was: " + wordList.length - 1)
+            alert("You lose! The word was " + word + ". Your score was: " + (wordList.length - 1))
             throw new Error("The game was lost") // This forces our program to exit
         }
     }

@@ -31,7 +31,7 @@ export default function Home() {
         <h2>The Playground</h2>
         <Link to="/playground">
           <FontAwesomeIcon className={play} title="To the sandbox" icon={faPlayCircle} />
-          Want to play some games other people have made? Click here!
+          Want to play some games other people have made?
         </Link>
       </div>
       <h2>Why this course?</h2>
