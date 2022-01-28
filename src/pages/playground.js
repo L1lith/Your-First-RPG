@@ -63,11 +63,10 @@ export default function Playground() {
           description="Take a walk in a dark city"
           author="Lilith"
         />
-
         <Game
           title="Elf Quest"
           code={elfQuest}
-          description="Go on an adventure as a lost elf. Based on starter code in the game editor."
+          description="Go on an RPG adventure as a lost elf. Based on the starter code in the game editor."
           author="Lilith"
         />
       </div>
