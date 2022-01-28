@@ -49,7 +49,8 @@ function exploreTheCave() {
         if (Math.random() > 0.5 ) {
             const choice = getAction("You fall down the left path into a giant pit, but fortunately you land in a massive underground pool. You feel something tugging at your foot but it's too dark to see anything. What will you do?", ['kick it', 'accept your fate'])
             if (choice === "kick it") {
-                prompt("You stun it for a moment, then it pulls you underwater fast, where you drown. You lose!")
+                alert("You stun it for a moment, then it pulls you underwater fast, where you drown.")
+                alert('You lose!')
             } else if (choice === "accept your fate") {
                 const giveShoe = getAction('It drags you to the edge of the water. As you get to the shore you begin to make out the shape of some kind of strange sea creature with a mermaid tail, arms like a human, and webbed fingers. "Gruck. Am Gruck." muttered the creature. "H-hello Gruck, I am ' + name +'" you said, surprised. "Gruck love shoe. Shoe tasty" Gruck begins pulling at your shoe. Let Gruck eat your shoe?', ['take your shoe off', 'yell at Gruck']) === "take your shoe off"
                 if (giveShoe) {
