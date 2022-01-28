@@ -68,6 +68,7 @@ export default function Playground() {
           code={elfQuest}
           description="Go on an RPG adventure as a lost elf. Based on the starter code in the game editor."
           author="Lilith"
+          source="$$ELF-QUEST$$"
         />
       </div>
     </>
@@ -75,8 +76,15 @@ export default function Playground() {
 }
 
 const gamePropsFormat = {
-  _: { code: String, title: String, thumbnail: ANY, description: String, author: String },
-  optionalProps: ['thumbnail']
+  _: {
+    code: String,
+    title: String,
+    thumbnail: ANY,
+    description: String,
+    author: String,
+    source: String
+  },
+  optionalProps: ['thumbnail', 'source']
 }
 
 function Game(props) {
@@ -93,7 +101,12 @@ function Game(props) {
         className={'icon ' + play}>
         <FontAwesomeIcon title="Play the game" icon={faPlayCircle} />
       </span>
-      <Link className={source} to={'/rpg/editor?code=' + encodeURIComponent(props.code)}>
+      <Link
+        className={source}
+        to={
+          '/rpg/editor?code=' +
+          encodeURIComponent(typeof props.source == 'string' ? props.source : props.code)
+        }>
         See the code!
       </Link>
     </div>

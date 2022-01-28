@@ -1,3 +1,4 @@
+import elfQuest from '!!raw-loader!../boiler/playground/elfQuest'
 import { defaultLanguage } from '../../i18n'
 import inspect from '../functions/inspect'
 import useLanguage from '../functions/useLanguage'
@@ -24,6 +25,18 @@ import { useLocation } from '@reach/router'
 import { Link } from 'gatsby'
 import { Component, Fragment, useState, useEffect, useRef } from 'react'
 import { useQueryParam, BooleanParam, StringParam } from 'use-query-params'
+
+const templates = {
+  '$$ELF-QUEST$$': elfQuest
+}
+
+function expandTemplates(code) {
+  if (templates.hasOwnProperty(code)) {
+    return templates[code]
+  } else {
+    return code
+  }
+}
 
 function CodeSandbox(props) {
   const [autoPlayQuery] = useQueryParam('autoPlay', BooleanParam)
@@ -54,12 +67,12 @@ function CodeSandbox(props) {
   // }, [autoPlayQuery])
   useEffect(() => {
     if (codeQuery) {
-      setCode(codeQuery)
+      setCode(expandTemplates(codeQuery))
     }
   }, [codeQuery])
   useEffect(() => {
     if (autoPlayQuery && codeQuery) {
-      setOutput(getOutput(codeQuery, props.consoleMode))
+      setOutput(getOutput(expandTemplates(codeQuery), props.consoleMode))
     }
   }, [autoPlayQuery, codeQuery])
   // let hasAutorun = false
