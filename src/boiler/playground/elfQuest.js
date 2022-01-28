@@ -5,7 +5,6 @@ function smartPrompt(question) {
     }
     return output.trim()
 }
-  
 function getAction(question, actionList) { 
     // Here we give a list of possible actions and retry until the user provides a valid response
     let answer = null
@@ -14,7 +13,6 @@ function getAction(question, actionList) {
     }
     return answer
 }
-
 function exploreTheBeach() { // We put our code for the beach in a function so we can re use it later
     while (true) { // We trap the user in this loop until they leave the beach
         const nextAction = getAction("What would you like to do?", ["wait", "explore the beach", "leave the beach"]) // Lists are surrounded by square brackets and separated by commas
@@ -24,12 +22,10 @@ function exploreTheBeach() { // We put our code for the beach in a function so w
         } else if (nextAction === "explore the beach") {
             alert("You find a large Oyster shell. Years of bombardment by the waves has left it brittle and chipped, but it's curves are still beautiful and pearlescent")
         } else if (nextAction === "leave the beach") { // the only remaining option is to leave the beach so we assume that
-            exploreTheFork() // Now we reach the fork in the path
-            return
+            return exploreTheFork() // Now we reach the fork in the path
         }
     }
 }
-
 function exploreTheFork() {
     const direction = getAction("As you leave the beach you reach the edge of a divide between a dark forest and a giant cave in the side of the mountain. Which way would you like to go?", ["enter the forest", "enter the cave", "return to the beach"])
     if (direction === "enter the forest") {
@@ -37,16 +33,14 @@ function exploreTheFork() {
     } else if (direction === "enter the cave") {
         exploreTheCave()
     } else if (direction === "return to the beach") {
-        exploreTheBeach() // Go back to the beach. Because it's a function we can run the code again without having to rewrite it
+        exploreTheBeach()
     }
 }
-
 function exploreTheCave() {
     const enter = getAction("You find a dark cave, twisting downwards into the earth. You can hear stalagmites slowly dripping with water below. Would you like to proceed into the cave?", ['yes', 'no']) === 'yes'
     if (enter) {
         alert("As you enter the cave you realize the rocks were more slippery than you realize. You begin to slip, and fall down a fork in the cave shaft.")
-        // Math.random() returns a decimal between 0 and 1. This means here we have a fifty percent chance of getting either path
-        if (Math.random() > 0.5 ) {
+        if (Math.random() > 0.5 ) { // 50% chance
             const choice = getAction("You fall down the left path into a giant pit, but fortunately you land in a massive underground pool. You feel something tugging at your foot but it's too dark to see anything. What will you do?", ['kick it', 'accept your fate'])
             if (choice === "kick it") {
                 alert("You stun it for a moment, then it pulls you underwater fast, where you drown.")
@@ -83,7 +77,6 @@ function exploreTheCave() {
         exploreTheFork()
     }
 }
-
 function exploreTheForest() {
     const choice = getAction("You enter a lush forest. You are surrounded by the sounds of birds and a small stream. You can see a stack of smoke billowing through the trees far away. What would you like to do?", ['investigate the smoke', 'follow the river', 'leave the forest'])
     if (choice === "leave the forest") {
@@ -94,17 +87,15 @@ function exploreTheForest() {
         exploreTheRiver()
     }
 }
-
 function investigateTheSmoke() {
     const approach = getAction("You fight your way through the dense thicket, with tree branches and brambles cutting at you. As the smell of smoke fills the air, you come upon a little clearing. Inside there is a figure in a red hood stoking a fire. Will you approach them?", ['approach', 'turn back']) === 'approach' // Here we have a boolean that says yes or no whether or not they said to approach
     if (approach) {
         alert("As you step into the clearing, the figure rips off their cloak to reveal a very muscular wolf. They quickly attack you, and you die. You have become a nice lunch.")
         alert("You lose!")
     } else {
-        exploreTheForest() // Loop back to the forest opening
+        exploreTheForest()
     }
 }
-
 function exploreTheRiver() {
     const willCross = getAction("You follow the riverbank, but it becomes more windy, and you realize the only way to proceed will be to cross the river. It is roaring and full of fish. Will you cross the river?", ['cross the river', 'go back']) === 'cross the river'
     if (willCross) {
@@ -114,9 +105,6 @@ function exploreTheRiver() {
         exploreTheForest()
     }
 }
-
 var name = smartPrompt("What is your name adventurer?")
-
 alert("You wake up on a strange beach. '" + name + "' is written on the inside of your shirt.")
-
-exploreTheBeach() // We start out by exploring the beach
+exploreTheBeach()
