@@ -22,7 +22,7 @@ export default function Playground() {
   return (
     <>
       <Helmet>
-        <title>Playground</title>
+        <title>The Playground</title>
         <meta name="description" content="Play the RPG games other people have made!" />
       </Helmet>
       <h1>The Playground</h1>
