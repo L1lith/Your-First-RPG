@@ -10,7 +10,7 @@ function getAction(question, actionList) {
     // Here we give a list of possible actions and retry until the user provides a valid response
     let answer = null
     while (!actionList.includes(answer)) {
-        answer = smartPrompt(question + " - possible actions: " + actionList.join(", ")) // Here we convert the list to a string by joining all of its contents with a comma and a space
+        answer = smartPrompt(question + "\n\nPossible Actions: " + actionList.join(", ")) // Here we convert the list to a string by joining all of its contents with a comma and a space
     }
     return answer
 }

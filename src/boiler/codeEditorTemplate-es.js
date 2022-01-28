@@ -10,7 +10,7 @@ function obtenerAccion(pregunta, listaDeAccion) {
     // Aquí damos una lista de posibles acciones y reintentamos hasta que el usuario proporcione una respuesta válida
     let respuesta = null
     while (!listaDeAccion.includes(answer)) {
-        respuesta = avisoInteligente(pregunta + " - possible actions: " + listaDeAccion.join(", ")) // Here we convert the list to a string by joining all of its contents with a comma and a space
+        respuesta = avisoInteligente(pregunta + "\n\nPosibles Acciones: " + listaDeAccion.join(", ")) // Here we convert the list to a string by joining all of its contents with a comma and a space
     }
     return respuesta
 }
