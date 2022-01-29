@@ -252,7 +252,7 @@ function getConsoleOutput(code) {
     )
   } catch (err) {
     console.log = oldLog
-    return <span className={outputSpan + ' ' + error}>{inspect(err)}</span>
+    return <span className={outputSpan + ' ' + error}>{String(err)}</span>
   }
 }
 
@@ -271,7 +271,7 @@ function getEvalOutput(code) {
       />
     )
   } catch (err) {
-    return <span className={outputSpan + ' ' + error}>{inspect(err)}</span>
+    return <span className={outputSpan + ' ' + error}>{String(err)}</span>
   }
 }
 
