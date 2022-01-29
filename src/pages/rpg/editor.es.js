@@ -1,7 +1,7 @@
 import defaultGame from '!!raw-loader!../../boiler/codeEditorTemplate-es'
 import CodeSandbox from '../../components/CodeSandbox'
 import Link from '../../components/TranslatedLink'
-import { editorModule } from '../../styles/rpg/editor.module.scss'
+import { editorModule, describeIcon, warning } from '../../styles/rpg/editor.module.scss'
 import { faPlayCircle, faDownload, faUpload } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Helmet } from 'react-helmet'
