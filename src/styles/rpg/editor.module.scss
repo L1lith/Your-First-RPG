@@ -1,3 +1,15 @@
 .editorModule {
     width: 78vw !important;
 }
+.describeIcon {
+    color: #39ff14;
+    height: 1em;
+    width: auto;
+    filter: drop-shadow(0 0 2px black);
+}
+.warning {
+    border: 2px solid red;
+    margin: 20px 0;
+    padding: 10px 15px;
+    font-weight: bold;
+}

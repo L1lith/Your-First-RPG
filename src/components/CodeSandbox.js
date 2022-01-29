@@ -168,8 +168,11 @@ function CodeSandbox(props) {
             className={icon}
             title="Reset"
             onClick={() => {
-              setCode(props.value || '')
-              setCodeQuery()
+              if (codeQuery) {
+                setCode(getTemplate(codeQuery))
+              } else {
+                setCode(props.value || '')
+              }
             }}
             icon={faTimesCircle}
           />

@@ -34,7 +34,8 @@ export default function Playground() {
         <a
           target="_blank"
           className="bold"
-          href="https://github.com/L1lith/Your-First-RPG/issues/new?assignees=&labels=rpg+display&template=display-your-project-on-the-site.md">
+          href="https://github.com/L1lith/Your-First-RPG/issues/new?assignees=&labels=rpg+display&template=display-your-project-on-the-site.md"
+        >
           here.
         </a>{' '}
       </p>
@@ -102,7 +103,8 @@ function Game(props) {
         onClick={() => {
           eval(props.code)
         }}
-        className={'icon ' + play}>
+        className={'icon ' + play}
+      >
         <FontAwesomeIcon title="Play the game" icon={faPlayCircle} />
       </span>
       {typeof props.source == 'string' ? (
