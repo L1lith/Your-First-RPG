@@ -3,8 +3,6 @@
 
 .sandbox {
     .icon {
-        margin-left: 20px;
-        cursor: pointer;
     }
     margin: 25px 0 25px 0;
     padding: 1vw;
@@ -22,7 +20,6 @@
     transform: none;
     overflow: none;
     .settings {
-        //margin-top: 100px;
         .autoPlay {
             input {
                 width: 0.5em;
@@ -92,7 +89,22 @@
             margin-left: auto;
             margin-right: auto;
         }
-        & > .icon {
+        .upload {
+            position: relative;
+            input {
+                cursor: pointer;
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 100;
+            }
+        }
+        .icon {
+            margin-left: 20px;
+            cursor: pointer;
             &:hover {
                 text-shadow: 1px 2px 5px rgba(255, 255, 255, 0.418);
                 transition: text-shadow 0.15s linear;
@@ -115,12 +127,12 @@
             // width: 50px;
             // height: 50px;
             width: auto;
-            height: auto;
+            height: 1em;
             line-height: 50px;
             cursor: pointer;
             transition: color 0.5s ease;
         }
-        padding: 0 20px;
+        padding: 5px 20px;
         align-items: center;
         display: flex;
         justify-content: space-between;

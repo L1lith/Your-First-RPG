@@ -1,5 +1,10 @@
+import adLibs from '!!raw-loader!../boiler/playground/adLibs'
+import darkWalk from '!!raw-loader!../boiler/playground/darkWalk'
 import elfQuest from '!!raw-loader!../boiler/playground/elfQuest'
+import memorizationGame from '!!raw-loader!../boiler/playground/memorizationGame'
+import rockPaperScissors from '!!raw-loader!../boiler/playground/rockPaperScissors'
 import { defaultLanguage } from '../../i18n'
+import downloadFile from '../functions/downloadFile'
 import inspect from '../functions/inspect'
 import useLanguage from '../functions/useLanguage'
 import {
@@ -17,24 +22,38 @@ import {
   outputSpan,
   aceEditor,
   title,
-  valid
+  error,
+  valid,
+  upload,
+  download
 } from '../styles/CodeSandbox.module.scss'
 import AceEditor from './AceEditor'
 import Output from './Dictionary/en/Output'
+import {
+  faPlayCircle,
+  faDownload,
+  faUpload,
+  faTimesCircle
+} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useLocation } from '@reach/router'
 import { Link } from 'gatsby'
 import { Component, Fragment, useState, useEffect, useRef } from 'react'
 import { useQueryParam, BooleanParam, StringParam } from 'use-query-params'
 
 const templates = {
-  '$$ELF-QUEST$$': elfQuest
+  elfQuest,
+  darkWalk,
+  memorizationGame,
+  rockPaperScissors,
+  adLibs
 }
 
-function expandTemplates(code) {
+function getTemplate(code) {
   if (templates.hasOwnProperty(code)) {
     return templates[code]
   } else {
-    return code
+    throw new Error('Unknown Template')
   }
 }
 
@@ -52,34 +71,23 @@ function CodeSandbox(props) {
   }/rpg/editor?${props.codeQueryParam}=${encodeURIComponent(code)}${
     autoPlay === true ? '&autoPlay=1' : ''
   }`
+  const consoleMode = !!props.consoleMode
+  const disableAutoRun = !!props.disableAutoRun
   const vert = !!props.vertical
   const [output, setOutput] = useState(
-    props.disableAutoRun === true ? null : getOutput(code, props.consoleMode)
+    !disableAutoRun && code ? getOutput(code, consoleMode) : null
   )
-  // useEffect(() => {
-  //   if (!queryCode) return
-  //   setCode(queryCode)
-  // }, [queryCode])
-  // useEffect(() => {
-  //   if (shareAutoPlay !== null) return
-  //   if (!autoPlayQuery) return
-  //   setShareAutoPlay(autoPlayQuery === '1')
-  // }, [autoPlayQuery])
+  if (!disableAutoRun) {
+    useEffect(() => {
+      setOutput(getOutput(code, consoleMode))
+    }, [code])
+  }
+
   useEffect(() => {
     if (codeQuery) {
-      setCode(expandTemplates(codeQuery))
+      setCode(getTemplate(codeQuery))
     }
   }, [codeQuery])
-  useEffect(() => {
-    if (autoPlayQuery && codeQuery) {
-      setOutput(getOutput(expandTemplates(codeQuery), props.consoleMode))
-    }
-  }, [autoPlayQuery, codeQuery])
-  // let hasAutorun = false
-  // useEffect(() => {
-  //   if (shareAutoPlay === null || !code) return
-  //   setOutput(getOutput(code, props.consoleMode))
-  // }, [shareAutoPlay, code])
 
   return (
     <div
@@ -116,42 +124,55 @@ function CodeSandbox(props) {
         </span>
       ) : null}
       <h2 className={mainTitle}>
-        {props.disableAutoRun === true ? (
-          <span
+        {disableAutoRun ? (
+          <FontAwesomeIcon
+            className={icon}
+            onClick={() => {
+              setOutput(getOutput(code, consoleMode))
+            }}
             title="Run"
-            className={icon}
-            onClick={() => {
-              setOutput(getOutput(code, props.consoleMode))
-            }}>
-            ▶
-          </span>
+            icon={faPlayCircle}
+          />
         ) : null}
-        <span className={mode}>
-          {props.consoleMode === true ? 'Terminal' : 'Expression Evaluator'}
-        </span>
+        <span className={mode}>{consoleMode === true ? 'Terminal' : 'Expression Evaluator'}</span>
         {props.readOnly === true ? ' (Read Only)' : null}
+        <FontAwesomeIcon
+          onClick={() => {
+            if (!code) return alert('Your editor is empty, cannot download!')
+            downloadFile('my-game.js', code)
+          }}
+          className={icon + ' ' + download}
+          title="Download App"
+          icon={faDownload}
+        />
+        <div title="Upload App" className={upload}>
+          <input
+            type="file"
+            accept="text/javascript"
+            onChange={event => {
+              const file = event.target.files[0]
+              if (file) {
+                const reader = new FileReader()
+                reader.readAsText(file)
+                reader.onload = loadEvent => {
+                  setCode(loadEvent.target.result)
+                } // desired file content
+                reader.onerror = console.error
+              }
+            }}
+          />
+          <FontAwesomeIcon className={icon} icon={faUpload} />
+        </div>
         {props.noReset !== true ? (
-          <span
-            title="Reset"
+          <FontAwesomeIcon
             className={icon}
+            title="Reset"
             onClick={() => {
-              setCode('')
-              setCodeQuery('')
-            }}>
-            ❌
-          </span>
-        ) : null}
-        {props.hasOwnProperty('codeQueryParam') == true ? (
-          <Fragment>
-            <span
-              title="Share"
-              onClick={() => {
-                setSharingOpen(true)
-              }}
-              className={icon}>
-              ☁️
-            </span>
-          </Fragment>
+              setCode(props.value || '')
+              setCodeQuery()
+            }}
+            icon={faTimesCircle}
+          />
         ) : null}
       </h2>
       <noscript>Please Enable JavaScript</noscript>
@@ -167,7 +188,6 @@ function CodeSandbox(props) {
             value={code}
             onChange={newCode => {
               setCode(newCode)
-              setCodeQuery(newCode)
               if (props.disableAutoRun !== true) {
                 setOutput(getOutput(newCode, props.consoleMode))
               }

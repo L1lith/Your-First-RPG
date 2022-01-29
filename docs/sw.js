@@ -27,23 +27,23 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-75bf9a8fca2359c2ea81.js"
+    "url": "webpack-runtime-46547d6136551b9dc1fe.js"
   },
   {
-    "url": "styles.7d732e17f84112e9cdf2.css"
+    "url": "styles.017392329604112fb0e5.css"
   },
   {
     "url": "framework-80fbcdba419e70b29ef9.js"
   },
   {
-    "url": "cb1608f2-405bec7f14c2c38dcc25.js"
+    "url": "cb1608f2-e65a40bed815be93124a.js"
   },
   {
-    "url": "app-e73c44b48c3cc434e81d.js"
+    "url": "app-3e1bdfb0eaba182cb3c8.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "e9d2ecb7add5ca5490be058092933341"
+    "revision": "efeea9718204ed326f689cc93a3120c8"
   },
   {
     "url": "fonts/droidSerifRegular.ttf",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "906392c10bf8f76d63662a7153e5bd69"
+    "revision": "7ba4a609194fc3c857c0a925b7be3f86"
   },
   {
     "url": "component---src-pages-404-js-fdb2c18e1af077ab0db4.js"
@@ -102,7 +102,7 @@ self.__precacheManifest = [
     "url": "f9d80a4f4101a4b6ce9ff1ec368321a4b2285d33-f2b484c17de3f56f35c6.js"
   },
   {
-    "url": "component---src-pages-playground-js-b2dcf94c4b9bcdf4392e.js"
+    "url": "component---src-pages-playground-js-2754b1cd3f37547e3161.js"
   },
   {
     "url": "page-data/playground/page-data.json",
@@ -255,7 +255,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-e73c44b48c3cc434e81d.js`))) {
+  if (!resources || !(await caches.match(`/app-3e1bdfb0eaba182cb3c8.js`))) {
     return await fetch(event.request)
   }
 
