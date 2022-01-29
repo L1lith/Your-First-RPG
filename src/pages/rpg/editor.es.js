@@ -2,6 +2,8 @@ import defaultGame from '!!raw-loader!../../boiler/codeEditorTemplate-es'
 import CodeSandbox from '../../components/CodeSandbox'
 import Link from '../../components/TranslatedLink'
 import { editorModule } from '../../styles/rpg/editor.module.scss'
+import { faPlayCircle, faDownload, faUpload } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Helmet } from 'react-helmet'
 
 function Editor() {
@@ -18,11 +20,15 @@ function Editor() {
       </Helmet>
       <h1>#4.3 🛠️ La editora de juegos</h1>
       <p>
-        ¡Construye tu propio juego! Asegúrate de presionar el botón ☁️ y compartir tu URL.
-        JavaScript debe estar habilitado en su navegador para usar el editor de juegos.
+        ¡Construye tu propio juego! Asegúrate de presionar el botón{' '}
+        <FontAwesomeIcon className={describeIcon} icon={faDownload} /> para guardar tu juego. A
+        carga tu juego presiona el botón{' '}
+        <FontAwesomeIcon className={describeIcon} icon={faUpload} />.
         <br />
-        Advertencia: debes guardar tu URL o los datos de tu juego podrían perderse.
       </p>
+      <span className={warning}>
+        Advertencia: debes guardar el archivo del juego en un lugar seguro o podría perderse.
+      </span>
       <CodeSandbox
         className={editorModule}
         codeQueryParam={'code'}
