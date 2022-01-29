@@ -2,6 +2,7 @@ import LevelThreeGame from '../../components/BooleanGame/levels/LevelThree'
 import BooleanDef from '../../components/Dictionary/en/BooleanDef'
 import Expression from '../../components/Dictionary/en/Expression'
 import Operator from '../../components/Dictionary/en/Operator'
+import Software from '../../components/Dictionary/en/Software'
 import Syntax from '../../components/Dictionary/en/Syntax'
 import Link from '../../components/TranslatedLink'
 import YTVideo from '../../components/YTVideo'
@@ -24,7 +25,7 @@ export default function LevelThree() {
         <br />
         <br />
         Rather than writing enormous combinations of ORs, NOTs, and other logical{' '}
-        <Operator>operators</Operator>, software engineers conveniently created coding languages
+        <Operator>operators</Operator>, <Software /> engineers conveniently created coding languages
         packed in with features that allow us to say what we are trying to do more easily. In fact,
         nearly every coding language has support for <BooleanDef /> logic built-in, which is an
         essential part of your toolkit as a coder.
@@ -39,8 +40,8 @@ export default function LevelThree() {
         You might have noticed that when given a NOT <Operator /> with multiple values, it is
         sometimes easier to think of it as simply a request for whatever is missing. This is an
         example of how we can build more complex rules from simplistic systems. Writing good
-        software is about learning to create apps with complex capabilities without making the code
-        itself overly complex or messy.
+        <Software /> is about learning to create apps with complex capabilities without making the
+        code itself overly complex or messy.
         <br />
         <br />
         Like speaking any language (human or machine), learning how to better express yourself (by

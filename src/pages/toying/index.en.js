@@ -38,7 +38,7 @@ export default function ToyingIntro() {
       <p>
         Now that you understand how to visualize your logic model, you can practice visualizing your
         own logic model while playing puzzle games. These games will help you think about coding
-        without writing a single line of code.
+        without needing to know how to write it.
       </p>
       <Link className="next" to="/toying/level-one">
         Next: #2.1 💬 Basic "Or" Boolean Logic

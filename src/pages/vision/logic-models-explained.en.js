@@ -1,5 +1,6 @@
 import BooleanDef from '../../components/Dictionary/en/BooleanDef'
 import Output from '../../components/Dictionary/en/Output'
+import Software from '../../components/Dictionary/en/Software'
 import Stack from '../../components/Dictionary/en/Stack'
 import EasterEgg from '../../components/EasterEgg'
 import Link from '../../components/TranslatedLink'
@@ -100,15 +101,14 @@ export default function LogicModelsExplained() {
         </tr>
       </table>
       <p>
-        In coding we have a set of software and methodology that makes describing our logical system
-        much easier. In the world of website development, we call this a <Stack />. Much like a
-        civil engineer must consider the effectiveness of a roadway system, when building a website
-        we must consider many aspects of the system, like cyber safety (allowing unsafe input data
-        has led to many people getting hacked), user experience, and visual appeal. By better
-        understanding the logic models behind our software we better understand where the issues
-        arise, preventing terrible database leaks and user rage-quits before they ever happen.
-        <br />
-        <br />
+        In coding we have a set of <Software /> and methodology that makes describing our logical
+        system much easier. In the world of website development, we call this a <Stack />. Much like
+        a civil engineer must consider the effectiveness of a roadway system, when building a
+        website we must consider many aspects of the system, like cyber safety (allowing unsafe
+        input data has led to many people getting hacked), user experience, and visual appeal. By
+        better understanding the logic models behind our <Software /> we better understand where the
+        issues arise, preventing terrible database leaks and user rage-quits before they ever
+        happen.
       </p>
       <YTVideo url="qybUFnY7Y8w" thumbnail="/images/this-too-shall-pass.jpg" />
       <span className="italic">it works perfectly 60% of the time!</span>
@@ -124,22 +124,22 @@ export default function LogicModelsExplained() {
         Next you must think about every step in your code, and how these{' '}
         <span className="bold">rules</span> ultimately handle your users' input and translates them
         into the program's <Output />. Don't cut corners or leave problems for someone else to deal
-        with. Building the best software you can the first time (you'll definitely write some messy
-        code starting out, but after you make your first draft of something try to come back and
-        look for ways to improve it) will save you a lot of time later on. Understand the deep inner
-        workings of your <Stack /> by{' '}
+        with. Building the best <Software /> you can the first time (you'll definitely write some
+        messy code starting out, but after you make your first draft of something try to come back
+        and look for ways to improve it) will save you a lot of time later on. Understand the deep
+        inner workings of your <Stack /> by{' '}
         <span className="underline">toying around with it and asking questions</span>
         !
         <br />
         <br />
-        The <Output /> is what the users of your software experience (this is a{' '}
+        The <Output /> is what the users of your app experience (this is a{' '}
         <span className="underline">critical</span> aspect of your logic model), so when coding you
         must always think about what your users are trying to achieve, and not only all the possible
-        issues and bugs they could run into, but also how to make your software straightforward and
-        convenient. Like good road design, your software should effectively serve your users,
-        instead of forcing your users to be focused trying to deal with your poorly designed
-        software. Take responsibility as an engineer for avoidable crashes and other issues that
-        arise with your software.
+        issues and bugs they could run into, but also how to make your <Software /> straightforward
+        and convenient. Like good road design, your <Software /> should effectively serve your
+        users, instead of forcing your users to be focused trying to deal with your poorly designed{' '}
+        <Software />. Take responsibility as an engineer for avoidable crashes and other issues that
+        arise with your <Software />.
       </p>
       <Link className="next" to="/toying">
         Next: #2.0 🧩 Playing around with Logic Puzzles

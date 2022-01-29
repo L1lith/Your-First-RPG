@@ -26,8 +26,8 @@ export default function CodingMindset() {
         Take coding at your own pace and take time for yourself
       </span>
       <p>
-        Programmers are great at writing code only they can understand. Many beginners can feel
-        alienated after hearing "just read the <Docs />
+        Coders are great at writing code only they can understand. Many beginners can feel alienated
+        after hearing "just read the <Docs />
         ", and aren't given a proper chance to understand why coders do what they do.
         <br />
         <br />
@@ -35,9 +35,9 @@ export default function CodingMindset() {
         <a target="_blank" href="https://nodejs.org/docs/latest-v15.x/api/">
           this one
         </a>{' '}
-        can be a valuable tool for experienced programmers, but for a beginner it's a total
-        headache. It's important to understand the concepts in simple terms so you can begin to
-        visualize what you are trying to do.
+        can be a valuable tool for coding experts, but for a beginner it's a giant pain. It's
+        important to understand the concepts in simple terms so you can begin to visualize what you
+        are trying to do.
         <br />
         <br />
         Another key to learning is to practice. In this section I will guide you through basic
