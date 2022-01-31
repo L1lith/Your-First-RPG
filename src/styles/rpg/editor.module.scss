@@ -1,5 +1,5 @@
 .editorModule {
-    width: 78vw !important;
+    //width: 78vw !important;
 }
 .describeIcon {
     color: #39ff14;
@@ -10,7 +10,8 @@
 .warning {
     display: block;
     border: 2px solid red;
-    margin: 20px 0;
+    margin: 20px auto;
     padding: 10px 15px;
     font-weight: bold;
+    width: fit-content;
 }

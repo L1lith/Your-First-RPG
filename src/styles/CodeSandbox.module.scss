@@ -35,7 +35,7 @@
         display: inline-block;
         min-height: 90px;
     }
-    & > .sharePopup {
+    & > .popup {
         overflow: auto;
         padding-top: 5vh;
         position: absolute;
@@ -50,11 +50,12 @@
             text-shadow: none;
         }
         & > .close {
+            display: block;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: 10px;
             cursor: pointer;
-            top: 20px;
-            right: 20px;
             text-shadow: none;
-            position: absolute;
             //filter: grayscale(100%);
         }
         z-index: 100;
@@ -103,7 +104,12 @@
             }
         }
         .icon {
-            margin-left: 20px;
+            &:first-child{
+                margin-right: 20px;
+            }
+            &:not(:first-child) {
+                margin-left: 20px;
+            }
             cursor: pointer;
             &:hover {
                 text-shadow: 1px 2px 5px rgba(255, 255, 255, 0.418);
