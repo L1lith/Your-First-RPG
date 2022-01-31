@@ -2,7 +2,7 @@ import defaultGame from '!!raw-loader!../../boiler/codeEditorTemplate-es'
 import CodeSandbox from '../../components/CodeSandbox'
 import Link from '../../components/TranslatedLink'
 import { editorModule, describeIcon, warning } from '../../styles/rpg/editor.module.scss'
-import { faPlayCircle, faDownload, faUpload } from '@fortawesome/free-solid-svg-icons'
+import { faTimesCircle, faDownload, faUpload } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Helmet } from 'react-helmet'
 
@@ -38,8 +38,9 @@ function Editor() {
         disableAutoRun
       />
       <p>
-        Siéntase libre de presionar el ❌ para eliminar el código de inicio. ¡Intenta voltear tu
-        teléfono hacia un lado si estás en un dispositivo móvil!
+        Siéntase libre de presionar el{' '}
+        <FontAwesomeIcon icon={faTimesCircle} className={describeIcon} /> para eliminar el código de
+        inicio.
       </p>
       <p>
         Si desea obtener más información sobre JavaScript o si desea ayudarme, continúe con la

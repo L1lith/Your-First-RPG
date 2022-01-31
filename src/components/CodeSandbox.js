@@ -7,7 +7,6 @@ import { defaultLanguage } from '../../i18n'
 import downloadFile from '../functions/downloadFile'
 import inspect from '../functions/inspect'
 import useLanguage from '../functions/useLanguage'
-import useWindowDimensions from '../functions/useWindowDimensions'
 import {
   vertical,
   sandbox,
@@ -90,17 +89,9 @@ function CodeSandbox(props) {
       setCode(getTemplate(codeQuery))
     }
   }, [codeQuery])
-  const { width, height } = useWindowDimensions()
-  const [dimensionPopupClosed, setDimensionPopupClosed] = useState(false)
-
-  return (
-    <div
-      className={
-        (vert === true ? vertical + ' ' : '') +
-        (typeof props.className == 'string' ? props.className + ' ' : '') +
-        sandbox
-      }>
-      {!dimensionPopupClosed && height > width ? (
+  // const { width, height } = useWindowDimensions()
+  // const [dimensionPopupClosed, setDimensionPopupClosed] = useState(false)
+  /*{!dimensionPopupClosed && height > width ? (
         <span className={popup}>
           <span
             className={icon + ' ' + close}
@@ -111,7 +102,14 @@ function CodeSandbox(props) {
           </span>
           Try turning your device sideways
         </span>
-      ) : null}
+      ) : null} */
+  return (
+    <div
+      className={
+        (vert === true ? vertical + ' ' : '') +
+        (typeof props.className == 'string' ? props.className + ' ' : '') +
+        sandbox
+      }>
       {shareOpen ? (
         <span className={sharePopup}>
           Your Sharing URL:

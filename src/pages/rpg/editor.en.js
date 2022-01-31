@@ -2,7 +2,7 @@ import defaultGame from '!!raw-loader!../../boiler/codeEditorTemplate'
 import CodeSandbox from '../../components/CodeSandbox'
 import Link from '../../components/TranslatedLink'
 import { editorModule, describeIcon, warning } from '../../styles/rpg/editor.module.scss'
-import { faPlayCircle, faDownload, faUpload } from '@fortawesome/free-solid-svg-icons'
+import { faDownload, faUpload, faTimesCircle } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Helmet } from 'react-helmet'
 
@@ -42,8 +42,8 @@ function Editor() {
         disableAutoRun
       />
       <p>
-        Feel free to press the ❌ to delete the starter code. Try flipping your phone sideways if
-        you're on mobile!
+        Feel free to press the <FontAwesomeIcon className={describeIcon} icon={faTimesCircle} /> to
+        reset the code.
       </p>
       <p>
         If you'd like to learn more about JavaScript, or you'd like to support me, continue on to
