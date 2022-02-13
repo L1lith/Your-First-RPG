@@ -35,7 +35,8 @@ function LanguageSelector(props) {
             }}
             lang={language}
             className={languageOption}
-            key={i}>
+            key={i}
+          >
             {languagesProperNames[language]}
           </a>
         ))}
@@ -43,7 +44,8 @@ function LanguageSelector(props) {
         onClick={() => {
           setPopup(null)
         }}
-        className={'icon ' + close}>
+        className={'icon ' + close}
+      >
         ❌
       </span>
     </div>
@@ -53,7 +55,8 @@ function LanguageSelector(props) {
       onClick={() => {
         setPopup(languageMenuComponent)
       }}
-      className={languageMenu}>
+      className={languageMenu}
+    >
       <FontAwesomeIcon className={languageIcon} title="Languages" icon={faGlobe} />
       <div className={current}>{languagesShorthands[language]}</div>
     </div>

@@ -34,7 +34,8 @@ export default function Playground() {
         <a
           target="_blank"
           className="bold"
-          href="https://github.com/L1lith/Your-First-RPG/issues/new?assignees=&labels=rpg+display&template=display-your-project-on-the-site.md">
+          href="https://github.com/L1lith/Your-First-RPG/issues/new?assignees=&labels=rpg+display&template=display-your-project-on-the-site.md"
+        >
           here.
         </a>{' '}
       </p>
@@ -44,31 +45,35 @@ export default function Playground() {
           code={adLibs}
           description="A silly story creator"
           author="Lilith"
+          source="adLibs"
         />
         <Game
           title="The Memorization Game"
           code={memorizationGame}
           description="See how many words you can remember in a row"
           author="Lilith"
+          source="memorizationGame"
         />
         <Game
           title="Rock Paper Scissors"
           code={rockPaperScissors}
           description="A game of chance"
           author="Lilith"
+          source="rockPaperScissors"
         />
         <Game
           title="A Dark Night"
           code={darkWalk}
           description="Take a walk in a dark city"
           author="Lilith"
+          source="darkWalk"
         />
         <Game
           title="Elf Quest"
           code={elfQuest}
           description="Go on an RPG adventure as a lost elf. Based on the starter code in the game editor."
           author="Lilith"
-          source="$$ELF-QUEST$$"
+          source="elfQuest"
         />
       </div>
     </>
@@ -98,17 +103,15 @@ function Game(props) {
         onClick={() => {
           eval(props.code)
         }}
-        className={'icon ' + play}>
+        className={'icon ' + play}
+      >
         <FontAwesomeIcon title="Play the game" icon={faPlayCircle} />
       </span>
-      <Link
-        className={source}
-        to={
-          '/rpg/editor?code=' +
-          encodeURIComponent(typeof props.source == 'string' ? props.source : props.code)
-        }>
-        See the code!
-      </Link>
+      {typeof props.source == 'string' ? (
+        <Link className={source} to={'/rpg/editor?code=' + encodeURIComponent(props.source)}>
+          See the code!
+        </Link>
+      ) : null}
     </div>
   )
 }

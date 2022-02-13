@@ -25,12 +25,11 @@ export default function Publishing() {
         your friends and they can play your game!
         <br />
         <br />
-        Made a cool RPG? Submit a request to have your game featured on this website{' '}
+        Made a cool RPG? Submit a request to have your game featured on this webpage{' '}
         <a
           target="_blank"
           className="bold"
-          href="https://github.com/L1lith/Your-First-RPG/issues/new?assignees=&labels=rpg+display&template=display-your-project-on-the-site.md"
-        >
+          href="https://github.com/L1lith/Your-First-RPG/issues/new?assignees=&labels=rpg+display&template=display-your-project-on-the-site.md">
           here
         </a>{' '}
         😊
