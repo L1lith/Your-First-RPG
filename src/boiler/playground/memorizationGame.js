@@ -2,6 +2,7 @@ function pickRandomWord(list) {
     // returns a random number between 0 and 1 less than the length of the array (since arrays start at 0) 
     return list[Math.floor(Math.random() * list.length)]
 }
+
 const words = ['tomato', 'banana', 'potato', 'broccoli', 'pickle', 'shoe', 'red', 'phone', 'pencil', 'ball', 'duck', 'dirty', 'shark', 'adventure', 'sandwich', 'game']
 
 alert("Try to remember all the words and enter them back in order one at a time")

@@ -5,6 +5,7 @@ function smartPrompt(question) {
     }
     return output.trim()
 }
+
 function getAction(question, actionList) { 
     // Here we give a list of possible actions and retry until the user provides a valid response
     let answer = null
@@ -13,6 +14,7 @@ function getAction(question, actionList) {
     }
     return answer
 }
+
 function exploreTheBeach() { // We put our code for the beach in a function so we can re use it later
     while (true) { // We trap the user in this loop until they leave the beach
         const nextAction = getAction("What would you like to do?", ["wait", "explore the beach", "leave the beach"]) // Lists are surrounded by square brackets and separated by commas
@@ -26,6 +28,7 @@ function exploreTheBeach() { // We put our code for the beach in a function so w
         }
     }
 }
+
 function exploreTheFork() {
     const direction = getAction("As you leave the beach you reach the edge of a divide between a dark forest and a giant cave in the side of the mountain. Which way would you like to go?", ["enter the forest", "enter the cave", "return to the beach"])
     if (direction === "enter the forest") {
@@ -36,6 +39,7 @@ function exploreTheFork() {
         exploreTheBeach()
     }
 }
+
 function exploreTheCave() {
     const enter = getAction("You find a dark cave, twisting downwards into the earth. You can hear stalagmites slowly dripping with water below. Would you like to proceed into the cave?", ['yes', 'no']) === 'yes'
     if (enter) {
@@ -77,6 +81,7 @@ function exploreTheCave() {
         exploreTheFork()
     }
 }
+
 function exploreTheForest() {
     const choice = getAction("You enter a lush forest. You are surrounded by the sounds of birds and a small stream. You can see a stack of smoke billowing through the trees far away. What would you like to do?", ['investigate the smoke', 'follow the river', 'leave the forest'])
     if (choice === "leave the forest") {
@@ -87,6 +92,7 @@ function exploreTheForest() {
         exploreTheRiver()
     }
 }
+
 function investigateTheSmoke() {
     const approach = getAction("You fight your way through the dense thicket, with tree branches and brambles cutting at you. As the smell of smoke fills the air, you come upon a little clearing. Inside there is a figure in a red hood stoking a fire. Will you approach them?", ['approach', 'turn back']) === 'approach' // Here we have a boolean that says yes or no whether or not they said to approach
     if (approach) {
@@ -96,6 +102,7 @@ function investigateTheSmoke() {
         exploreTheForest()
     }
 }
+
 function exploreTheRiver() {
     const willCross = getAction("You follow the riverbank, but it becomes more windy, and you realize the only way to proceed will be to cross the river. It is roaring and full of fish. Will you cross the river?", ['cross the river', 'go back']) === 'cross the river'
     if (willCross) {
@@ -105,6 +112,7 @@ function exploreTheRiver() {
         exploreTheForest()
     }
 }
+
 var name = smartPrompt("What is your name adventurer?")
 alert("You wake up on a strange beach. '" + name + "' is written on the inside of your shirt.")
 exploreTheBeach()
