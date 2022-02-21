@@ -2,7 +2,7 @@
 
 .languageMenu {
     @media screen and (max-width: $mini-width) {
-        margin: 0;
+        margin: 0 auto;
     }
     &:hover .languageIcon {
         border-color: #0055bd;
@@ -25,7 +25,9 @@
         width: 1em;
         max-width: 1em;
         @media screen and (max-width: $mini-width) {
-            display: none;
+            //display: none;
+            margin: 0 auto;
+            display: block;
         }
     }
     // position: relative; // An attempt at making a pure css implementation
