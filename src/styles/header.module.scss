@@ -2,12 +2,59 @@
 
 .main-header {
     align-items: center;
-    .resources {
-        margin-left: auto;
-        padding-left: 0.5em;
-        @media screen and (max-width: $mini-width) {
-            display: none;
+    .navigation {
+        &:hover ul {
+            // transition: opacity 0.2s linear;
+            // opacity: 1;
+            right: 0;
+            width: fit-content;
         }
+        & > svg {
+            @media screen and (max-width: $mini-width) {
+              font-size: 1.5em;
+            }
+            cursor: pointer;
+        }
+        ul {
+            @media screen and (max-width: $mini-width) {
+                font-size: 1.3em;
+            }
+            color: #0069ed;
+            transition: right 0.2s linear;
+            //opacity: 0;
+            //display: none;
+            border-left: 8px solid #68508e;
+            z-index: 100;
+            background-color: white;
+            list-style: none;
+            position: absolute;
+            top: 0;
+            right: -108px;
+            width: 0;
+            border-bottom: 6px solid #68508e;
+            border-bottom-left-radius: 10px;
+            li {
+                padding: 20px 40px;
+                &:not(:last-child) {
+                    border-bottom: 4px solid #68508e;
+                }
+                a {
+                    color: #0069ed;
+                    text-decoration: none;
+                }
+                .githubIcon {
+                    padding-right: 20px;
+                    color: black;
+                }
+            }
+        }
+    }
+    .resources {
+        // margin-left: auto;
+        // padding-left: 0.5em;
+        // @media screen and (max-width: $mini-width) {
+        //     display: none;
+        // }
     }
     .settings {
         margin: 20px;
@@ -17,6 +64,9 @@
     }
     .siteTitle {
         margin-right: auto;
+        @media screen and (max-width: $mini-width) {
+          margin-right: 20px;
+        }
     }
     .homeLink {
         color: #0069ed;

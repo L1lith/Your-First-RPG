@@ -15,10 +15,10 @@ function Editor() {
   return (
     <div>
       <Helmet>
-        <title>🛠️ La editora de juegos</title>
+        <title>🛠️ La Editora de Juegos</title>
         <meta name="description" content="Crea tu propio juego de rol con este editor" />
       </Helmet>
-      <h1>#4.3 🛠️ La editora de juegos</h1>
+      <h1>#4.3 🛠️ La Editora de Juegos</h1>
       <p>
         ¡Construye tu propio juego! Asegúrate de presionar el botón{' '}
         <FontAwesomeIcon className={describeIcon} icon={faDownload} /> para guardar tu juego. A

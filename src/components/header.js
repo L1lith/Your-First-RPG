@@ -6,9 +6,14 @@ import {
   homeLink,
   resources,
   settings,
-  siteTitle
+  siteTitle,
+  navigation,
+  githubIcon
 } from '../styles/header.module.scss'
 import LanguageSelector from './LanguageSelector'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 //import { Link } from 'gatsby'
 
@@ -30,10 +35,30 @@ const Header = props => (
         Your First RPG
       </Link>
     </h1>
-    <Link to="/resources" className={resources}>
-      {useTranslation('Stuck?', { es: 'Atascada?' })}
-    </Link>
+
     <LanguageSelector setPopup={props.setPopup} />
+    <nav className={navigation}>
+      <FontAwesomeIcon icon={faChevronLeft} />
+      <ul>
+        <li>
+          <Link to="/resources" className={resources}>
+            {useTranslation('Need help?', { es: '¿Necesitas ayuda?' })}
+          </Link>
+        </li>
+        <li>
+          <Link to="/rpg/editor">{useTranslation('The Editor', { es: 'La Editora' })}</Link>
+        </li>
+        <li>
+          <Link to="/support">Support Me</Link>
+        </li>
+        <li>
+          <a href="https://github.com/L1lith/Your-First-RPG">
+            <FontAwesomeIcon className={githubIcon} icon={faGithub} />
+            GitHub
+          </a>
+        </li>
+      </ul>
+    </nav>
   </header>
 )
 
