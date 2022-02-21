@@ -22,13 +22,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Header = props => (
   <header
     className={mainHeader + (typeof props.className == 'string' ? ' ' + props.className : '')}>
-    <Link aria-hidden to="/">
-      <img
-        alt="site logo"
-        type="image/svg"
-        className={siteIcon}
-        src="/images/icons/site-icon.svg"
-      />
+    <Link className={siteIcon} aria-hidden to="/">
+      <img alt="site logo" type="image/svg" src="/images/icons/site-icon.svg" />
     </Link>
     <h1 className={siteTitle}>
       <Link to="/" className={homeLink}>

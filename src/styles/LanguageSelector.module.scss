@@ -1,6 +1,9 @@
 @import "variables";
 
 .languageMenu {
+    @media screen and (max-width: $mini-width) {
+        margin: 0;
+    }
     &:hover .languageIcon {
         border-color: #0055bd;
         border-radius: 100vw;
@@ -12,6 +15,10 @@
     }
     .current {
         margin-left: 0.4em;
+        
+        @media screen and (max-width: $mini-width) {
+            margin-left: 0;
+        }
     }
     .languageIcon {
         position: relative;
@@ -86,6 +93,5 @@
         border-right-width: 0;
         border-radius: 0;
         width: 100vw;
-        
     }
 }

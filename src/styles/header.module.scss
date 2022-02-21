@@ -6,8 +6,7 @@
         &:hover ul {
             // transition: opacity 0.2s linear;
             // opacity: 1;
-            right: 0;
-            width: fit-content;
+            display: initial;
         }
         & > svg {
             @media screen and (max-width: $mini-width) {
@@ -29,8 +28,8 @@
             list-style: none;
             position: absolute;
             top: 0;
-            right: -108px;
-            width: 0;
+            right: 0;
+            display: none;
             border-bottom: 6px solid #68508e;
             border-bottom-left-radius: 10px;
             li {
@@ -65,7 +64,7 @@
     .siteTitle {
         margin-right: auto;
         @media screen and (max-width: $mini-width) {
-          margin-right: 20px;
+          margin: 0;
         }
     }
     .homeLink {
@@ -74,33 +73,16 @@
         display: flex;
         text-decoration: none;
         user-select: none;
-        margin-right: 0;
         //position: fixed;
         //text-shadow: 2px 2px 1px $accent-dark;
     }
     .siteIcon {
-        user-select: none;
-        // @media screen and (max-width: $mini-width) {
-        //     display: none;
-        // }
-        //filter: drop-shadow(0 0  4px #004193);
-        height: 2em;
-        text-shadow: 0 0 20px $background;
-        margin-left: 0;
-        // &:hover {
-        //     transform: rotateY(360);
-        //     transition: transform 0.4s linear;
-        // }
-        // transform: none;
-        // transition: none;
-        //margin: 0 10px;
-        // image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
-        // image-rendering: -moz-crisp-edges;          /* Firefox                        */
-        // image-rendering: -o-crisp-edges;            /* Opera                          */
-        // image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
-        // image-rendering: pixelated; /* Chrome */
-        // image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
-        // -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+        margin: 0;
+        img {
+            user-select: none;
+            height: 2em;
+            text-shadow: 0 0 20px $background;
+        }
     }
     @media screen and (max-width: $mini-width) {
         margin: 0;
@@ -113,15 +95,22 @@
         font-size: 2.75em;
     }
     //color: white;
-    max-width: 92vw;
     width: 92vw;
     padding: 1vh 4vw;
+    
+    @media screen and (max-width: $mini-width) {
+        padding: 1vh 0;
+        width: 100vw;
+    }
     border-bottom: 2px solid #68508e;
     //border-radius: 20px;
     //background: linear-gradient(to right, rgb(70, 54, 96), rgb(104, 80, 142), rgb(70, 54, 96));
     display: flex;
     flex-direction: row;
     justify-content: center;
+    @media screen and (max-width: $mini-width) {
+        justify-content: left;
+    }
     text-align: center;
     font-size: 2.5em;
     overflow: hidden;
