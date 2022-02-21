@@ -108,9 +108,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    @media screen and (max-width: $mini-width) {
-        justify-content: left;
-    }
     text-align: center;
     font-size: 2.5em;
     overflow: hidden;
