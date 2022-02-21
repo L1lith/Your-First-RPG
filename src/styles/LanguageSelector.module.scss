@@ -16,9 +16,6 @@
     .current {
         margin-left: 0.4em;
         
-        @media screen and (max-width: $mini-width) {
-            margin-left: 0;
-        }
     }
     .languageIcon {
         position: relative;
@@ -27,6 +24,9 @@
         border: 2px solid transparent;
         width: 1em;
         max-width: 1em;
+        @media screen and (max-width: $mini-width) {
+            display: none;
+        }
     }
     // position: relative; // An attempt at making a pure css implementation
     // z-index: 1;
