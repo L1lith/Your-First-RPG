@@ -18,44 +18,49 @@ import React, { Component, useState } from 'react'
 
 function LanguageSelector(props) {
   const { setPopup } = props
+  const [showPopup, setPopupShown] = useState(false)
   //const [languageMenuOpen, setLanguageMenuOpen] = useState(false)
   const location = useLocation()
   const language = useLanguage()
-  const languageMenuComponent = (
-    <div className={languageList}>
-      <h2 className={title}>Languages</h2>
-      {languages
-        .filter(language => languagesProperNames.hasOwnProperty(language))
-        .sort()
-        .map((language, i) => (
-          <a
-            onClick={() => {
-              setPopup(null)
-              navigate(translatePath(location.pathname, language))
-            }}
-            lang={language}
-            className={languageOption}
-            key={i}>
-            {languagesProperNames[language]}
-          </a>
-        ))}
-      <span
-        onClick={() => {
-          setPopup(null)
-        }}
-        className={'icon ' + close}>
-        ❌
-      </span>
-    </div>
-  )
+
   return (
-    <div
-      onClick={() => {
-        setPopup(languageMenuComponent)
-      }}
-      className={languageMenu}>
-      <FontAwesomeIcon className={languageIcon} title="Languages" icon={faGlobe} />
-      <div className={current}>{languagesShorthands[language]}</div>
+    <div>
+      <span
+        onClick={event => {
+          console.log(event)
+          if (!showPopup) setPopupShown(true)
+        }}
+        className={languageMenu}>
+        <FontAwesomeIcon className={languageIcon} title="Languages" icon={faGlobe} />
+        <div className={current}>{languagesShorthands[language]}</div>
+      </span>
+      {showPopup ? (
+        <div className={languageList}>
+          <h2 className={title}>Languages</h2>
+          {languages
+            .filter(language => languagesProperNames.hasOwnProperty(language))
+            .sort()
+            .map((language, i) => (
+              <a
+                onClick={() => {
+                  setPopupShown(false)
+                  navigate(translatePath(location.pathname, language))
+                }}
+                lang={language}
+                className={languageOption}
+                key={i}>
+                {languagesProperNames[language]}
+              </a>
+            ))}
+          <span
+            onClick={() => {
+              setPopupShown(false)
+            }}
+            className={'icon ' + close}>
+            ❌
+          </span>
+        </div>
+      ) : null}
     </div>
   )
 }

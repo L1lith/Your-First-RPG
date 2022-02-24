@@ -9,7 +9,8 @@ import {
   settings,
   siteTitle,
   navigation,
-  githubIcon
+  githubIcon,
+  navToggle
 } from '../styles/header.module.scss'
 import LanguageSelector from './LanguageSelector'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
@@ -19,32 +20,21 @@ import { useEffect, useRef, useState } from 'react'
 
 const Header = props => {
   const nav = useRef(null)
+  const chevron = useRef(null)
   const [isNavOpen, setNavOpen] = useState(false)
   useEffect(() => {
     if (nav?.current) {
       const elem = nav.current
-      console.log(elem, 'elem')
       const clickListener = event => {
-        // if (
-        //   !elem.contains(event.target) /* They clicked outside the nav */ ||
-        //   event.target?.tagName === 'A' /*They clicked the link */
-        // ) {
-        // }
-        setNavOpen(false)
+        if (chevron?.current instanceof HTMLElement && chevron.current.contains(event.target)) {
+          //setNavOpen(true) // Do Nothing, handled below
+        } else {
+          setNavOpen(false)
+        }
       }
-      const hoverListener = () => {
-        setNavOpen(true)
-      }
-      const mouseOutListener = () => {
-        setNavOpen(false)
-      }
-      elem.addEventListener('mouseout', mouseOutListener)
-      elem.addEventListener('mouseover', hoverListener)
       document.addEventListener('click', clickListener)
       const removeEventListener = () => {
-        elem.removeEventListener('mouseover', hoverListener)
         document.removeEventListener('click', clickListener)
-        elem.removeEventListener('mouseout', mouseOutListener)
       }
       return removeEventListener
     }
@@ -64,7 +54,15 @@ const Header = props => {
 
       <LanguageSelector setPopup={props.setPopup} />
       <nav ref={nav} className={navigation}>
-        <FontAwesomeIcon icon={faChevronLeft} />
+        <button
+          className={navToggle}
+          ref={chevron}
+          onClick={() => {
+            console.log(isNavOpen, !isNavOpen)
+            setNavOpen(!isNavOpen)
+          }}>
+          <FontAwesomeIcon icon={faChevronLeft} />
+        </button>
         <ul style={isNavOpen ? { display: 'initial' } : { display: 'none' }}>
           <li>
             <Link to="/resources" className={resources}>
