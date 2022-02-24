@@ -25,12 +25,12 @@ const Header = props => {
       const elem = nav.current
       console.log(elem, 'elem')
       const clickListener = event => {
-        if (
-          !elem.contains(event.target) /* They clicked outside the nav */ ||
-          event.target?.tagName === 'A' /*They clicked the link */
-        ) {
-          setNavOpen(false)
-        }
+        // if (
+        //   !elem.contains(event.target) /* They clicked outside the nav */ ||
+        //   event.target?.tagName === 'A' /*They clicked the link */
+        // ) {
+        // }
+        setNavOpen(false)
       }
       const hoverListener = () => {
         setNavOpen(true)
