@@ -12,6 +12,7 @@ module.exports = {
         prefixDefault: false
       }
     },
+    'gatsby-plugin-fontawesome-css',
     'gatsby-plugin-preact',
     'gatsby-plugin-sass',
     'gatsby-plugin-image',
