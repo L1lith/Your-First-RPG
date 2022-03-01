@@ -150,33 +150,37 @@ function CodeSandbox(props) {
         ) : null}
         <span className={mode}>{consoleMode === true ? 'Terminal' : 'Expression Evaluator'}</span>
         {props.readOnly === true ? ' (Read Only)' : null}
-        <FontAwesomeIcon
-          onClick={() => {
-            if (!code) return alert('Your editor is empty, cannot download!')
-            downloadFile('my-game.js', code)
-          }}
-          className={icon + ' ' + download}
-          title="Download App"
-          icon={faDownload}
-        />
-        <div title="Upload App" className={upload}>
-          <input
-            type="file"
-            accept="text/javascript"
-            onChange={event => {
-              const file = event.target.files[0]
-              if (file) {
-                const reader = new FileReader()
-                reader.readAsText(file)
-                reader.onload = loadEvent => {
-                  setCode(loadEvent.target.result)
-                } // desired file content
-                reader.onerror = console.error
-              }
-            }}
-          />
-          <FontAwesomeIcon className={icon} icon={faUpload} />
-        </div>
+        {props.savable === true ? (
+          <>
+            <FontAwesomeIcon
+              onClick={() => {
+                if (!code) return alert('Your editor is empty, cannot download!')
+                downloadFile('my-game.js', code)
+              }}
+              className={icon + ' ' + download}
+              title="Download App"
+              icon={faDownload}
+            />
+            <div title="Upload App" className={upload}>
+              <input
+                type="file"
+                accept="text/javascript"
+                onChange={event => {
+                  const file = event.target.files[0]
+                  if (file) {
+                    const reader = new FileReader()
+                    reader.readAsText(file)
+                    reader.onload = loadEvent => {
+                      setCode(loadEvent.target.result)
+                    } // desired file content
+                    reader.onerror = console.error
+                  }
+                }}
+              />
+              <FontAwesomeIcon className={icon} icon={faUpload} />
+            </div>
+          </>
+        ) : null}
         {props.noReset !== true ? (
           <FontAwesomeIcon
             className={icon}

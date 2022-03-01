@@ -40,6 +40,7 @@ function Editor() {
         vertical
         consoleMode
         disableAutoRun
+        savable
       />
       <p>
         Feel free to press the <FontAwesomeIcon className={describeIcon} icon={faTimesCircle} /> to

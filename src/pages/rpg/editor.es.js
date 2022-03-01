@@ -36,6 +36,7 @@ function Editor() {
         vertical
         consoleMode
         disableAutoRun
+        savable
       />
       <p>
         Siéntase libre de presionar el{' '}
