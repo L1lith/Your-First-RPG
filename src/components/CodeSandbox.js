@@ -164,10 +164,16 @@ function CodeSandbox(props) {
             <div title="Upload App" className={upload}>
               <input
                 type="file"
-                accept="text/javascript"
+                accept="application/javascript"
                 onChange={event => {
                   const file = event.target.files[0]
                   if (file) {
+                    if (
+                      file.type !== 'application/javascript' &&
+                      file.type !== 'text/javascript' &&
+                      file.type !== 'text/plain'
+                    )
+                      return alert('Received an invalid file. Please provide a .js file')
                     const reader = new FileReader()
                     reader.readAsText(file)
                     reader.onload = loadEvent => {
