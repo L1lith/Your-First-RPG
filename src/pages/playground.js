@@ -11,7 +11,8 @@ import {
   description,
   play,
   source,
-  author
+  author,
+  shareYourGame
 } from '../styles/Playground.module.scss'
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -27,17 +28,9 @@ export default function Playground() {
       </Helmet>
       <h1>The Playground</h1>
       <p>
-        Here are a bunch of games to try 🙂 Try clicking "See the code!" to see how they were coded.
+        Here are some great games other people made with the game editor!
         <br />
-        Once you make your own game you can submit a request to have your game featured on this
-        website by going{' '}
-        <a
-          target="_blank"
-          className="bold"
-          href="https://github.com/L1lith/Your-First-RPG/issues/new?assignees=&labels=rpg+display&template=display-your-project-on-the-site.md"
-        >
-          here.
-        </a>{' '}
+        They can help you come up with your own game idea, or you can just have fun playing them 🙂
       </p>
       <div className={games}>
         <Game
@@ -76,6 +69,16 @@ export default function Playground() {
           source="elfQuest"
         />
       </div>
+      <span className={shareYourGame}>
+        If you make your own game you can submit a request to have your game posted on this page by
+        going{' '}
+        <a
+          target="_blank"
+          className="bold"
+          href="https://github.com/L1lith/Your-First-RPG/issues/new?assignees=&labels=rpg+display&template=display-your-project-on-the-site.md">
+          here!
+        </a>{' '}
+      </span>
     </>
   )
 }
@@ -103,13 +106,12 @@ function Game(props) {
         onClick={() => {
           eval(props.code)
         }}
-        className={'icon ' + play}
-      >
+        className={'icon ' + play}>
         <FontAwesomeIcon title="Play the game" icon={faPlayCircle} />
       </span>
       {typeof props.source == 'string' ? (
         <Link className={source} to={'/rpg/editor?code=' + encodeURIComponent(props.source)}>
-          See the code!
+          See how the code works!
         </Link>
       ) : null}
     </div>

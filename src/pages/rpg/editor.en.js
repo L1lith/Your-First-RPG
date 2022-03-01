@@ -1,7 +1,12 @@
 import defaultGame from '!!raw-loader!../../boiler/codeEditorTemplate'
 import CodeSandbox from '../../components/CodeSandbox'
 import Link from '../../components/TranslatedLink'
-import { editorModule, describeIcon, warning } from '../../styles/rpg/editor.module.scss'
+import {
+  editorModule,
+  describeIcon,
+  warning,
+  playgroundInfo
+} from '../../styles/rpg/editor.module.scss'
 import { faDownload, faUpload, faTimesCircle } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Helmet } from 'react-helmet'
@@ -29,9 +34,8 @@ function Editor() {
       <span className={warning}>
         Warning: You must save your game file somewhere safe or it could be lost.
       </span>
-      <p className="italic">
-        Need some inspiration? Want to see how other people made their games? Check out the{' '}
-        <Link to="/playground">Playground!</Link>
+      <p className={playgroundInfo + ' italic'}>
+        <Link to="/playground">Just starting out? Click here to see games other people made!</Link>
       </p>
       <CodeSandbox
         className={editorModule}
