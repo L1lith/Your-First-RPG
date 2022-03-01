@@ -27,7 +27,7 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-32814eddd6f6353d8f18.js"
+    "url": "webpack-runtime-16fbc2f5a75b39656928.js"
   },
   {
     "url": "styles.bbb9f89c1e0ff5f24f6b.css"
@@ -42,11 +42,11 @@ self.__precacheManifest = [
     "url": "a9a7754c-9723f75fbeed8a6d2ab7.js"
   },
   {
-    "url": "app-17d657c11e8bd6723abf.js"
+    "url": "app-de402fa9721763c47b74.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "1b2c375bf66f1144cfcfd29094a79d8b"
+    "revision": "ee56b954a4160c677f9e45f1dfd069fc"
   },
   {
     "url": "fonts/droidSerifRegular.ttf",
@@ -67,7 +67,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "4981a759e136b9af63aefec5a434a4dc"
+    "revision": "7c4bd906ee0d65f63ca4dd425e76d992"
   },
   {
     "url": "component---src-pages-404-js-fdb2c18e1af077ab0db4.js"
@@ -81,7 +81,7 @@ self.__precacheManifest = [
     "revision": "8036c40541e7fdf55e2899beb6c0cd41"
   },
   {
-    "url": "component---src-pages-coding-index-en-js-9b64346d28da13768e33.js"
+    "url": "component---src-pages-coding-index-en-js-b5d9840660ff6f94fe37.js"
   },
   {
     "url": "page-data/coding/page-data.json",
@@ -258,7 +258,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-17d657c11e8bd6723abf.js`))) {
+  if (!resources || !(await caches.match(`/app-de402fa9721763c47b74.js`))) {
     return await fetch(event.request)
   }
 

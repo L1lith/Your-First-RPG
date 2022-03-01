@@ -138,7 +138,7 @@ export default function LogicModelsExplained() {
         issues and bugs they could run into, but also how to make your <Software /> straightforward
         and convenient. Like good road design, your <Software /> should effectively serve your
         users, instead of forcing your users to be focused trying to deal with your poorly designed{' '}
-        <Software />. Take responsibility as an engineer for avoidable crashes and other issues that
+        <Software />. Take responsibility as an coder for avoidable crashes and other issues that
         arise with your <Software />.
       </p>
       <Link className="next" to="/toying">

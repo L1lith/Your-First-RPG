@@ -22,7 +22,7 @@ export default function LevelTwo() {
         Now that we've learned the most basic <Operator /> OR, it's time to move onto NOT. The NOT
         {' ' + ''}
         <Operator /> returns false when it's input is true, and true when it's input is false. You
-        can think of this like an inversion (inversion meaning it returns the opposite).
+        can think of this like an inversion (to invert something means to get the opposite of it).
       </p>
       <p>
         When playing the second level, make sure NOT to select any colors or shapes that are

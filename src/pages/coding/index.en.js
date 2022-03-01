@@ -1,3 +1,4 @@
+import AhaMoment from '../../components/Dictionary/en/AhaMoment'
 import Expression from '../../components/Dictionary/en/Expression'
 import Interpreter from '../../components/Dictionary/en/Interpreter'
 import Link from '../../components/TranslatedLink'
@@ -31,22 +32,23 @@ export default function CodingIntro() {
       </span>
 
       <p>
-        How is JS (JavaScript) code written? JavaScript code is just a series of logical{' '}
-        <Expression>expressions</Expression> (like little logic models) that are run by the{' '}
-        <Interpreter>JavaScript Interpreter</Interpreter> in a particular order. Each line is
-        evaluated one at a time from top to bottom and left-to-right like English. The{' '}
-        <Interpreter /> also understands and applies the rules of{' '}
+        How is JS (JavaScript) code written? JavaScript code is just a series of{' '}
+        <Expression>code expressions</Expression> (like putting together a bunch of little logic
+        models like legos) that are run by the <Interpreter>JavaScript Interpreter</Interpreter> in
+        a particular order. Each line of code is evaluated one at a time from top to bottom and
+        left-to-right like English. The <Interpreter /> also understands and applies the rules of{' '}
         <a target="_blank" href="https://www.mathsisfun.com/operation-order-pemdas.html">
           PEMDAS
         </a>
-        . Every line of code you write should combine cohesively in order to form a well functioning
-        program.
+        . Your goal should be to write code that is easy to understand, this will help you make
+        awesome programs.
         <br />
         <br />
-        Coding doesn't have to be frustrating, let's try to have some fun with it. In this section I
-        hope it will become clear how you can take an approach based on logic models to write basic
-        code. I'm going to be providing many examples, and if you get stuck it's okay to continue on
-        and come back later. Try to get a feel for what is going on overall by toying with the code.
+        In this section you will learn how to use logic to write your first code, hurray! Take it at
+        your own pace so you don't get overwhelmed, and I promise coding can be fun! I'm going to be
+        providing many examples, and if you get confused it's okay to continue on and come back
+        later. Playing around with code is one of the best ways to have a wonderful{' '}
+        <AhaMoment>"aha moment"</AhaMoment>.
       </p>
       <Link className="next" to="/coding/primitives">
         Next: #3.1 📊 Basic Data Types

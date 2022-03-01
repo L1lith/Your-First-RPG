@@ -39,7 +39,7 @@ export default function LevelThree() {
       <p>
         You might have noticed that when given a NOT <Operator /> with multiple values, it is
         sometimes easier to think of it as simply a request for whatever is missing. This is an
-        example of how we can build more complex rules from simplistic systems. Writing good
+        example of how we can build more complex rules from simplistic systems. Writing good{' '}
         <Software /> is about learning to create apps with powerful capabilities without making the
         code you write too complex or messy.
         <br />

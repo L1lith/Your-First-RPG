@@ -50,11 +50,13 @@ const Primitives = () => (
       <li>null</li>
     </ul>
     <p>
-      I will now detail each type of data and their <Operator>operators</Operator>, then in the next
-      page I will provide more examples of how they can be used together. Additionally, you can edit
-      the <Input /> of all the code examples below. If your syntax is invalid (this means your
-      coding grammar is incorrect) you will receive an error instead the <Output /> you expected
-      because the <Interpreter>JS interpreter</Interpreter> will become confused.
+      Now I will explain each type of data and their <Operator>operators</Operator>, then in the
+      next page I will show more examples of how they can be used together. Also, you can edit the{' '}
+      <Input /> of all the code examples below. If your syntax is invalid (this means there is an
+      error in your coding grammar) you will receive an error instead the <Output /> you expected
+      because the <Interpreter>JS interpreter</Interpreter> will become confused. Computers are
+      giant sticklers about their grammer, if there is a mistake in your code it will probably not
+      run.
       <br />
       <br />
       The left side of the editor is the code we give to the <Interpreter />, and the right side is
