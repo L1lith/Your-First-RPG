@@ -19,7 +19,7 @@ export default function LogicModelsExplained() {
         <meta name="description" content="Arranging Logic Models" />
         <title>🧠 Logic Models Explained</title>
       </Helmet>
-      <h2>#1.1 🧠 Logic Models Explained</h2>
+      <h2>#1.2 🧠 Logic Models Explained</h2>
       <br />
       <span className="introCard">
         <video autoPlay {...hoverVideo()} muted>
@@ -29,9 +29,9 @@ export default function LogicModelsExplained() {
       </span>
       <p>
         Next you will learn about <BooleanDef /> logic and how to visualize them. Visualizing
-        logical systems is very useful. The entire world operates using logic; like how you do your
-        job, how you cross the street, or how you navigate a website. We make a lot of decisions
-        without realizing we made them.
+        logical systems is very useful. The entire world uses logic; like how you do your job, how
+        you cross the street, or how you explore a website. We make a lot of decisions without
+        realizing that we made them.
       </p>
       {
         null /*<span className="introCard">
@@ -61,10 +61,10 @@ export default function LogicModelsExplained() {
         <br />
         <br />
         Imagine you are a civil engineer trying to optimize the flow of traffic through a very busy
-        area. Our input data is the flow of cars into the freeway and where they want to go. Our{' '}
-        <Output /> is the flow of cars out of the freeway. A civil engineer's logic model will not
-        only help someone get to work quickly, but their decisions will ultimately be the difference
-        between life and death when reckless driving happens.
+        area. Our input data is the cars going into the freeway and where they want to go. Our{' '}
+        <Output /> is the cars going out of the freeway. A civil engineer's logic model decides how
+        the cars will get to their destination. This will not only help someone get to work quickly,
+        but their decisions will also save lives when reckless driving happens.
         <br />
         <br />
         While watching this video try to notice all the things civil engineers must pay attention to
@@ -113,12 +113,12 @@ export default function LogicModelsExplained() {
       <YTVideo url="qybUFnY7Y8w" thumbnail="/images/this-too-shall-pass.jpg" />
       <span className="italic">it works perfectly 60% of the time!</span>
       <p>
-        When coding it's important to think our system through from beginning to end. Most bugs stem
-        from coders thinking "it's not my job" or not putting that extra effort to consider edge
-        cases because "it worked when I ran it". You must remember the 3 components of your logic
-        model, so first consider your user <span className="bold">input</span>. When navigating a
-        site the user gives many inputs, like clicking a link, scrolling the page, logging in, or
-        submitting a form.
+        When coding it's important to think about our project from the beginning all the way to end.
+        Most bugs stem from coders thinking "it's not my job" or not putting that extra effort to
+        consider edge cases because "it worked when I ran it". You must remember the 3 components of
+        your logic model, so first consider your users' <span className="bold">input</span>. When
+        exploring a site the user gives many inputs, like clicking a link, scrolling the page,
+        logging in, or submitting a form.
         <br />
         <br />
         Next you must think about every step in your code, and how these{' '}

@@ -17,7 +17,10 @@ export default function CodingMindset() {
           <Link to="/vision#lesson">#1.0 🗺️ Planning it out</Link>
         </li>
         <li>
-          <Link to="/vision/logic-models-explained">#1.1 🧠 Logic Models Explained</Link>
+          <Link to="/vision/what-is-data">#1.1 🔢 What is Data?</Link>
+        </li>
+        <li>
+          <Link to="/vision/logic-models-explained">#1.2 🧠 Logic Models Explained</Link>
         </li>
       </ol>
       <h2 id="lesson">#1.0 🗺️ Planning it out</h2>
@@ -36,16 +39,16 @@ export default function CodingMindset() {
           this one
         </a>{' '}
         can be a valuable tool for coding experts, but for a beginner it's a giant pain. It's
-        important to understand the concepts in simple terms so you can begin to visualize what you
-        are trying to do.
+        important to understand the ideas in simple terms so you can begin to visualize what you are
+        trying to do.
         <br />
         <br />
         Another key to learning is to practice. In this section I will guide you through basic
-        coding concepts like problem solving, logic rules, and working with data. In the next
-        chapter we will cement these concepts with hands-on activities.
+        coding ideas like problem solving, logic rules, and working with data. We will cement these
+        ideas with hands-on activities.
       </p>
-      <Link className="next" to="/vision/logic-models-explained">
-        Next: #1.1 Logic Models Explained
+      <Link className="next" to="/vision/what-is-data">
+        Next: #1.1 🔢 What is Data?
       </Link>
     </div>
   )

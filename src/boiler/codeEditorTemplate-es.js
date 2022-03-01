@@ -18,7 +18,7 @@ function obtenerAccion(pregunta, listaDeAccion) {
 //////////
 // INFO //
 //////////
-// Si te quedas atascado o quieres aprender a hacer más cosas, considera consultar la sección de recursos https://l1lith.github.io/Intro-Coding-Concepts#resources
+// Si te quedas atascado o quieres aprender a hacer más cosas, considera consultar la sección de recursos https://yourfirstrpg.com/es/resources/
 // ¡Además, no tengas miedo de googlearlo!
 ///////////
 

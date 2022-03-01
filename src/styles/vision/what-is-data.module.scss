@@ -1,0 +1,8 @@
+.datas {
+    tr > * {
+        padding: 20px;
+    }
+    tr > *:nth-child(2) {
+        width: 100%;
+    }
+}

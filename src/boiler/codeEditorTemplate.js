@@ -18,7 +18,7 @@ function getAction(question, actionList) {
   //////////
   // INFO //
   //////////
-  // If you get stuck or want to learn how to do more things consider checking out the resources section https://l1lith.github.io/Intro-Coding-Concepts#resources
+  // If you get stuck or want to learn how to do more things consider checking out the resources section https://yourfirstrpg.com/resources
   // Also, don't be afraid to google it!
   ///////////
   
