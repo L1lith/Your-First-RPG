@@ -27,26 +27,26 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-c0ef1cbc9081a8557df0.js"
+    "url": "webpack-runtime-c4bab1f4448234c466b7.js"
   },
   {
-    "url": "styles.2bbaa548809d000326bd.css"
+    "url": "styles.a5725ffb171d6c570d91.css"
   },
   {
     "url": "framework-80fbcdba419e70b29ef9.js"
   },
   {
-    "url": "cb1608f2-48588a717c8986ce0567.js"
+    "url": "cb1608f2-7a311fc50352453127d5.js"
   },
   {
     "url": "a9a7754c-9723f75fbeed8a6d2ab7.js"
   },
   {
-    "url": "app-de402fa9721763c47b74.js"
+    "url": "app-3b06254c43b99d2ccfdf.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "715513771df56f89abc90c836b961c9f"
+    "revision": "2c7f6a13871f38b2255be79a8fa870ba"
   },
   {
     "url": "fonts/droidSerifRegular.ttf",
@@ -59,7 +59,7 @@ self.__precacheManifest = [
     "url": "polyfill-cb6bfe04aa984d9012d0.js"
   },
   {
-    "url": "component---src-pages-index-en-js-5333d952b04660c73fe3.js"
+    "url": "component---src-pages-index-en-js-4d87a15617b0c401017f.js"
   },
   {
     "url": "page-data/index/page-data.json",
@@ -67,7 +67,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "beb6f21e408940a2e103ca0df9c29b96"
+    "revision": "d86eeaac7ba220fd26c5e25f29024b37"
   },
   {
     "url": "component---src-pages-404-js-fdb2c18e1af077ab0db4.js"
@@ -81,14 +81,14 @@ self.__precacheManifest = [
     "revision": "8036c40541e7fdf55e2899beb6c0cd41"
   },
   {
-    "url": "component---src-pages-coding-index-en-js-b5d9840660ff6f94fe37.js"
+    "url": "component---src-pages-coding-index-en-js-0e9dbbe0f05040a8a657.js"
   },
   {
     "url": "page-data/coding/page-data.json",
     "revision": "a0fc6bc1669da4e5b27394f67f766173"
   },
   {
-    "url": "component---src-pages-index-es-js-527315da7633792b94c4.js"
+    "url": "component---src-pages-index-es-js-f5993abde5f2f649e9b4.js"
   },
   {
     "url": "page-data/es/page-data.json",
@@ -119,7 +119,7 @@ self.__precacheManifest = [
     "revision": "9eccd9d2c871cf0f47bf32bb8a4d1963"
   },
   {
-    "url": "component---src-pages-rpg-index-en-js-e2724ebf8faa811a604d.js"
+    "url": "component---src-pages-rpg-index-en-js-831bd69699d98465bae3.js"
   },
   {
     "url": "page-data/rpg/page-data.json",
@@ -140,7 +140,7 @@ self.__precacheManifest = [
     "revision": "9fc081bb861f31cbca73f91e2448b889"
   },
   {
-    "url": "component---src-pages-vision-index-en-js-2c95cccb3c3c8cd51280.js"
+    "url": "component---src-pages-vision-index-en-js-854a5511a232ddef27d2.js"
   },
   {
     "url": "page-data/vision/page-data.json",
@@ -258,7 +258,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-de402fa9721763c47b74.js`))) {
+  if (!resources || !(await caches.match(`/app-3b06254c43b99d2ccfdf.js`))) {
     return await fetch(event.request)
   }
 

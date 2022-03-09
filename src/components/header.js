@@ -14,7 +14,7 @@ import {
 } from '../styles/header.module.scss'
 import LanguageSelector from './LanguageSelector'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faChevronLeft, faChevronRight, faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useEffect, useRef, useState } from 'react'
 
@@ -61,7 +61,7 @@ const Header = props => {
             console.log(isNavOpen, !isNavOpen)
             setNavOpen(!isNavOpen)
           }}>
-          <FontAwesomeIcon icon={faChevronLeft} />
+          <FontAwesomeIcon icon={faBars} />
         </button>
         <ul style={isNavOpen ? { display: 'initial' } : { display: 'none' }}>
           <li>

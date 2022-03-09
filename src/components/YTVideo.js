@@ -1,4 +1,4 @@
-import { youtubeContainer, disabled } from '../styles/YTVideo.module.scss'
+import { youtubeContainer, disabled, popout } from '../styles/YTVideo.module.scss'
 import { useState, Fragment } from 'react'
 
 const urlRegex = /^[0-9A-Za-z_-]{10}[048AEIMQUYcgkosw]$/i
@@ -33,8 +33,7 @@ function YTVideo(props = { url }) {
       className={
         youtubeContainer + ' youtube-container'
         // 'youtube-container' + (typeof props.className == 'string' ? ' ' + props.className : '')
-      }
-    >
+      }>
       {!isOpen ? (
         <Fragment>
           <img
@@ -50,7 +49,7 @@ function YTVideo(props = { url }) {
         </Fragment>
       ) : null}
       <iframe
-        className={isOpen ? null : disabled}
+        className={popout + (isOpen ? '' : ' ' + disabled)}
         src={isOpen ? videoURL : null}
         title="YouTube video player"
         frameBorder="0"

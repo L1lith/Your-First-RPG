@@ -38,15 +38,15 @@
     margin: 20px auto;
     height: 0;
     padding-bottom: 56.25%;
-    iframe {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      transform: translateY(-50%);
-      &.disabled {
-        display: none;
-      }
-    }
+    
+}
+.popout {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  &.disabled {
+    display: none;
+  }
 }

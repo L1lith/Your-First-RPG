@@ -4,13 +4,15 @@
     align-items: center;
     .navigation {
         .navToggle {
-            border-radius: 100vw;
+            background: none;
+            border: none;
             cursor: pointer;
-            background-color: #d1d1ff;
-            padding: 10px;
-            @media screen and (max-width: $mini-width) {
-                padding: 5px 2px;
-            }
+            // border-radius: 100vw;
+            // background-color: #d1d1ff;
+            // padding: 10px;
+            // @media screen and (max-width: $mini-width) {
+            //     padding: 5px 2px;
+            // }
         }
         &:hover ul {
             // transition: opacity 0.2s linear;
@@ -72,9 +74,6 @@
     }
     .siteTitle {
         margin-right: auto;
-        @media screen and (max-width: $mini-width) {
-          margin: 0;
-        }
     }
     .homeLink {
         color: #0069ed;
@@ -86,10 +85,11 @@
         //text-shadow: 2px 2px 1px $accent-dark;
     }
     .siteIcon {
-        margin: 0;
         img {
+            margin-left: 10px;
             user-select: none;
-            height: 2em;
+            height: 0.98666241056em;
+            width: 1.25em;
             text-shadow: 0 0 20px $background;
         }
     }

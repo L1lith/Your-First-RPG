@@ -87,7 +87,7 @@
     //white-space: nowrap;
     text-align: center;
     width: fit-content;
-    margin: 40px auto 20px auto;
+    margin: 40px auto 0 auto;
 }
 #___gatsby {
     height: 100vh;
@@ -115,17 +115,7 @@ body {
     &.disabled {
         overflow: hidden;
     }
-    @media screen and (max-width: $mini-width) {
-        font-size: 5vw;
-    }
-    @media screen and (min-width: $mega-width) {
-        font-size: 1.25vw;
-    }
-    
-    @media screen and (min-width: $mini-width) {
-        //background-image: url('/images/site-background.svg');
-    }
-    font-size: 2vw;
+    font-size: 1.25em;
     position: relative;
     color: $foreground;
     min-height: 100vh;

@@ -11,10 +11,7 @@ export default function Home() {
     <div className={home}>
       <Helmet>
         <title>Your First RPG</title>
-        <meta
-          name="description"
-          content="Learn how to make your own online adventure game and share it with your friends!"
-        />
+        <meta name="description" content="Learn to code by making a game in JavaScript!" />
       </Helmet>
       <h1 className={title}>
         <span className={small}>Coding Intro:</span>
@@ -55,15 +52,14 @@ export default function Home() {
           <Link to="/rpg">🎮 Building an RPG</Link>
         </li>
       </ol>
-      <Link to="/resources">Remember to check out the resource section if you get stuck</Link>
+      <Link className="next" to="/vision">
+        Get Started: 🗺️ Planning it out
+      </Link>
       <div className={extra}>
         <h2>Scared of Coding? Don't be!</h2>
         Check out this inspiring talk by Linda Liukas
         <YTVideo url="-jRREn6ifEQ" thumbnail="/images/poetry-of-programming.jpg" />
       </div>
-      <Link className="next" to="/vision">
-        Get Started: 🗺️ Planning it out
-      </Link>
     </div>
   )
 }
