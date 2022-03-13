@@ -9,7 +9,7 @@ import { Helmet } from 'react-helmet'
 
 export default function LevelThree() {
   return (
-    <div className="level-3">
+    <>
       <Helmet>
         <title>💻 Booleans para aplicaciones de codificación</title>
         <meta name="description" content="Una revisión de rompecabezas de la lógica booleana" />
@@ -62,6 +62,6 @@ export default function LevelThree() {
       <Link className="next" to="/coding">
         Siguiente: #3.0 🛣️ Aprendiendo a codificar
       </Link>
-    </div>
+    </>
   )
 }

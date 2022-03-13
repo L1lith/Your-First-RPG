@@ -1,7 +1,7 @@
 @import "variables";
 
 .shareYourGame {
-    border: 2px solid #0069ed;
+    border: 2px solid $highlight;
     padding: 10px 15px;
     border-width: 2px 0;
     margin-top: 30px;
@@ -35,7 +35,7 @@
     }
     .play {
         font-size: 2.5em;
-        color: #0069ed;
+        color: $highlight;
         cursor: pointer;
     }
     .source {

@@ -10,11 +10,11 @@ import StringDef from '../../components/Dictionary/es/StringDef'
 import Variable from '../../components/Dictionary/es/Variable'
 import Link from '../../components/TranslatedLink'
 import YTVideo from '../../components/YTVideo'
-import { primitives, primitivesList } from '../../styles/coding/primitives.module.scss'
+import { primitivesList } from '../../styles/coding/primitives.module.scss'
 import { Helmet } from 'react-helmet'
 
 const Primitives = () => (
-  <div className={primitives}>
+  <>
     <Helmet>
       <title>📊 Tipos de datos básicos</title>
       <meta
@@ -173,7 +173,7 @@ const Primitives = () => (
     <Link className="next" to="/coding/essential-tools">
       Siguiente: #3.2 Herramientas esenciales
     </Link>
-  </div>
+  </>
 )
 
 export default Primitives

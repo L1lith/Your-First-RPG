@@ -13,7 +13,7 @@ import { Helmet } from 'react-helmet'
 
 export default function EssentialTools() {
   return (
-    <div>
+    <>
       <Helmet>
         <title>🔨 Herramientas esenciales</title>
         <meta
@@ -155,6 +155,6 @@ export default function EssentialTools() {
       <Link className="next" to="/rpg">
         Siguiente: #4.0 Construyendo un juego!
       </Link>
-    </div>
+    </>
   )
 }

@@ -16,7 +16,9 @@ import LanguageSelector from './LanguageSelector'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faChevronLeft, faChevronRight, faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useEffect, useRef, useState } from 'react'
+import { createContext, useEffect, useRef, useState } from 'react'
+
+export const activeDropDown = createContext(null)
 
 const Header = props => {
   const nav = useRef(null)

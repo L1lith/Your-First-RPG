@@ -1,11 +1,11 @@
 import RPG from '../components/Dictionary/es/RPG'
 import Link from '../components/TranslatedLink'
 import YTVideo from '../components/YTVideo'
-import { home, extra, small, title } from '../styles/index.module.scss'
+import { extra, small, title } from '../styles/index.module.scss'
 import { Helmet } from 'react-helmet'
 
 const Home = () => (
-  <div className={home}>
+  <>
     <Helmet>
       <title>Tu Primer Juego RPG</title>
       <meta
@@ -57,7 +57,7 @@ const Home = () => (
     <Link className="next" to="/vision">
       Get Started: 🗺️ Planning it out
     </Link>
-  </div>
+  </>
 )
 
 export default Home

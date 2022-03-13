@@ -11,7 +11,7 @@ import { Helmet } from 'react-helmet'
 
 export default function LogicModelsExplained() {
   return (
-    <div className="logic-models">
+    <>
       <Helmet>
         <meta name="description" content="What is data? A simple explanation" />
         <title>🔢 What is Data?</title>
@@ -43,6 +43,6 @@ export default function LogicModelsExplained() {
       <Link className="next" to="/vision/logic-models-explained">
         Next: #1.2 🧠 Logic Models Explained
       </Link>
-    </div>
+    </>
   )
 }

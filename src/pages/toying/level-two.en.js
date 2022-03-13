@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet'
 
 export default function LevelTwo() {
   return (
-    <div className="level-2">
+    <>
       <Helmet>
         <title>🚫 Whats "Not" Allowed</title>
         <meta name="description" content="Learn about Not expressions with a simple game!" />
@@ -32,6 +32,6 @@ export default function LevelTwo() {
       <Link className="next" to="/toying/level-three">
         Next: #2.3 💻 Booleans for coding Apps
       </Link>
-    </div>
+    </>
   )
 }

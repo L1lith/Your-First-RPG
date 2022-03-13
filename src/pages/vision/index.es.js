@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet'
 
 export default function CodingMindset() {
   return (
-    <div className={visionIntro}>
+    <>
       <Helmet>
         <meta name="description" content="Getting in the coding mindset" />
         <title>🗺️ Planificándolo</title>
@@ -48,6 +48,6 @@ export default function CodingMindset() {
       <Link className="next" to="/vision/logic-models-explained">
         Siguiente: #1.1 🧠 Explicación de modelos lógicos
       </Link>
-    </div>
+    </>
   )
 }

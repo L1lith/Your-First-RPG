@@ -18,7 +18,7 @@ function Editor() {
   //   if (typeof gameCode == 'string' && gameCode.length > 1) setCode(gameCode)
   // })
   return (
-    <div>
+    <>
       <Helmet>
         <title>🛠️ The Game Editor</title>
         <meta name="description" content="Build an RPG game of your own with this editor" />
@@ -57,7 +57,7 @@ function Editor() {
       <Link className="next" to="/rpg/summary">
         Next: #4.4 🔭 You Won! Further Reading
       </Link>
-    </div>
+    </>
   )
 }
 

@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet'
 
 export default function CodingIntro() {
   return (
-    <div className="coding-intro">
+    <>
       <Helmet>
         <title>🛣️ Pasando a la codificación</title>
         <meta name="description" content="Una introducción a la codificación en JavaScript " />
@@ -49,6 +49,6 @@ export default function CodingIntro() {
       <Link className="next" to="/coding/primitives">
         Siguiente: #3.1 📊 Tipos de datos básicos
       </Link>
-    </div>
+    </>
   )
 }

@@ -1,14 +1,14 @@
 import RPG from '../components/Dictionary/en/RPG'
 import Link from '../components/TranslatedLink'
 import YTVideo from '../components/YTVideo'
-import { home, extra, small, title, play, playground } from '../styles/index.module.scss'
+import { extra, small, title, play, playground } from '../styles/index.module.scss'
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Helmet } from 'react-helmet'
 
 export default function Home() {
   return (
-    <div className={home}>
+    <>
       <Helmet>
         <title>Your First RPG</title>
         <meta name="description" content="Learn to code by making a game in JavaScript!" />
@@ -60,6 +60,6 @@ export default function Home() {
         Check out this inspiring talk by Linda Liukas
         <YTVideo url="-jRREn6ifEQ" thumbnail="/images/poetry-of-programming.jpg" />
       </div>
-    </div>
+    </>
   )
 }

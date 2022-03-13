@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet'
 
 export default function LetsMakeAGame() {
   return (
-    <div className="coding-intro">
+    <>
       <Helmet>
         <title>🎮 Let's make a Game!</title>
         <meta name="description" content="In this chapter we will begin creating our RPG game" />
@@ -43,6 +43,6 @@ export default function LetsMakeAGame() {
       <Link className="next" to="/rpg/communication">
         Next: #4.1 🗣️ Talking to the Player
       </Link>
-    </div>
+    </>
   )
 }

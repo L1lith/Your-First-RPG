@@ -2,6 +2,23 @@
 
 .main-header {
     align-items: center;
+    width: 92vw;
+    padding: 1vh 4vw;
+    border-bottom: 2px solid $accent-dark;//#68508e;
+    background-color: $background;
+    //border-radius: 20px;
+    //background: linear-gradient(to right, rgb(70, 54, 96), rgb(104, 80, 142), rgb(70, 54, 96));
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+    overflow-y: visible;
+    white-space: nowrap;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: white;
     .navigation {
         .navToggle {
             background: none;
@@ -29,11 +46,11 @@
             @media screen and (max-width: $mini-width) {
                 font-size: 1.3em;
             }
-            color: #0069ed;
+            color: $highlight;
             transition: right 0.2s linear;
             //opacity: 0;
             //display: none;
-            border-left: 8px solid #68508e;
+            border-left: 8px solid $accent-dark;
             z-index: 100;
             background-color: white;
             list-style: none;
@@ -49,7 +66,7 @@
                     border-bottom: 4px solid #68508e;
                 }
                 a {
-                    color: #0069ed;
+                    color: $highlight;
                     text-decoration: none;
                 }
                 .githubIcon {
@@ -76,7 +93,7 @@
         margin-right: auto;
     }
     .homeLink {
-        color: #0069ed;
+        color: $highlight;
         text-align: center;
         display: flex;
         text-decoration: none;
@@ -108,33 +125,10 @@
         //font-size: 2.75em;
     }
     //color: white;
-    width: 92vw;
-    padding: 1vh 4vw;
-    
     @media screen and (max-width: $mini-width) {
         padding: 1vh 0;
         width: 100vw;
     }
-    border-bottom: 2px solid #68508e;
-    //border-radius: 20px;
-    //background: linear-gradient(to right, rgb(70, 54, 96), rgb(104, 80, 142), rgb(70, 54, 96));
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    font-size: 2em;
-    overflow-y: visible;
-    white-space: nowrap;
-    position: relative;
-    // & > * {
-    //     padding: 0 20px;
-    //     @media screen and (max-width: $mini-width) {
-    //         padding: 0 5px;
-    //     }
-    //     @media screen and (min-width: $mega-width) {
-    //         padding: 0 20px;
-    //     }
-    // }
     & > * {
         margin: 20px;
         @media screen and (max-width: $mini-width) {

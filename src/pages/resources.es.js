@@ -1,9 +1,9 @@
-import { resources, resourceList } from '../styles/resources.module.scss'
+import { resourceList } from '../styles/resources.module.scss'
 import { Helmet } from 'react-helmet'
 
 export default function Resources() {
   return (
-    <div className={resources}>
+    <>
       <Helmet>
         <title>Recursos</title>
         <meta name="description" content="Recursos para ayudarte a aprender a programar " />
@@ -24,8 +24,7 @@ export default function Resources() {
               <a
                 target="_blank"
                 className="bold"
-                href="https://www.youtube.com/c/TheCodingTrain/featured"
-              >
+                href="https://www.youtube.com/c/TheCodingTrain/featured">
                 The Coding Train (canal de YouTube)
               </a>
             </td>
@@ -76,8 +75,7 @@ export default function Resources() {
             <td>
               <a
                 target="_blank"
-                href="https://github.com/L1lith/Your-First-RPG/issues/new?assignees=&labels=help+request&template=help-request.md"
-              >
+                href="https://github.com/L1lith/Your-First-RPG/issues/new?assignees=&labels=help+request&template=help-request.md">
                 Soporte de YourFirstRPG (seguimiento de problemas de GitHub)
               </a>
             </td>
@@ -89,6 +87,6 @@ export default function Resources() {
           </tr>
         </tbody>
       </table>
-    </div>
+    </>
   )
 }

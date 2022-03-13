@@ -10,11 +10,11 @@ import StringDef from '../../components/Dictionary/en/StringDef'
 import Variable from '../../components/Dictionary/en/Variable'
 import Link from '../../components/TranslatedLink'
 import YTVideo from '../../components/YTVideo'
-import { primitives, primitivesList } from '../../styles/coding/primitives.module.scss'
+import { primitivesList } from '../../styles/coding/primitives.module.scss'
 import { Helmet } from 'react-helmet'
 
 const Primitives = () => (
-  <div className={primitives}>
+  <>
     <Helmet>
       <title>📊 Data Types</title>
       <meta name="description" content="Learn about the different types of data in JavaScript" />
@@ -173,7 +173,7 @@ const Primitives = () => (
     <Link className="next" to="/coding/essential-tools">
       Next: #3.2 Essential Tools
     </Link>
-  </div>
+  </>
 )
 
 export default Primitives

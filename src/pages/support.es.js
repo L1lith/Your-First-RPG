@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet'
 
 export default function Support() {
   return (
-    <div>
+    <>
       <Helmet>
         <title>Apoyo</title>
       </Helmet>
@@ -17,6 +17,6 @@ export default function Support() {
       <br />
       ¡Una vez que este proyecto llame la atención de la comunidad, consideraré crear un curso de
       seguimiento!
-    </div>
+    </>
   )
 }

@@ -7,7 +7,7 @@
     background-color: #e4ecf8;
     transition: background-color 0.2s ease;
     &.switchActive {
-        background-color: #0069ed;
+        background-color: $highlight;
     }
     &.roundedStyle {
         border-radius: 100px;

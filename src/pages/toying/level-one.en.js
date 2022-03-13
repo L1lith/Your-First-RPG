@@ -8,7 +8,7 @@ import { Helmet } from 'react-helmet'
 
 export default function LevelOne() {
   return (
-    <div className="level-1">
+    <>
       <Helmet>
         <title>💬 Basic Or Expressions</title>
         <meta name="description" content="Learn about Or expressions with a simple game!" />
@@ -50,6 +50,6 @@ export default function LevelOne() {
       <Link className="next" to="/toying/level-two">
         Next: #2.2 🚫 Whats "Not" Allowed
       </Link>
-    </div>
+    </>
   )
 }

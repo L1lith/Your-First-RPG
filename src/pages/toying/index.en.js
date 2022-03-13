@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet'
 
 export default function ToyingIntro() {
   return (
-    <div className="toying-intro">
+    <>
       <Helmet>
         <title>🧩 Logic Puzzles</title>
         <meta name="description" content="Learn about Boolean Logic using puzzles" />
@@ -43,6 +43,6 @@ export default function ToyingIntro() {
       <Link className="next" to="/toying/level-one">
         Next: #2.1 💬 Basic "Or" Boolean Logic
       </Link>
-    </div>
+    </>
   )
 }

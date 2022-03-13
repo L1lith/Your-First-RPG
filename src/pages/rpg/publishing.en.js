@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet'
 
 export default function Publishing() {
   return (
-    <div className="publishing">
+    <>
       <Helmet>
         <title>🏆 Sharing your RPG</title>
         <meta name="description" content="How to share your RPG game" />
@@ -37,6 +37,6 @@ export default function Publishing() {
       <Link className="next" to="/rpg/editor">
         #4.3 🛠️ The Game Editor
       </Link>
-    </div>
+    </>
   )
 }

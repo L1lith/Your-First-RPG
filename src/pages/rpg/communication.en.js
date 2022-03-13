@@ -13,7 +13,7 @@ import { Helmet } from 'react-helmet'
 
 export default function Communication() {
   return (
-    <div className="communication">
+    <>
       <Helmet>
         <title>🗣️ Talking to the Player</title>
         <meta name="description" content="Learn how to communicate with the player of your game" />
@@ -182,6 +182,6 @@ if(smartPrompt("Do you like oatmeal raisin cookies?").toLowerCase() === "yes") {
       <Link className="next" to="/rpg/publishing">
         Next: #4.2 🏆 Sharing your RPG
       </Link>
-    </div>
+    </>
   )
 }

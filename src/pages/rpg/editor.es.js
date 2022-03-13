@@ -13,7 +13,7 @@ function Editor() {
   //   if (typeof gameCode == 'string' && gameCode.length > 1) setCode(gameCode)
   // })
   return (
-    <div>
+    <>
       <Helmet>
         <title>🛠️ La Editora de Juegos</title>
         <meta name="description" content="Crea tu propio juego de rol con este editor" />
@@ -50,7 +50,7 @@ function Editor() {
       <Link className="next" to="/rpg/summary">
         Siguiente: #4.4 🔭 ¡Ganaste! Otras lecturas
       </Link>
-    </div>
+    </>
   )
 }
 

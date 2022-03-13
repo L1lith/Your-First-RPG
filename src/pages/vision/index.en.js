@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet'
 
 export default function CodingMindset() {
   return (
-    <div className={visionIntro}>
+    <>
       <Helmet>
         <meta name="description" content="Getting in the coding mindset" />
         <title>🗺️ Planning it out</title>
@@ -31,7 +31,7 @@ export default function CodingMindset() {
       <p>
         Coders are great at writing code only they can understand. Many beginners can feel alienated
         after hearing "just read the <Docs />
-        ", and aren't given a proper chance to understand why coders do what they do.
+        ", and aren't given a fair chance to understand why coders do what they do.
         <br />
         <br />
         Documentation sites like{' '}
@@ -50,6 +50,6 @@ export default function CodingMindset() {
       <Link className="next" to="/vision/what-is-data">
         Next: #1.1 🔢 What is Data?
       </Link>
-    </div>
+    </>
   )
 }

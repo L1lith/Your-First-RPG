@@ -14,7 +14,7 @@ import { Helmet } from 'react-helmet'
 
 export default function LogicModelsExplained() {
   return (
-    <div className="logic-models">
+    <>
       <Helmet>
         <meta name="description" content="Arranging Logic Models" />
         <title>🧠 Logic Models Explained</title>
@@ -150,6 +150,6 @@ export default function LogicModelsExplained() {
         <p>Bonus: Liked the Rube Goldberg Machine?</p>
         <YTVideo url="Av07QiqmsoA" thumbnail="/images/lifes-lemons.jpg" />
       </EasterEgg>
-    </div>
+    </>
   )
 }

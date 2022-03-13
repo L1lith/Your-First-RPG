@@ -8,7 +8,7 @@ import { Helmet } from 'react-helmet'
 
 export default function LevelOne() {
   return (
-    <div className="level-1">
+    <>
       <Helmet>
         <title>💬 Expressions "Or" básicas</title>
         <meta
@@ -54,6 +54,6 @@ export default function LevelOne() {
       <Link className="next" to="/toying/level-two">
         Siguiente: #2.2 🚫 Lo que es "NOT" permitido
       </Link>
-    </div>
+    </>
   )
 }

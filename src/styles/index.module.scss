@@ -1,56 +1,41 @@
 @import "variables";
 
-.home {
-    ol {
-        display: block;
-        width: fit-content;
+.playground {
+    border: 5px solid #68508e;
+    border-radius: 5px;
+    display: block;
+    width: fit-content;
+    margin: 50px auto;
+    @media screen and (max-width: $mini-width) {
+        margin: 25px auto;
     }
-    .playground {
-        border: 5px solid #68508e;
-        border-radius: 5px;
+    padding: 0 40px 20px 40px;    
+    .play {
+        color: $highlight;
         display: block;
-        width: fit-content;
-        margin: 50px auto;
-        @media screen and (max-width: $mini-width) {
-            margin: 25px auto;
-        }
-        padding: 0 40px 20px 40px;    
-        .play {
-            color: #0069ed;
-            display: block;
-            margin: 25px auto;
-            font-size: 2.5em;
-        }
+        margin: 25px auto;
+        font-size: 2.5em;
     }
-    // & > * {
-    //     display: block;
-    //     width: fit-content;
-    //     margin: 0 auto;
-    // }
-    text-align: center;
+}
 
-    & > h2 {
-        margin-top: 40px;
-    }
-    .title {
-        width: fit-content;
-        margin: 0 auto;
-        border-bottom: 8px solid #d1d1ff;
-        border-radius: 10px;
-    }
-    .extra {
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-        margin-top: 50px;
-        background: linear-gradient(to bottom, white, #d1d1ff);
-        border: 2px solid #d1d1ff;
-        border-width: 0 2px;
-        padding: 5px 10px;
-    }
-    .small {
-        display: inline-block;
-        font-weight: initial;
-        font-size: 0.65em;
-        padding-bottom: 10px;
-    }
+.title {
+    width: fit-content;
+    margin: 0 auto;
+    border-bottom: 8px solid #d1d1ff;
+    border-radius: 10px;
+}
+.extra {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: 50px;
+    background-color: white;
+    border: 2px solid #d1d1ff;
+    border-width: 0 2px;
+    padding: 5px 10px;
+}
+.small {
+    display: inline-block;
+    font-weight: initial;
+    font-size: 0.65em;
+    padding-bottom: 10px;
 }

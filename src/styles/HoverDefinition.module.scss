@@ -1,6 +1,8 @@
+@import 'variables';
+
 .hover-definition {
     position: relative;
-    color: #0069ed;
+    color: $highlight;
     font-weight: bold;
     cursor: pointer;
     text-decoration: underline;
@@ -37,5 +39,5 @@
     z-index: 10;
     position: absolute;
     background-color: white;
-    border: 1px solid #0069ed;
+    border: 1px solid $highlight;
 }

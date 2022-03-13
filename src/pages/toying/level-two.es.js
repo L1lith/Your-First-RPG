@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet'
 
 export default function LevelTwo() {
   return (
-    <div className="level-2">
+    <>
       <Helmet>
         <title>🚫 Lo que es "NOT" permitido</title>
         <meta
@@ -35,6 +35,6 @@ export default function LevelTwo() {
       <Link className="next" to="/toying/level-three">
         Siguiente: #2.3 💻 Booleans para aplicaciones de codificación
       </Link>
-    </div>
+    </>
   )
 }

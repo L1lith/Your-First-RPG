@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet'
 
 export default function LetsMakeAGame() {
   return (
-    <div className="coding-intro">
+    <>
       <Helmet>
         <title>🎮 Construyendo un juego!</title>
         <meta
@@ -46,6 +46,6 @@ export default function LetsMakeAGame() {
       <Link className="next" to="/rpg/communication">
         Siguiente: #4.1 🗣️ Comunicarse con el jugador
       </Link>
-    </div>
+    </>
   )
 }

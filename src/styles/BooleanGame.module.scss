@@ -102,6 +102,7 @@
             border: 2px solid #0000008a;
             box-sizing: border-box;
             transition: border-color 0.5s ease;
+            margin: 0;
             cursor: pointer;
             &.failedStyle {
                 border-color: red !important;

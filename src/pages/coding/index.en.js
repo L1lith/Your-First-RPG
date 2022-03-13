@@ -7,7 +7,7 @@ import { Helmet } from 'react-helmet'
 
 export default function CodingIntro() {
   return (
-    <div className="coding-intro">
+    <>
       <h1 className="title">Chapter 3</h1>
       <Helmet>
         <title>🛣️ Stepping into Coding</title>
@@ -53,6 +53,6 @@ export default function CodingIntro() {
       <Link className="next" to="/coding/primitives">
         Next: #3.1 📊 Basic Data Types
       </Link>
-    </div>
+    </>
   )
 }

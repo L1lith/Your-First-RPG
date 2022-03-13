@@ -13,7 +13,7 @@ import { Helmet } from 'react-helmet'
 
 export default function Communication() {
   return (
-    <div className="communication">
+    <>
       <Helmet>
         <title>🗣️ Comunicarse con el jugador</title>
         <meta name="description" content="Aprende a comunicarte con el jugador de tu juego" />
@@ -99,8 +99,7 @@ export default function Communication() {
           adecuada para completar correctamente la tarea. Puede leer más sobre el control de flujo{' '}
           <a
             target="_blank"
-            href="https://vanessamarely.medium.com/estructuras-de-control-de-flujo-en-javascript-c848337a5c02"
-          >
+            href="https://vanessamarely.medium.com/estructuras-de-control-de-flujo-en-javascript-c848337a5c02">
             aquí.
           </a>
           <br />
@@ -195,6 +194,6 @@ if(avisoInteligente("¿Te gustan las galletas de avena con pasas?").toLowerCase(
       <Link className="next" to="/rpg/publishing">
         Siguiente: #4.2 🏆 Compartiendo tu juego RPG
       </Link>
-    </div>
+    </>
   )
 }

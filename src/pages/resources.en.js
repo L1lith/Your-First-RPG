@@ -1,9 +1,9 @@
-import { resources, resourceList } from '../styles/resources.module.scss'
+import { resourceList } from '../styles/resources.module.scss'
 import { Helmet } from 'react-helmet'
 
 export default function Resources() {
   return (
-    <div className={resources}>
+    <>
       <Helmet>
         <title>Resources</title>
         <meta name="description" content="Resources to help you learn to code" />
@@ -84,6 +84,6 @@ export default function Resources() {
           </tr>
         </tbody>
       </table>
-    </div>
+    </>
   )
 }

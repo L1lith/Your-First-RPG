@@ -10,7 +10,7 @@ import { Helmet } from 'react-helmet'
 
 export default function LevelThree() {
   return (
-    <div className="level-3">
+    <>
       <Helmet>
         <title>💻 Booleans for coding Apps</title>
         <meta name="description" content="A puzzle review of Boolean Logic" />
@@ -60,6 +60,6 @@ export default function LevelThree() {
       <Link className="next" to="/coding">
         Next: #3.0 🛣️ Stepping into Coding
       </Link>
-    </div>
+    </>
   )
 }

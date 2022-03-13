@@ -1,8 +1,10 @@
+@import "../variables";
+
 .playgroundInfo {
     margin-top: 40px;
     font-size: 1.2em;
     a {
-        color: #0069ed !important;
+        color: $highlight !important;
     }
 }
 
