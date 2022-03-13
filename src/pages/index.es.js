@@ -44,7 +44,6 @@ const Home = () => (
         <Link to="/rpg">🎮 Construyendo un juego!</Link>
       </li>
     </ol>
-    <Link to="/resources">Recuerde consultar la sección de recursos si se queda atascado</Link>
     <div className={extra}>
       <h2>¿Miedo a la codificación? ¡No lo seas!</h2>
       Echa un vistazo a esta inspiradora charla de Linda Liukas
