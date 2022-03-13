@@ -27,10 +27,10 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-87a4d3ca60aa3ce9ea11.js"
+    "url": "webpack-runtime-b9bf99bb09dc420a710b.js"
   },
   {
-    "url": "styles.e4791dbeef97b54bdcda.css"
+    "url": "styles.91031d6283f3168642c7.css"
   },
   {
     "url": "framework-80fbcdba419e70b29ef9.js"
@@ -46,7 +46,7 @@ self.__precacheManifest = [
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "23c99a7645d627b27648755755492e16"
+    "revision": "9306b1efbdc757b5009320b90509d107"
   },
   {
     "url": "fonts/droidSerifRegular.ttf",
@@ -59,7 +59,7 @@ self.__precacheManifest = [
     "url": "polyfill-cb6bfe04aa984d9012d0.js"
   },
   {
-    "url": "component---src-pages-index-en-js-4d87a15617b0c401017f.js"
+    "url": "component---src-pages-index-en-js-d501445c8a158c12af08.js"
   },
   {
     "url": "page-data/index/page-data.json",
@@ -67,7 +67,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "0eeb64fb1655d384bd206bd8350c8f4e"
+    "revision": "6a665eb8eb446bbcd4d13608307224c7"
   },
   {
     "url": "component---src-pages-404-js-fdb2c18e1af077ab0db4.js"
@@ -81,14 +81,14 @@ self.__precacheManifest = [
     "revision": "8036c40541e7fdf55e2899beb6c0cd41"
   },
   {
-    "url": "component---src-pages-coding-index-en-js-0e9dbbe0f05040a8a657.js"
+    "url": "component---src-pages-coding-index-en-js-c052eef0db1eeb566acf.js"
   },
   {
     "url": "page-data/coding/page-data.json",
     "revision": "a0fc6bc1669da4e5b27394f67f766173"
   },
   {
-    "url": "component---src-pages-index-es-js-f5993abde5f2f649e9b4.js"
+    "url": "component---src-pages-index-es-js-23d5af3eb01e57df35e9.js"
   },
   {
     "url": "page-data/es/page-data.json",
@@ -112,35 +112,35 @@ self.__precacheManifest = [
     "revision": "d06e4ecaf0368f9a3805e42c8bbd3c46"
   },
   {
-    "url": "component---src-pages-resources-en-js-4e1fa2093070eb40e6e5.js"
+    "url": "component---src-pages-resources-en-js-626bfd7d02238dc43598.js"
   },
   {
     "url": "page-data/resources/page-data.json",
     "revision": "9eccd9d2c871cf0f47bf32bb8a4d1963"
   },
   {
-    "url": "component---src-pages-rpg-index-en-js-831bd69699d98465bae3.js"
+    "url": "component---src-pages-rpg-index-en-js-a4b5eb0c8feca8b3aaa8.js"
   },
   {
     "url": "page-data/rpg/page-data.json",
     "revision": "fff5c763df69862244044fcead7b1b3c"
   },
   {
-    "url": "component---src-pages-support-en-js-21379bd2158d4eb2c6a1.js"
+    "url": "component---src-pages-support-en-js-d653516c3308b20cf7f0.js"
   },
   {
     "url": "page-data/support/page-data.json",
     "revision": "80d4e143042c3faf0a118aca709e5f79"
   },
   {
-    "url": "component---src-pages-toying-index-en-js-49abef94e3c1bb482a18.js"
+    "url": "component---src-pages-toying-index-en-js-860f78fe950075440666.js"
   },
   {
     "url": "page-data/toying/page-data.json",
     "revision": "9fc081bb861f31cbca73f91e2448b889"
   },
   {
-    "url": "component---src-pages-vision-index-en-js-854a5511a232ddef27d2.js"
+    "url": "component---src-pages-vision-index-en-js-1400bb114097a0d6586e.js"
   },
   {
     "url": "page-data/vision/page-data.json",
