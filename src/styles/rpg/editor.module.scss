@@ -13,11 +13,11 @@
 }
 .describeIcon {
     color: #39ff14;
-    background: black;
+    background: $foreground !important;
     border-radius: 100px;
     height: 1em;
     width: auto;
-    filter: drop-shadow(0 0 2px black);
+    filter: drop-shadow(0 0 2px $foreground);
 }
 .warning {
     display: block;

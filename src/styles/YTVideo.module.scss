@@ -1,8 +1,8 @@
 @import "variables";
 
 .youtubeContainer {
-  background-color: black;
-  color: white; // to display the alt text properly
+  background-color: $foreground;
+  color: $background; // to display the alt text properly
   overflow: hidden;
   img{
     user-select: none;
@@ -23,7 +23,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       font-size: calc(5vw + 5vh);
-      color: white;
+      color: $background;
       filter: drop-shadow(0 0 5px #000000e6);
       pointer-events: none;
       cursor: pointer;
