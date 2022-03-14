@@ -12,10 +12,12 @@
     display: flex;
     justify-content: space-between;
     max-width: 100%;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    background: none !important;
 }
 
 .game {
+    background-color: $background;
     margin: 30px 20px;
     @media screen and (max-width: $mini-width) {
         margin: 20px;
