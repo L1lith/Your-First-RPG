@@ -118,7 +118,9 @@ table th {
 
 body {
     //background: conic-gradient( white, $accent, #d1d1ff, white);
-    background:conic-gradient(from 90deg at 50% 50%, $background, $accent-light, $highlight-light, $highlight-light 32%, $background 56%);
+    //background:conic-gradient(from 90deg at 50% 50%, $background, $accent-light, $highlight-light, $highlight-light 32%, $background 56%);
+    background:linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 253, 1) 28%, $accent-light, $highlight-light 100%);
+    background:radial-gradient(ellipse at 50% 50%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 253, 1) 68%, $accent-light, $highlight-light 100%);
     background-attachment: fixed;
     &.disabled {
         overflow: hidden;

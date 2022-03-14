@@ -27,10 +27,10 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-b9bf99bb09dc420a710b.js"
+    "url": "webpack-runtime-cb48bc45dcb594a62c0b.js"
   },
   {
-    "url": "styles.91031d6283f3168642c7.css"
+    "url": "styles.5d8a52f669ff3b303319.css"
   },
   {
     "url": "framework-80fbcdba419e70b29ef9.js"
@@ -46,7 +46,7 @@ self.__precacheManifest = [
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "9306b1efbdc757b5009320b90509d107"
+    "revision": "c10a9b9a5c77c7a3c846a7e655adf56b"
   },
   {
     "url": "fonts/droidSerifRegular.ttf",
@@ -67,7 +67,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "6a665eb8eb446bbcd4d13608307224c7"
+    "revision": "515cd5c1fad97393bf9b4ca6acfe21df"
   },
   {
     "url": "component---src-pages-404-js-fdb2c18e1af077ab0db4.js"
@@ -88,7 +88,7 @@ self.__precacheManifest = [
     "revision": "a0fc6bc1669da4e5b27394f67f766173"
   },
   {
-    "url": "component---src-pages-index-es-js-23d5af3eb01e57df35e9.js"
+    "url": "component---src-pages-index-es-js-1dbf12d5a051baa12011.js"
   },
   {
     "url": "page-data/es/page-data.json",
