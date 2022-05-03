@@ -1,8 +1,8 @@
+---
 import { resourceList } from '../styles/resources.module.scss'
 import { Helmet } from 'react-helmet'
 
-export default function Resources() {
-  return (
+---
     <>
       <Helmet>
         <title>Resources</title>
@@ -11,7 +11,7 @@ export default function Resources() {
       <h2>Resources</h2>
       This course focuses on being palatable for beginners, so if you'd like to learn about
       JavaScript in more depth, or you have questions I recommend the following resources:
-      <table className={resourceList}>
+      <table class={resourceList}>
         <thead>
           <tr>
             <th>Title/Type</th>
@@ -23,7 +23,7 @@ export default function Resources() {
             <td>
               <a
                 target="_blank"
-                className="bold"
+                class="bold"
                 href="https://www.youtube.com/c/TheCodingTrain/featured">
                 The Coding Train (YouTube Channel)
               </a>
@@ -44,7 +44,7 @@ export default function Resources() {
               StackOverflow is a little like the yahoo answers of the coding world (but please don't
               spam silly questions). If you have an issue chances are someones had the exact same
               one before. If you're stuck and can't figure something out search on there,{' '}
-              <span className="bold">google it</span>, and if you still can't find the answer feel
+              <span class="bold">google it</span>, and if you still can't find the answer feel
               free to open a new question.
             </td>
           </tr>
@@ -85,5 +85,3 @@ export default function Resources() {
         </tbody>
       </table>
     </>
-  )
-}
