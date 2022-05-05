@@ -2,7 +2,7 @@
 dist/
 .output/
 
-# Pages (procedurally built)
+# Pages and components (procedurally built)
 /src/pages/
 
 # dependencies
