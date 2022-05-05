@@ -4,6 +4,7 @@ dist/
 
 # Pages and components (procedurally built)
 /src/pages/
+/src/components/
 
 # dependencies
 node_modules/
