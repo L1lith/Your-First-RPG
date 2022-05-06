@@ -48,7 +48,8 @@ export default function Summary() {
         . JavaScript es un gran punto de entrada a muchas áreas diferentes, como bots de{' '}
         <a
           target="_blank"
-          href="https://www.youtube.com/watch?v=7A-bnPlxj4k&list=PLRqwX-V7Uu6avBYxeBSwF48YhAnSn_sA4">
+          href="https://www.youtube.com/watch?v=7A-bnPlxj4k&list=PLRqwX-V7Uu6avBYxeBSwF48YhAnSn_sA4"
+        >
           discord bots
         </a>
         , secuencias de comandos de{' '}
@@ -63,7 +64,8 @@ export default function Summary() {
         Si desea sugerir una mejora, puede abrir un ticket{' '}
         <a
           target="_blank"
-          href="https://github.com/L1lith/Your-First-RPG/issues/new?assignees=&labels=enhancement&template=improvement-idea.md">
+          href="https://github.com/L1lith/Your-First-RPG/issues/new?assignees=&labels=enhancement&template=improvement-idea.md"
+        >
           aquí
         </a>{' '}
         o puede enviar una solicitud de extracción{' '}

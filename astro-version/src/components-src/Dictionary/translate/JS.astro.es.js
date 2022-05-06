@@ -1,6 +1,6 @@
 module.exports = new Map([
   [
-    /(?<=definition=['|"]).*(?=['|"][\s]*\n)/g,
-    'El "JavaScript Interpreter" es el software que ejecuta su código, como el motor'
+    /(?<=definition=['|"]).*(?=['|"])/g,
+    'JS es la abreviatura de JavaScript, el lenguaje de codificación'
   ]
 ])

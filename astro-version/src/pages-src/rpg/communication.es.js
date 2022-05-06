@@ -99,7 +99,8 @@ export default function Communication() {
           adecuada para completar correctamente la tarea. Puede leer más sobre el control de flujo{' '}
           <a
             target="_blank"
-            href="https://vanessamarely.medium.com/estructuras-de-control-de-flujo-en-javascript-c848337a5c02">
+            href="https://vanessamarely.medium.com/estructuras-de-control-de-flujo-en-javascript-c848337a5c02"
+          >
             aquí.
           </a>
           <br />

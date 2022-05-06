@@ -44,7 +44,8 @@ const Header = props => {
 
   return (
     <header
-      className={mainHeader + (typeof props.className == 'string' ? ' ' + props.className : '')}>
+      className={mainHeader + (typeof props.className == 'string' ? ' ' + props.className : '')}
+    >
       <Link className={siteIcon} aria-hidden to="/">
         <img alt="site logo" type="image/svg" src="/images/icons/site-icon.svg" />
       </Link>
@@ -62,7 +63,8 @@ const Header = props => {
           onClick={() => {
             console.log(isNavOpen, !isNavOpen)
             setNavOpen(!isNavOpen)
-          }}>
+          }}
+        >
           <FontAwesomeIcon icon={faBars} />
         </button>
         <ul style={isNavOpen ? { display: 'initial' } : { display: 'none' }}>

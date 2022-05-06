@@ -1,3 +1,3 @@
 module.exports = {
-  dependencies: ["fs-extra"],
-};
+  dependencies: ['fs-extra']
+}

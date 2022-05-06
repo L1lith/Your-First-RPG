@@ -30,7 +30,8 @@ export default function Publishing() {
         <a
           target="_blank"
           className="bold"
-          href="https://github.com/L1lith/Your-First-RPG/issues/new?assignees=&labels=rpg+display&template=display-your-project-on-the-site.md">
+          href="https://github.com/L1lith/Your-First-RPG/issues/new?assignees=&labels=rpg+display&template=display-your-project-on-the-site.md"
+        >
           aquí
         </a>{' '}
         😊

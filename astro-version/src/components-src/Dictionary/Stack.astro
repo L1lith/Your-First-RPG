@@ -1,0 +1,9 @@
+---
+import HoverDefinition from '../../HoverDefinition'
+---
+  <HoverDefinition
+    definition='Your stack is the list of software/apps that you use to code'
+    {...Astro.props}
+  >
+    {Astro.props.children || 'stack'}
+</HoverDefinition>
