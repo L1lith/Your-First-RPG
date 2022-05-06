@@ -1,0 +1,9 @@
+---
+import HoverDefinition from '../../HoverDefinition'
+---
+  <HoverDefinition
+    definition="docs is short for documentation, which is a site that describes something"
+    {...Astro.props}
+  >
+    {Astro.props.children || 'docs'}
+  </HoverDefinition>

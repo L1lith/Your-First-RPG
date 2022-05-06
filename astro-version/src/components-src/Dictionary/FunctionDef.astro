@@ -1,0 +1,9 @@
+---
+import HoverDefinition from '../../HoverDefinition'
+---
+  <HoverDefinition
+    definition='A function is a re-usable piece of code that has a set of inputs, rules, and outputs. A function is like a miniature logic model that we can re-use to save time!'
+    {...Astro.props}
+  >
+    {Astro.props.children || 'function'}
+  </HoverDefinition>

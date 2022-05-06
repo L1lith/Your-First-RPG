@@ -1,0 +1,9 @@
+---
+import HoverDefinition from '../../HoverDefinition'
+---
+  <HoverDefinition
+    definition='An expression is a piece of code that can be reduced to a single value, like a math equation'
+    {...Astro.props}
+  >
+    {Astro.props.children || 'expression'}
+  </HoverDefinition>

@@ -1,0 +1,9 @@
+---
+import HoverDefinition from '../../HoverDefinition'
+---
+  <HoverDefinition
+    definition='A boolean is something that is either true or false, like a yes or no question'
+    {...Astro.props}
+  >
+    {Astro.props.children || 'boolean'}
+  </HoverDefinition>

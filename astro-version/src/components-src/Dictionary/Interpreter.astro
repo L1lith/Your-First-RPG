@@ -1,0 +1,10 @@
+---
+import HoverDefinition from '../../HoverDefinition'
+---
+
+  <HoverDefinition
+    definition='The JavaScript interpreter is the software that runs your code, like the engine'
+    {...Astro.props}
+  >
+    {Astro.props.children || 'interpreter'}
+  </HoverDefinition>
