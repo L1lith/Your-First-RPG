@@ -1,6 +1,6 @@
 module.exports = new Map([
   [
-    /(?<=definition=['|"]).*(?=['|"][\s]*(\n|{|>))/g,
+    /(?<=definition=[{]?['|"]).*(?=['|"][\s]*[}]?[\s]*(\n|>|{))/g,
     'Tu "output" es el resultado de tu modelo lógico'
   ]
 ])
