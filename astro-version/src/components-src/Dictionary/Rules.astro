@@ -3,10 +3,8 @@ import HoverDefinition from '../../HoverDefinition'
 ---
 
   <HoverDefinition
-    definition={
-      'This is the "logic" or "code" of your logic model. The rules are used to decide what the output of our model is based on the input'
-    }
+    definition='This is the "logic" or "code" of your logic model. The rules are used to decide what the output of our model is based on the input'
     {...Astro.props}
   >
-    {props.children || 'rules'}
+    {Astro.props.children || 'rules'}
   </HoverDefinition>
